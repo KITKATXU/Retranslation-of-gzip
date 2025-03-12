@@ -2173,16 +2173,6 @@
         "inflate.c",
         945,
         "Macro",
-        "wp",
-        "inflate.c",
-        978
-      ],
-      [
-        "Function",
-        "inflate",
-        "inflate.c",
-        945,
-        "Macro",
         "flush_output",
         "inflate.c",
         978
@@ -2249,16 +2239,6 @@
       ],
       [
         "Function",
-        "write_error",
-        "util.c",
-        496,
-        "Macro",
-        "errno",
-        "util.c",
-        500
-      ],
-      [
-        "Function",
         "read_error",
         "util.c",
         483,
@@ -2283,16 +2263,6 @@
         "util.c",
         483,
         "Macro",
-        "fprintf",
-        "util.c",
-        491
-      ],
-      [
-        "Function",
-        "read_error",
-        "util.c",
-        483,
-        "Macro",
         "stderr",
         "util.c",
         486
@@ -2303,29 +2273,9 @@
         "util.c",
         483,
         "Macro",
-        "stderr",
-        "util.c",
-        491
-      ],
-      [
-        "Function",
-        "read_error",
-        "util.c",
-        483,
-        "Macro",
         "errno",
         "util.c",
         485
-      ],
-      [
-        "Function",
-        "read_error",
-        "util.c",
-        483,
-        "Macro",
-        "errno",
-        "util.c",
-        488
       ],
       [
         "Function",
@@ -2433,49 +2383,9 @@
         "util.c",
         412,
         "Macro",
-        "NULL",
-        "util.c",
-        437
-      ],
-      [
-        "Function",
-        "add_envopt",
-        "util.c",
-        412,
-        "Macro",
-        "NULL",
-        "util.c",
-        457
-      ],
-      [
-        "Function",
-        "add_envopt",
-        "util.c",
-        412,
-        "Macro",
         "SEPARATOR",
         "util.c",
         429
-      ],
-      [
-        "Function",
-        "add_envopt",
-        "util.c",
-        412,
-        "Macro",
-        "SEPARATOR",
-        "util.c",
-        432
-      ],
-      [
-        "Function",
-        "add_envopt",
-        "util.c",
-        412,
-        "Macro",
-        "SEPARATOR",
-        "util.c",
-        452
       ],
       [
         "Function",
@@ -2573,16 +2483,6 @@
         "util.c",
         241,
         "Macro",
-        "fcntl",
-        "util.c",
-        261
-      ],
-      [
-        "Function",
-        "read_buffer",
-        "util.c",
-        241,
-        "Macro",
         "O_NONBLOCK",
         "util.c",
         259
@@ -2593,37 +2493,7 @@
         "util.c",
         241,
         "Macro",
-        "O_NONBLOCK",
-        "util.c",
-        261
-      ],
-      [
-        "Function",
-        "read_buffer",
-        "util.c",
-        241,
-        "Macro",
         "EAGAIN",
-        "util.c",
-        254
-      ],
-      [
-        "Function",
-        "read_buffer",
-        "util.c",
-        241,
-        "Macro",
-        "EAGAIN",
-        "util.c",
-        260
-      ],
-      [
-        "Function",
-        "read_buffer",
-        "util.c",
-        241,
-        "Macro",
-        "errno",
         "util.c",
         254
       ],
@@ -2635,7 +2505,7 @@
         "Macro",
         "errno",
         "util.c",
-        260
+        254
       ],
       [
         "Function",
@@ -2669,16 +2539,6 @@
       ],
       [
         "Function",
-        "read_buffer",
-        "util.c",
-        241,
-        "Macro",
-        "INT_MAX",
-        "util.c",
-        248
-      ],
-      [
-        "Function",
         "fill_inbuf",
         "util.c",
         210,
@@ -2686,16 +2546,6 @@
         "INBUFSIZ",
         "util.c",
         218
-      ],
-      [
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210,
-        "Macro",
-        "INBUFSIZ",
-        "util.c",
-        225
       ],
       [
         "Function",
@@ -2793,16 +2643,6 @@
         "trees.c",
         859,
         "Macro",
-        "STORED_BLOCK",
-        "trees.c",
-        956
-      ],
-      [
-        "Function",
-        "flush_block",
-        "trees.c",
-        859,
-        "Macro",
         "STATIC_TREES",
         "trees.c",
         939
@@ -2893,36 +2733,6 @@
         "trees.c",
         968,
         "Macro",
-        "Freq",
-        "trees.c",
-        983
-      ],
-      [
-        "Function",
-        "ct_tally",
-        "trees.c",
-        968,
-        "Macro",
-        "Freq",
-        "trees.c",
-        984
-      ],
-      [
-        "Function",
-        "ct_tally",
-        "trees.c",
-        968,
-        "Macro",
-        "Freq",
-        "trees.c",
-        1003
-      ],
-      [
-        "Function",
-        "ct_tally",
-        "trees.c",
-        968,
-        "Macro",
         "d_code",
         "trees.c",
         984
@@ -2963,29 +2773,9 @@
         "trees.c",
         341,
         "Macro",
-        "LENGTH_CODES",
-        "trees.c",
-        401
-      ],
-      [
-        "Function",
-        "ct_init",
-        "trees.c",
-        341,
-        "Macro",
         "D_CODES",
         "trees.c",
         382
-      ],
-      [
-        "Function",
-        "ct_init",
-        "trees.c",
-        341,
-        "Macro",
-        "D_CODES",
-        "trees.c",
-        404
       ],
       [
         "Function",
@@ -3019,56 +2809,6 @@
       ],
       [
         "Function",
-        "ct_init",
-        "trees.c",
-        341,
-        "Macro",
-        "Len",
-        "trees.c",
-        393
-      ],
-      [
-        "Function",
-        "ct_init",
-        "trees.c",
-        341,
-        "Macro",
-        "Len",
-        "trees.c",
-        394
-      ],
-      [
-        "Function",
-        "ct_init",
-        "trees.c",
-        341,
-        "Macro",
-        "Len",
-        "trees.c",
-        395
-      ],
-      [
-        "Function",
-        "ct_init",
-        "trees.c",
-        341,
-        "Macro",
-        "Len",
-        "trees.c",
-        396
-      ],
-      [
-        "Function",
-        "ct_init",
-        "trees.c",
-        341,
-        "Macro",
-        "Len",
-        "trees.c",
-        405
-      ],
-      [
-        "Function",
         "deflate",
         "deflate.c",
         748,
@@ -3093,49 +2833,9 @@
         "deflate.c",
         748,
         "Macro",
-        "MIN_LOOKAHEAD",
-        "deflate.c",
-        772
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_LOOKAHEAD",
-        "deflate.c",
-        873
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
         "MAX_MATCH",
         "deflate.c",
         771
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MAX_MATCH",
-        "deflate.c",
-        772
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MAX_MATCH",
-        "deflate.c",
-        873
       ],
       [
         "Function",
@@ -3153,146 +2853,6 @@
         "deflate.c",
         748,
         "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        763
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        768
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        771
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        772
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        782
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        792
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        796
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        819
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        827
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        873
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
         "WSIZE",
         "deflate.c",
         763
@@ -3303,119 +2863,9 @@
         "deflate.c",
         748,
         "Macro",
-        "WSIZE",
-        "deflate.c",
-        771
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        819
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
         "head",
         "deflate.c",
         763
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "head",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "head",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "head",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "head",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "head",
-        "deflate.c",
-        819
       ],
       [
         "Function",
@@ -3453,109 +2903,9 @@
         "deflate.c",
         748,
         "Macro",
-        "HASH_SIZE",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_SIZE",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_SIZE",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_SIZE",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_SIZE",
-        "deflate.c",
-        819
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
         "WMASK",
         "deflate.c",
         763
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WMASK",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WMASK",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WMASK",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WMASK",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "WMASK",
-        "deflate.c",
-        819
       ],
       [
         "Function",
@@ -3573,56 +2923,6 @@
         "deflate.c",
         748,
         "Macro",
-        "H_SHIFT",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "H_SHIFT",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "H_SHIFT",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "H_SHIFT",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "H_SHIFT",
-        "deflate.c",
-        819
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
         "HASH_MASK",
         "deflate.c",
         763
@@ -3633,109 +2933,9 @@
         "deflate.c",
         748,
         "Macro",
-        "HASH_MASK",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_MASK",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_MASK",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_MASK",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_MASK",
-        "deflate.c",
-        819
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
         "HASH_BITS",
         "deflate.c",
         763
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_BITS",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_BITS",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_BITS",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_BITS",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "HASH_BITS",
-        "deflate.c",
-        819
       ],
       [
         "Function",
@@ -3753,36 +2953,6 @@
         "deflate.c",
         748,
         "Macro",
-        "NULL",
-        "deflate.c",
-        846
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "NULL",
-        "deflate.c",
-        858
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "NULL",
-        "deflate.c",
-        877
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
         "INSERT_STRING",
         "deflate.c",
         763
@@ -3793,109 +2963,9 @@
         "deflate.c",
         748,
         "Macro",
-        "INSERT_STRING",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "INSERT_STRING",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "INSERT_STRING",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "INSERT_STRING",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "INSERT_STRING",
-        "deflate.c",
-        819
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
         "UPDATE_HASH",
         "deflate.c",
         763
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "UPDATE_HASH",
-        "deflate.c",
-        808
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "UPDATE_HASH",
-        "deflate.c",
-        810
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "UPDATE_HASH",
-        "deflate.c",
-        812
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "UPDATE_HASH",
-        "deflate.c",
-        814
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "UPDATE_HASH",
-        "deflate.c",
-        819
       ],
       [
         "Function",
@@ -3913,59 +2983,9 @@
         "deflate.c",
         748,
         "Macro",
-        "RSYNC_ROLL",
-        "deflate.c",
-        847
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "RSYNC_ROLL",
-        "deflate.c",
-        862
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
         "FLUSH_BLOCK",
         "deflate.c",
         834
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "FLUSH_BLOCK",
-        "deflate.c",
-        846
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "FLUSH_BLOCK",
-        "deflate.c",
-        858
-      ],
-      [
-        "Function",
-        "deflate",
-        "deflate.c",
-        748,
-        "Macro",
-        "FLUSH_BLOCK",
-        "deflate.c",
-        877
       ],
       [
         "Function",
@@ -4003,29 +3023,9 @@
         "deflate.c",
         311,
         "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        367
-      ],
-      [
-        "Function",
-        "lm_init",
-        "deflate.c",
-        311,
-        "Macro",
         "WSIZE",
         "deflate.c",
         324
-      ],
-      [
-        "Function",
-        "lm_init",
-        "deflate.c",
-        311,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        354
       ],
       [
         "Function",
@@ -4046,16 +3046,6 @@
         "HASH_SIZE",
         "deflate.c",
         324
-      ],
-      [
-        "Function",
-        "lm_init",
-        "deflate.c",
-        311,
-        "Macro",
-        "HASH_SIZE",
-        "deflate.c",
-        367
       ],
       [
         "Function",
@@ -4106,16 +3096,6 @@
         "HASH_BITS",
         "deflate.c",
         324
-      ],
-      [
-        "Function",
-        "lm_init",
-        "deflate.c",
-        311,
-        "Macro",
-        "HASH_BITS",
-        "deflate.c",
-        367
       ],
       [
         "Function",
@@ -4263,16 +3243,6 @@
         "unpack.c",
         213,
         "Macro",
-        "look_bits",
-        "unpack.c",
-        252
-      ],
-      [
-        "Function",
-        "unpack",
-        "unpack.c",
-        213,
-        "Macro",
         "skip_bits",
         "unpack.c",
         261
@@ -4286,26 +3256,6 @@
         "fprintf",
         "unzip.c",
         73
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "fprintf",
-        "unzip.c",
-        80
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "fprintf",
-        "unzip.c",
-        89
       ],
       [
         "Function",
@@ -4343,56 +3293,6 @@
         "unzip.c",
         62,
         "Macro",
-        "ERROR",
-        "unzip.c",
-        76
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "ERROR",
-        "unzip.c",
-        83
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "ERROR",
-        "unzip.c",
-        84
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "ERROR",
-        "unzip.c",
-        91
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "ERROR",
-        "unzip.c",
-        92
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
         "OK",
         "unzip.c",
         100
@@ -4406,26 +3306,6 @@
         "stderr",
         "unzip.c",
         73
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "stderr",
-        "unzip.c",
-        80
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "stderr",
-        "unzip.c",
-        89
       ],
       [
         "Function",
@@ -4466,16 +3346,6 @@
         "LOCFLG",
         "unzip.c",
         88
-      ],
-      [
-        "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "LOCFLG",
-        "unzip.c",
-        96
       ],
       [
         "Function",
@@ -4539,16 +3409,6 @@
       ],
       [
         "Function",
-        "check_zipfile",
-        "unzip.c",
-        62,
-        "Macro",
-        "SH",
-        "unzip.c",
-        72
-      ],
-      [
-        "Function",
         "unzip",
         "unzip.c",
         110,
@@ -4556,46 +3416,6 @@
         "fprintf",
         "unzip.c",
         146
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "fprintf",
-        "unzip.c",
-        184
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "fprintf",
-        "unzip.c",
-        189
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "fprintf",
-        "unzip.c",
-        197
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "fprintf",
-        "unzip.c",
-        202
       ],
       [
         "Function",
@@ -4653,49 +3473,9 @@
         "unzip.c",
         110,
         "Macro",
-        "ERROR",
-        "unzip.c",
-        191
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "ERROR",
-        "unzip.c",
-        205
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "ERROR",
-        "unzip.c",
-        210
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
         "OK",
         "unzip.c",
         197
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "OK",
-        "unzip.c",
-        209
       ],
       [
         "Function",
@@ -4723,59 +3503,9 @@
         "unzip.c",
         110,
         "Macro",
-        "stderr",
-        "unzip.c",
-        184
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "stderr",
-        "unzip.c",
-        189
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "stderr",
-        "unzip.c",
-        197
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "stderr",
-        "unzip.c",
-        202
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
         "EXTHDR",
         "unzip.c",
         116
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "EXTHDR",
-        "unzip.c",
-        175
       ],
       [
         "Function",
@@ -4813,29 +3543,9 @@
         "unzip.c",
         110,
         "Macro",
-        "LOCLEN",
-        "unzip.c",
-        142
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
         "LOCSIZ",
         "unzip.c",
         144
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "LOCSIZ",
-        "unzip.c",
-        146
       ],
       [
         "Function",
@@ -4873,189 +3583,9 @@
         "unzip.c",
         110,
         "Macro",
-        "LG",
-        "unzip.c",
-        126
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "LG",
-        "unzip.c",
-        142
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "LG",
-        "unzip.c",
-        144
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "LG",
-        "unzip.c",
-        146
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "LG",
-        "unzip.c",
-        166
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "LG",
-        "unzip.c",
-        167
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "LG",
-        "unzip.c",
-        178
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "LG",
-        "unzip.c",
-        179
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "LG",
-        "unzip.c",
-        195
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
         "SH",
         "unzip.c",
         125
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "SH",
-        "unzip.c",
-        126
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "SH",
-        "unzip.c",
-        142
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "SH",
-        "unzip.c",
-        144
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "SH",
-        "unzip.c",
-        146
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "SH",
-        "unzip.c",
-        166
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "SH",
-        "unzip.c",
-        167
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "SH",
-        "unzip.c",
-        178
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "SH",
-        "unzip.c",
-        179
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "SH",
-        "unzip.c",
-        195
       ],
       [
         "Function",
@@ -5076,26 +3606,6 @@
         "get_byte",
         "unzip.c",
         150
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "get_byte",
-        "unzip.c",
-        164
-      ],
-      [
-        "Function",
-        "unzip",
-        "unzip.c",
-        110,
-        "Macro",
-        "get_byte",
-        "unzip.c",
-        176
       ],
       [
         "Function",
@@ -5143,16 +3653,6 @@
         "zip.c",
         34,
         "Macro",
-        "GZIP_MAGIC",
-        "zip.c",
-        50
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
         "OUTBUFSIZ",
         "zip.c",
         49
@@ -5163,109 +3663,9 @@
         "zip.c",
         34,
         "Macro",
-        "OUTBUFSIZ",
-        "zip.c",
-        50
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "OUTBUFSIZ",
-        "zip.c",
-        51
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "OUTBUFSIZ",
-        "zip.c",
-        56
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "OUTBUFSIZ",
-        "zip.c",
-        68
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "OUTBUFSIZ",
-        "zip.c",
-        77
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "OUTBUFSIZ",
-        "zip.c",
-        78
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "OUTBUFSIZ",
-        "zip.c",
-        83
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "OUTBUFSIZ",
-        "zip.c",
-        101
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "OUTBUFSIZ",
-        "zip.c",
-        102
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
         "DEFLATED",
         "zip.c",
         48
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "DEFLATED",
-        "zip.c",
-        51
       ],
       [
         "Function",
@@ -5303,49 +3703,9 @@
         "zip.c",
         34,
         "Macro",
-        "put_long",
-        "zip.c",
-        101
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_long",
-        "zip.c",
-        102
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
         "put_short",
         "zip.c",
         68
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_short",
-        "zip.c",
-        101
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_short",
-        "zip.c",
-        102
       ],
       [
         "Function",
@@ -5359,96 +3719,6 @@
       ],
       [
         "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_byte",
-        "zip.c",
-        50
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_byte",
-        "zip.c",
-        51
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_byte",
-        "zip.c",
-        56
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_byte",
-        "zip.c",
-        68
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_byte",
-        "zip.c",
-        77
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_byte",
-        "zip.c",
-        78
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_byte",
-        "zip.c",
-        83
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_byte",
-        "zip.c",
-        101
-      ],
-      [
-        "Function",
-        "zip",
-        "zip.c",
-        34,
-        "Macro",
-        "put_byte",
-        "zip.c",
-        102
-      ],
-      [
-        "Function",
         "copy_block",
         "bits.c",
         190,
@@ -5456,26 +3726,6 @@
         "OUTBUFSIZ",
         "bits.c",
         198
-      ],
-      [
-        "Function",
-        "copy_block",
-        "bits.c",
-        190,
-        "Macro",
-        "OUTBUFSIZ",
-        "bits.c",
-        199
-      ],
-      [
-        "Function",
-        "copy_block",
-        "bits.c",
-        190,
-        "Macro",
-        "OUTBUFSIZ",
-        "bits.c",
-        208
       ],
       [
         "Function",
@@ -5493,39 +3743,9 @@
         "bits.c",
         190,
         "Macro",
-        "put_short",
-        "bits.c",
-        199
-      ],
-      [
-        "Function",
-        "copy_block",
-        "bits.c",
-        190,
-        "Macro",
         "put_byte",
         "bits.c",
         198
-      ],
-      [
-        "Function",
-        "copy_block",
-        "bits.c",
-        190,
-        "Macro",
-        "put_byte",
-        "bits.c",
-        199
-      ],
-      [
-        "Function",
-        "copy_block",
-        "bits.c",
-        190,
-        "Macro",
-        "put_byte",
-        "bits.c",
-        208
       ],
       [
         "Function",
@@ -5536,16 +3756,6 @@
         "OUTBUFSIZ",
         "bits.c",
         175
-      ],
-      [
-        "Function",
-        "bi_windup",
-        "bits.c",
-        172,
-        "Macro",
-        "OUTBUFSIZ",
-        "bits.c",
-        177
       ],
       [
         "Function",
@@ -5566,16 +3776,6 @@
         "put_byte",
         "bits.c",
         175
-      ],
-      [
-        "Function",
-        "bi_windup",
-        "bits.c",
-        172,
-        "Macro",
-        "put_byte",
-        "bits.c",
-        177
       ],
       [
         "Function",
@@ -5596,26 +3796,6 @@
         "Buf_size",
         "bits.c",
         141
-      ],
-      [
-        "Function",
-        "send_bits",
-        "bits.c",
-        128,
-        "Macro",
-        "Buf_size",
-        "bits.c",
-        144
-      ],
-      [
-        "Function",
-        "send_bits",
-        "bits.c",
-        128,
-        "Macro",
-        "Buf_size",
-        "bits.c",
-        145
       ],
       [
         "Function",
@@ -5663,49 +3843,9 @@
         "unlzw.c",
         99,
         "Macro",
-        "fprintf",
-        "unlzw.c",
-        132
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "tab_prefix",
         "unlzw.c",
         148
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "tab_prefix",
-        "unlzw.c",
-        202
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "tab_prefix",
-        "unlzw.c",
-        242
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "tab_prefix",
-        "unlzw.c",
-        275
       ],
       [
         "Function",
@@ -5723,36 +3863,6 @@
         "unlzw.c",
         99,
         "Macro",
-        "tab_suffix",
-        "unlzw.c",
-        241
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "tab_suffix",
-        "unlzw.c",
-        244
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "tab_suffix",
-        "unlzw.c",
-        276
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "DIST_BUFSIZE",
         "unlzw.c",
         211
@@ -5763,49 +3873,9 @@
         "unlzw.c",
         99,
         "Macro",
-        "DIST_BUFSIZE",
-        "unlzw.c",
-        250
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "DIST_BUFSIZE",
-        "unlzw.c",
-        266
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "OUTBUFSIZ",
         "unlzw.c",
         250
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "OUTBUFSIZ",
-        "unlzw.c",
-        252
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "OUTBUFSIZ",
-        "unlzw.c",
-        258
       ],
       [
         "Function",
@@ -5853,16 +3923,6 @@
         "unlzw.c",
         99,
         "Macro",
-        "ERROR",
-        "unlzw.c",
-        136
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "OK",
         "unlzw.c",
         125
@@ -5873,16 +3933,6 @@
         "unlzw.c",
         99,
         "Macro",
-        "OK",
-        "unlzw.c",
-        287
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "FIRST",
         "unlzw.c",
         146
@@ -5893,39 +3943,9 @@
         "unlzw.c",
         99,
         "Macro",
-        "FIRST",
-        "unlzw.c",
-        203
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "CLEAR",
         "unlzw.c",
         146
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "CLEAR",
-        "unlzw.c",
-        201
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "CLEAR",
-        "unlzw.c",
-        203
       ],
       [
         "Function",
@@ -5936,16 +3956,6 @@
         "LZW_RESERVED",
         "unlzw.c",
         124
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "LZW_RESERVED",
-        "unlzw.c",
-        125
       ],
       [
         "Function",
@@ -5983,29 +3993,9 @@
         "unlzw.c",
         99,
         "Macro",
-        "INIT_BITS",
-        "unlzw.c",
-        206
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "BITS",
         "unlzw.c",
         131
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "BITS",
-        "unlzw.c",
-        134
       ],
       [
         "Function",
@@ -6023,39 +4013,9 @@
         "unlzw.c",
         99,
         "Macro",
-        "stderr",
-        "unlzw.c",
-        132
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "de_stack",
         "unlzw.c",
         211
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "de_stack",
-        "unlzw.c",
-        250
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "de_stack",
-        "unlzw.c",
-        266
       ],
       [
         "Function",
@@ -6093,49 +4053,9 @@
         "unlzw.c",
         99,
         "Macro",
-        "memzero",
-        "unlzw.c",
-        202
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "MAXCODE",
         "unlzw.c",
         129
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "MAXCODE",
-        "unlzw.c",
-        139
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "MAXCODE",
-        "unlzw.c",
-        187
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "MAXCODE",
-        "unlzw.c",
-        206
       ],
       [
         "Function",
@@ -6153,49 +4073,9 @@
         "unlzw.c",
         99,
         "Macro",
-        "clear_tab_prefixof",
-        "unlzw.c",
-        202
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
         "tab_suffixof",
         "unlzw.c",
         151
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "tab_suffixof",
-        "unlzw.c",
-        241
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "tab_suffixof",
-        "unlzw.c",
-        244
-      ],
-      [
-        "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "tab_suffixof",
-        "unlzw.c",
-        276
       ],
       [
         "Function",
@@ -6219,16 +4099,6 @@
       ],
       [
         "Function",
-        "unlzw",
-        "unlzw.c",
-        99,
-        "Macro",
-        "tab_prefixof",
-        "unlzw.c",
-        275
-      ],
-      [
-        "Function",
         "lzw",
         "lzw.c",
         13,
@@ -6246,26 +4116,6 @@
         "ERROR",
         "lzw.c",
         16
-      ],
-      [
-        "Function",
-        "lzw",
-        "lzw.c",
-        13,
-        "Macro",
-        "ERROR",
-        "lzw.c",
-        20
-      ],
-      [
-        "Function",
-        "lzw",
-        "lzw.c",
-        13,
-        "Macro",
-        "ERROR",
-        "lzw.c",
-        22
       ],
       [
         "Function",
@@ -6303,49 +4153,9 @@
         "deflate.c",
         660,
         "Macro",
-        "MIN_LOOKAHEAD",
-        "deflate.c",
-        677
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MIN_LOOKAHEAD",
-        "deflate.c",
-        737
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
         "MAX_MATCH",
         "deflate.c",
         676
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MAX_MATCH",
-        "deflate.c",
-        677
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MAX_MATCH",
-        "deflate.c",
-        737
       ],
       [
         "Function",
@@ -6363,117 +4173,7 @@
         "deflate.c",
         660,
         "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        671
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        676
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        677
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        686
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        689
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        701
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        713
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        737
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
         "WSIZE",
-        "deflate.c",
-        671
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        676
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        701
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "head",
         "deflate.c",
         671
       ],
@@ -6485,7 +4185,7 @@
         "Macro",
         "head",
         "deflate.c",
-        701
+        671
       ],
       [
         "Function",
@@ -6513,39 +4213,9 @@
         "deflate.c",
         660,
         "Macro",
-        "HASH_SIZE",
-        "deflate.c",
-        701
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "HASH_SIZE",
-        "deflate.c",
-        713
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
         "WMASK",
         "deflate.c",
         671
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "WMASK",
-        "deflate.c",
-        701
       ],
       [
         "Function",
@@ -6573,26 +4243,6 @@
         "deflate.c",
         660,
         "Macro",
-        "H_SHIFT",
-        "deflate.c",
-        701
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "H_SHIFT",
-        "deflate.c",
-        713
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
         "HASH_MASK",
         "deflate.c",
         671
@@ -6603,49 +4253,9 @@
         "deflate.c",
         660,
         "Macro",
-        "HASH_MASK",
-        "deflate.c",
-        701
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "HASH_MASK",
-        "deflate.c",
-        713
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
         "HASH_BITS",
         "deflate.c",
         671
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "HASH_BITS",
-        "deflate.c",
-        701
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "HASH_BITS",
-        "deflate.c",
-        713
       ],
       [
         "Function",
@@ -6663,16 +4273,6 @@
         "deflate.c",
         660,
         "Macro",
-        "NULL",
-        "deflate.c",
-        740
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
         "INSERT_STRING",
         "deflate.c",
         671
@@ -6683,39 +4283,9 @@
         "deflate.c",
         660,
         "Macro",
-        "INSERT_STRING",
-        "deflate.c",
-        701
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
         "UPDATE_HASH",
         "deflate.c",
         671
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "UPDATE_HASH",
-        "deflate.c",
-        701
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "UPDATE_HASH",
-        "deflate.c",
-        713
       ],
       [
         "Function",
@@ -6733,29 +4303,9 @@
         "deflate.c",
         660,
         "Macro",
-        "RSYNC_ROLL",
-        "deflate.c",
-        722
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
         "FLUSH_BLOCK",
         "deflate.c",
         730
-      ],
-      [
-        "Function",
-        "deflate_fast",
-        "deflate.c",
-        660,
-        "Macro",
-        "FLUSH_BLOCK",
-        "deflate.c",
-        740
       ],
       [
         "Function",
@@ -6766,56 +4316,6 @@
         "RSYNC_WIN",
         "deflate.c",
         618
-      ],
-      [
-        "Function",
-        "rsync_roll",
-        "deflate.c",
-        614,
-        "Macro",
-        "RSYNC_WIN",
-        "deflate.c",
-        620
-      ],
-      [
-        "Function",
-        "rsync_roll",
-        "deflate.c",
-        614,
-        "Macro",
-        "RSYNC_WIN",
-        "deflate.c",
-        625
-      ],
-      [
-        "Function",
-        "rsync_roll",
-        "deflate.c",
-        614,
-        "Macro",
-        "RSYNC_WIN",
-        "deflate.c",
-        626
-      ],
-      [
-        "Function",
-        "rsync_roll",
-        "deflate.c",
-        614,
-        "Macro",
-        "RSYNC_WIN",
-        "deflate.c",
-        634
-      ],
-      [
-        "Function",
-        "rsync_roll",
-        "deflate.c",
-        614,
-        "Macro",
-        "RSYNC_WIN",
-        "deflate.c",
-        635
       ],
       [
         "Function",
@@ -6873,16 +4373,6 @@
         "deflate.c",
         558,
         "Macro",
-        "MIN_MATCH",
-        "deflate.c",
-        605
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
         "WSIZE",
         "deflate.c",
         572
@@ -6893,106 +4383,6 @@
         "deflate.c",
         558,
         "Macro",
-        "WSIZE",
-        "deflate.c",
-        578
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        579
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        580
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        582
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        584
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        587
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        588
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        590
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        592
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        597
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
         "head",
         "deflate.c",
         587
@@ -7003,29 +4393,9 @@
         "deflate.c",
         558,
         "Macro",
-        "head",
-        "deflate.c",
-        588
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
         "NIL",
         "deflate.c",
         588
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "NIL",
-        "deflate.c",
-        592
       ],
       [
         "Function",
@@ -7056,16 +4426,6 @@
         "EOF",
         "deflate.c",
         567
-      ],
-      [
-        "Function",
-        "fill_window",
-        "deflate.c",
-        558,
-        "Macro",
-        "EOF",
-        "deflate.c",
-        602
       ],
       [
         "Function",
@@ -7113,36 +4473,6 @@
         "deflate.c",
         387,
         "Macro",
-        "MAX_MATCH",
-        "deflate.c",
-        417
-      ],
-      [
-        "Function",
-        "longest_match",
-        "deflate.c",
-        387,
-        "Macro",
-        "MAX_MATCH",
-        "deflate.c",
-        496
-      ],
-      [
-        "Function",
-        "longest_match",
-        "deflate.c",
-        387,
-        "Macro",
-        "MAX_MATCH",
-        "deflate.c",
-        497
-      ],
-      [
-        "Function",
-        "longest_match",
-        "deflate.c",
-        387,
-        "Macro",
         "MIN_MATCH",
         "deflate.c",
         394
@@ -7156,16 +4486,6 @@
         "WSIZE",
         "deflate.c",
         394
-      ],
-      [
-        "Function",
-        "longest_match",
-        "deflate.c",
-        387,
-        "Macro",
-        "WSIZE",
-        "deflate.c",
-        517
       ],
       [
         "Function",
@@ -7313,16 +4633,6 @@
         "gzip.c",
         2050,
         "Macro",
-        "NULL",
-        "gzip.c",
-        2073
-      ],
-      [
-        "Function",
-        "install_signal_handlers",
-        "gzip.c",
-        2050,
-        "Macro",
         "SIG_IGN",
         "gzip.c",
         2060
@@ -7336,16 +4646,6 @@
         "sa_handler",
         "gzip.c",
         2060
-      ],
-      [
-        "Function",
-        "install_signal_handlers",
-        "gzip.c",
-        2050,
-        "Macro",
-        "sa_handler",
-        "gzip.c",
-        2064
       ],
       [
         "Function",
@@ -7403,16 +4703,6 @@
         "gzip.c",
         2000,
         "Macro",
-        "MAX_PATH_LEN",
-        "gzip.c",
-        2031
-      ],
-      [
-        "Function",
-        "treat_dir",
-        "gzip.c",
-        2000,
-        "Macro",
         "stderr",
         "gzip.c",
         2038
@@ -7453,16 +4743,6 @@
         "gzip.c",
         1935,
         "Macro",
-        "perror",
-        "gzip.c",
-        1988
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
         "fprintf",
         "gzip.c",
         1955
@@ -7473,47 +4753,7 @@
         "gzip.c",
         1935,
         "Macro",
-        "fprintf",
-        "gzip.c",
-        1961
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1985
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
         "WARNING",
-        "gzip.c",
-        1961
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        1985
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
-        "OK",
         "gzip.c",
         1961
       ],
@@ -7525,7 +4765,7 @@
         "Macro",
         "OK",
         "gzip.c",
-        1985
+        1961
       ],
       [
         "Function",
@@ -7613,26 +4853,6 @@
         "gzip.c",
         1935,
         "Macro",
-        "stderr",
-        "gzip.c",
-        1961
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1985
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
         "errno",
         "gzip.c",
         1960
@@ -7643,49 +4863,9 @@
         "gzip.c",
         1935,
         "Macro",
-        "errno",
-        "gzip.c",
-        1964
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
-        "errno",
-        "gzip.c",
-        1984
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
-        "errno",
-        "gzip.c",
-        1987
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
         "WARN",
         "gzip.c",
         1961
-      ],
-      [
-        "Function",
-        "copy_stat",
-        "gzip.c",
-        1935,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        1985
       ],
       [
         "Function",
@@ -7706,26 +4886,6 @@
         "fprintf",
         "gzip.c",
         1893
-      ],
-      [
-        "Function",
-        "check_ofname",
-        "gzip.c",
-        1888,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1895
-      ],
-      [
-        "Function",
-        "check_ofname",
-        "gzip.c",
-        1888,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1900
       ],
       [
         "Function",
@@ -7763,29 +4923,9 @@
         "gzip.c",
         1888,
         "Macro",
-        "ERROR",
-        "gzip.c",
-        1907
-      ],
-      [
-        "Function",
-        "check_ofname",
-        "gzip.c",
-        1888,
-        "Macro",
         "OK",
         "gzip.c",
         1901
-      ],
-      [
-        "Function",
-        "check_ofname",
-        "gzip.c",
-        1888,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1909
       ],
       [
         "Function",
@@ -7809,36 +4949,6 @@
       ],
       [
         "Function",
-        "check_ofname",
-        "gzip.c",
-        1888,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1895
-      ],
-      [
-        "Function",
-        "check_ofname",
-        "gzip.c",
-        1888,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1896
-      ],
-      [
-        "Function",
-        "check_ofname",
-        "gzip.c",
-        1888,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1900
-      ],
-      [
-        "Function",
         "shorten_name",
         "gzip.c",
         1830,
@@ -7853,39 +4963,9 @@
         "gzip.c",
         1830,
         "Macro",
-        "NULL",
-        "gzip.c",
-        1868
-      ],
-      [
-        "Function",
-        "shorten_name",
-        "gzip.c",
-        1830,
-        "Macro",
-        "NULL",
-        "gzip.c",
-        1870
-      ],
-      [
-        "Function",
-        "shorten_name",
-        "gzip.c",
-        1830,
-        "Macro",
         "PART_SEP",
         "gzip.c",
         1863
-      ],
-      [
-        "Function",
-        "shorten_name",
-        "gzip.c",
-        1830,
-        "Macro",
-        "PART_SEP",
-        "gzip.c",
-        1876
       ],
       [
         "Function",
@@ -7906,116 +4986,6 @@
         "printf",
         "gzip.c",
         1740
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1743
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1750
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1754
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1756
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1762
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1794
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1796
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1799
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1802
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1804
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "printf",
-        "gzip.c",
-        1818
       ],
       [
         "Function",
@@ -8073,77 +5043,7 @@
         "gzip.c",
         1722,
         "Macro",
-        "stdout",
-        "gzip.c",
-        1755
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "stdout",
-        "gzip.c",
-        1758
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "stdout",
-        "gzip.c",
-        1801
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "stdout",
-        "gzip.c",
-        1803
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "stdout",
-        "gzip.c",
-        1817
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
         "LG",
-        "gzip.c",
-        1783
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "LG",
-        "gzip.c",
-        1784
-      ],
-      [
-        "Function",
-        "do_list",
-        "gzip.c",
-        1722,
-        "Macro",
-        "SH",
         "gzip.c",
         1783
       ],
@@ -8155,7 +5055,7 @@
         "Macro",
         "SH",
         "gzip.c",
-        1784
+        1783
       ],
       [
         "Function",
@@ -8223,86 +5123,6 @@
         "gzip.c",
         1488,
         "Macro",
-        "fprintf",
-        "gzip.c",
-        1538
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1545
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1564
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1592
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1640
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1692
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1705
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1711
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "RESERVED",
         "gzip.c",
         1544
@@ -8363,49 +5183,9 @@
         "gzip.c",
         1488,
         "Macro",
-        "HEADER_CRC",
-        "gzip.c",
-        1595
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "HEADER_CRC",
-        "gzip.c",
-        1616
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "HEADER_CRC",
-        "gzip.c",
-        1633
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "PKZIP_MAGIC",
         "gzip.c",
         1653
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "PKZIP_MAGIC",
-        "gzip.c",
-        1654
       ],
       [
         "Function",
@@ -8463,16 +5243,6 @@
         "gzip.c",
         1488,
         "Macro",
-        "DEFLATED",
-        "gzip.c",
-        1577
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "LZHED",
         "gzip.c",
         1675
@@ -8523,26 +5293,6 @@
         "gzip.c",
         1488,
         "Macro",
-        "WARNING",
-        "gzip.c",
-        1705
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        1711
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "ERROR",
         "gzip.c",
         1531
@@ -8553,79 +5303,9 @@
         "gzip.c",
         1488,
         "Macro",
-        "ERROR",
-        "gzip.c",
-        1541
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "ERROR",
-        "gzip.c",
-        1548
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "ERROR",
-        "gzip.c",
-        1643
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "ERROR",
-        "gzip.c",
-        1694
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "OK",
         "gzip.c",
         1564
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1660
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1705
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1711
       ],
       [
         "Function",
@@ -8673,39 +5353,9 @@
         "gzip.c",
         1488,
         "Macro",
-        "EOF",
-        "gzip.c",
-        1684
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "EOF",
-        "gzip.c",
-        1702
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "CHAR_BIT",
         "gzip.c",
         1557
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "CHAR_BIT",
-        "gzip.c",
-        1567
       ],
       [
         "Function",
@@ -8723,109 +5373,9 @@
         "gzip.c",
         1488,
         "Macro",
-        "stderr",
-        "gzip.c",
-        1538
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1545
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1564
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1592
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1640
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1692
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1705
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1711
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "WARN",
         "gzip.c",
         1564
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        1705
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        1711
       ],
       [
         "Function",
@@ -8843,36 +5393,6 @@
         "gzip.c",
         1488,
         "Macro",
-        "try_byte",
-        "gzip.c",
-        1503
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "try_byte",
-        "gzip.c",
-        1513
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "try_byte",
-        "gzip.c",
-        1700
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "get_byte",
         "gzip.c",
         1507
@@ -8883,159 +5403,9 @@
         "gzip.c",
         1488,
         "Macro",
-        "get_byte",
-        "gzip.c",
-        1510
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1526
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1535
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1551
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1552
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1553
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1554
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1572
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1573
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1589
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1590
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1610
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1636
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1637
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "TYPE_MAXIMUM",
         "gzip.c",
         1557
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "TYPE_MAXIMUM",
-        "gzip.c",
-        1567
       ],
       [
         "Function",
@@ -9053,29 +5423,9 @@
         "gzip.c",
         1488,
         "Macro",
-        "TYPE_WIDTH",
-        "gzip.c",
-        1567
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
         "TYPE_SIGNED",
         "gzip.c",
         1557
-      ],
-      [
-        "Function",
-        "get_method",
-        "gzip.c",
-        1488,
-        "Macro",
-        "TYPE_SIGNED",
-        "gzip.c",
-        1567
       ],
       [
         "Function",
@@ -9113,69 +5463,9 @@
         "gzip.c",
         1380,
         "Macro",
-        "fprintf",
-        "gzip.c",
-        1415
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1453
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
         "WARNING",
         "gzip.c",
         1397
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        1400
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        1418
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        1453
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        1454
       ],
       [
         "Function",
@@ -9186,36 +5476,6 @@
         "OK",
         "gzip.c",
         1393
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1397
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1450
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1453
       ],
       [
         "Function",
@@ -9243,39 +5503,9 @@
         "gzip.c",
         1380,
         "Macro",
-        "stderr",
-        "gzip.c",
-        1415
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1453
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
         "WARN",
         "gzip.c",
         1397
-      ],
-      [
-        "Function",
-        "make_ofname",
-        "gzip.c",
-        1380,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        1453
       ],
       [
         "Function",
@@ -9363,39 +5593,9 @@
         "gzip.c",
         1281,
         "Macro",
-        "NULL",
-        "gzip.c",
-        1315
-      ],
-      [
-        "Function",
-        "open_input_file",
-        "gzip.c",
-        1281,
-        "Macro",
-        "NULL",
-        "gzip.c",
-        1354
-      ],
-      [
-        "Function",
-        "open_input_file",
-        "gzip.c",
-        1281,
-        "Macro",
         "ENOENT",
         "gzip.c",
         1309
-      ],
-      [
-        "Function",
-        "open_input_file",
-        "gzip.c",
-        1281,
-        "Macro",
-        "ENOENT",
-        "gzip.c",
-        1347
       ],
       [
         "Function",
@@ -9423,49 +5623,9 @@
         "gzip.c",
         1281,
         "Macro",
-        "errno",
-        "gzip.c",
-        1347
-      ],
-      [
-        "Function",
-        "open_input_file",
-        "gzip.c",
-        1281,
-        "Macro",
-        "errno",
-        "gzip.c",
-        1353
-      ],
-      [
-        "Function",
-        "open_input_file",
-        "gzip.c",
-        1281,
-        "Macro",
-        "errno",
-        "gzip.c",
-        1366
-      ],
-      [
-        "Function",
-        "open_input_file",
-        "gzip.c",
-        1281,
-        "Macro",
         "strequ",
         "gzip.c",
         1327
-      ],
-      [
-        "Function",
-        "open_input_file",
-        "gzip.c",
-        1281,
-        "Macro",
-        "strequ",
-        "gzip.c",
-        1352
       ],
       [
         "Function",
@@ -9573,26 +5733,6 @@
         "gzip.c",
         1225,
         "Macro",
-        "errno",
-        "gzip.c",
-        1264
-      ],
-      [
-        "Function",
-        "open_and_stat",
-        "gzip.c",
-        1225,
-        "Macro",
-        "errno",
-        "gzip.c",
-        1266
-      ],
-      [
-        "Function",
-        "open_and_stat",
-        "gzip.c",
-        1225,
-        "Macro",
         "__O_NOFOLLOW",
         "gzip.c",
         1235
@@ -9623,59 +5763,9 @@
         "gzip.c",
         1165,
         "Macro",
-        "MAX_SUFFIX",
-        "gzip.c",
-        1199
-      ],
-      [
-        "Function",
-        "get_suffix",
-        "gzip.c",
-        1165,
-        "Macro",
-        "MAX_SUFFIX",
-        "gzip.c",
-        1202
-      ],
-      [
-        "Function",
-        "get_suffix",
-        "gzip.c",
-        1165,
-        "Macro",
         "NULL",
         "gzip.c",
         1171
-      ],
-      [
-        "Function",
-        "get_suffix",
-        "gzip.c",
-        1165,
-        "Macro",
-        "NULL",
-        "gzip.c",
-        1175
-      ],
-      [
-        "Function",
-        "get_suffix",
-        "gzip.c",
-        1165,
-        "Macro",
-        "NULL",
-        "gzip.c",
-        1206
-      ],
-      [
-        "Function",
-        "get_suffix",
-        "gzip.c",
-        1165,
-        "Macro",
-        "NULL",
-        "gzip.c",
-        1214
       ],
       [
         "Function",
@@ -9706,16 +5796,6 @@
         "strequ",
         "gzip.c",
         1184
-      ],
-      [
-        "Function",
-        "get_suffix",
-        "gzip.c",
-        1165,
-        "Macro",
-        "strequ",
-        "gzip.c",
-        1210
       ],
       [
         "Function",
@@ -9763,39 +5843,9 @@
         "gzip.c",
         1087,
         "Macro",
-        "ERROR",
-        "gzip.c",
-        1141
-      ],
-      [
-        "Function",
-        "create_outfile",
-        "gzip.c",
-        1087,
-        "Macro",
         "OK",
         "gzip.c",
         1131
-      ],
-      [
-        "Function",
-        "create_outfile",
-        "gzip.c",
-        1087,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1148
-      ],
-      [
-        "Function",
-        "create_outfile",
-        "gzip.c",
-        1087,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1152
       ],
       [
         "Function",
@@ -10003,116 +6053,6 @@
         "gzip.c",
         864,
         "Macro",
-        "fprintf",
-        "gzip.c",
-        899
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        907
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        914
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        924
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        932
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        983
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        991
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1039
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1058
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1065
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        1067
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
         "WARNING",
         "gzip.c",
         890
@@ -10123,159 +6063,9 @@
         "gzip.c",
         864,
         "Macro",
-        "WARNING",
-        "gzip.c",
-        899
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        907
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        914
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        924
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        932
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARNING",
-        "gzip.c",
-        1039
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
         "OK",
         "gzip.c",
         890
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "OK",
-        "gzip.c",
-        899
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "OK",
-        "gzip.c",
-        907
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "OK",
-        "gzip.c",
-        914
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "OK",
-        "gzip.c",
-        924
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "OK",
-        "gzip.c",
-        932
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "OK",
-        "gzip.c",
-        950
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "OK",
-        "gzip.c",
-        980
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "OK",
-        "gzip.c",
-        997
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "OK",
-        "gzip.c",
-        1039
       ],
       [
         "Function",
@@ -10413,16 +6203,6 @@
         "gzip.c",
         864,
         "Macro",
-        "__S_IFMT",
-        "gzip.c",
-        897
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
         "NULL",
         "gzip.c",
         1035
@@ -10473,149 +6253,9 @@
         "gzip.c",
         864,
         "Macro",
-        "EINVAL",
-        "gzip.c",
-        1019
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
         "stderr",
         "gzip.c",
         890
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        899
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        907
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        914
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        924
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        932
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        983
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        991
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1039
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1058
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1060
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1062
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1065
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        1067
       ],
       [
         "Function",
@@ -10633,99 +6273,9 @@
         "gzip.c",
         864,
         "Macro",
-        "errno",
-        "gzip.c",
-        1019
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "errno",
-        "gzip.c",
-        1034
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "errno",
-        "gzip.c",
-        1042
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
         "WARN",
         "gzip.c",
         890
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        899
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        907
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        914
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        924
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        932
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "WARN",
-        "gzip.c",
-        1039
       ],
       [
         "Function",
@@ -10746,16 +6296,6 @@
         "__S_ISTYPE",
         "gzip.c",
         881
-      ],
-      [
-        "Function",
-        "treat_file",
-        "gzip.c",
-        864,
-        "Macro",
-        "__S_ISTYPE",
-        "gzip.c",
-        897
       ],
       [
         "Function",
@@ -10823,39 +6363,9 @@
         "gzip.c",
         725,
         "Macro",
-        "fprintf",
-        "gzip.c",
-        805
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        809
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
         "ERROR",
         "gzip.c",
         751
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
-        "ERROR",
-        "gzip.c",
-        767
       ],
       [
         "Function",
@@ -10883,49 +6393,9 @@
         "gzip.c",
         725,
         "Macro",
-        "STDIN_FILENO",
-        "gzip.c",
-        764
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
-        "STDIN_FILENO",
-        "gzip.c",
-        775
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
-        "STDIN_FILENO",
-        "gzip.c",
-        792
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
         "STDOUT_FILENO",
         "gzip.c",
         729
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
-        "STDOUT_FILENO",
-        "gzip.c",
-        792
       ],
       [
         "Function",
@@ -10946,36 +6416,6 @@
         "stderr",
         "gzip.c",
         743
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        805
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        808
-      ],
-      [
-        "Function",
-        "treat_stdin",
-        "gzip.c",
-        725,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        809
       ],
       [
         "Function",
@@ -11093,96 +6533,6 @@
         "gzip.c",
         414,
         "Macro",
-        "fprintf",
-        "gzip.c",
-        486
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        513
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        583
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        602
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        604
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        606
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        607
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        625
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "fprintf",
-        "gzip.c",
-        630
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
         "fflush",
         "gzip.c",
         672
@@ -11213,109 +6563,9 @@
         "gzip.c",
         414,
         "Macro",
-        "optind",
-        "gzip.c",
-        474
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "optind",
-        "gzip.c",
-        479
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "optind",
-        "gzip.c",
-        494
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "optind",
-        "gzip.c",
-        620
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "optind",
-        "gzip.c",
-        656
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "optind",
-        "gzip.c",
-        657
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
         "optarg",
         "gzip.c",
         509
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "optarg",
-        "gzip.c",
-        510
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "optarg",
-        "gzip.c",
-        511
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "optarg",
-        "gzip.c",
-        565
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "optarg",
-        "gzip.c",
-        566
       ],
       [
         "Function",
@@ -11326,136 +6576,6 @@
         "__GETOPT_ID",
         "gzip.c",
         464
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        468
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        474
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        479
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        494
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        501
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        509
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        510
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        511
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        565
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        566
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        620
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        656
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_ID",
-        "gzip.c",
-        657
       ],
       [
         "Function",
@@ -11483,29 +6603,9 @@
         "gzip.c",
         414,
         "Macro",
-        "STDOUT_FILENO",
-        "gzip.c",
-        678
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
         "getopt_long",
         "gzip.c",
         468
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "getopt_long",
-        "gzip.c",
-        501
       ],
       [
         "Function",
@@ -11523,39 +6623,9 @@
         "gzip.c",
         414,
         "Macro",
-        "NULL",
-        "gzip.c",
-        493
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
         "true",
         "gzip.c",
         458
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "true",
-        "gzip.c",
-        543
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "true",
-        "gzip.c",
-        569
       ],
       [
         "Function",
@@ -11603,96 +6673,6 @@
         "gzip.c",
         414,
         "Macro",
-        "stderr",
-        "gzip.c",
-        486
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        513
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        583
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        602
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        604
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        606
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        607
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        625
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "stderr",
-        "gzip.c",
-        630
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
         "errno",
         "gzip.c",
         677
@@ -11703,16 +6683,6 @@
         "gzip.c",
         414,
         "Macro",
-        "errno",
-        "gzip.c",
-        679
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
         "__GETOPT_XCONCAT",
         "gzip.c",
         464
@@ -11723,269 +6693,9 @@
         "gzip.c",
         414,
         "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        468
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        474
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        479
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        494
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        501
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        509
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        510
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        511
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        565
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        566
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        620
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        656
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_XCONCAT",
-        "gzip.c",
-        657
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
         "__GETOPT_CONCAT",
         "gzip.c",
         464
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        468
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        474
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        479
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        494
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        501
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        509
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        510
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        511
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        565
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        566
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        620
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        656
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "__GETOPT_CONCAT",
-        "gzip.c",
-        657
       ],
       [
         "Function",
@@ -11996,16 +6706,6 @@
         "strequ",
         "gzip.c",
         428
-      ],
-      [
-        "Function",
-        "main",
-        "gzip.c",
-        414,
-        "Macro",
-        "strequ",
-        "gzip.c",
-        464
       ],
       [
         "Function",
@@ -12059,16 +6759,6 @@
       ],
       [
         "Function",
-        "progerror",
-        "gzip.c",
-        404,
-        "Macro",
-        "errno",
-        "gzip.c",
-        408
-      ],
-      [
-        "Function",
         "version",
         "gzip.c",
         397,
@@ -12076,16 +6766,6 @@
         "printf",
         "gzip.c",
         400
-      ],
-      [
-        "Function",
-        "version",
-        "gzip.c",
-        397,
-        "Macro",
-        "printf",
-        "gzip.c",
-        401
       ],
       [
         "Function",
@@ -12099,16 +6779,6 @@
       ],
       [
         "Function",
-        "license",
-        "gzip.c",
-        388,
-        "Macro",
-        "printf",
-        "gzip.c",
-        393
-      ],
-      [
-        "Function",
         "help",
         "gzip.c",
         335,
@@ -12116,16 +6786,6 @@
         "printf",
         "gzip.c",
         383
-      ],
-      [
-        "Function",
-        "help",
-        "gzip.c",
-        335,
-        "Macro",
-        "printf",
-        "gzip.c",
-        384
       ],
       [
         "Function",
@@ -12173,39 +6833,9 @@
         "inflate.c",
         898,
         "Macro",
-        "wp",
-        "inflate.c",
-        913
-      ],
-      [
-        "Function",
-        "inflate_block",
-        "inflate.c",
-        898,
-        "Macro",
-        "wp",
-        "inflate.c",
-        919
-      ],
-      [
-        "Function",
-        "inflate_block",
-        "inflate.c",
-        898,
-        "Macro",
         "NEXTBYTE",
         "inflate.c",
         913
-      ],
-      [
-        "Function",
-        "inflate_block",
-        "inflate.c",
-        898,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        919
       ],
       [
         "Function",
@@ -12223,29 +6853,9 @@
         "inflate.c",
         898,
         "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        919
-      ],
-      [
-        "Function",
-        "inflate_block",
-        "inflate.c",
-        898,
-        "Macro",
         "GETBYTE",
         "inflate.c",
         913
-      ],
-      [
-        "Function",
-        "inflate_block",
-        "inflate.c",
-        898,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        919
       ],
       [
         "Function",
@@ -12256,16 +6866,6 @@
         "DUMPBITS",
         "inflate.c",
         915
-      ],
-      [
-        "Function",
-        "inflate_block",
-        "inflate.c",
-        898,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        921
       ],
       [
         "Function",
@@ -12283,16 +6883,6 @@
         "inflate.c",
         722,
         "Macro",
-        "NULL",
-        "inflate.c",
-        790
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
         "wp",
         "inflate.c",
         749
@@ -12303,159 +6893,9 @@
         "inflate.c",
         722,
         "Macro",
-        "wp",
-        "inflate.c",
-        753
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "wp",
-        "inflate.c",
-        756
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "wp",
-        "inflate.c",
-        759
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "wp",
-        "inflate.c",
-        773
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "wp",
-        "inflate.c",
-        799
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "wp",
-        "inflate.c",
-        813
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "wp",
-        "inflate.c",
-        823
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "wp",
-        "inflate.c",
-        834
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
         "NEXTBYTE",
         "inflate.c",
         753
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        756
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        759
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        773
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        799
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        813
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        823
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        834
       ],
       [
         "Function",
@@ -12473,149 +6913,9 @@
         "inflate.c",
         722,
         "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        756
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        759
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        773
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        799
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        813
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        823
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        834
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
         "GETBYTE",
         "inflate.c",
         753
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        756
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        759
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        773
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        799
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        813
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        823
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        834
       ],
       [
         "Function",
@@ -12626,76 +6926,6 @@
         "DUMPBITS",
         "inflate.c",
         755
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        758
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        761
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        775
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        801
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        815
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        825
-      ],
-      [
-        "Function",
-        "inflate_dynamic",
-        "inflate.c",
-        722,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        836
       ],
       [
         "Function",
@@ -12716,56 +6946,6 @@
         "wp",
         "inflate.c",
         627
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "wp",
-        "inflate.c",
-        636
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "wp",
-        "inflate.c",
-        639
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "wp",
-        "inflate.c",
-        648
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "wp",
-        "inflate.c",
-        652
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "wp",
-        "inflate.c",
-        660
       ],
       [
         "Function",
@@ -12803,26 +6983,6 @@
         "inflate.c",
         616,
         "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        639
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        648
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
         "NEEDBITS",
         "inflate.c",
         636
@@ -12833,49 +6993,9 @@
         "inflate.c",
         616,
         "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        639
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        648
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
         "GETBYTE",
         "inflate.c",
         636
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        639
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        648
       ],
       [
         "Function",
@@ -12886,36 +7006,6 @@
         "DUMPBITS",
         "inflate.c",
         632
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        638
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        642
-      ],
-      [
-        "Function",
-        "inflate_stored",
-        "inflate.c",
-        616,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        655
       ],
       [
         "Function",
@@ -12933,119 +7023,9 @@
         "inflate.c",
         509,
         "Macro",
-        "WSIZE",
-        "inflate.c",
-        579
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "WSIZE",
-        "inflate.c",
-        593
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
         "wp",
         "inflate.c",
         523
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "wp",
-        "inflate.c",
-        530
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "wp",
-        "inflate.c",
-        537
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "wp",
-        "inflate.c",
-        546
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "wp",
-        "inflate.c",
-        557
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "wp",
-        "inflate.c",
-        562
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "wp",
-        "inflate.c",
-        569
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "wp",
-        "inflate.c",
-        572
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "wp",
-        "inflate.c",
-        595
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "wp",
-        "inflate.c",
-        604
       ],
       [
         "Function",
@@ -13063,26 +7043,6 @@
         "inflate.c",
         509,
         "Macro",
-        "slide",
-        "inflate.c",
-        583
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "slide",
-        "inflate.c",
-        590
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
         "flush_output",
         "inflate.c",
         546
@@ -13093,69 +7053,9 @@
         "inflate.c",
         509,
         "Macro",
-        "flush_output",
-        "inflate.c",
-        595
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
         "NEXTBYTE",
         "inflate.c",
         530
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        537
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        557
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        562
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        569
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        572
       ],
       [
         "Function",
@@ -13173,109 +7073,9 @@
         "inflate.c",
         509,
         "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        537
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        557
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        562
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        569
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        572
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
         "GETBYTE",
         "inflate.c",
         530
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        537
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        557
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        562
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        569
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        572
       ],
       [
         "Function",
@@ -13286,56 +7086,6 @@
         "DUMPBITS",
         "inflate.c",
         535
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        539
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        559
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        567
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        571
-      ],
-      [
-        "Function",
-        "inflate_codes",
-        "inflate.c",
-        509,
-        "Macro",
-        "DUMPBITS",
-        "inflate.c",
-        574
       ],
       [
         "Function",
@@ -13363,89 +7113,9 @@
         "inflate.c",
         273,
         "Macro",
-        "NULL",
-        "inflate.c",
-        383
-      ],
-      [
-        "Function",
-        "huft_build",
-        "inflate.c",
-        273,
-        "Macro",
-        "NULL",
-        "inflate.c",
-        384
-      ],
-      [
-        "Function",
-        "huft_build",
-        "inflate.c",
-        273,
-        "Macro",
-        "NULL",
-        "inflate.c",
-        418
-      ],
-      [
-        "Function",
-        "huft_build",
-        "inflate.c",
-        273,
-        "Macro",
-        "NULL",
-        "inflate.c",
-        426
-      ],
-      [
-        "Function",
-        "huft_build",
-        "inflate.c",
-        273,
-        "Macro",
         "BMAX",
         "inflate.c",
         289
-      ],
-      [
-        "Function",
-        "huft_build",
-        "inflate.c",
-        273,
-        "Macro",
-        "BMAX",
-        "inflate.c",
-        300
-      ],
-      [
-        "Function",
-        "huft_build",
-        "inflate.c",
-        273,
-        "Macro",
-        "BMAX",
-        "inflate.c",
-        303
-      ],
-      [
-        "Function",
-        "huft_build",
-        "inflate.c",
-        273,
-        "Macro",
-        "BMAX",
-        "inflate.c",
-        337
-      ],
-      [
-        "Function",
-        "huft_build",
-        "inflate.c",
-        273,
-        "Macro",
-        "BMAX",
-        "inflate.c",
-        343
       ],
       [
         "Function",
@@ -13503,16 +7173,6 @@
         "trees.c",
         1073,
         "Macro",
-        "BINARY",
-        "trees.c",
-        1082
-      ],
-      [
-        "Function",
-        "set_file_type",
-        "trees.c",
-        1073,
-        "Macro",
         "LITERALS",
         "trees.c",
         1080
@@ -13529,26 +7189,6 @@
       ],
       [
         "Function",
-        "set_file_type",
-        "trees.c",
-        1073,
-        "Macro",
-        "Freq",
-        "trees.c",
-        1079
-      ],
-      [
-        "Function",
-        "set_file_type",
-        "trees.c",
-        1073,
-        "Macro",
-        "Freq",
-        "trees.c",
-        1080
-      ],
-      [
-        "Function",
         "compress_block",
         "trees.c",
         1021,
@@ -13556,36 +7196,6 @@
         "Code",
         "trees.c",
         1038
-      ],
-      [
-        "Function",
-        "compress_block",
-        "trees.c",
-        1021,
-        "Macro",
-        "Code",
-        "trees.c",
-        1043
-      ],
-      [
-        "Function",
-        "compress_block",
-        "trees.c",
-        1021,
-        "Macro",
-        "Code",
-        "trees.c",
-        1054
-      ],
-      [
-        "Function",
-        "compress_block",
-        "trees.c",
-        1021,
-        "Macro",
-        "Code",
-        "trees.c",
-        1064
       ],
       [
         "Function",
@@ -13633,69 +7243,9 @@
         "trees.c",
         1021,
         "Macro",
-        "Len",
-        "trees.c",
-        1043
-      ],
-      [
-        "Function",
-        "compress_block",
-        "trees.c",
-        1021,
-        "Macro",
-        "Len",
-        "trees.c",
-        1054
-      ],
-      [
-        "Function",
-        "compress_block",
-        "trees.c",
-        1021,
-        "Macro",
-        "Len",
-        "trees.c",
-        1064
-      ],
-      [
-        "Function",
-        "compress_block",
-        "trees.c",
-        1021,
-        "Macro",
         "send_code",
         "trees.c",
         1038
-      ],
-      [
-        "Function",
-        "compress_block",
-        "trees.c",
-        1021,
-        "Macro",
-        "send_code",
-        "trees.c",
-        1043
-      ],
-      [
-        "Function",
-        "compress_block",
-        "trees.c",
-        1021,
-        "Macro",
-        "send_code",
-        "trees.c",
-        1054
-      ],
-      [
-        "Function",
-        "compress_block",
-        "trees.c",
-        1021,
-        "Macro",
-        "send_code",
-        "trees.c",
-        1064
       ],
       [
         "Function",
@@ -13753,46 +7303,6 @@
         "trees.c",
         749,
         "Macro",
-        "Code",
-        "trees.c",
-        773
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "Code",
-        "trees.c",
-        776
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "Code",
-        "trees.c",
-        779
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "Code",
-        "trees.c",
-        782
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
         "REP_3_6",
         "trees.c",
         776
@@ -13833,109 +7343,9 @@
         "trees.c",
         749,
         "Macro",
-        "Len",
-        "trees.c",
-        765
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "Len",
-        "trees.c",
-        769
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "Len",
-        "trees.c",
-        773
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "Len",
-        "trees.c",
-        776
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "Len",
-        "trees.c",
-        779
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "Len",
-        "trees.c",
-        782
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
         "send_code",
         "trees.c",
         769
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "send_code",
-        "trees.c",
-        773
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "send_code",
-        "trees.c",
-        776
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "send_code",
-        "trees.c",
-        779
-      ],
-      [
-        "Function",
-        "send_tree",
-        "trees.c",
-        749,
-        "Macro",
-        "send_code",
-        "trees.c",
-        782
       ],
       [
         "Function",
@@ -13983,69 +7393,9 @@
         "trees.c",
         705,
         "Macro",
-        "Len",
-        "trees.c",
-        718
-      ],
-      [
-        "Function",
-        "scan_tree",
-        "trees.c",
-        705,
-        "Macro",
-        "Len",
-        "trees.c",
-        721
-      ],
-      [
-        "Function",
-        "scan_tree",
-        "trees.c",
-        705,
-        "Macro",
         "Freq",
         "trees.c",
         725
-      ],
-      [
-        "Function",
-        "scan_tree",
-        "trees.c",
-        705,
-        "Macro",
-        "Freq",
-        "trees.c",
-        727
-      ],
-      [
-        "Function",
-        "scan_tree",
-        "trees.c",
-        705,
-        "Macro",
-        "Freq",
-        "trees.c",
-        728
-      ],
-      [
-        "Function",
-        "scan_tree",
-        "trees.c",
-        705,
-        "Macro",
-        "Freq",
-        "trees.c",
-        730
-      ],
-      [
-        "Function",
-        "scan_tree",
-        "trees.c",
-        705,
-        "Macro",
-        "Freq",
-        "trees.c",
-        732
       ],
       [
         "Function",
@@ -14103,59 +7453,9 @@
         "trees.c",
         618,
         "Macro",
-        "SMALLEST",
-        "trees.c",
-        667
-      ],
-      [
-        "Function",
-        "build_tree",
-        "trees.c",
-        618,
-        "Macro",
-        "SMALLEST",
-        "trees.c",
-        683
-      ],
-      [
-        "Function",
-        "build_tree",
-        "trees.c",
-        618,
-        "Macro",
-        "SMALLEST",
-        "trees.c",
-        684
-      ],
-      [
-        "Function",
-        "build_tree",
-        "trees.c",
-        618,
-        "Macro",
-        "SMALLEST",
-        "trees.c",
-        688
-      ],
-      [
-        "Function",
-        "build_tree",
-        "trees.c",
-        618,
-        "Macro",
         "Len",
         "trees.c",
         639
-      ],
-      [
-        "Function",
-        "build_tree",
-        "trees.c",
-        618,
-        "Macro",
-        "Len",
-        "trees.c",
-        652
       ],
       [
         "Function",
@@ -14176,26 +7476,6 @@
         "Freq",
         "trees.c",
         635
-      ],
-      [
-        "Function",
-        "build_tree",
-        "trees.c",
-        618,
-        "Macro",
-        "Freq",
-        "trees.c",
-        650
-      ],
-      [
-        "Function",
-        "build_tree",
-        "trees.c",
-        618,
-        "Macro",
-        "Freq",
-        "trees.c",
-        673
       ],
       [
         "Function",
@@ -14226,16 +7506,6 @@
         "prefix_len",
         "unpack.c",
         196
-      ],
-      [
-        "Function",
-        "build_tree",
-        "unpack.c",
-        170,
-        "Macro",
-        "prefix_len",
-        "unpack.c",
-        202
       ],
       [
         "Function",
@@ -14276,16 +7546,6 @@
         "MAX_BITS",
         "trees.c",
         581
-      ],
-      [
-        "Function",
-        "gen_codes",
-        "trees.c",
-        577,
-        "Macro",
-        "MAX_BITS",
-        "trees.c",
-        589
       ],
       [
         "Function",
@@ -14363,66 +7623,6 @@
         "trees.c",
         492,
         "Macro",
-        "Len",
-        "trees.c",
-        517
-      ],
-      [
-        "Function",
-        "gen_bitlen",
-        "trees.c",
-        492,
-        "Macro",
-        "Len",
-        "trees.c",
-        519
-      ],
-      [
-        "Function",
-        "gen_bitlen",
-        "trees.c",
-        492,
-        "Macro",
-        "Len",
-        "trees.c",
-        529
-      ],
-      [
-        "Function",
-        "gen_bitlen",
-        "trees.c",
-        492,
-        "Macro",
-        "Len",
-        "trees.c",
-        559
-      ],
-      [
-        "Function",
-        "gen_bitlen",
-        "trees.c",
-        492,
-        "Macro",
-        "Len",
-        "trees.c",
-        561
-      ],
-      [
-        "Function",
-        "gen_bitlen",
-        "trees.c",
-        492,
-        "Macro",
-        "Len",
-        "trees.c",
-        562
-      ],
-      [
-        "Function",
-        "gen_bitlen",
-        "trees.c",
-        492,
-        "Macro",
         "Dad",
         "trees.c",
         517
@@ -14439,16 +7639,6 @@
       ],
       [
         "Function",
-        "gen_bitlen",
-        "trees.c",
-        492,
-        "Macro",
-        "Freq",
-        "trees.c",
-        561
-      ],
-      [
-        "Function",
         "pqdownheap",
         "trees.c",
         460,
@@ -14463,29 +7653,9 @@
         "trees.c",
         460,
         "Macro",
-        "Freq",
-        "trees.c",
-        471
-      ],
-      [
-        "Function",
-        "pqdownheap",
-        "trees.c",
-        460,
-        "Macro",
         "smaller",
         "trees.c",
         468
-      ],
-      [
-        "Function",
-        "pqdownheap",
-        "trees.c",
-        460,
-        "Macro",
-        "smaller",
-        "trees.c",
-        471
       ],
       [
         "Function",
@@ -14559,36 +7729,6 @@
       ],
       [
         "Function",
-        "init_block",
-        "trees.c",
-        416,
-        "Macro",
-        "Freq",
-        "trees.c",
-        422
-      ],
-      [
-        "Function",
-        "init_block",
-        "trees.c",
-        416,
-        "Macro",
-        "Freq",
-        "trees.c",
-        423
-      ],
-      [
-        "Function",
-        "init_block",
-        "trees.c",
-        416,
-        "Macro",
-        "Freq",
-        "trees.c",
-        425
-      ],
-      [
-        "Function",
         "decode",
         "unlzh.c",
         336,
@@ -14603,49 +7743,9 @@
         "unlzh.c",
         336,
         "Macro",
-        "UCHAR_MAX",
-        "unlzh.c",
-        363
-      ],
-      [
-        "Function",
-        "decode",
-        "unlzh.c",
-        336,
-        "Macro",
-        "UCHAR_MAX",
-        "unlzh.c",
-        367
-      ],
-      [
-        "Function",
-        "decode",
-        "unlzh.c",
-        336,
-        "Macro",
         "DICSIZ",
         "unlzh.c",
         354
-      ],
-      [
-        "Function",
-        "decode",
-        "unlzh.c",
-        336,
-        "Macro",
-        "DICSIZ",
-        "unlzh.c",
-        368
-      ],
-      [
-        "Function",
-        "decode",
-        "unlzh.c",
-        336,
-        "Macro",
-        "DICSIZ",
-        "unlzh.c",
-        371
       ],
       [
         "Function",
@@ -14673,16 +7773,6 @@
         "unlzh.c",
         336,
         "Macro",
-        "THRESHOLD",
-        "unlzh.c",
-        367
-      ],
-      [
-        "Function",
-        "decode",
-        "unlzh.c",
-        336,
-        "Macro",
         "MAXMATCH",
         "unlzh.c",
         359
@@ -14696,26 +7786,6 @@
         "DICBIT",
         "unlzh.c",
         354
-      ],
-      [
-        "Function",
-        "decode",
-        "unlzh.c",
-        336,
-        "Macro",
-        "DICBIT",
-        "unlzh.c",
-        368
-      ],
-      [
-        "Function",
-        "decode",
-        "unlzh.c",
-        336,
-        "Macro",
-        "DICBIT",
-        "unlzh.c",
-        371
       ],
       [
         "Function",
@@ -14753,16 +7823,6 @@
         "unlzh.c",
         297,
         "Macro",
-        "CHAR_BIT",
-        "unlzh.c",
-        303
-      ],
-      [
-        "Function",
-        "decode_p",
-        "unlzh.c",
-        297,
-        "Macro",
         "BITBUFSIZ",
         "unlzh.c",
         301
@@ -14773,29 +7833,9 @@
         "unlzh.c",
         297,
         "Macro",
-        "BITBUFSIZ",
-        "unlzh.c",
-        303
-      ],
-      [
-        "Function",
-        "decode_p",
-        "unlzh.c",
-        297,
-        "Macro",
         "NP",
         "unlzh.c",
         302
-      ],
-      [
-        "Function",
-        "decode_p",
-        "unlzh.c",
-        297,
-        "Macro",
-        "NP",
-        "unlzh.c",
-        308
       ],
       [
         "Function",
@@ -14829,16 +7869,6 @@
       ],
       [
         "Function",
-        "decode_p",
-        "unlzh.c",
-        297,
-        "Macro",
-        "DICBIT",
-        "unlzh.c",
-        308
-      ],
-      [
-        "Function",
         "decode_c",
         "unlzh.c",
         270,
@@ -14873,39 +7903,9 @@
         "unlzh.c",
         270,
         "Macro",
-        "CHAR_BIT",
-        "unlzh.c",
-        286
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
         "UCHAR_MAX",
         "unlzh.c",
         277
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
-        "UCHAR_MAX",
-        "unlzh.c",
-        285
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
-        "UCHAR_MAX",
-        "unlzh.c",
-        291
       ],
       [
         "Function",
@@ -14933,26 +7933,6 @@
         "unlzh.c",
         270,
         "Macro",
-        "NC",
-        "unlzh.c",
-        285
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
-        "NC",
-        "unlzh.c",
-        291
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
         "THRESHOLD",
         "unlzh.c",
         277
@@ -14963,39 +7943,9 @@
         "unlzh.c",
         270,
         "Macro",
-        "THRESHOLD",
-        "unlzh.c",
-        285
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
-        "THRESHOLD",
-        "unlzh.c",
-        291
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
         "BITBUFSIZ",
         "unlzh.c",
         284
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
-        "BITBUFSIZ",
-        "unlzh.c",
-        286
       ],
       [
         "Function",
@@ -15093,26 +8043,6 @@
         "unlzh.c",
         270,
         "Macro",
-        "MAXMATCH",
-        "unlzh.c",
-        285
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
-        "MAXMATCH",
-        "unlzh.c",
-        291
-      ],
-      [
-        "Function",
-        "decode_c",
-        "unlzh.c",
-        270,
-        "Macro",
         "DICBIT",
         "unlzh.c",
         281
@@ -15153,16 +8083,6 @@
         "unlzh.c",
         235,
         "Macro",
-        "CHAR_BIT",
-        "unlzh.c",
-        250
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
         "UCHAR_MAX",
         "unlzh.c",
         243
@@ -15173,69 +8093,9 @@
         "unlzh.c",
         235,
         "Macro",
-        "UCHAR_MAX",
-        "unlzh.c",
-        265
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "UCHAR_MAX",
-        "unlzh.c",
-        266
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
         "c_len",
         "unlzh.c",
         243
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "c_len",
-        "unlzh.c",
-        262
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "c_len",
-        "unlzh.c",
-        263
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "c_len",
-        "unlzh.c",
-        265
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "c_len",
-        "unlzh.c",
-        266
       ],
       [
         "Function",
@@ -15253,49 +8113,9 @@
         "unlzh.c",
         235,
         "Macro",
-        "NC",
-        "unlzh.c",
-        265
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "NC",
-        "unlzh.c",
-        266
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
         "THRESHOLD",
         "unlzh.c",
         243
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "THRESHOLD",
-        "unlzh.c",
-        265
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "THRESHOLD",
-        "unlzh.c",
-        266
       ],
       [
         "Function",
@@ -15313,29 +8133,9 @@
         "unlzh.c",
         235,
         "Macro",
-        "BITBUFSIZ",
-        "unlzh.c",
-        250
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
         "NT",
         "unlzh.c",
         249
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "NT",
-        "unlzh.c",
-        255
       ],
       [
         "Function",
@@ -15353,39 +8153,9 @@
         "unlzh.c",
         235,
         "Macro",
-        "CBIT",
-        "unlzh.c",
-        242
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "CBIT",
-        "unlzh.c",
-        261
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
         "c_table",
         "unlzh.c",
         244
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "c_table",
-        "unlzh.c",
-        266
       ],
       [
         "Function",
@@ -15423,42 +8193,12 @@
         "unlzh.c",
         235,
         "Macro",
-        "CODE_BIT",
-        "unlzh.c",
-        255
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
         "MAXMATCH",
         "unlzh.c",
         243
       ],
       [
         "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "MAXMATCH",
-        "unlzh.c",
-        265
-      ],
-      [
-        "Function",
-        "read_c_len",
-        "unlzh.c",
-        235,
-        "Macro",
-        "MAXMATCH",
-        "unlzh.c",
-        266
-      ],
-      [
-        "Function",
         "read_pt_len",
         "unlzh.c",
         200,
@@ -15473,29 +8213,9 @@
         "unlzh.c",
         200,
         "Macro",
-        "CHAR_BIT",
-        "unlzh.c",
-        218
-      ],
-      [
-        "Function",
-        "read_pt_len",
-        "unlzh.c",
-        200,
-        "Macro",
         "BITBUFSIZ",
         "unlzh.c",
         216
-      ],
-      [
-        "Function",
-        "read_pt_len",
-        "unlzh.c",
-        200,
-        "Macro",
-        "BITBUFSIZ",
-        "unlzh.c",
-        218
       ],
       [
         "Function",
@@ -15513,29 +8233,9 @@
         "unlzh.c",
         134,
         "Macro",
-        "WSIZE",
-        "unlzh.c",
-        186
-      ],
-      [
-        "Function",
-        "make_table",
-        "unlzh.c",
-        134,
-        "Macro",
         "head",
         "unlzh.c",
         183
-      ],
-      [
-        "Function",
-        "make_table",
-        "unlzh.c",
-        134,
-        "Macro",
-        "head",
-        "unlzh.c",
-        186
       ],
       [
         "Function",
@@ -15553,29 +8253,9 @@
         "unlzh.c",
         134,
         "Macro",
-        "right",
-        "unlzh.c",
-        186
-      ],
-      [
-        "Function",
-        "make_table",
-        "unlzh.c",
-        134,
-        "Macro",
         "left",
         "unlzh.c",
         183
-      ],
-      [
-        "Function",
-        "make_table",
-        "unlzh.c",
-        134,
-        "Macro",
-        "left",
-        "unlzh.c",
-        187
       ],
       [
         "Function",
@@ -15688,40 +8368,10 @@
         277
       ],
       [
-        "Function",
-        "write_buffer",
-        "util.c",
-        272,
-        "Macro",
-        "INT_MAX",
-        "util.c",
-        278
-      ],
-      [
         "Macro",
         "put_long",
         "zip.c",
         68,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_long",
-        "zip.c",
-        101,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_long",
-        "zip.c",
-        102,
         "Function",
         "flush_outbuf",
         "util.c",
@@ -15732,66 +8382,6 @@
         "put_short",
         "bits.c",
         143,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_short",
-        "bits.c",
-        175,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_short",
-        "bits.c",
-        198,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_short",
-        "bits.c",
-        199,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_short",
-        "zip.c",
-        68,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_short",
-        "zip.c",
-        101,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_short",
-        "zip.c",
-        102,
         "Function",
         "flush_outbuf",
         "util.c",
@@ -15809,169 +8399,9 @@
       ],
       [
         "Macro",
-        "put_ubyte",
-        "unzip.c",
-        151,
-        "Function",
-        "flush_window",
-        "util.c",
-        299
-      ],
-      [
-        "Macro",
         "put_byte",
         "bits.c",
         143,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "bits.c",
-        175,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "bits.c",
-        177,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "bits.c",
-        198,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "bits.c",
-        199,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "bits.c",
-        208,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        49,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        50,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        51,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        56,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        68,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        77,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        78,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        83,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        101,
-        "Function",
-        "flush_outbuf",
-        "util.c",
-        286
-      ],
-      [
-        "Macro",
-        "put_byte",
-        "zip.c",
-        102,
         "Function",
         "flush_outbuf",
         "util.c",
@@ -15989,249 +8419,9 @@
       ],
       [
         "Macro",
-        "try_byte",
-        "gzip.c",
-        1501,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "try_byte",
-        "gzip.c",
-        1503,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "try_byte",
-        "gzip.c",
-        1513,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "try_byte",
-        "gzip.c",
-        1700,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
         "get_byte",
         "unpack.c",
         83,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "unlzw.c",
-        122,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1467,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1507,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1510,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1526,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1535,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1551,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1552,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1553,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1554,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1572,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1573,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1589,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1590,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1610,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1636,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "gzip.c",
-        1637,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "unzip.c",
-        150,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "unzip.c",
-        164,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "get_byte",
-        "unzip.c",
-        176,
         "Function",
         "fill_inbuf",
         "util.c",
@@ -16249,99 +8439,9 @@
       ],
       [
         "Macro",
-        "RSYNC_ROLL",
-        "deflate.c",
-        722,
-        "Function",
-        "rsync_roll",
-        "deflate.c",
-        614
-      ],
-      [
-        "Macro",
-        "RSYNC_ROLL",
-        "deflate.c",
-        803,
-        "Function",
-        "rsync_roll",
-        "deflate.c",
-        614
-      ],
-      [
-        "Macro",
-        "RSYNC_ROLL",
-        "deflate.c",
-        847,
-        "Function",
-        "rsync_roll",
-        "deflate.c",
-        614
-      ],
-      [
-        "Macro",
-        "RSYNC_ROLL",
-        "deflate.c",
-        862,
-        "Function",
-        "rsync_roll",
-        "deflate.c",
-        614
-      ],
-      [
-        "Macro",
         "FLUSH_BLOCK",
         "deflate.c",
         730,
-        "Function",
-        "flush_block",
-        "trees.c",
-        859
-      ],
-      [
-        "Macro",
-        "FLUSH_BLOCK",
-        "deflate.c",
-        740,
-        "Function",
-        "flush_block",
-        "trees.c",
-        859
-      ],
-      [
-        "Macro",
-        "FLUSH_BLOCK",
-        "deflate.c",
-        834,
-        "Function",
-        "flush_block",
-        "trees.c",
-        859
-      ],
-      [
-        "Macro",
-        "FLUSH_BLOCK",
-        "deflate.c",
-        846,
-        "Function",
-        "flush_block",
-        "trees.c",
-        859
-      ],
-      [
-        "Macro",
-        "FLUSH_BLOCK",
-        "deflate.c",
-        858,
-        "Function",
-        "flush_block",
-        "trees.c",
-        859
-      ],
-      [
-        "Macro",
-        "FLUSH_BLOCK",
-        "deflate.c",
-        877,
         "Function",
         "flush_block",
         "trees.c",
@@ -16359,219 +8459,9 @@
       ],
       [
         "Macro",
-        "flush_output",
-        "inflate.c",
-        595,
-        "Function",
-        "flush_window",
-        "util.c",
-        299
-      ],
-      [
-        "Macro",
-        "flush_output",
-        "inflate.c",
-        652,
-        "Function",
-        "flush_window",
-        "util.c",
-        299
-      ],
-      [
-        "Macro",
-        "flush_output",
-        "inflate.c",
-        978,
-        "Function",
-        "flush_window",
-        "util.c",
-        299
-      ],
-      [
-        "Macro",
         "NEXTBYTE",
         "inflate.c",
         530,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        537,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        557,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        562,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        569,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        572,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        636,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        639,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        648,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        753,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        756,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        759,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        773,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        799,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        813,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        823,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        834,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        913,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEXTBYTE",
-        "inflate.c",
-        919,
         "Function",
         "fill_inbuf",
         "util.c",
@@ -16589,369 +8479,9 @@
       ],
       [
         "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        537,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        557,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        562,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        569,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        572,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        636,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        639,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        648,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        753,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        756,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        759,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        773,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        799,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        813,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        823,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        834,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        913,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "NEEDBITS",
-        "inflate.c",
-        919,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
         "GETBYTE",
         "inflate.c",
         530,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        537,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        557,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        562,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        569,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        572,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        636,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        639,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        648,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        753,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        756,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        759,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        773,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        799,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        813,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        823,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        834,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        913,
-        "Function",
-        "fill_inbuf",
-        "util.c",
-        210
-      ],
-      [
-        "Macro",
-        "GETBYTE",
-        "inflate.c",
-        919,
         "Function",
         "fill_inbuf",
         "util.c",
@@ -16962,86 +8492,6 @@
         "send_code",
         "trees.c",
         769,
-        "Function",
-        "send_bits",
-        "bits.c",
-        128
-      ],
-      [
-        "Macro",
-        "send_code",
-        "trees.c",
-        773,
-        "Function",
-        "send_bits",
-        "bits.c",
-        128
-      ],
-      [
-        "Macro",
-        "send_code",
-        "trees.c",
-        776,
-        "Function",
-        "send_bits",
-        "bits.c",
-        128
-      ],
-      [
-        "Macro",
-        "send_code",
-        "trees.c",
-        779,
-        "Function",
-        "send_bits",
-        "bits.c",
-        128
-      ],
-      [
-        "Macro",
-        "send_code",
-        "trees.c",
-        782,
-        "Function",
-        "send_bits",
-        "bits.c",
-        128
-      ],
-      [
-        "Macro",
-        "send_code",
-        "trees.c",
-        1038,
-        "Function",
-        "send_bits",
-        "bits.c",
-        128
-      ],
-      [
-        "Macro",
-        "send_code",
-        "trees.c",
-        1043,
-        "Function",
-        "send_bits",
-        "bits.c",
-        128
-      ],
-      [
-        "Macro",
-        "send_code",
-        "trees.c",
-        1054,
-        "Function",
-        "send_bits",
-        "bits.c",
-        128
-      ],
-      [
-        "Macro",
-        "send_code",
-        "trees.c",
-        1064,
         "Function",
         "send_bits",
         "bits.c",
@@ -17062,16 +8512,6 @@
         "look_bits",
         "unpack.c",
         239,
-        "Function",
-        "read_byte",
-        "unpack.c",
-        81
-      ],
-      [
-        "Macro",
-        "look_bits",
-        "unpack.c",
-        252,
         "Function",
         "read_byte",
         "unpack.c",
