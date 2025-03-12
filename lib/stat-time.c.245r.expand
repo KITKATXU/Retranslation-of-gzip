@@ -1,0 +1,478 @@
+
+;; Function get_stat_atime_ns (get_stat_atime_ns, funcdef_no=6, decl_uid=2609, cgraph_uid=7, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 11.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])
+        (reg:DI 5 di [ st ])) "stat-time.h":67:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])) "stat-time.h":69:37 -1
+     (nil))
+(insn 7 6 10 2 (set (reg:DI 82 [ _3 ])
+        (mem:DI (plus:DI (reg/f:DI 84)
+                (const_int 80 [0x50])) [3 st_2(D)->st_atim.tv_nsec+0 S8 A64])) "stat-time.h":69:37 -1
+     (nil))
+(insn 10 7 14 2 (set (reg:DI 83 [ <retval> ])
+        (reg:DI 82 [ _3 ])) "stat-time.h":69:37 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:DI 0 ax)
+        (reg:DI 83 [ <retval> ])) "stat-time.h":75:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:DI 0 ax)) "stat-time.h":75:1 -1
+     (nil))
+
+;; Function get_stat_ctime_ns (get_stat_ctime_ns, funcdef_no=7, decl_uid=2612, cgraph_uid=8, symbol_order=7)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 11.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])
+        (reg:DI 5 di [ st ])) "stat-time.h":80:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])) "stat-time.h":82:37 -1
+     (nil))
+(insn 7 6 10 2 (set (reg:DI 82 [ _3 ])
+        (mem:DI (plus:DI (reg/f:DI 84)
+                (const_int 112 [0x70])) [3 st_2(D)->st_ctim.tv_nsec+0 S8 A64])) "stat-time.h":82:37 -1
+     (nil))
+(insn 10 7 14 2 (set (reg:DI 83 [ <retval> ])
+        (reg:DI 82 [ _3 ])) "stat-time.h":82:37 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:DI 0 ax)
+        (reg:DI 83 [ <retval> ])) "stat-time.h":88:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:DI 0 ax)) "stat-time.h":88:1 -1
+     (nil))
+
+;; Function get_stat_mtime_ns (get_stat_mtime_ns, funcdef_no=8, decl_uid=2615, cgraph_uid=9, symbol_order=8)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 11.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])
+        (reg:DI 5 di [ st ])) "stat-time.h":93:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])) "stat-time.h":95:37 -1
+     (nil))
+(insn 7 6 10 2 (set (reg:DI 82 [ _3 ])
+        (mem:DI (plus:DI (reg/f:DI 84)
+                (const_int 96 [0x60])) [3 st_2(D)->st_mtim.tv_nsec+0 S8 A64])) "stat-time.h":95:37 -1
+     (nil))
+(insn 10 7 14 2 (set (reg:DI 83 [ <retval> ])
+        (reg:DI 82 [ _3 ])) "stat-time.h":95:37 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:DI 0 ax)
+        (reg:DI 83 [ <retval> ])) "stat-time.h":101:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:DI 0 ax)) "stat-time.h":101:1 -1
+     (nil))
+
+;; Function get_stat_birthtime_ns (get_stat_birthtime_ns, funcdef_no=9, decl_uid=2618, cgraph_uid=10, symbol_order=9)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 10.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])
+        (reg:DI 5 di [ st ])) "stat-time.h":106:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 9 2 (set (reg:DI 82 [ _1 ])
+        (const_int 0 [0])) "stat-time.h":112:10 -1
+     (nil))
+(insn 9 6 13 2 (set (reg:DI 83 [ <retval> ])
+        (reg:DI 82 [ _1 ])) "stat-time.h":112:10 -1
+     (nil))
+(insn 13 9 14 2 (set (reg/i:DI 0 ax)
+        (reg:DI 83 [ <retval> ])) "stat-time.h":114:1 -1
+     (nil))
+(insn 14 13 0 2 (use (reg/i:DI 0 ax)) "stat-time.h":114:1 -1
+     (nil))
+
+;; Function get_stat_atime (get_stat_atime, funcdef_no=10, decl_uid=2621, cgraph_uid=11, symbol_order=10)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 11.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])
+        (reg:DI 5 di [ st ])) "stat-time.h":119:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])) "stat-time.h":121:10 -1
+     (nil))
+(insn 7 6 10 2 (set (reg:TI 82 [ D.2646 ])
+        (mem:TI (plus:DI (reg/f:DI 84)
+                (const_int 72 [0x48])) [5 st_2(D)->st_atim+0 S16 A64])) "stat-time.h":121:10 -1
+     (nil))
+(insn 10 7 14 2 (set (reg:TI 83 [ <retval> ])
+        (reg:TI 82 [ D.2646 ])) "stat-time.h":121:10 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:TI 0 ax)
+        (reg:TI 83 [ <retval> ])) "stat-time.h":128:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:TI 0 ax)) "stat-time.h":128:1 -1
+     (nil))
+
+;; Function get_stat_ctime (get_stat_ctime, funcdef_no=11, decl_uid=2624, cgraph_uid=12, symbol_order=11)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 11.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])
+        (reg:DI 5 di [ st ])) "stat-time.h":133:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])) "stat-time.h":135:10 -1
+     (nil))
+(insn 7 6 10 2 (set (reg:TI 82 [ D.2648 ])
+        (mem:TI (plus:DI (reg/f:DI 84)
+                (const_int 104 [0x68])) [5 st_2(D)->st_ctim+0 S16 A64])) "stat-time.h":135:10 -1
+     (nil))
+(insn 10 7 14 2 (set (reg:TI 83 [ <retval> ])
+        (reg:TI 82 [ D.2648 ])) "stat-time.h":135:10 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:TI 0 ax)
+        (reg:TI 83 [ <retval> ])) "stat-time.h":142:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:TI 0 ax)) "stat-time.h":142:1 -1
+     (nil))
+
+;; Function get_stat_mtime (get_stat_mtime, funcdef_no=12, decl_uid=2627, cgraph_uid=13, symbol_order=12)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 11.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])
+        (reg:DI 5 di [ st ])) "stat-time.h":147:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 st+0 S8 A64])) "stat-time.h":149:10 -1
+     (nil))
+(insn 7 6 10 2 (set (reg:TI 82 [ D.2650 ])
+        (mem:TI (plus:DI (reg/f:DI 84)
+                (const_int 88 [0x58])) [5 st_2(D)->st_mtim+0 S16 A64])) "stat-time.h":149:10 -1
+     (nil))
+(insn 10 7 14 2 (set (reg:TI 83 [ <retval> ])
+        (reg:TI 82 [ D.2650 ])) "stat-time.h":149:10 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:TI 0 ax)
+        (reg:TI 83 [ <retval> ])) "stat-time.h":156:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:TI 0 ax)) "stat-time.h":156:1 -1
+     (nil))
+
+;; Function get_stat_birthtime (get_stat_birthtime, funcdef_no=13, decl_uid=2630, cgraph_uid=14, symbol_order=13)
+
+Partition 0: size 16 align 16
+	t
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 12.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 st+0 S8 A64])
+        (reg:DI 5 di [ st ])) "stat-time.h":162:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [3 t.tv_sec+0 S8 A128])
+        (const_int -1 [0xffffffffffffffff])) "stat-time.h":183:12 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 t.tv_nsec+0 S8 A64])
+        (const_int -1 [0xffffffffffffffff])) "stat-time.h":184:13 -1
+     (nil))
+(insn 8 7 11 2 (set (reg:TI 82 [ D.2652 ])
+        (mem/c:TI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [5 t+0 S16 A128])) "stat-time.h":202:10 -1
+     (nil))
+(insn 11 8 15 2 (set (reg:TI 83 [ <retval> ])
+        (reg:TI 82 [ D.2652 ])) "stat-time.h":202:10 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:TI 0 ax)
+        (reg:TI 83 [ <retval> ])) "stat-time.h":203:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:TI 0 ax)) "stat-time.h":203:1 -1
+     (nil))
+
+;; Function stat_time_normalize (stat_time_normalize, funcdef_no=14, decl_uid=2635, cgraph_uid=15, symbol_order=14)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 11.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [4 result+0 S4 A32])
+        (reg:SI 5 di [ result ])) "stat-time.h":212:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 st+0 S8 A64])
+        (reg:DI 4 si [ st ])) "stat-time.h":212:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 10 2 (set (reg:SI 82 [ _2 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [4 result+0 S4 A32])) "stat-time.h":243:10 -1
+     (nil))
+(insn 10 7 14 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _2 ])) "stat-time.h":243:10 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "stat-time.h":244:1 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:SI 0 ax)) "stat-time.h":244:1 -1
+     (nil))

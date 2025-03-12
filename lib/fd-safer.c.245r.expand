@@ -1,0 +1,160 @@
+
+;; Function fd_safer (fd_safer, funcdef_no=0, decl_uid=1945, cgraph_uid=1, symbol_order=0)
+
+Partition 1: size 4 align 4
+	e_9
+Partition 0: size 4 align 4
+	f_8
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Removing jump 40.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [1 fd+0 S4 A32])
+        (reg:SI 5 di [ fd ])) "fd-safer.c":38:1 -1
+     (nil))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 3 9 2 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [1 fd+0 S4 A32])
+            (const_int 0 [0]))) "fd-safer.c":39:6 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (lt (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) "fd-safer.c":39:6 -1
+     (nil)
+ -> 34)
+(note 10 9 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 10 14 4 (set (reg:CCGC 17 flags)
+        (compare:CCGC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [1 fd+0 S4 A32])
+            (const_int 2 [0x2]))) "fd-safer.c":39:26 -1
+     (nil))
+(jump_insn 14 13 15 4 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) "fd-safer.c":39:26 -1
+     (nil)
+ -> 34)
+(note 15 14 16 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 5 (set (reg:SI 86)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [1 fd+0 S4 A32])) "fd-safer.c":41:15 -1
+     (nil))
+(insn 17 16 18 5 (set (reg:SI 5 di)
+        (reg:SI 86)) "fd-safer.c":41:15 -1
+     (nil))
+(call_insn 18 17 19 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("dup_safer") [flags 0x41]  <function_decl 0x791b60f66000 dup_safer>) [0 dup_safer S1 A8])
+            (const_int 0 [0]))) "fd-safer.c":41:15 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 19 18 20 5 (set (reg:SI 87)
+        (reg:SI 0 ax)) "fd-safer.c":41:15 -1
+     (nil))
+(insn 20 19 21 5 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 f+0 S4 A64])
+        (reg:SI 87)) "fd-safer.c":41:15 -1
+     (nil))
+(call_insn/u 21 20 22 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x791b60f76d00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "fd-safer.c":42:15 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 22 21 23 5 (set (reg/f:DI 82 [ _1 ])
+        (reg:DI 0 ax)) "fd-safer.c":42:15 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 88)
+        (mem:SI (reg/f:DI 82 [ _1 ]) [1 *_1+0 S4 A32])) "fd-safer.c":42:11 -1
+     (nil))
+(insn 24 23 25 5 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 e+0 S4 A32])
+        (reg:SI 88)) "fd-safer.c":42:11 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 89)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [1 fd+0 S4 A32])) "fd-safer.c":43:7 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:SI 5 di)
+        (reg:SI 89)) "fd-safer.c":43:7 -1
+     (nil))
+(call_insn 27 26 28 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("close") [flags 0x41]  <function_decl 0x791b60f92700 close>) [0 close S1 A8])
+            (const_int 0 [0]))) "fd-safer.c":43:7 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(call_insn/u 28 27 29 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x791b60f76d00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "fd-safer.c":44:7 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 29 28 30 5 (set (reg/f:DI 83 [ _2 ])
+        (reg:DI 0 ax)) "fd-safer.c":44:7 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:SI 90)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 e+0 S4 A32])) "fd-safer.c":44:13 -1
+     (nil))
+(insn 31 30 32 5 (set (mem:SI (reg/f:DI 83 [ _2 ]) [1 *_2+0 S4 A32])
+        (reg:SI 90)) "fd-safer.c":44:13 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:SI 91)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 f+0 S4 A64])) "fd-safer.c":45:10 -1
+     (nil))
+(insn 33 32 34 5 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [1 fd+0 S4 A32])
+        (reg:SI 91)) "fd-safer.c":45:10 -1
+     (nil))
+(code_label 34 33 35 6 2 (nil) [2 uses])
+(note 35 34 36 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 39 6 (set (reg:SI 84 [ _13 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [1 fd+0 S4 A32])) "fd-safer.c":48:10 -1
+     (nil))
+(insn 39 36 43 6 (set (reg:SI 85 [ <retval> ])
+        (reg:SI 84 [ _13 ])) "fd-safer.c":48:10 -1
+     (nil))
+(insn 43 39 44 6 (set (reg/i:SI 0 ax)
+        (reg:SI 85 [ <retval> ])) "fd-safer.c":49:1 -1
+     (nil))
+(insn 44 43 0 6 (use (reg/i:SI 0 ax)) "fd-safer.c":49:1 -1
+     (nil))

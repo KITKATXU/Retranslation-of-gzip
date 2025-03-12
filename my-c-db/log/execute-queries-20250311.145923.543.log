@@ -1,0 +1,59 @@
+[2025-03-11 14:59:23] This is codeql execute queries -J-Xmx12861M --off-heap-ram=16001 --verbosity=progress --logdir=/home/qingxiao/retranslation/gzip/my-c-db/log --evaluator-log-level=5 --warnings=show --dynamic-join-order-mode=none --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --output=/home/qingxiao/retranslation/gzip/call_graph.csv -- /home/qingxiao/retranslation/gzip/my-c-db/db-cpp path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:59:23] Calling plumbing command: codeql resolve queries --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --format=json -- path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:59:23] [PROGRESS] resolve queries> Recording pack reference my-queries at /home/qingxiao/codeql/my-queries.
+[2025-03-11 14:59:23] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql"
+                      ]
+[2025-03-11 14:59:23] Creating executor with 1 threads.
+[2025-03-11 14:59:24] Calling plumbing command: codeql resolve extensions --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --include-extension-row-locations path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:59:24] Calling plumbing command: codeql resolve queries --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --allow-library-packs --format startingpacks -- path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:59:24] [PROGRESS] resolve queries> Recording pack reference my-queries at /home/qingxiao/codeql/my-queries.
+[2025-03-11 14:59:24] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/qingxiao/codeql/my-queries"
+                      ]
+[2025-03-11 14:59:24] Calling plumbing command: codeql resolve extensions-by-pack --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --include-extension-row-locations -- /home/qingxiao/codeql/my-queries
+[2025-03-11 14:59:24] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] my-queries: not 0.0.1 {root: my-queries@0.0.1}
+[2025-03-11 14:59:24] [SPAMMY] resolve extensions-by-pack> [DERIVATION] my-queries: 0.0.1 {my-queries: not 0.0.1 {root: my-queries@0.0.1}}
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] my-queries: * [*], codeql/cpp-all: not * {dependency: my-queries@* [*] requires codeql/cpp-all@*}
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack> [DECISION 1] my-queries: 0.0.1
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack> [DERIVATION] codeql/cpp-all: * {my-queries: * [*], codeql/cpp-all: not * {dependency: my-queries@* [*] requires codeql/cpp-all@*}}
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] codeql/cpp-all: * [*] {pack not found: codeql/cpp-all}
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack> [CONFLICT] codeql/cpp-all: * [*] {pack not found: codeql/cpp-all}
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack>   [CONSTRAINT] my-queries: 0.0.1
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack>   [CONSTRAINT] codeql/cpp-all: *
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack>   [SATISFIER] derivation: codeql/cpp-all: *
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack>   [ALMOST_SATISFIER] <none>
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] my-queries: * [*] {conflict}
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack> [FAILURE]
+[2025-03-11 14:59:25] [SPAMMY] resolve extensions-by-pack>   Because 'my-queries' depends on 'codeql/cpp-all@*', but pack 'codeql/cpp-all' was not found, version solving failed.
+[2025-03-11 14:59:25] [ERROR] resolve extensions-by-pack> ERROR: Referenced pack 'codeql/cpp-all' was not found locally, and no lock file is present for 'my-queries'. Run 'codeql pack install' to create the lock file and download the dependencies. (/home/qingxiao/codeql/my-queries/qlpack.yml:1,1-1)
+[2025-03-11 14:59:25] [ERROR] resolve extensions-by-pack> ERROR: No valid pack solution found:
+                              Because 'my-queries' depends on 'codeql/cpp-all@*', but pack 'codeql/cpp-all' was not found, version solving failed.
+                               (/home/qingxiao/codeql/my-queries/qlpack.yml:1,1-1)
+[2025-03-11 14:59:25] Sequence stamp origin is -6073319275474756839
+[2025-03-11 14:59:25] Pausing evaluation to close the cache at sequence stamp o+0
+[2025-03-11 14:59:25] The disk cache is freshly trimmed; leave it be.
+[2025-03-11 14:59:25] Unpausing evaluation
+[2025-03-11 14:59:25] This NaiveBuddyAllocator requested 0 eviction rounds.
+[2025-03-11 14:59:25] Exception caught at top level: A 'codeql resolve extensions-by-pack' operation failed with error code 2
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:75)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:170)
+                      com.semmle.cli2.resolve.ResolveExtensionsCommand.executeJSON(ResolveExtensionsCommand.java:62)
+                      com.semmle.cli2.resolve.ResolveExtensionsCommand.executeJSON(ResolveExtensionsCommand.java:18)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSONWithExistingMessages(SimpleJsonSubcommand.java:121)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSON(SimpleJsonSubcommand.java:110)
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:61)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:170)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.resolveExtensions(ExecuteQueriesCommand.java:856)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.executeSubcommand(ExecuteQueriesCommand.java:471)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)

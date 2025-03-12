@@ -1,0 +1,395 @@
+
+;; Function last_component (last_component, funcdef_no=0, decl_uid=1956, cgraph_uid=1, symbol_order=0)
+
+Partition 1: size 8 align 8
+	p_7
+Partition 0: size 8 align 8
+	base_4
+Partition 2: size 1 align 1
+	saw_slash_8
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+Removing jump 57.
+Merging block 15 into block 13...
+Merged blocks 13 and 15.
+Merged 13 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [1 name+0 S8 A64])
+        (reg:DI 5 di [ name ])) "basename-lgpl.c":31:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 87)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [1 name+0 S8 A64])) "basename-lgpl.c":32:15 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 base+0 S8 A64])
+        (reg/f:DI 87)) "basename-lgpl.c":32:15 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [2 saw_slash+0 S1 A8])
+        (const_int 0 [0])) "basename-lgpl.c":34:8 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (label_ref 13)) "basename-lgpl.c":36:9 -1
+     (nil)
+ -> 13)
+(barrier 10 9 17)
+(code_label 17 10 11 4 3 (nil) [1 uses])
+(note 11 17 12 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 12 11 13 4 (parallel [
+            (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -16 [0xfffffffffffffff0])) [1 base+0 S8 A64])
+                (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -16 [0xfffffffffffffff0])) [1 base+0 S8 A64])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "basename-lgpl.c":37:9 -1
+     (nil))
+(code_label 13 12 14 5 2 (nil) [1 uses])
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (reg/f:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 base+0 S8 A64])) "basename-lgpl.c":36:10 -1
+     (nil))
+(insn 16 15 18 5 (set (reg:QI 82 [ _1 ])
+        (mem:QI (reg/f:DI 88) [0 *base_4+0 S1 A8])) "basename-lgpl.c":36:10 -1
+     (nil))
+(insn 18 16 19 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 82 [ _1 ])
+            (const_int 47 [0x2f]))) "basename-lgpl.c":36:10 -1
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) "basename-lgpl.c":36:10 -1
+     (nil)
+ -> 17)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 base+0 S8 A64])) "basename-lgpl.c":39:10 -1
+     (nil))
+(insn 22 21 23 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])
+        (reg/f:DI 89)) "basename-lgpl.c":39:10 -1
+     (nil))
+(jump_insn 23 22 24 6 (set (pc)
+        (label_ref 45)) "basename-lgpl.c":39:3 -1
+     (nil)
+ -> 45)
+(barrier 24 23 49)
+(code_label 49 24 25 7 7 (nil) [1 uses])
+(note 25 49 26 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 7 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])) "basename-lgpl.c":41:11 -1
+     (nil))
+(insn 27 26 28 7 (set (reg:QI 83 [ _2 ])
+        (mem:QI (reg/f:DI 90) [0 *p_7+0 S1 A8])) "basename-lgpl.c":41:11 -1
+     (nil))
+(insn 28 27 29 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 83 [ _2 ])
+            (const_int 47 [0x2f]))) "basename-lgpl.c":41:10 -1
+     (nil))
+(jump_insn 29 28 30 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) "basename-lgpl.c":41:10 -1
+     (nil)
+ -> 34)
+(note 30 29 31 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 8 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [2 saw_slash+0 S1 A8])
+        (const_int 1 [0x1])) "basename-lgpl.c":42:19 -1
+     (nil))
+(jump_insn 32 31 33 8 (set (pc)
+        (label_ref 42)) -1
+     (nil)
+ -> 42)
+(barrier 33 32 34)
+(code_label 34 33 35 9 5 (nil) [1 uses])
+(note 35 34 36 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -17 [0xffffffffffffffef])) [2 saw_slash+0 S1 A8])
+            (const_int 0 [0]))) "basename-lgpl.c":43:15 -1
+     (nil))
+(jump_insn 37 36 38 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) "basename-lgpl.c":43:15 -1
+     (nil)
+ -> 42)
+(note 38 37 39 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 40 10 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])) "basename-lgpl.c":45:16 -1
+     (nil))
+(insn 40 39 41 10 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 base+0 S8 A64])
+        (reg/f:DI 91)) "basename-lgpl.c":45:16 -1
+     (nil))
+(insn 41 40 42 10 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [2 saw_slash+0 S1 A8])
+        (const_int 0 [0])) "basename-lgpl.c":46:21 -1
+     (nil))
+(code_label 42 41 43 11 6 (nil) [2 uses])
+(note 43 42 44 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 11 (parallel [
+            (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])
+                (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "basename-lgpl.c":39:23 -1
+     (nil))
+(code_label 45 44 46 12 4 (nil) [1 uses])
+(note 46 45 47 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 12 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])) "basename-lgpl.c":39:18 -1
+     (nil))
+(insn 48 47 50 12 (set (reg:QI 84 [ _3 ])
+        (mem:QI (reg/f:DI 92) [0 *p_7+0 S1 A8])) "basename-lgpl.c":39:18 -1
+     (nil))
+(insn 50 48 51 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 84 [ _3 ])
+            (const_int 0 [0]))) "basename-lgpl.c":39:18 -1
+     (nil))
+(jump_insn 51 50 52 12 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 49)
+            (pc))) "basename-lgpl.c":39:18 -1
+     (nil)
+ -> 49)
+(note 52 51 53 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 56 13 (set (reg/f:DI 85 [ _15 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 base+0 S8 A64])) "basename-lgpl.c":50:10 -1
+     (nil))
+(insn 56 53 60 13 (set (reg/f:DI 86 [ <retval> ])
+        (reg/f:DI 85 [ _15 ])) "basename-lgpl.c":50:10 -1
+     (nil))
+(insn 60 56 61 13 (set (reg/i:DI 0 ax)
+        (reg/f:DI 86 [ <retval> ])) "basename-lgpl.c":51:1 -1
+     (nil))
+(insn 61 60 0 13 (use (reg/i:DI 0 ax)) "basename-lgpl.c":51:1 -1
+     (nil))
+
+;; Function base_len (base_len, funcdef_no=1, decl_uid=1952, cgraph_uid=2, symbol_order=1)
+
+Partition 1: size 8 align 8
+	prefix_len_5
+Partition 0: size 8 align 8
+	len_4
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 7->4 redirected to 5
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Removing jump 38.
+Merging block 10 into block 8...
+Merged blocks 8 and 10.
+Merged 8 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+deleting block 4
+
+
+try_optimize_cfg iteration 3
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 name+0 S8 A64])
+        (reg:DI 5 di [ name ])) "basename-lgpl.c":59:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 prefix_len+0 S8 A64])
+        (const_int 0 [0])) "basename-lgpl.c":61:10 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 87)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 name+0 S8 A64])) "basename-lgpl.c":63:14 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 5 di)
+        (reg:DI 87)) "basename-lgpl.c":63:14 -1
+     (nil))
+(call_insn/i 9 8 10 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x77ebf58b7700 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) "basename-lgpl.c":63:14 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 10 9 11 2 (set (reg:DI 88)
+        (reg:DI 0 ax)) "basename-lgpl.c":63:14 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [3 len+0 S8 A64])
+        (reg:DI 88)) "basename-lgpl.c":63:14 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (label_ref 17)) "basename-lgpl.c":63:3 -1
+     (nil)
+ -> 17)
+(barrier 13 12 44)
+(code_label 44 13 15 5 14 (nil) [1 uses])
+(note 15 44 16 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 5 (parallel [
+            (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -16 [0xfffffffffffffff0])) [3 len+0 S8 A64])
+                (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -16 [0xfffffffffffffff0])) [3 len+0 S8 A64])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "basename-lgpl.c":63:70 -1
+     (nil))
+(code_label 17 16 18 6 10 (nil) [1 uses])
+(note 18 17 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 18 22 6 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [3 len+0 S8 A64])
+            (const_int 1 [0x1]))) "basename-lgpl.c":63:38 -1
+     (nil))
+(jump_insn 22 21 23 6 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) "basename-lgpl.c":63:38 -1
+     (nil)
+ -> 32)
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg:DI 89)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [3 len+0 S8 A64])) "basename-lgpl.c":63:41 -1
+     (nil))
+(insn 25 24 26 7 (parallel [
+            (set (reg:DI 82 [ _1 ])
+                (plus:DI (reg:DI 89)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "basename-lgpl.c":63:41 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [3 len+0 S8 A64])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 26 25 27 7 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 name+0 S8 A64])) "basename-lgpl.c":63:41 -1
+     (nil))
+(insn 27 26 28 7 (parallel [
+            (set (reg/f:DI 83 [ _2 ])
+                (plus:DI (reg:DI 82 [ _1 ])
+                    (reg/f:DI 90)))
+            (clobber (reg:CC 17 flags))
+        ]) "basename-lgpl.c":63:41 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [1 name+0 S8 A64])
+            (reg:DI 82 [ _1 ]))
+        (nil)))
+(insn 28 27 30 7 (set (reg:QI 84 [ _3 ])
+        (mem:QI (reg/f:DI 83 [ _2 ]) [0 *_2+0 S1 A8])) "basename-lgpl.c":63:41 -1
+     (nil))
+(insn 30 28 31 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 84 [ _3 ])
+            (const_int 47 [0x2f]))) "basename-lgpl.c":63:38 -1
+     (nil))
+(jump_insn 31 30 32 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 44)
+            (pc))) "basename-lgpl.c":63:38 806 {*jcc}
+     (nil)
+ -> 44)
+(code_label 32 31 33 8 11 (nil) [1 uses])
+(note 33 32 34 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 37 8 (set (reg:DI 85 [ _10 ])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [3 len+0 S8 A64])) "basename-lgpl.c":74:10 -1
+     (nil))
+(insn 37 34 41 8 (set (reg:DI 86 [ <retval> ])
+        (reg:DI 85 [ _10 ])) "basename-lgpl.c":75:1 -1
+     (nil))
+(insn 41 37 42 8 (set (reg/i:DI 0 ax)
+        (reg:DI 86 [ <retval> ])) "basename-lgpl.c":75:1 -1
+     (nil))
+(insn 42 41 0 8 (use (reg/i:DI 0 ax)) "basename-lgpl.c":75:1 -1
+     (nil))

@@ -1,0 +1,530 @@
+
+;; Function mfile_name_concat (mfile_name_concat, funcdef_no=6, decl_uid=1945, cgraph_uid=7, symbol_order=6)
+
+Partition 6: size 8 align 8
+	p_32
+Partition 5: size 8 align 8
+	p_concat_30
+Partition 4: size 8 align 8
+	baselen_25
+Partition 3: size 8 align 8
+	dirlen_23
+Partition 2: size 8 align 8
+	dirbaselen_22
+Partition 1: size 8 align 8
+	dirbase_21
+Partition 0: size 1 align 1
+	sep_15
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 121.
+Merging block 15 into block 14...
+Merged blocks 14 and 15.
+Merged 14 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [1 dir+0 S8 A64])
+        (reg:DI 5 di [ dir ])) "filenamecat-lgpl.c":48:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [1 base+0 S8 A64])
+        (reg:DI 4 si [ base ])) "filenamecat-lgpl.c":48:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [3 base_in_result+0 S8 A64])
+        (reg:DI 1 dx [ base_in_result ])) "filenamecat-lgpl.c":48:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [1 dir+0 S8 A64])) "filenamecat-lgpl.c":49:25 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (reg:DI 98)) "filenamecat-lgpl.c":49:25 -1
+     (nil))
+(call_insn/i 10 9 11 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("last_component") [flags 0x41]  <function_decl 0x74de1f40e400 last_component>) [0 last_component S1 A8])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":49:25 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 99)
+        (reg:DI 0 ax)) "filenamecat-lgpl.c":49:25 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [1 dirbase+0 S8 A64])
+        (reg:DI 99)) "filenamecat-lgpl.c":49:25 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [1 dirbase+0 S8 A64])) "filenamecat-lgpl.c":50:23 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 5 di)
+        (reg:DI 100)) "filenamecat-lgpl.c":50:23 -1
+     (nil))
+(call_insn/i 15 14 16 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("base_len") [flags 0x41]  <function_decl 0x74de1f40e200 base_len>) [0 base_len S1 A8])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":50:23 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 16 15 17 2 (set (reg:DI 101)
+        (reg:DI 0 ax)) "filenamecat-lgpl.c":50:23 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [2 dirbaselen+0 S8 A64])
+        (reg:DI 101)) "filenamecat-lgpl.c":50:23 -1
+     (nil))
+(insn 18 17 19 2 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [1 dirbase+0 S8 A64])) "filenamecat-lgpl.c":51:27 -1
+     (nil))
+(insn 19 18 20 2 (parallel [
+            (set (reg:DI 82 [ _1 ])
+                (minus:DI (reg/f:DI 102)
+                    (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -72 [0xffffffffffffffb8])) [1 dir+0 S8 A64])))
+            (clobber (reg:CC 17 flags))
+        ]) "filenamecat-lgpl.c":51:27 -1
+     (expr_list:REG_EQUAL (minus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])) [1 dirbase+0 S8 A64])
+            (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -72 [0xffffffffffffffb8])) [1 dir+0 S8 A64]))
+        (nil)))
+(insn 20 19 24 2 (set (reg:DI 83 [ _2 ])
+        (reg:DI 82 [ _1 ])) "filenamecat-lgpl.c":51:27 -1
+     (nil))
+(insn 24 20 25 2 (set (reg:DI 106)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [2 dirbaselen+0 S8 A64])) "filenamecat-lgpl.c":51:10 -1
+     (nil))
+(insn 25 24 26 2 (parallel [
+            (set (reg:DI 105)
+                (plus:DI (reg:DI 83 [ _2 ])
+                    (reg:DI 106)))
+            (clobber (reg:CC 17 flags))
+        ]) "filenamecat-lgpl.c":51:10 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 83 [ _2 ])
+            (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [2 dirbaselen+0 S8 A64]))
+        (nil)))
+(insn 26 25 27 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 dirlen+0 S8 A64])
+        (reg:DI 105)) "filenamecat-lgpl.c":51:10 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [1 base+0 S8 A64])) "filenamecat-lgpl.c":52:20 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 5 di)
+        (reg:DI 107)) "filenamecat-lgpl.c":52:20 -1
+     (nil))
+(call_insn/i 29 28 30 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x74de1f6b7700 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":52:20 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 30 29 31 2 (set (reg:DI 108)
+        (reg:DI 0 ax)) "filenamecat-lgpl.c":52:20 -1
+     (nil))
+(insn 31 30 32 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 baselen+0 S8 A64])
+        (reg:DI 108)) "filenamecat-lgpl.c":52:20 -1
+     (nil))
+(insn 32 31 33 2 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -49 [0xffffffffffffffcf])) [0 sep+0 S1 A8])
+        (const_int 0 [0])) "filenamecat-lgpl.c":53:8 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [2 dirbaselen+0 S8 A64])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":54:6 -1
+     (nil))
+(jump_insn 34 33 35 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 52)
+            (pc))) "filenamecat-lgpl.c":54:6 -1
+     (nil)
+ -> 52)
+(note 35 34 36 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 4 (set (reg:DI 109)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 dirlen+0 S8 A64])) "filenamecat-lgpl.c":57:13 -1
+     (nil))
+(insn 37 36 38 4 (parallel [
+            (set (reg:DI 84 [ _3 ])
+                (plus:DI (reg:DI 109)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "filenamecat-lgpl.c":57:13 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [2 dirlen+0 S8 A64])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 38 37 39 4 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [1 dir+0 S8 A64])) "filenamecat-lgpl.c":57:13 -1
+     (nil))
+(insn 39 38 40 4 (parallel [
+            (set (reg/f:DI 85 [ _4 ])
+                (plus:DI (reg:DI 84 [ _3 ])
+                    (reg/f:DI 110)))
+            (clobber (reg:CC 17 flags))
+        ]) "filenamecat-lgpl.c":57:13 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -72 [0xffffffffffffffb8])) [1 dir+0 S8 A64])
+            (reg:DI 84 [ _3 ]))
+        (nil)))
+(insn 40 39 41 4 (set (reg:QI 86 [ _5 ])
+        (mem:QI (reg/f:DI 85 [ _4 ]) [0 *_4+0 S1 A8])) "filenamecat-lgpl.c":57:13 -1
+     (nil))
+(insn 41 40 42 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 86 [ _5 ])
+            (const_int 47 [0x2f]))) "filenamecat-lgpl.c":57:10 -1
+     (nil))
+(jump_insn 42 41 43 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 60)
+            (pc))) "filenamecat-lgpl.c":57:10 -1
+     (nil)
+ -> 60)
+(note 43 42 44 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 5 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [1 base+0 S8 A64])) "filenamecat-lgpl.c":57:44 -1
+     (nil))
+(insn 45 44 46 5 (set (reg:QI 87 [ _6 ])
+        (mem:QI (reg/f:DI 111) [0 *base_24(D)+0 S1 A8])) "filenamecat-lgpl.c":57:44 -1
+     (nil))
+(insn 46 45 47 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 87 [ _6 ])
+            (const_int 47 [0x2f]))) "filenamecat-lgpl.c":57:39 -1
+     (nil))
+(jump_insn 47 46 48 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 60)
+            (pc))) "filenamecat-lgpl.c":57:39 -1
+     (nil)
+ -> 60)
+(note 48 47 49 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 6 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -49 [0xffffffffffffffcf])) [0 sep+0 S1 A8])
+        (const_int 47 [0x2f])) "filenamecat-lgpl.c":58:13 -1
+     (nil))
+(jump_insn 50 49 51 6 (set (pc)
+        (label_ref 60)) "filenamecat-lgpl.c":58:13 -1
+     (nil)
+ -> 60)
+(barrier 51 50 52)
+(code_label 52 51 53 7 2 (nil) [1 uses])
+(note 53 52 54 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 54 53 55 7 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [1 base+0 S8 A64])) "filenamecat-lgpl.c":60:12 -1
+     (nil))
+(insn 55 54 56 7 (set (reg:QI 88 [ _7 ])
+        (mem:QI (reg/f:DI 112) [0 *base_24(D)+0 S1 A8])) "filenamecat-lgpl.c":60:12 -1
+     (nil))
+(insn 56 55 57 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 88 [ _7 ])
+            (const_int 47 [0x2f]))) "filenamecat-lgpl.c":60:11 -1
+     (nil))
+(jump_insn 57 56 58 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 60)
+            (pc))) "filenamecat-lgpl.c":60:11 -1
+     (nil)
+ -> 60)
+(note 58 57 59 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 60 8 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -49 [0xffffffffffffffcf])) [0 sep+0 S1 A8])
+        (const_int 46 [0x2e])) "filenamecat-lgpl.c":67:11 -1
+     (nil))
+(code_label 60 59 61 9 3 (nil) [4 uses])
+(note 61 60 62 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 62 61 63 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -49 [0xffffffffffffffcf])) [0 sep+0 S1 A8])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":70:42 -1
+     (nil))
+(insn 63 62 64 9 (set (reg:QI 89 [ _8 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) "filenamecat-lgpl.c":70:42 -1
+     (nil))
+(insn 64 63 65 9 (set (reg:DI 90 [ _9 ])
+        (zero_extend:DI (reg:QI 89 [ _8 ]))) "filenamecat-lgpl.c":70:42 -1
+     (nil))
+(insn 65 64 66 9 (set (reg:DI 113)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 dirlen+0 S8 A64])) "filenamecat-lgpl.c":70:35 -1
+     (nil))
+(insn 66 65 67 9 (parallel [
+            (set (reg:DI 91 [ _10 ])
+                (plus:DI (reg:DI 90 [ _9 ])
+                    (reg:DI 113)))
+            (clobber (reg:CC 17 flags))
+        ]) "filenamecat-lgpl.c":70:35 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 90 [ _9 ])
+            (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [2 dirlen+0 S8 A64]))
+        (nil)))
+(insn 67 66 68 9 (set (reg:DI 114)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 baselen+0 S8 A64])) "filenamecat-lgpl.c":70:52 -1
+     (nil))
+(insn 68 67 69 9 (parallel [
+            (set (reg:DI 92 [ _11 ])
+                (plus:DI (reg:DI 91 [ _10 ])
+                    (reg:DI 114)))
+            (clobber (reg:CC 17 flags))
+        ]) "filenamecat-lgpl.c":70:52 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 91 [ _10 ])
+            (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [2 baselen+0 S8 A64]))
+        (nil)))
+(insn 69 68 70 9 (parallel [
+            (set (reg:DI 93 [ _12 ])
+                (plus:DI (reg:DI 92 [ _11 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "filenamecat-lgpl.c":70:20 -1
+     (nil))
+(insn 70 69 71 9 (set (reg:DI 5 di)
+        (reg:DI 93 [ _12 ])) "filenamecat-lgpl.c":70:20 -1
+     (nil))
+(call_insn 71 70 72 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x74de1f6dd800 malloc>) [0 __builtin_malloc S1 A8])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":70:20 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 72 71 73 9 (set (reg/f:DI 115)
+        (reg:DI 0 ax)) "filenamecat-lgpl.c":70:20 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 115)
+        (nil)))
+(insn 73 72 74 9 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 p_concat+0 S8 A64])
+        (reg/f:DI 115)) "filenamecat-lgpl.c":70:20 -1
+     (nil))
+(insn 74 73 75 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [1 p_concat+0 S8 A64])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":73:6 -1
+     (nil))
+(jump_insn 75 74 76 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 80)
+            (pc))) "filenamecat-lgpl.c":73:6 -1
+     (nil)
+ -> 80)
+(note 76 75 77 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 78 10 (set (reg/f:DI 96 [ _16 ])
+        (const_int 0 [0])) "filenamecat-lgpl.c":74:12 -1
+     (nil))
+(jump_insn 78 77 79 10 (set (pc)
+        (label_ref 118)) "filenamecat-lgpl.c":74:12 -1
+     (nil)
+ -> 118)
+(barrier 79 78 80)
+(code_label 80 79 81 11 4 (nil) [1 uses])
+(note 81 80 82 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 82 81 83 11 (set (reg:DI 116)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 dirlen+0 S8 A64])) "filenamecat-lgpl.c":76:7 -1
+     (nil))
+(insn 83 82 84 11 (set (reg:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [1 dir+0 S8 A64])) "filenamecat-lgpl.c":76:7 -1
+     (nil))
+(insn 84 83 85 11 (set (reg:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 p_concat+0 S8 A64])) "filenamecat-lgpl.c":76:7 -1
+     (nil))
+(insn 85 84 86 11 (set (reg:DI 1 dx)
+        (reg:DI 116)) "filenamecat-lgpl.c":76:7 -1
+     (nil))
+(insn 86 85 87 11 (set (reg:DI 4 si)
+        (reg:DI 117)) "filenamecat-lgpl.c":76:7 -1
+     (nil))
+(insn 87 86 88 11 (set (reg:DI 5 di)
+        (reg:DI 118)) "filenamecat-lgpl.c":76:7 -1
+     (nil))
+(call_insn 88 87 89 11 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("mempcpy") [flags 0x41]  <function_decl 0x74de1f6b2d00 mempcpy>) [0 __builtin_mempcpy S1 A8])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":76:7 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 89 88 90 11 (set (reg:DI 119)
+        (reg:DI 0 ax)) "filenamecat-lgpl.c":76:7 -1
+     (nil))
+(insn 90 89 91 11 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])
+        (reg:DI 119)) "filenamecat-lgpl.c":76:7 -1
+     (nil))
+(insn 91 90 92 11 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])) "filenamecat-lgpl.c":77:6 -1
+     (nil))
+(insn 92 91 93 11 (set (reg:QI 121)
+        (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -49 [0xffffffffffffffcf])) [0 sep+0 S1 A8])) "filenamecat-lgpl.c":77:6 -1
+     (nil))
+(insn 93 92 94 11 (set (mem:QI (reg/f:DI 120) [0 *p_32+0 S1 A8])
+        (reg:QI 121)) "filenamecat-lgpl.c":77:6 -1
+     (nil))
+(insn 94 93 95 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -49 [0xffffffffffffffcf])) [0 sep+0 S1 A8])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":78:12 -1
+     (nil))
+(insn 95 94 96 11 (set (reg:QI 94 [ _13 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) "filenamecat-lgpl.c":78:12 -1
+     (nil))
+(insn 96 95 97 11 (set (reg:DI 95 [ _14 ])
+        (zero_extend:DI (reg:QI 94 [ _13 ]))) "filenamecat-lgpl.c":78:12 -1
+     (nil))
+(insn 97 96 98 11 (parallel [
+            (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])
+                (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])
+                    (reg:DI 95 [ _14 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "filenamecat-lgpl.c":78:5 -1
+     (nil))
+(insn 98 97 99 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])) [3 base_in_result+0 S8 A64])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":80:6 -1
+     (nil))
+(jump_insn 99 98 100 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 104)
+            (pc))) "filenamecat-lgpl.c":80:6 -1
+     (nil)
+ -> 104)
+(note 100 99 101 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 101 100 102 12 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [3 base_in_result+0 S8 A64])) "filenamecat-lgpl.c":81:21 -1
+     (nil))
+(insn 102 101 103 12 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])) "filenamecat-lgpl.c":81:21 -1
+     (nil))
+(insn 103 102 104 12 (set (mem/f:DI (reg/f:DI 122) [1 *base_in_result_35(D)+0 S8 A64])
+        (reg/f:DI 123)) "filenamecat-lgpl.c":81:21 -1
+     (nil))
+(code_label 104 103 105 13 6 (nil) [1 uses])
+(note 105 104 106 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 106 105 107 13 (set (reg:DI 124)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 baselen+0 S8 A64])) "filenamecat-lgpl.c":83:7 -1
+     (nil))
+(insn 107 106 108 13 (set (reg:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [1 base+0 S8 A64])) "filenamecat-lgpl.c":83:7 -1
+     (nil))
+(insn 108 107 109 13 (set (reg:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])) "filenamecat-lgpl.c":83:7 -1
+     (nil))
+(insn 109 108 110 13 (set (reg:DI 1 dx)
+        (reg:DI 124)) "filenamecat-lgpl.c":83:7 -1
+     (nil))
+(insn 110 109 111 13 (set (reg:DI 4 si)
+        (reg:DI 125)) "filenamecat-lgpl.c":83:7 -1
+     (nil))
+(insn 111 110 112 13 (set (reg:DI 5 di)
+        (reg:DI 126)) "filenamecat-lgpl.c":83:7 -1
+     (nil))
+(call_insn 112 111 113 13 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("mempcpy") [flags 0x41]  <function_decl 0x74de1f6b2d00 mempcpy>) [0 __builtin_mempcpy S1 A8])
+            (const_int 0 [0]))) "filenamecat-lgpl.c":83:7 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 113 112 114 13 (set (reg:DI 127)
+        (reg:DI 0 ax)) "filenamecat-lgpl.c":83:7 -1
+     (nil))
+(insn 114 113 115 13 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])
+        (reg:DI 127)) "filenamecat-lgpl.c":83:7 -1
+     (nil))
+(insn 115 114 116 13 (set (reg/f:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 p+0 S8 A64])) "filenamecat-lgpl.c":84:6 -1
+     (nil))
+(insn 116 115 117 13 (set (mem:QI (reg/f:DI 128) [0 *p_38+0 S1 A8])
+        (const_int 0 [0])) "filenamecat-lgpl.c":84:6 -1
+     (nil))
+(insn 117 116 118 13 (set (reg/f:DI 96 [ _16 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 p_concat+0 S8 A64])) "filenamecat-lgpl.c":86:10 -1
+     (nil))
+(code_label 118 117 119 14 5 (nil) [1 uses])
+(note 119 118 120 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 120 119 124 14 (set (reg/f:DI 97 [ <retval> ])
+        (reg/f:DI 96 [ _16 ])) "filenamecat-lgpl.c":87:1 -1
+     (nil))
+(insn 124 120 125 14 (set (reg/i:DI 0 ax)
+        (reg/f:DI 97 [ <retval> ])) "filenamecat-lgpl.c":87:1 -1
+     (nil))
+(insn 125 124 0 14 (use (reg/i:DI 0 ax)) "filenamecat-lgpl.c":87:1 -1
+     (nil))

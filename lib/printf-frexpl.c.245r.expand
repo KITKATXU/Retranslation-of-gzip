@@ -1,0 +1,1059 @@
+
+;; Function printf_frexpl (printf_frexpl, funcdef_no=0, decl_uid=1944, cgraph_uid=1, symbol_order=0)
+
+Partition 10: size 1024 align 16
+	powh
+Partition 9: size 1024 align 16
+	pow2
+Partition 5: size 16 align 16
+	powh_i_33
+Partition 4: size 16 align 16
+	pow2_i_32
+Partition 3: size 16 align 16
+	powh_i_31
+Partition 2: size 16 align 16
+	pow2_i_30
+Partition 1: size 4 align 4
+	i_25
+Partition 0: size 4 align 4
+	exponent_19
+Partition 6: size 2 align 2
+	oldcw_41
+Partition 11: size 2 align 2
+	_ncw	_cw	_ncw
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+Purged non-fallthru edges from bb 30
+Purged non-fallthru edges from bb 32
+Purged non-fallthru edges from bb 34
+Purged non-fallthru edges from bb 36
+Purged non-fallthru edges from bb 38
+Purged non-fallthru edges from bb 40
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->5 redirected to 6
+Forwarding edge 2->4 to 14 failed.
+Forwarding edge 2->4 to 14 failed.
+deleting block 5
+Edge 7->9 redirected to 10
+Forwarding edge 7->8 to 11 failed.
+Forwarding edge 7->8 to 11 failed.
+Redirecting jump 33 from 11 to 32.
+deleting block 9
+deleting block 11
+Removing jump 45.
+Deleted label in block 12.
+deleting block 13
+Forwarding edge 15->16 to 22 failed.
+Edge 17->19 redirected to 22
+Forwarding edge 17->18 to 21 failed.
+Forwarding edge 17->18 to 21 failed.
+deleting block 19
+deleting block 20
+Removing jump 115.
+Deleted label in block 21.
+Edge 22->24 redirected to 25
+Forwarding edge 22->23 to 32 failed.
+Forwarding edge 22->23 to 32 failed.
+deleting block 24
+Edge 27->29 redirected to 32
+deleting block 29
+deleting block 30
+Removing jump 188.
+Edge 33->35 redirected to 36
+deleting block 35
+Merging block 39 into block 38...
+Merged blocks 38 and 39.
+Merged 38 and 39 without moving.
+Removing jump 251.
+Merging block 40 into block 38...
+Merged blocks 38 and 40.
+Merged 38 and 40 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 14 failed.
+Forwarding edge 15->16 to 22 failed.
+Forwarding edge 17->18 to 21 failed.
+Forwarding edge 22->23 to 32 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2152 [0xfffffffffffff798])) [5 expptr+0 S8 A64])
+        (reg:DI 5 di [ expptr ])) "printf-frexp.c":68:1 -1
+     (nil))
+(note 3 2 4 2 NOTE_INSN_FUNCTION_BEG)
+(insn 4 3 7 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [1 D.5963+0 S8 A64])
+                (unspec:DI [
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":68:1 -1
+     (nil))
+(insn 7 4 8 2 (parallel [
+            (set (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -2140 [0xfffffffffffff7a4])) [4 MEM[(short unsigned int *)_84]+0 S2 A32])
+                (asm_operands/v:HI ("fnstcw %0") ("=m") 0 []
+                     []
+                     [] printf-frexp.c:72))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":72:3 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:HI 94 [ _39 ])
+        (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2140 [0xfffffffffffff7a4])) [4 MEM[(short unsigned int *)_84]+0 S2 A32])) "printf-frexp.c":72:3 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2138 [0xfffffffffffff7a6])) [4 oldcw+0 S2 A16])
+        (reg:HI 94 [ _39 ])) "printf-frexp.c":72:3 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:HI 97)
+        (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2138 [0xfffffffffffff7a6])) [4 oldcw+0 S2 A16])) "printf-frexp.c":72:3 -1
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg:HI 82 [ _1 ])
+                (ior:HI (reg:HI 97)
+                    (const_int 768 [0x300])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":72:3 -1
+     (expr_list:REG_EQUAL (ior:HI (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2138 [0xfffffffffffff7a6])) [4 oldcw+0 S2 A16])
+            (const_int 768 [0x300]))
+        (nil)))
+(insn 12 11 13 2 (set (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2140 [0xfffffffffffff7a4])) [4 MEM[(short unsigned int *)_84]+0 S2 A32])
+        (reg:HI 82 [ _1 ])) "printf-frexp.c":72:3 -1
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (asm_operands/v ("fldcw %0") ("") 0 [
+                    (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2140 [0xfffffffffffff7a4])) [4 MEM[(short unsigned int *)_84]+0 S2 A32])
+                ]
+                 [
+                    (asm_input:HI ("m") printf-frexp.c:72)
+                ]
+                 [] printf-frexp.c:72)
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":72:3 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+        (const_int 0 [0])) "printf-frexp.c":94:14 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:XF 98)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":95:8 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:XF 99)
+        (mem/u/c:XF (symbol_ref/u:DI ("*.LC0") [flags 0x2]) [0  S16 A128])) "printf-frexp.c":95:8 -1
+     (expr_list:REG_EQUAL (const_double:XF 1.0e+0 [0x0.8p+1])
+        (nil)))
+(insn 17 16 18 2 (set (reg:CCFP 17 flags)
+        (compare:CCFP (reg:XF 98)
+            (reg:XF 99))) "printf-frexp.c":95:8 -1
+     (nil))
+(jump_insn 18 17 262 2 (set (pc)
+        (if_then_else (ge (reg:CCFP 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 276)
+            (pc))) "printf-frexp.c":95:8 806 {*jcc}
+     (nil)
+ -> 276)
+(note 262 18 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 19 262 20 4 (set (pc)
+        (label_ref 81)) "printf-frexp.c":95:8 -1
+     (nil)
+ -> 81)
+(barrier 20 19 276)
+(code_label 276 20 22 6 24 (nil) [1 uses])
+(note 22 276 23 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 6 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+        (const_int 0 [0])) "printf-frexp.c":104:18 -1
+     (nil))
+(insn 24 23 25 6 (set (reg:XF 100)
+        (mem/u/c:XF (symbol_ref/u:DI ("*.LC1") [flags 0x2]) [0  S16 A128])) "printf-frexp.c":104:30 -1
+     (nil))
+(insn 25 24 26 6 (set (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2128 [0xfffffffffffff7b0])) [2 pow2_i+0 S16 A128])
+        (reg:XF 100)) "printf-frexp.c":104:30 -1
+     (nil))
+(insn 26 25 27 6 (set (reg:XF 101)
+        (mem/u/c:XF (symbol_ref/u:DI ("*.LC2") [flags 0x2]) [0  S16 A128])) "printf-frexp.c":104:48 -1
+     (nil))
+(insn 27 26 74 6 (set (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2112 [0xfffffffffffff7c0])) [2 powh_i+0 S16 A128])
+        (reg:XF 101)) "printf-frexp.c":104:48 -1
+     (nil))
+(code_label 74 27 28 7 8 (nil) [1 uses])
+(note 28 74 29 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 7 (set (reg:XF 102)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":108:18 -1
+     (nil))
+(insn 30 29 31 7 (set (reg:XF 103)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2128 [0xfffffffffffff7b0])) [2 pow2_i+0 S16 A128])) "printf-frexp.c":108:18 -1
+     (nil))
+(insn 31 30 32 7 (set (reg:CCFP 17 flags)
+        (compare:CCFP (reg:XF 102)
+            (reg:XF 103))) "printf-frexp.c":108:18 -1
+     (nil))
+(jump_insn 32 31 264 7 (set (pc)
+        (if_then_else (ge (reg:CCFP 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 277)
+            (pc))) "printf-frexp.c":108:18 806 {*jcc}
+     (nil)
+ -> 277)
+(note 264 32 33 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 33 264 34 8 (set (pc)
+        (label_ref:DI 201)) "printf-frexp.c":108:18 807 {jump}
+     (nil)
+ -> 201)
+(barrier 34 33 277)
+(code_label 277 34 36 10 25 (nil) [1 uses])
+(note 36 277 37 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 10 (set (reg:SI 104)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":110:34 -1
+     (nil))
+(insn 38 37 39 10 (set (reg:SI 105)
+        (const_int 1 [0x1])) "printf-frexp.c":110:34 -1
+     (nil))
+(insn 39 38 40 10 (parallel [
+            (set (reg:SI 83 [ _2 ])
+                (ashift:SI (reg:SI 105)
+                    (subreg:QI (reg:SI 104) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":110:34 -1
+     (nil))
+(insn 40 39 41 10 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+                    (reg:SI 83 [ _2 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":110:28 -1
+     (nil))
+(insn 41 40 42 10 (set (reg:XF 107)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":111:21 -1
+     (nil))
+(insn 42 41 43 10 (set (reg:XF 108)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2112 [0xfffffffffffff7c0])) [2 powh_i+0 S16 A128])) "printf-frexp.c":111:21 -1
+     (nil))
+(insn 43 42 44 10 (set (reg:XF 106)
+        (mult:XF (reg:XF 107)
+            (reg:XF 108))) "printf-frexp.c":111:21 -1
+     (nil))
+(insn 44 43 52 10 (set (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])
+        (reg:XF 106)) "printf-frexp.c":111:21 -1
+     (nil))
+(note 52 44 53 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 12 (set (reg:SI 110)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":116:23 -1
+     (nil))
+(insn 54 53 55 12 (set (reg:DI 109)
+        (sign_extend:DI (reg:SI 110))) "printf-frexp.c":116:23 -1
+     (nil))
+(insn 55 54 56 12 (parallel [
+            (set (reg:DI 111)
+                (ashift:DI (reg:DI 109)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":116:23 -1
+     (nil))
+(insn 56 55 57 12 (parallel [
+            (set (reg:DI 112)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (reg:DI 111)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":116:23 -1
+     (nil))
+(insn 57 56 58 12 (parallel [
+            (set (reg/f:DI 113)
+                (plus:DI (reg:DI 112)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":116:23 -1
+     (nil))
+(insn 58 57 59 12 (set (reg:XF 114)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2128 [0xfffffffffffff7b0])) [2 pow2_i+0 S16 A128])) "printf-frexp.c":116:23 -1
+     (nil))
+(insn 59 58 60 12 (set (mem:XF (reg/f:DI 113) [2 pow2[i_25]+0 S16 A128])
+        (reg:XF 114)) "printf-frexp.c":116:23 -1
+     (nil))
+(insn 60 59 61 12 (set (reg:SI 116)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":117:23 -1
+     (nil))
+(insn 61 60 62 12 (set (reg:DI 115)
+        (sign_extend:DI (reg:SI 116))) "printf-frexp.c":117:23 -1
+     (nil))
+(insn 62 61 63 12 (parallel [
+            (set (reg:DI 117)
+                (ashift:DI (reg:DI 115)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":117:23 -1
+     (nil))
+(insn 63 62 64 12 (parallel [
+            (set (reg:DI 118)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (reg:DI 117)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":117:23 -1
+     (nil))
+(insn 64 63 65 12 (parallel [
+            (set (reg/f:DI 119)
+                (plus:DI (reg:DI 118)
+                    (const_int -1040 [0xfffffffffffffbf0])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":117:23 -1
+     (nil))
+(insn 65 64 66 12 (set (reg:XF 120)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2112 [0xfffffffffffff7c0])) [2 powh_i+0 S16 A128])) "printf-frexp.c":117:23 -1
+     (nil))
+(insn 66 65 67 12 (set (mem:XF (reg/f:DI 119) [2 powh[i_25]+0 S16 A128])
+        (reg:XF 120)) "printf-frexp.c":117:23 -1
+     (nil))
+(insn 67 66 68 12 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":106:17 -1
+     (nil))
+(insn 68 67 69 12 (set (reg:XF 122)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2128 [0xfffffffffffff7b0])) [2 pow2_i+0 S16 A128])) "printf-frexp.c":106:28 -1
+     (nil))
+(insn 69 68 70 12 (set (reg:XF 121)
+        (mult:XF (reg:XF 122)
+            (reg:XF 122))) "printf-frexp.c":106:28 -1
+     (nil))
+(insn 70 69 71 12 (set (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2128 [0xfffffffffffff7b0])) [2 pow2_i+0 S16 A128])
+        (reg:XF 121)) "printf-frexp.c":106:28 -1
+     (nil))
+(insn 71 70 72 12 (set (reg:XF 124)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2112 [0xfffffffffffff7c0])) [2 powh_i+0 S16 A128])) "printf-frexp.c":106:54 -1
+     (nil))
+(insn 72 71 73 12 (set (reg:XF 123)
+        (mult:XF (reg:XF 124)
+            (reg:XF 124))) "printf-frexp.c":106:54 -1
+     (nil))
+(insn 73 72 75 12 (set (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2112 [0xfffffffffffff7c0])) [2 powh_i+0 S16 A128])
+        (reg:XF 123)) "printf-frexp.c":106:54 -1
+     (nil))
+(jump_insn 75 73 76 12 (set (pc)
+        (label_ref 74)) "printf-frexp.c":108:18 -1
+     (nil)
+ -> 74)
+(barrier 76 75 81)
+(code_label 81 76 82 14 2 (nil) [1 uses])
+(note 82 81 83 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 14 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+        (const_int 0 [0])) "printf-frexp.c":131:18 -1
+     (nil))
+(insn 84 83 85 14 (set (reg:XF 125)
+        (mem/u/c:XF (symbol_ref/u:DI ("*.LC1") [flags 0x2]) [0  S16 A128])) "printf-frexp.c":131:30 -1
+     (nil))
+(insn 85 84 86 14 (set (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2096 [0xfffffffffffff7d0])) [2 pow2_i+0 S16 A128])
+        (reg:XF 125)) "printf-frexp.c":131:30 -1
+     (nil))
+(insn 86 85 87 14 (set (reg:XF 126)
+        (mem/u/c:XF (symbol_ref/u:DI ("*.LC2") [flags 0x2]) [0  S16 A128])) "printf-frexp.c":131:48 -1
+     (nil))
+(insn 87 86 144 14 (set (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2080 [0xfffffffffffff7e0])) [2 powh_i+0 S16 A128])
+        (reg:XF 126)) "printf-frexp.c":131:48 -1
+     (nil))
+(code_label 144 87 88 15 14 (nil) [1 uses])
+(note 88 144 89 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 89 88 90 15 (set (reg:SI 127)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":135:33 -1
+     (nil))
+(insn 90 89 91 15 (set (reg:SI 128)
+        (const_int 1 [0x1])) "printf-frexp.c":135:33 -1
+     (nil))
+(insn 91 90 92 15 (parallel [
+            (set (reg:SI 84 [ _3 ])
+                (ashift:SI (reg:SI 128)
+                    (subreg:QI (reg:SI 127) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":135:33 -1
+     (nil))
+(insn 92 91 93 15 (set (reg:SI 129)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])) "printf-frexp.c":135:28 -1
+     (nil))
+(insn 93 92 96 15 (parallel [
+            (set (reg:SI 85 [ _4 ])
+                (minus:SI (reg:SI 129)
+                    (reg:SI 84 [ _3 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":135:28 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+            (reg:SI 84 [ _3 ]))
+        (nil)))
+(insn 96 93 97 15 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 85 [ _4 ])
+            (const_int -16382 [0xffffffffffffc002]))) "printf-frexp.c":135:18 -1
+     (nil))
+(jump_insn 97 96 98 15 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 101)
+            (pc))) "printf-frexp.c":135:18 -1
+     (nil)
+ -> 101)
+(note 98 97 99 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 99 98 100 16 (set (pc)
+        (label_ref 147)) "printf-frexp.c":136:17 -1
+     (nil)
+ -> 147)
+(barrier 100 99 101)
+(code_label 101 100 102 17 10 (nil) [1 uses])
+(note 102 101 103 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 103 102 104 17 (set (reg:SI 130)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":138:30 -1
+     (nil))
+(insn 104 103 105 17 (set (reg:SI 131)
+        (const_int 1 [0x1])) "printf-frexp.c":138:30 -1
+     (nil))
+(insn 105 104 106 17 (parallel [
+            (set (reg:SI 86 [ _5 ])
+                (ashift:SI (reg:SI 131)
+                    (subreg:QI (reg:SI 130) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":138:30 -1
+     (nil))
+(insn 106 105 107 17 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+                (minus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+                    (reg:SI 86 [ _5 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":138:24 -1
+     (nil))
+(insn 107 106 108 17 (set (reg:XF 133)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":139:17 -1
+     (nil))
+(insn 108 107 109 17 (set (reg:XF 134)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2096 [0xfffffffffffff7d0])) [2 pow2_i+0 S16 A128])) "printf-frexp.c":139:17 -1
+     (nil))
+(insn 109 108 110 17 (set (reg:XF 132)
+        (mult:XF (reg:XF 133)
+            (reg:XF 134))) "printf-frexp.c":139:17 -1
+     (nil))
+(insn 110 109 111 17 (set (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])
+        (reg:XF 132)) "printf-frexp.c":139:17 -1
+     (nil))
+(insn 111 110 112 17 (set (reg:XF 135)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":140:18 -1
+     (nil))
+(insn 112 111 113 17 (set (reg:XF 136)
+        (mem/u/c:XF (symbol_ref/u:DI ("*.LC0") [flags 0x2]) [0  S16 A128])) "printf-frexp.c":140:18 -1
+     (expr_list:REG_EQUAL (const_double:XF 1.0e+0 [0x0.8p+1])
+        (nil)))
+(insn 113 112 114 17 (set (reg:CCFP 17 flags)
+        (compare:CCFP (reg:XF 135)
+            (reg:XF 136))) "printf-frexp.c":140:18 -1
+     (nil))
+(jump_insn 114 113 266 17 (set (pc)
+        (if_then_else (ge (reg:CCFP 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 147)
+            (pc))) "printf-frexp.c":140:18 806 {*jcc}
+     (nil)
+ -> 147)
+(note 266 114 122 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(note 122 266 123 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 123 122 124 21 (set (reg:SI 138)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":143:23 -1
+     (nil))
+(insn 124 123 125 21 (set (reg:DI 137)
+        (sign_extend:DI (reg:SI 138))) "printf-frexp.c":143:23 -1
+     (nil))
+(insn 125 124 126 21 (parallel [
+            (set (reg:DI 139)
+                (ashift:DI (reg:DI 137)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":143:23 -1
+     (nil))
+(insn 126 125 127 21 (parallel [
+            (set (reg:DI 140)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (reg:DI 139)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":143:23 -1
+     (nil))
+(insn 127 126 128 21 (parallel [
+            (set (reg/f:DI 141)
+                (plus:DI (reg:DI 140)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":143:23 -1
+     (nil))
+(insn 128 127 129 21 (set (reg:XF 142)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2096 [0xfffffffffffff7d0])) [2 pow2_i+0 S16 A128])) "printf-frexp.c":143:23 -1
+     (nil))
+(insn 129 128 130 21 (set (mem:XF (reg/f:DI 141) [2 pow2[i_26]+0 S16 A128])
+        (reg:XF 142)) "printf-frexp.c":143:23 -1
+     (nil))
+(insn 130 129 131 21 (set (reg:SI 144)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":144:23 -1
+     (nil))
+(insn 131 130 132 21 (set (reg:DI 143)
+        (sign_extend:DI (reg:SI 144))) "printf-frexp.c":144:23 -1
+     (nil))
+(insn 132 131 133 21 (parallel [
+            (set (reg:DI 145)
+                (ashift:DI (reg:DI 143)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":144:23 -1
+     (nil))
+(insn 133 132 134 21 (parallel [
+            (set (reg:DI 146)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (reg:DI 145)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":144:23 -1
+     (nil))
+(insn 134 133 135 21 (parallel [
+            (set (reg/f:DI 147)
+                (plus:DI (reg:DI 146)
+                    (const_int -1040 [0xfffffffffffffbf0])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":144:23 -1
+     (nil))
+(insn 135 134 136 21 (set (reg:XF 148)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2080 [0xfffffffffffff7e0])) [2 powh_i+0 S16 A128])) "printf-frexp.c":144:23 -1
+     (nil))
+(insn 136 135 137 21 (set (mem:XF (reg/f:DI 147) [2 powh[i_26]+0 S16 A128])
+        (reg:XF 148)) "printf-frexp.c":144:23 -1
+     (nil))
+(insn 137 136 138 21 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":133:17 -1
+     (nil))
+(insn 138 137 139 21 (set (reg:XF 150)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2096 [0xfffffffffffff7d0])) [2 pow2_i+0 S16 A128])) "printf-frexp.c":133:28 -1
+     (nil))
+(insn 139 138 140 21 (set (reg:XF 149)
+        (mult:XF (reg:XF 150)
+            (reg:XF 150))) "printf-frexp.c":133:28 -1
+     (nil))
+(insn 140 139 141 21 (set (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2096 [0xfffffffffffff7d0])) [2 pow2_i+0 S16 A128])
+        (reg:XF 149)) "printf-frexp.c":133:28 -1
+     (nil))
+(insn 141 140 142 21 (set (reg:XF 152)
+        (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2080 [0xfffffffffffff7e0])) [2 powh_i+0 S16 A128])) "printf-frexp.c":133:54 -1
+     (nil))
+(insn 142 141 143 21 (set (reg:XF 151)
+        (mult:XF (reg:XF 152)
+            (reg:XF 152))) "printf-frexp.c":133:54 -1
+     (nil))
+(insn 143 142 145 21 (set (mem/c:XF (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2080 [0xfffffffffffff7e0])) [2 powh_i+0 S16 A128])
+        (reg:XF 151)) "printf-frexp.c":133:54 -1
+     (nil))
+(jump_insn 145 143 146 21 (set (pc)
+        (label_ref 144)) "printf-frexp.c":135:18 -1
+     (nil)
+ -> 144)
+(barrier 146 145 147)
+(code_label 147 146 148 22 11 (nil) [2 uses])
+(note 148 147 149 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 149 148 150 22 (set (reg:XF 153)
+        (mem/u/c:XF (symbol_ref/u:DI ("*.LC0") [flags 0x2]) [0  S16 A128])) "printf-frexp.c":150:12 -1
+     (expr_list:REG_EQUAL (const_double:XF 1.0e+0 [0x0.8p+1])
+        (nil)))
+(insn 150 149 151 22 (set (reg:XF 154)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":150:12 -1
+     (nil))
+(insn 151 150 152 22 (set (reg:CCFP 17 flags)
+        (compare:CCFP (reg:XF 153)
+            (reg:XF 154))) "printf-frexp.c":150:12 -1
+     (nil))
+(jump_insn 152 151 268 22 (set (pc)
+        (if_then_else (gt (reg:CCFP 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 278)
+            (pc))) "printf-frexp.c":150:12 806 {*jcc}
+     (nil)
+ -> 278)
+(note 268 152 153 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 153 268 154 23 (set (pc)
+        (label_ref 201)) "printf-frexp.c":150:12 -1
+     (nil)
+ -> 201)
+(barrier 154 153 278)
+(code_label 278 154 156 25 26 (nil) [1 uses])
+(note 156 278 157 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 157 156 158 25 (set (pc)
+        (label_ref 194)) "printf-frexp.c":153:17 -1
+     (nil)
+ -> 194)
+(barrier 158 157 196)
+(code_label 196 158 159 26 18 (nil) [1 uses])
+(note 159 196 160 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 26 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":155:16 -1
+     (nil))
+(insn 161 160 162 26 (set (reg:SI 155)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":156:33 -1
+     (nil))
+(insn 162 161 163 26 (set (reg:SI 156)
+        (const_int 1 [0x1])) "printf-frexp.c":156:33 -1
+     (nil))
+(insn 163 162 164 26 (parallel [
+            (set (reg:SI 87 [ _6 ])
+                (ashift:SI (reg:SI 156)
+                    (subreg:QI (reg:SI 155) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":156:33 -1
+     (nil))
+(insn 164 163 165 26 (set (reg:SI 157)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])) "printf-frexp.c":156:28 -1
+     (nil))
+(insn 165 164 168 26 (parallel [
+            (set (reg:SI 88 [ _7 ])
+                (minus:SI (reg:SI 157)
+                    (reg:SI 87 [ _6 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":156:28 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+            (reg:SI 87 [ _6 ]))
+        (nil)))
+(insn 168 165 169 26 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 88 [ _7 ])
+            (const_int -16382 [0xffffffffffffc002]))) "printf-frexp.c":156:18 -1
+     (nil))
+(jump_insn 169 168 170 26 (set (pc)
+        (if_then_else (lt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 194)
+            (pc))) "printf-frexp.c":156:18 -1
+     (nil)
+ -> 194)
+(note 170 169 171 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 171 170 172 27 (set (reg:SI 158)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":158:34 -1
+     (nil))
+(insn 172 171 173 27 (set (reg:SI 159)
+        (const_int 1 [0x1])) "printf-frexp.c":158:34 -1
+     (nil))
+(insn 173 172 174 27 (parallel [
+            (set (reg:SI 89 [ _8 ])
+                (ashift:SI (reg:SI 159)
+                    (subreg:QI (reg:SI 158) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":158:34 -1
+     (nil))
+(insn 174 173 175 27 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+                (minus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+                    (reg:SI 89 [ _8 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":158:28 -1
+     (nil))
+(insn 175 174 176 27 (set (reg:SI 161)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":159:28 -1
+     (nil))
+(insn 176 175 177 27 (set (reg:DI 160)
+        (sign_extend:DI (reg:SI 161))) "printf-frexp.c":159:28 -1
+     (nil))
+(insn 177 176 178 27 (parallel [
+            (set (reg:DI 162)
+                (ashift:DI (reg:DI 160)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":159:28 -1
+     (nil))
+(insn 178 177 179 27 (parallel [
+            (set (reg:DI 163)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (reg:DI 162)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":159:28 -1
+     (nil))
+(insn 179 178 180 27 (parallel [
+            (set (reg/f:DI 164)
+                (plus:DI (reg:DI 163)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":159:28 -1
+     (nil))
+(insn 180 179 181 27 (set (reg:XF 90 [ _9 ])
+        (mem:XF (reg/f:DI 164) [2 pow2[i_56]+0 S16 A128])) "printf-frexp.c":159:28 -1
+     (nil))
+(insn 181 180 182 27 (set (reg:XF 166)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":159:21 -1
+     (nil))
+(insn 182 181 183 27 (set (reg:XF 165)
+        (mult:XF (reg:XF 166)
+            (reg:XF 90 [ _9 ]))) "printf-frexp.c":159:21 -1
+     (nil))
+(insn 183 182 184 27 (set (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])
+        (reg:XF 165)) "printf-frexp.c":159:21 -1
+     (nil))
+(insn 184 183 185 27 (set (reg:XF 167)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":160:22 -1
+     (nil))
+(insn 185 184 186 27 (set (reg:XF 168)
+        (mem/u/c:XF (symbol_ref/u:DI ("*.LC0") [flags 0x2]) [0  S16 A128])) "printf-frexp.c":160:22 -1
+     (expr_list:REG_EQUAL (const_double:XF 1.0e+0 [0x0.8p+1])
+        (nil)))
+(insn 186 185 187 27 (set (reg:CCFP 17 flags)
+        (compare:CCFP (reg:XF 167)
+            (reg:XF 168))) "printf-frexp.c":160:22 -1
+     (nil))
+(jump_insn 187 186 270 27 (set (pc)
+        (if_then_else (ge (reg:CCFP 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 201)
+            (pc))) "printf-frexp.c":160:22 806 {*jcc}
+     (nil)
+ -> 201)
+(note 270 187 194 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(code_label 194 270 195 31 16 (nil) [2 uses])
+(note 195 194 199 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 199 195 200 31 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+            (const_int 0 [0]))) "printf-frexp.c":153:20 -1
+     (nil))
+(jump_insn 200 199 201 31 (set (pc)
+        (if_then_else (gt (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 196)
+            (pc))) "printf-frexp.c":153:20 -1
+     (nil)
+ -> 196)
+(code_label 201 200 202 32 9 (nil) [3 uses])
+(note 202 201 203 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 203 202 204 32 (set (pc)
+        (label_ref 233)) "printf-frexp.c":172:11 -1
+     (nil)
+ -> 233)
+(barrier 204 203 235)
+(code_label 235 204 205 33 21 (nil) [1 uses])
+(note 205 235 206 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 206 205 207 33 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":174:10 -1
+     (nil))
+(insn 207 206 208 33 (set (reg:SI 170)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":175:22 -1
+     (nil))
+(insn 208 207 209 33 (set (reg:DI 169)
+        (sign_extend:DI (reg:SI 170))) "printf-frexp.c":175:22 -1
+     (nil))
+(insn 209 208 210 33 (parallel [
+            (set (reg:DI 171)
+                (ashift:DI (reg:DI 169)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":175:22 -1
+     (nil))
+(insn 210 209 211 33 (parallel [
+            (set (reg:DI 172)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (reg:DI 171)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":175:22 -1
+     (nil))
+(insn 211 210 212 33 (parallel [
+            (set (reg/f:DI 173)
+                (plus:DI (reg:DI 172)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":175:22 -1
+     (nil))
+(insn 212 211 213 33 (set (reg:XF 91 [ _10 ])
+        (mem:XF (reg/f:DI 173) [2 pow2[i_76]+0 S16 A128])) "printf-frexp.c":175:22 -1
+     (nil))
+(insn 213 212 214 33 (set (reg:XF 174)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":175:12 -1
+     (nil))
+(insn 214 213 215 33 (set (reg:CCFP 17 flags)
+        (compare:CCFP (reg:XF 174)
+            (reg:XF 91 [ _10 ]))) "printf-frexp.c":175:12 -1
+     (nil))
+(jump_insn 215 214 272 33 (set (pc)
+        (if_then_else (ge (reg:CCFP 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 279)
+            (pc))) "printf-frexp.c":175:12 806 {*jcc}
+     (nil)
+ -> 279)
+(note 272 215 216 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 216 272 217 34 (set (pc)
+        (label_ref 233)) "printf-frexp.c":175:12 -1
+     (nil)
+ -> 233)
+(barrier 217 216 279)
+(code_label 279 217 219 36 27 (nil) [1 uses])
+(note 219 279 220 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 220 219 221 36 (set (reg:SI 175)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":177:28 -1
+     (nil))
+(insn 221 220 222 36 (set (reg:SI 176)
+        (const_int 1 [0x1])) "printf-frexp.c":177:28 -1
+     (nil))
+(insn 222 221 223 36 (parallel [
+            (set (reg:SI 92 [ _11 ])
+                (ashift:SI (reg:SI 176)
+                    (subreg:QI (reg:SI 175) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":177:28 -1
+     (nil))
+(insn 223 222 224 36 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])
+                    (reg:SI 92 [ _11 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":177:22 -1
+     (nil))
+(insn 224 223 225 36 (set (reg:SI 178)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])) "printf-frexp.c":178:22 -1
+     (nil))
+(insn 225 224 226 36 (set (reg:DI 177)
+        (sign_extend:DI (reg:SI 178))) "printf-frexp.c":178:22 -1
+     (nil))
+(insn 226 225 227 36 (parallel [
+            (set (reg:DI 179)
+                (ashift:DI (reg:DI 177)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":178:22 -1
+     (nil))
+(insn 227 226 228 36 (parallel [
+            (set (reg:DI 180)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (reg:DI 179)))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":178:22 -1
+     (nil))
+(insn 228 227 229 36 (parallel [
+            (set (reg/f:DI 181)
+                (plus:DI (reg:DI 180)
+                    (const_int -1040 [0xfffffffffffffbf0])))
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":178:22 -1
+     (nil))
+(insn 229 228 230 36 (set (reg:XF 93 [ _12 ])
+        (mem:XF (reg/f:DI 181) [2 powh[i_76]+0 S16 A128])) "printf-frexp.c":178:22 -1
+     (nil))
+(insn 230 229 231 36 (set (reg:XF 183)
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":178:15 -1
+     (nil))
+(insn 231 230 232 36 (set (reg:XF 182)
+        (mult:XF (reg:XF 183)
+            (reg:XF 93 [ _12 ]))) "printf-frexp.c":178:15 -1
+     (nil))
+(insn 232 231 233 36 (set (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])
+        (reg:XF 182)) "printf-frexp.c":178:15 -1
+     (nil))
+(code_label 233 232 234 37 19 (nil) [2 uses])
+(note 234 233 238 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 238 234 239 37 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2132 [0xfffffffffffff7ac])) [3 i+0 S4 A32])
+            (const_int 0 [0]))) "printf-frexp.c":172:14 -1
+     (nil))
+(jump_insn 239 238 240 37 (set (pc)
+        (if_then_else (gt (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 235)
+            (pc))) "printf-frexp.c":172:14 -1
+     (nil)
+ -> 235)
+(note 240 239 241 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 241 240 242 38 (set (reg:HI 184)
+        (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2138 [0xfffffffffffff7a6])) [4 oldcw+0 S2 A16])) "printf-frexp.c":186:3 -1
+     (nil))
+(insn 242 241 243 38 (set (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2140 [0xfffffffffffff7a4])) [4 MEM[(short unsigned int *)_84]+0 S2 A32])
+        (reg:HI 184)) "printf-frexp.c":186:3 -1
+     (nil))
+(insn 243 242 244 38 (parallel [
+            (asm_operands/v ("fldcw %0") ("") 0 [
+                    (mem/c:HI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -2140 [0xfffffffffffff7a4])) [4 MEM[(short unsigned int *)_84]+0 S2 A32])
+                ]
+                 [
+                    (asm_input:HI ("m") printf-frexp.c:186)
+                ]
+                 [] printf-frexp.c:186)
+            (clobber (reg:CC 17 flags))
+        ]) "printf-frexp.c":186:3 -1
+     (nil))
+(insn 244 243 245 38 (set (reg/f:DI 185)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2152 [0xfffffffffffff798])) [5 expptr+0 S8 A64])) "printf-frexp.c":188:11 -1
+     (nil))
+(insn 245 244 246 38 (set (reg:SI 186)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2136 [0xfffffffffffff7a8])) [3 exponent+0 S4 A64])) "printf-frexp.c":188:11 -1
+     (nil))
+(insn 246 245 247 38 (set (mem:SI (reg/f:DI 185) [3 *expptr_73(D)+0 S4 A32])
+        (reg:SI 186)) "printf-frexp.c":188:11 -1
+     (nil))
+(insn 247 246 250 38 (set (reg:XF 95 [ _75 ])
+        (mem/c:XF (reg/f:DI 76 virtual-incoming-args) [2 x+0 S16 A128])) "printf-frexp.c":189:10 -1
+     (nil))
+(insn 250 247 254 38 (set (reg:XF 96 [ <retval> ])
+        (reg:XF 95 [ _75 ])) "printf-frexp.c":189:10 -1
+     (nil))
+(insn 254 250 255 38 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [1 D.5963+0 S8 A64])
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_TEST))
+            (clobber (scratch:DI))
+        ]) "printf-frexp.c":190:1 -1
+     (nil))
+(jump_insn 255 254 274 38 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 258)
+            (pc))) "printf-frexp.c":190:1 -1
+     (nil)
+ -> 258)
+(note 274 255 256 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(call_insn 256 274 257 41 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x79ceae07dc00 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "printf-frexp.c":190:1 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 257 256 258)
+(code_label 258 257 275 42 23 (nil) [1 uses])
+(note 275 258 259 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 259 275 260 42 (set (reg/i:XF 8 st)
+        (reg:XF 96 [ <retval> ])) "printf-frexp.c":190:1 -1
+     (nil))
+(insn 260 259 0 42 (use (reg/i:XF 8 st)) "printf-frexp.c":190:1 -1
+     (nil))

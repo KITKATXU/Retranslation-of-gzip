@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: /home/qingxiao/retranslation/gzip
+baselineLinesOfCode: 33742
+unicodeNewlines: false
+columnKind: utf8
+primaryLanguage: cpp
+creationMetadata:
+  sha: 6a3ebab7e475fb5ca9b01c344eb45c27ea81ef89
+  cliVersion: 2.20.6
+  creationTime: 2025-03-11T13:58:05.102324160Z
+finalised: true

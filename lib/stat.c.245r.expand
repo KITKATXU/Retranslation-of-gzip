@@ -1,0 +1,324 @@
+
+;; Function orig_stat (orig_stat, funcdef_no=6, decl_uid=2395, cgraph_uid=7, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 16.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 filename+0 S8 A64])
+        (reg:DI 5 di [ filename ])) "stat.c":38:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 buf+0 S8 A64])
+        (reg:DI 4 si [ buf ])) "stat.c":38:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 buf+0 S8 A64])) "stat.c":39:10 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 filename+0 S8 A64])) "stat.c":39:10 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (reg:DI 84)) "stat.c":39:10 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg:DI 85)) "stat.c":39:10 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("stat") [flags 0x41]  <function_decl 0x7fc59dfa7800 stat>) [0 stat S1 A8])
+            (const_int 0 [0]))) "stat.c":39:10 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 12 11 15 2 (set (reg:SI 82 [ _5 ])
+        (reg:SI 0 ax)) "stat.c":39:10 -1
+     (nil))
+(insn 15 12 19 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _5 ])) "stat.c":39:10 -1
+     (nil))
+(insn 19 15 20 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "stat.c":40:1 -1
+     (nil))
+(insn 20 19 0 2 (use (reg/i:SI 0 ax)) "stat.c":40:1 -1
+     (nil))
+
+;; Function rpl_stat (rpl_stat, funcdef_no=16, decl_uid=2604, cgraph_uid=17, symbol_order=16)
+
+Partition 1: size 8 align 8
+	len_16
+Partition 0: size 4 align 4
+	result_7
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 57.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 name+0 S8 A64])
+        (reg:DI 5 di [ name ])) "stat.c":102:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 buf+0 S8 A64])
+        (reg:DI 4 si [ buf ])) "stat.c":102:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 buf+0 S8 A64])) "stat.c":409:16 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 name+0 S8 A64])) "stat.c":409:16 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (reg:DI 90)) "stat.c":409:16 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg:DI 91)) "stat.c":409:16 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("orig_stat") [flags 0x3]  <function_decl 0x7fc59dfc0000 orig_stat>) [0 orig_stat S1 A8])
+            (const_int 0 [0]))) "stat.c":409:16 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 12 11 13 2 (set (reg:SI 92)
+        (reg:SI 0 ax)) "stat.c":409:16 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [4 result+0 S4 A32])
+        (reg:SI 92)) "stat.c":409:16 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [4 result+0 S4 A32])
+            (const_int 0 [0]))) "stat.c":410:6 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) "stat.c":410:6 -1
+     (nil)
+ -> 51)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 4 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 buf+0 S8 A64])) "stat.c":415:12 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 82 [ _1 ])
+        (mem:SI (plus:DI (reg/f:DI 93)
+                (const_int 24 [0x18])) [4 buf_13(D)->st_mode+0 S4 A64])) "stat.c":415:12 -1
+     (nil))
+(insn 19 18 20 4 (parallel [
+            (set (reg:SI 83 [ _2 ])
+                (and:SI (reg:SI 82 [ _1 ])
+                    (const_int 61440 [0xf000])))
+            (clobber (reg:CC 17 flags))
+        ]) "stat.c":415:12 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 83 [ _2 ])
+            (const_int 16384 [0x4000]))) "stat.c":415:10 -1
+     (nil))
+(jump_insn 21 20 22 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) "stat.c":415:10 -1
+     (nil)
+ -> 42)
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 name+0 S8 A64])) "stat.c":417:24 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:DI 5 di)
+        (reg:DI 94)) "stat.c":417:24 -1
+     (nil))
+(call_insn/i 25 24 26 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x7fc59deb7700 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) "stat.c":417:24 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 26 25 27 5 (set (reg:DI 95)
+        (reg:DI 0 ax)) "stat.c":417:24 -1
+     (nil))
+(insn 27 26 28 5 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 len+0 S8 A64])
+        (reg:DI 95)) "stat.c":417:24 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:DI 96)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 len+0 S8 A64])) "stat.c":418:15 -1
+     (nil))
+(insn 29 28 30 5 (parallel [
+            (set (reg:DI 84 [ _3 ])
+                (plus:DI (reg:DI 96)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "stat.c":418:15 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [3 len+0 S8 A64])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 30 29 31 5 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 name+0 S8 A64])) "stat.c":418:15 -1
+     (nil))
+(insn 31 30 32 5 (parallel [
+            (set (reg/f:DI 85 [ _4 ])
+                (plus:DI (reg:DI 84 [ _3 ])
+                    (reg/f:DI 97)))
+            (clobber (reg:CC 17 flags))
+        ]) "stat.c":418:15 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [1 name+0 S8 A64])
+            (reg:DI 84 [ _3 ]))
+        (nil)))
+(insn 32 31 33 5 (set (reg:QI 86 [ _5 ])
+        (mem:QI (reg/f:DI 85 [ _4 ]) [0 *_4+0 S1 A8])) "stat.c":418:15 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 86 [ _5 ])
+            (const_int 47 [0x2f]))) "stat.c":418:14 -1
+     (nil))
+(jump_insn 34 33 35 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) "stat.c":418:14 -1
+     (nil)
+ -> 42)
+(note 35 34 36 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 36 35 37 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7fc59dfe9800 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "stat.c":420:15 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 37 36 38 6 (set (reg/f:DI 87 [ _6 ])
+        (reg:DI 0 ax)) "stat.c":420:15 -1
+     (nil))
+(insn 38 37 39 6 (set (mem:SI (reg/f:DI 87 [ _6 ]) [4 *_6+0 S4 A32])
+        (const_int 20 [0x14])) "stat.c":420:21 -1
+     (nil))
+(insn 39 38 40 6 (set (reg:SI 88 [ _8 ])
+        (const_int -1 [0xffffffffffffffff])) "stat.c":421:22 -1
+     (nil))
+(jump_insn 40 39 41 6 (set (pc)
+        (label_ref 54)) "stat.c":421:22 -1
+     (nil)
+ -> 54)
+(barrier 41 40 42)
+(code_label 42 41 43 7 5 (nil) [2 uses])
+(note 43 42 44 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 7 (set (reg:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 buf+0 S8 A64])) "stat.c":425:16 -1
+     (nil))
+(insn 45 44 46 7 (set (reg:SI 99)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [4 result+0 S4 A32])) "stat.c":425:16 -1
+     (nil))
+(insn 46 45 47 7 (set (reg:DI 4 si)
+        (reg:DI 98)) "stat.c":425:16 -1
+     (nil))
+(insn 47 46 48 7 (set (reg:SI 5 di)
+        (reg:SI 99)) "stat.c":425:16 -1
+     (nil))
+(call_insn 48 47 49 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("stat_time_normalize") [flags 0x41]  <function_decl 0x7fc59dff8a00 stat_time_normalize>) [0 stat_time_normalize S1 A8])
+            (const_int 0 [0]))) "stat.c":425:16 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 49 48 50 7 (set (reg:SI 100)
+        (reg:SI 0 ax)) "stat.c":425:16 -1
+     (nil))
+(insn 50 49 51 7 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [4 result+0 S4 A32])
+        (reg:SI 100)) "stat.c":425:16 -1
+     (nil))
+(code_label 51 50 52 8 4 (nil) [1 uses])
+(note 52 51 53 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 8 (set (reg:SI 88 [ _8 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [4 result+0 S4 A32])) "stat.c":427:10 -1
+     (nil))
+(code_label 54 53 55 9 6 (nil) [1 uses])
+(note 55 54 56 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 60 9 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 88 [ _8 ])) "stat.c":429:1 -1
+     (nil))
+(insn 60 56 61 9 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) "stat.c":429:1 -1
+     (nil))
+(insn 61 60 0 9 (use (reg/i:SI 0 ax)) "stat.c":429:1 -1
+     (nil))

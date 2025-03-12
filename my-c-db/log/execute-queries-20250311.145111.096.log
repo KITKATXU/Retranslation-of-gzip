@@ -1,0 +1,121 @@
+[2025-03-11 14:51:11] This is codeql execute queries -J-Xmx12861M --off-heap-ram=16001 --verbosity=progress --logdir=/home/qingxiao/retranslation/gzip/my-c-db/log --evaluator-log-level=5 --warnings=show --dynamic-join-order-mode=none --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --output=/home/qingxiao/retranslation/gzip/call_graph.csv -- /home/qingxiao/retranslation/gzip/my-c-db/db-cpp path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:51:11] Calling plumbing command: codeql resolve queries --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --format=json -- path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:51:11] [PROGRESS] resolve queries> Recording pack reference my-queries at /home/qingxiao/codeql/my-queries.
+[2025-03-11 14:51:11] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql"
+                      ]
+[2025-03-11 14:51:11] Creating executor with 1 threads.
+[2025-03-11 14:51:11] Calling plumbing command: codeql resolve extensions --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --include-extension-row-locations path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:51:11] Calling plumbing command: codeql resolve queries --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --allow-library-packs --format startingpacks -- path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:51:11] [PROGRESS] resolve queries> Recording pack reference my-queries at /home/qingxiao/codeql/my-queries.
+[2025-03-11 14:51:11] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/qingxiao/codeql/my-queries"
+                      ]
+[2025-03-11 14:51:11] Calling plumbing command: codeql resolve extensions-by-pack --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --include-extension-row-locations -- /home/qingxiao/codeql/my-queries
+[2025-03-11 14:51:11] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] my-queries: not 0.0.1 {root: my-queries@0.0.1}
+[2025-03-11 14:51:11] [SPAMMY] resolve extensions-by-pack> [DERIVATION] my-queries: 0.0.1 {my-queries: not 0.0.1 {root: my-queries@0.0.1}}
+[2025-03-11 14:51:11] Sequence stamp origin is -6073321390659918639
+[2025-03-11 14:51:11] Pausing evaluation to close the cache at sequence stamp o+0
+[2025-03-11 14:51:11] The disk cache is freshly trimmed; leave it be.
+[2025-03-11 14:51:11] Unpausing evaluation
+[2025-03-11 14:51:11] This NaiveBuddyAllocator requested 0 eviction rounds.
+[2025-03-11 14:51:11] Exception caught at top level: Invalid pack name 'codeql/qlpacks/codeql/cpp'. A pack name must contain only lowercase ASCII letters, ASCII digits, and hyphens.
+                      (eventual cause: InvalidPackNameException "Invalid pack name 'codeql/qlpacks/codeql/cpp'. A pack name must contain only low...")
+                      com.semmle.frontend.packs.PackName.parseOrThrow(PackName.java:148)
+                      java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+                      java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+                      java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+                      java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+                      java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+                      java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+                      java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+                      java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+                      com.semmle.frontend.packs.QlPackBase.getAllDependencies(QlPackBase.java:62)
+                      com.semmle.frontend.packs.solver.QlPackSolver$PackInfo.getDependencyIncompatibilities(QlPackSolver.java:265)
+                      com.semmle.frontend.packs.solver.QlPackSolver.addDependencyIncompatibilities(QlPackSolver.java:640)
+                      com.semmle.frontend.packs.solver.QlPackSolver.lambda$makeDecision$5(QlPackSolver.java:613)
+                      java.base/java.util.Optional.ifPresent(Unknown Source)
+                      com.semmle.frontend.packs.solver.QlPackSolver.makeDecision(QlPackSolver.java:611)
+                      com.semmle.frontend.packs.solver.QlPackSolver.solve(QlPackSolver.java:435)
+                      com.semmle.frontend.packs.solver.QlPackSolver.solve(QlPackSolver.java:418)
+                      com.semmle.frontend.packs.QLPackLibraryPathResolver.findAllPacks(QLPackLibraryPathResolver.java:181)
+                      com.semmle.frontend.packs.QLPackLibraryPathResolver.findAllDependentPacks(QLPackLibraryPathResolver.java:124)
+                      com.semmle.frontend.packs.QlPackSearchContext.findAllPackDependencies(QlPackSearchContext.java:597)
+                      com.semmle.cli2.resolve.ResolveExtensionsByPackCommand.resolvePackDependencies(ResolveExtensionsByPackCommand.java:494)
+                      com.semmle.cli2.resolve.ResolveExtensionsByPackCommand.executeJSON(ResolveExtensionsByPackCommand.java:137)
+                      com.semmle.cli2.resolve.ResolveExtensionsByPackCommand.executeJSON(ResolveExtensionsByPackCommand.java:67)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSONWithExistingMessages(SimpleJsonSubcommand.java:121)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSON(SimpleJsonSubcommand.java:110)
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:61)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:170)
+                      com.semmle.cli2.resolve.ResolveExtensionsCommand.executeJSON(ResolveExtensionsCommand.java:62)
+                      com.semmle.cli2.resolve.ResolveExtensionsCommand.executeJSON(ResolveExtensionsCommand.java:18)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSONWithExistingMessages(SimpleJsonSubcommand.java:121)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSON(SimpleJsonSubcommand.java:110)
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:61)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:170)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.resolveExtensions(ExecuteQueriesCommand.java:856)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.executeSubcommand(ExecuteQueriesCommand.java:471)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)
+                      
+                       ... caused by:
+                      
+                      com.semmle.frontend.packs.PackName$InvalidPackNameException: Invalid pack name 'codeql/qlpacks/codeql/cpp'. A pack name must contain only lowercase ASCII letters, ASCII digits, and hyphens.
+                      com.semmle.frontend.packs.PackName.validateName(PackName.java:311)
+                      com.semmle.frontend.packs.PackName.internalParse(PackName.java:153)
+                      com.semmle.frontend.packs.PackName.parseOrThrow(PackName.java:146)
+                      java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+                      java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+                      java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+                      java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+                      java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+                      java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+                      java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+                      java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+                      com.semmle.frontend.packs.QlPackBase.getAllDependencies(QlPackBase.java:62)
+                      com.semmle.frontend.packs.solver.QlPackSolver$PackInfo.getDependencyIncompatibilities(QlPackSolver.java:265)
+                      com.semmle.frontend.packs.solver.QlPackSolver.addDependencyIncompatibilities(QlPackSolver.java:640)
+                      com.semmle.frontend.packs.solver.QlPackSolver.lambda$makeDecision$5(QlPackSolver.java:613)
+                      java.base/java.util.Optional.ifPresent(Unknown Source)
+                      com.semmle.frontend.packs.solver.QlPackSolver.makeDecision(QlPackSolver.java:611)
+                      com.semmle.frontend.packs.solver.QlPackSolver.solve(QlPackSolver.java:435)
+                      com.semmle.frontend.packs.solver.QlPackSolver.solve(QlPackSolver.java:418)
+                      com.semmle.frontend.packs.QLPackLibraryPathResolver.findAllPacks(QLPackLibraryPathResolver.java:181)
+                      com.semmle.frontend.packs.QLPackLibraryPathResolver.findAllDependentPacks(QLPackLibraryPathResolver.java:124)
+                      com.semmle.frontend.packs.QlPackSearchContext.findAllPackDependencies(QlPackSearchContext.java:597)
+                      com.semmle.cli2.resolve.ResolveExtensionsByPackCommand.resolvePackDependencies(ResolveExtensionsByPackCommand.java:494)
+                      com.semmle.cli2.resolve.ResolveExtensionsByPackCommand.executeJSON(ResolveExtensionsByPackCommand.java:137)
+                      com.semmle.cli2.resolve.ResolveExtensionsByPackCommand.executeJSON(ResolveExtensionsByPackCommand.java:67)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSONWithExistingMessages(SimpleJsonSubcommand.java:121)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSON(SimpleJsonSubcommand.java:110)
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:61)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:170)
+                      com.semmle.cli2.resolve.ResolveExtensionsCommand.executeJSON(ResolveExtensionsCommand.java:62)
+                      com.semmle.cli2.resolve.ResolveExtensionsCommand.executeJSON(ResolveExtensionsCommand.java:18)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSONWithExistingMessages(SimpleJsonSubcommand.java:121)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SimpleJsonSubcommand.executeInsistingOnJSON(SimpleJsonSubcommand.java:110)
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:61)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:170)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.resolveExtensions(ExecuteQueriesCommand.java:856)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.executeSubcommand(ExecuteQueriesCommand.java:471)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)

@@ -1,0 +1,206 @@
+
+;; Function rpl_localtime (rpl_localtime, funcdef_no=0, decl_uid=2201, cgraph_uid=1, symbol_order=2)
+
+Partition 0: size 8 align 8
+	tm_6
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 24.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [6 timep+0 S8 A64])
+        (reg:DI 5 di [ timep ])) "localtime-buffer.c":38:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [6 timep+0 S8 A64])) "localtime-buffer.c":39:19 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (reg:DI 85)) "localtime-buffer.c":39:19 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("localtime") [flags 0x41]  <function_decl 0x779aca790300 localtime>) [0 localtime S1 A8])
+            (const_int 0 [0]))) "localtime-buffer.c":39:19 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:DI 86)
+        (reg:DI 0 ax)) "localtime-buffer.c":39:19 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [5 tm+0 S8 A64])
+        (reg:DI 86)) "localtime-buffer.c":39:19 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:DI 82 [ localtime_buffer_addr.0_1 ])
+        (mem/f/c:DI (symbol_ref:DI ("localtime_buffer_addr") [flags 0x2]  <var_decl 0x779aca7a0240 localtime_buffer_addr>) [5 localtime_buffer_addr+0 S8 A64])) "localtime-buffer.c":41:29 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 87)
+        (symbol_ref:DI ("tm_zero_buffer") [flags 0x2]  <var_decl 0x779aca7a02d0 tm_zero_buffer>)) "localtime-buffer.c":41:6 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 82 [ localtime_buffer_addr.0_1 ])
+            (reg:DI 87))) "localtime-buffer.c":41:6 -1
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "localtime-buffer.c":41:6 -1
+     (nil)
+ -> 18)
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg/f:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [5 tm+0 S8 A64])) "localtime-buffer.c":42:27 -1
+     (nil))
+(insn 17 16 18 4 (set (mem/f/c:DI (symbol_ref:DI ("localtime_buffer_addr") [flags 0x2]  <var_decl 0x779aca7a0240 localtime_buffer_addr>) [5 localtime_buffer_addr+0 S8 A64])
+        (reg/f:DI 88)) "localtime-buffer.c":42:27 -1
+     (nil))
+(code_label 18 17 19 5 2 (nil) [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 23 5 (set (reg/f:DI 83 [ _8 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [5 tm+0 S8 A64])) "localtime-buffer.c":44:10 -1
+     (nil))
+(insn 23 20 27 5 (set (reg/f:DI 84 [ <retval> ])
+        (reg/f:DI 83 [ _8 ])) "localtime-buffer.c":44:10 -1
+     (nil))
+(insn 27 23 28 5 (set (reg/i:DI 0 ax)
+        (reg/f:DI 84 [ <retval> ])) "localtime-buffer.c":45:1 -1
+     (nil))
+(insn 28 27 0 5 (use (reg/i:DI 0 ax)) "localtime-buffer.c":45:1 -1
+     (nil))
+
+;; Function rpl_gmtime (rpl_gmtime, funcdef_no=1, decl_uid=2205, cgraph_uid=2, symbol_order=3)
+
+Partition 0: size 8 align 8
+	tm_6
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 24.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [6 timep+0 S8 A64])
+        (reg:DI 5 di [ timep ])) "localtime-buffer.c":51:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [6 timep+0 S8 A64])) "localtime-buffer.c":52:19 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (reg:DI 85)) "localtime-buffer.c":52:19 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("gmtime") [flags 0x41]  <function_decl 0x779aca790200 gmtime>) [0 gmtime S1 A8])
+            (const_int 0 [0]))) "localtime-buffer.c":52:19 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:DI 86)
+        (reg:DI 0 ax)) "localtime-buffer.c":52:19 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [5 tm+0 S8 A64])
+        (reg:DI 86)) "localtime-buffer.c":52:19 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:DI 82 [ localtime_buffer_addr.1_1 ])
+        (mem/f/c:DI (symbol_ref:DI ("localtime_buffer_addr") [flags 0x2]  <var_decl 0x779aca7a0240 localtime_buffer_addr>) [5 localtime_buffer_addr+0 S8 A64])) "localtime-buffer.c":54:29 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 87)
+        (symbol_ref:DI ("tm_zero_buffer") [flags 0x2]  <var_decl 0x779aca7a02d0 tm_zero_buffer>)) "localtime-buffer.c":54:6 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 82 [ localtime_buffer_addr.1_1 ])
+            (reg:DI 87))) "localtime-buffer.c":54:6 -1
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "localtime-buffer.c":54:6 -1
+     (nil)
+ -> 18)
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg/f:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [5 tm+0 S8 A64])) "localtime-buffer.c":55:27 -1
+     (nil))
+(insn 17 16 18 4 (set (mem/f/c:DI (symbol_ref:DI ("localtime_buffer_addr") [flags 0x2]  <var_decl 0x779aca7a0240 localtime_buffer_addr>) [5 localtime_buffer_addr+0 S8 A64])
+        (reg/f:DI 88)) "localtime-buffer.c":55:27 -1
+     (nil))
+(code_label 18 17 19 5 5 (nil) [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 23 5 (set (reg/f:DI 83 [ _8 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [5 tm+0 S8 A64])) "localtime-buffer.c":57:10 -1
+     (nil))
+(insn 23 20 27 5 (set (reg/f:DI 84 [ <retval> ])
+        (reg/f:DI 83 [ _8 ])) "localtime-buffer.c":57:10 -1
+     (nil))
+(insn 27 23 28 5 (set (reg/i:DI 0 ax)
+        (reg/f:DI 84 [ <retval> ])) "localtime-buffer.c":58:1 -1
+     (nil))
+(insn 28 27 0 5 (use (reg/i:DI 0 ax)) "localtime-buffer.c":58:1 -1
+     (nil))

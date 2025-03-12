@@ -1,0 +1,11 @@
+[2025-03-11 15:04:57] This is codeql query run --search-path /home/qingxiao/codeql/qlpacks -d my-c-db /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql --output=call_graph.csv
+[2025-03-11 15:04:57] Log file was started late.
+[2025-03-11 15:04:57] Calling plumbing command: codeql resolve ram --dataset=/home/qingxiao/retranslation/gzip/my-c-db/db-cpp --format=json
+[2025-03-11 15:04:57] [PROGRESS] resolve ram> Stringpool size measured as 5013930
+[2025-03-11 15:04:57] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx12861M",
+                        "--off-heap-ram=16001"
+                      ]
+[2025-03-11 15:04:57] Chaining via /tmp/codeql.4aUp8ITP to plumbing: execute queries -J-Xmx12861M --off-heap-ram=16001 --verbosity=progress --logdir=/home/qingxiao/retranslation/gzip/my-c-db/log --evaluator-log-level=5 --warnings=show --dynamic-join-order-mode=none --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --output=/home/qingxiao/retranslation/gzip/call_graph.csv -- /home/qingxiao/retranslation/gzip/my-c-db/db-cpp path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 15:04:57] Exiting with code 70

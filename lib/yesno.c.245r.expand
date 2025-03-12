@@ -1,0 +1,180 @@
+
+;; Function yesno (yesno, funcdef_no=6, decl_uid=1943, cgraph_uid=7, symbol_order=6)
+
+Partition 0: size 4 align 4
+	c_1
+Partition 1: size 1 align 1
+	yes_9
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+Removing jump 45.
+Merging block 13 into block 11...
+Merged blocks 11 and 13.
+Merged 11 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 6 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getchar") [flags 0x41]  <function_decl 0x74f4dfa04600 getchar>) [0 getchar S1 A8])
+            (const_int 0 [0]))) "yesno.c":56:11 -1
+     (nil)
+    (nil))
+(insn 6 5 7 2 (set (reg:SI 85)
+        (reg:SI 0 ax)) "yesno.c":56:11 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 c+0 S4 A32])
+        (reg:SI 85)) "yesno.c":56:11 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [1 c+0 S4 A32])
+            (const_int 121 [0x79]))) "yesno.c":57:19 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 13)
+            (pc))) "yesno.c":57:19 -1
+     (nil)
+ -> 13)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [1 c+0 S4 A32])
+            (const_int 89 [0x59]))) "yesno.c":57:19 -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "yesno.c":57:19 -1
+     (nil)
+ -> 18)
+(code_label 13 12 14 5 2 (nil) [1 uses])
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (reg:SI 82 [ iftmp.0_2 ])
+        (const_int 1 [0x1])) "yesno.c":57:19 -1
+     (nil))
+(jump_insn 16 15 17 5 (set (pc)
+        (label_ref 21)) "yesno.c":57:19 -1
+     (nil)
+ -> 21)
+(barrier 17 16 18)
+(code_label 18 17 19 6 3 (nil) [1 uses])
+(note 19 18 20 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 6 (set (reg:SI 82 [ iftmp.0_2 ])
+        (const_int 0 [0])) "yesno.c":57:19 -1
+     (nil))
+(code_label 21 20 22 7 4 (nil) [1 uses])
+(note 22 21 23 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 7 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -5 [0xfffffffffffffffb])) [2 yes+0 S1 A8])
+        (subreg:QI (reg:SI 82 [ iftmp.0_2 ]) 0)) "yesno.c":57:7 -1
+     (nil))
+(insn 24 23 25 7 (parallel [
+            (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -5 [0xfffffffffffffffb])) [2 yes+0 S1 A8])
+                (and:QI (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -5 [0xfffffffffffffffb])) [2 yes+0 S1 A8])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "yesno.c":57:7 -1
+     (nil))
+(jump_insn 25 24 26 7 (set (pc)
+        (label_ref 31)) "yesno.c":58:9 -1
+     (nil)
+ -> 31)
+(barrier 26 25 36)
+(code_label 36 26 27 8 7 (nil) [1 uses])
+(note 27 36 28 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(call_insn 28 27 29 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getchar") [flags 0x41]  <function_decl 0x74f4dfa04600 getchar>) [0 getchar S1 A8])
+            (const_int 0 [0]))) "yesno.c":59:9 -1
+     (nil)
+    (nil))
+(insn 29 28 30 8 (set (reg:SI 86)
+        (reg:SI 0 ax)) "yesno.c":59:9 -1
+     (nil))
+(insn 30 29 31 8 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 c+0 S4 A32])
+        (reg:SI 86)) "yesno.c":59:9 -1
+     (nil))
+(code_label 31 30 32 9 5 (nil) [1 uses])
+(note 32 31 33 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [1 c+0 S4 A32])
+            (const_int 10 [0xa]))) "yesno.c":58:20 -1
+     (nil))
+(jump_insn 34 33 35 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) "yesno.c":58:20 -1
+     (nil)
+ -> 39)
+(note 35 34 37 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 37 35 38 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [1 c+0 S4 A32])
+            (const_int -1 [0xffffffffffffffff]))) "yesno.c":58:20 -1
+     (nil))
+(jump_insn 38 37 39 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 36)
+            (pc))) "yesno.c":58:20 -1
+     (nil)
+ -> 36)
+(code_label 39 38 40 11 6 (nil) [1 uses])
+(note 40 39 41 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 44 11 (set (reg:QI 83 [ _12 ])
+        (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -5 [0xfffffffffffffffb])) [2 yes+0 S1 A8])) "yesno.c":62:10 -1
+     (nil))
+(insn 44 41 48 11 (set (reg:QI 84 [ <retval> ])
+        (reg:QI 83 [ _12 ])) "yesno.c":62:10 -1
+     (nil))
+(insn 48 44 49 11 (set (reg/i:QI 0 ax)
+        (reg:QI 84 [ <retval> ])) "yesno.c":63:1 -1
+     (nil))
+(insn 49 48 0 11 (use (reg/i:QI 0 ax)) "yesno.c":63:1 -1
+     (nil))

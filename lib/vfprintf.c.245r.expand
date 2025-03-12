@@ -1,0 +1,444 @@
+
+;; Function rpl_vfprintf (rpl_vfprintf, funcdef_no=6, decl_uid=2685, cgraph_uid=7, symbol_order=6)
+
+Partition 3: size 2000 align 16
+	buf
+Partition 1: size 8 align 8
+	len_15
+Partition 0: size 8 align 8
+	output_14
+Partition 4: size 8 align 8
+	lenbuf
+Partition 2: size 4 align 4
+	saved_errno_23
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 30 from 14 to 15.
+Redirecting jump 64 from 14 to 15.
+Redirecting jump 90 from 14 to 15.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+Removing jump 101.
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2056 [0xfffffffffffff7f8])) [5 fp+0 S8 A64])
+        (reg:DI 5 di [ fp ])) "vfprintf.c":37:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2064 [0xfffffffffffff7f0])) [3 format+0 S8 A64])
+        (reg:DI 4 si [ format ])) "vfprintf.c":37:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2072 [0xfffffffffffff7e8])) [6 args+0 S8 A64])
+        (reg:DI 1 dx [ args ])) "vfprintf.c":37:1 -1
+     (nil))
+(note 5 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 5 9 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [2 D.3244+0 S8 A64])
+                (unspec:DI [
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "vfprintf.c":37:1 -1
+     (nil))
+(insn 9 6 10 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2040 [0xfffffffffffff808])) [1 lenbuf+0 S8 A64])
+        (const_int 2000 [0x7d0])) "vfprintf.c":41:10 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2072 [0xfffffffffffff7e8])) [6 args+0 S8 A64])) "vfprintf.c":43:12 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2064 [0xfffffffffffff7f0])) [3 format+0 S8 A64])) "vfprintf.c":43:12 -1
+     (nil))
+(insn 12 11 13 2 (parallel [
+            (set (reg:DI 90)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2040 [0xfffffffffffff808])))
+            (clobber (reg:CC 17 flags))
+        ]) "vfprintf.c":43:12 -1
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg:DI 91)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2016 [0xfffffffffffff820])))
+            (clobber (reg:CC 17 flags))
+        ]) "vfprintf.c":43:12 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 2 cx)
+        (reg:DI 88)) "vfprintf.c":43:12 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 1 dx)
+        (reg:DI 89)) "vfprintf.c":43:12 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 4 si)
+        (reg:DI 90)) "vfprintf.c":43:12 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg:DI 91)) "vfprintf.c":43:12 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("vasnprintf") [flags 0x41]  <function_decl 0x758e28832700 vasnprintf>) [0 vasnprintf S1 A8])
+            (const_int 0 [0]))) "vfprintf.c":43:12 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 19 18 20 2 (set (reg:DI 92)
+        (reg:DI 0 ax)) "vfprintf.c":43:12 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2032 [0xfffffffffffff810])) [3 output+0 S8 A128])
+        (reg:DI 92)) "vfprintf.c":43:12 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 93)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2040 [0xfffffffffffff808])) [1 lenbuf+0 S8 A64])) "vfprintf.c":44:7 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2024 [0xfffffffffffff818])) [1 len+0 S8 A64])
+        (reg:DI 93)) "vfprintf.c":44:7 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2032 [0xfffffffffffff810])) [3 output+0 S8 A128])
+            (const_int 0 [0]))) "vfprintf.c":46:6 -1
+     (nil))
+(jump_insn 24 23 25 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) "vfprintf.c":46:6 -1
+     (nil)
+ -> 32)
+(note 25 24 26 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 4 (set (reg:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2056 [0xfffffffffffff7f8])) [5 fp+0 S8 A64])) "vfprintf.c":48:7 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:DI 5 di)
+        (reg:DI 94)) "vfprintf.c":48:7 -1
+     (nil))
+(call_insn 28 27 29 4 (call (mem:QI (symbol_ref:DI ("fseterr") [flags 0x41]  <function_decl 0x758e28832400 fseterr>) [0 fseterr S1 A8])
+        (const_int 0 [0])) "vfprintf.c":48:7 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 29 28 30 4 (set (reg:SI 86 [ _5 ])
+        (const_int -1 [0xffffffffffffffff])) "vfprintf.c":49:14 -1
+     (nil))
+(jump_insn 30 29 31 4 (set (pc)
+        (label_ref:DI 98)) "vfprintf.c":49:14 807 {jump}
+     (nil)
+ -> 98)
+(barrier 31 30 32)
+(code_label 32 31 33 5 2 (nil) [1 uses])
+(note 33 32 34 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 5 (set (reg:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2056 [0xfffffffffffff7f8])) [5 fp+0 S8 A64])) "vfprintf.c":52:7 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:DI 96)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2024 [0xfffffffffffff818])) [1 len+0 S8 A64])) "vfprintf.c":52:7 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2032 [0xfffffffffffff810])) [3 output+0 S8 A128])) "vfprintf.c":52:7 -1
+     (nil))
+(insn 37 36 38 5 (set (reg:DI 2 cx)
+        (reg:DI 95)) "vfprintf.c":52:7 -1
+     (nil))
+(insn 38 37 39 5 (set (reg:DI 1 dx)
+        (reg:DI 96)) "vfprintf.c":52:7 -1
+     (nil))
+(insn 39 38 40 5 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) "vfprintf.c":52:7 -1
+     (nil))
+(insn 40 39 41 5 (set (reg:DI 5 di)
+        (reg:DI 97)) "vfprintf.c":52:7 -1
+     (nil))
+(call_insn 41 40 42 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fwrite") [flags 0x41]  <function_decl 0x758e28abdd00 fwrite>) [0 __builtin_fwrite S1 A8])
+            (const_int 0 [0]))) "vfprintf.c":52:7 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 42 41 43 5 (set (reg:DI 82 [ _1 ])
+        (reg:DI 0 ax)) "vfprintf.c":52:7 -1
+     (nil))
+(insn 43 42 44 5 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2024 [0xfffffffffffff818])) [1 len+0 S8 A64])
+            (reg:DI 82 [ _1 ]))) "vfprintf.c":52:6 -1
+     (nil))
+(jump_insn 44 43 45 5 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 66)
+            (pc))) "vfprintf.c":52:6 -1
+     (nil)
+ -> 66)
+(note 45 44 46 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 6 (parallel [
+            (set (reg:DI 98)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2016 [0xfffffffffffff820])))
+            (clobber (reg:CC 17 flags))
+        ]) "vfprintf.c":54:10 -1
+     (nil))
+(insn 47 46 48 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2032 [0xfffffffffffff810])) [3 output+0 S8 A128])
+            (reg:DI 98))) "vfprintf.c":54:10 -1
+     (nil))
+(jump_insn 48 47 49 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 61)
+            (pc))) "vfprintf.c":54:10 -1
+     (nil)
+ -> 61)
+(note 49 48 50 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 50 49 51 7 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x758e28bde600 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "vfprintf.c":56:29 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 51 50 52 7 (set (reg/f:DI 83 [ _2 ])
+        (reg:DI 0 ax)) "vfprintf.c":56:29 -1
+     (nil))
+(insn 52 51 53 7 (set (reg:SI 99)
+        (mem:SI (reg/f:DI 83 [ _2 ]) [4 *_2+0 S4 A32])) "vfprintf.c":56:15 -1
+     (nil))
+(insn 53 52 54 7 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2044 [0xfffffffffffff804])) [4 saved_errno+0 S4 A32])
+        (reg:SI 99)) "vfprintf.c":56:15 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2032 [0xfffffffffffff810])) [3 output+0 S8 A128])) "vfprintf.c":57:11 -1
+     (nil))
+(insn 55 54 56 7 (set (reg:DI 5 di)
+        (reg:DI 100)) "vfprintf.c":57:11 -1
+     (nil))
+(call_insn 56 55 57 7 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x758e28ad6d00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "vfprintf.c":57:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn/u 57 56 58 7 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x758e28bde600 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "vfprintf.c":58:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 58 57 59 7 (set (reg/f:DI 84 [ _3 ])
+        (reg:DI 0 ax)) "vfprintf.c":58:11 -1
+     (nil))
+(insn 59 58 60 7 (set (reg:SI 101)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2044 [0xfffffffffffff804])) [4 saved_errno+0 S4 A32])) "vfprintf.c":58:17 -1
+     (nil))
+(insn 60 59 61 7 (set (mem:SI (reg/f:DI 84 [ _3 ]) [4 *_3+0 S4 A32])
+        (reg:SI 101)) "vfprintf.c":58:17 -1
+     (nil))
+(code_label 61 60 62 8 5 (nil) [1 uses])
+(note 62 61 63 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 63 62 64 8 (set (reg:SI 86 [ _5 ])
+        (const_int -1 [0xffffffffffffffff])) "vfprintf.c":60:14 -1
+     (nil))
+(jump_insn 64 63 65 8 (set (pc)
+        (label_ref:DI 98)) "vfprintf.c":60:14 807 {jump}
+     (nil)
+ -> 98)
+(barrier 65 64 66)
+(code_label 66 65 67 9 4 (nil) [1 uses])
+(note 67 66 68 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 68 67 69 9 (parallel [
+            (set (reg:DI 102)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2016 [0xfffffffffffff820])))
+            (clobber (reg:CC 17 flags))
+        ]) "vfprintf.c":63:6 -1
+     (nil))
+(insn 69 68 70 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2032 [0xfffffffffffff810])) [3 output+0 S8 A128])
+            (reg:DI 102))) "vfprintf.c":63:6 -1
+     (nil))
+(jump_insn 70 69 71 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 75)
+            (pc))) "vfprintf.c":63:6 -1
+     (nil)
+ -> 75)
+(note 71 70 72 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 10 (set (reg:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2032 [0xfffffffffffff810])) [3 output+0 S8 A128])) "vfprintf.c":64:5 -1
+     (nil))
+(insn 73 72 74 10 (set (reg:DI 5 di)
+        (reg:DI 103)) "vfprintf.c":64:5 -1
+     (nil))
+(call_insn 74 73 75 10 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x758e28ad6d00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "vfprintf.c":64:5 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 75 74 76 11 6 (nil) [1 uses])
+(note 76 75 79 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 79 76 80 11 (set (reg:DI 104)
+        (const_int 2147483648 [0x80000000])) "vfprintf.c":66:6 -1
+     (nil))
+(insn 80 79 81 11 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -2024 [0xfffffffffffff818])) [1 len+0 S8 A64])
+            (reg:DI 104))) "vfprintf.c":66:6 -1
+     (nil))
+(jump_insn 81 80 82 11 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 92)
+            (pc))) "vfprintf.c":66:6 -1
+     (nil)
+ -> 92)
+(note 82 81 83 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 83 82 84 12 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x758e28bde600 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "vfprintf.c":68:7 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 84 83 85 12 (set (reg/f:DI 85 [ _4 ])
+        (reg:DI 0 ax)) "vfprintf.c":68:7 -1
+     (nil))
+(insn 85 84 86 12 (set (mem:SI (reg/f:DI 85 [ _4 ]) [4 *_4+0 S4 A32])
+        (const_int 75 [0x4b])) "vfprintf.c":68:13 -1
+     (nil))
+(insn 86 85 87 12 (set (reg:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2056 [0xfffffffffffff7f8])) [5 fp+0 S8 A64])) "vfprintf.c":69:7 -1
+     (nil))
+(insn 87 86 88 12 (set (reg:DI 5 di)
+        (reg:DI 105)) "vfprintf.c":69:7 -1
+     (nil))
+(call_insn 88 87 89 12 (call (mem:QI (symbol_ref:DI ("fseterr") [flags 0x41]  <function_decl 0x758e28832400 fseterr>) [0 fseterr S1 A8])
+        (const_int 0 [0])) "vfprintf.c":69:7 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 89 88 90 12 (set (reg:SI 86 [ _5 ])
+        (const_int -1 [0xffffffffffffffff])) "vfprintf.c":70:14 -1
+     (nil))
+(jump_insn 90 89 91 12 (set (pc)
+        (label_ref:DI 98)) "vfprintf.c":70:14 807 {jump}
+     (nil)
+ -> 98)
+(barrier 91 90 92)
+(code_label 92 91 93 13 7 (nil) [1 uses])
+(note 93 92 94 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 94 93 95 13 (set (reg:DI 106)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -2024 [0xfffffffffffff818])) [1 len+0 S8 A64])) "vfprintf.c":73:10 -1
+     (nil))
+(insn 95 94 98 13 (set (reg:SI 86 [ _5 ])
+        (subreg:SI (reg:DI 106) 0)) "vfprintf.c":73:10 -1
+     (nil))
+(code_label 98 95 99 15 8 (nil) [3 uses])
+(note 99 98 100 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 104 15 (set (reg:SI 87 [ <retval> ])
+        (reg:SI 86 [ _5 ])) "vfprintf.c":74:1 -1
+     (nil))
+(insn 104 100 105 15 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [2 D.3244+0 S8 A64])
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_TEST))
+            (clobber (scratch:DI))
+        ]) "vfprintf.c":74:1 -1
+     (nil))
+(jump_insn 105 104 112 15 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 108)
+            (pc))) "vfprintf.c":74:1 -1
+     (nil)
+ -> 108)
+(note 112 105 106 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(call_insn 106 112 107 17 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x758e2883f600 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "vfprintf.c":74:1 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 107 106 108)
+(code_label 108 107 113 18 9 (nil) [1 uses])
+(note 113 108 109 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 109 113 110 18 (set (reg/i:SI 0 ax)
+        (reg:SI 87 [ <retval> ])) "vfprintf.c":74:1 -1
+     (nil))
+(insn 110 109 0 18 (use (reg/i:SI 0 ax)) "vfprintf.c":74:1 -1
+     (nil))

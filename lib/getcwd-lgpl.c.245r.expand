@@ -1,0 +1,859 @@
+
+;; Function rpl_getcwd (rpl_getcwd, funcdef_no=6, decl_uid=2743, cgraph_uid=7, symbol_order=6)
+
+Partition 4: size 4032 align 16
+	tmp
+Partition 1: size 8 align 8
+	ptr_31
+Partition 0: size 8 align 8
+	result_17
+Partition 3: size 4 align 4
+	saved_errno_59
+Partition 2: size 4 align 4
+	saved_errno_42
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 104 from 20 to 30.
+Removing jump 208.
+Merging block 31 into block 30...
+Merged blocks 30 and 31.
+Merged 30 and 31 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])
+        (reg:DI 5 di [ buf ])) "getcwd-lgpl.c":43:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])
+        (reg:DI 4 si [ size ])) "getcwd-lgpl.c":43:1 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [1 D.3746+0 S8 A64])
+                (unspec:DI [
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "getcwd-lgpl.c":43:1 -1
+     (nil))
+(insn 8 5 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])
+            (const_int 0 [0]))) "getcwd-lgpl.c":48:6 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 30)
+            (pc))) "getcwd-lgpl.c":48:6 -1
+     (nil)
+ -> 30)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])
+            (const_int 0 [0]))) "getcwd-lgpl.c":50:10 -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) "getcwd-lgpl.c":50:10 -1
+     (nil)
+ -> 20)
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 14 13 15 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":52:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 15 14 16 5 (set (reg/f:DI 82 [ _1 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":52:11 -1
+     (nil))
+(insn 16 15 17 5 (set (mem:SI (reg/f:DI 82 [ _1 ]) [3 *_1+0 S4 A32])
+        (const_int 22 [0x16])) "getcwd-lgpl.c":52:17 -1
+     (nil))
+(insn 17 16 18 5 (set (reg/f:DI 96 [ _19 ])
+        (const_int 0 [0])) "getcwd-lgpl.c":53:18 -1
+     (nil))
+(jump_insn 18 17 19 5 (set (pc)
+        (label_ref 205)) "getcwd-lgpl.c":53:18 -1
+     (nil)
+ -> 205)
+(barrier 19 18 20)
+(code_label 20 19 21 6 3 (nil) [1 uses])
+(note 21 20 22 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 6 (set (reg:DI 98)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])) "getcwd-lgpl.c":55:14 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":55:14 -1
+     (nil))
+(insn 24 23 25 6 (set (reg:DI 4 si)
+        (reg:DI 98)) "getcwd-lgpl.c":55:14 -1
+     (nil))
+(insn 25 24 26 6 (set (reg:DI 5 di)
+        (reg:DI 99)) "getcwd-lgpl.c":55:14 -1
+     (nil))
+(call_insn 26 25 27 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getcwd") [flags 0x41]  <function_decl 0x7b9b0b395600 getcwd>) [0 getcwd S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":55:14 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 27 26 28 6 (set (reg/f:DI 96 [ _19 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":55:14 -1
+     (nil))
+(jump_insn 28 27 29 6 (set (pc)
+        (label_ref 205)) "getcwd-lgpl.c":55:14 -1
+     (nil)
+ -> 205)
+(barrier 29 28 30)
+(code_label 30 29 31 7 2 (nil) [1 uses])
+(note 31 30 32 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])
+            (const_int 0 [0]))) "getcwd-lgpl.c":58:6 -1
+     (nil))
+(jump_insn 33 32 34 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 77)
+            (pc))) "getcwd-lgpl.c":58:6 -1
+     (nil)
+ -> 77)
+(note 34 33 35 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 8 (set (reg:DI 100)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])) "getcwd-lgpl.c":60:13 -1
+     (nil))
+(insn 36 35 37 8 (set (reg:DI 5 di)
+        (reg:DI 100)) "getcwd-lgpl.c":60:13 -1
+     (nil))
+(call_insn 37 36 38 8 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7b9b0b2dd800 malloc>) [0 __builtin_malloc S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":60:13 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 38 37 39 8 (set (reg/f:DI 101)
+        (reg:DI 0 ax)) "getcwd-lgpl.c":60:13 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 101)
+        (nil)))
+(insn 39 38 40 8 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])
+        (reg/f:DI 101)) "getcwd-lgpl.c":60:13 -1
+     (nil))
+(insn 40 39 41 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])
+            (const_int 0 [0]))) "getcwd-lgpl.c":61:10 -1
+     (nil))
+(jump_insn 41 40 42 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 49)
+            (pc))) "getcwd-lgpl.c":61:10 -1
+     (nil)
+ -> 49)
+(note 42 41 43 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 43 42 44 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":63:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 44 43 45 9 (set (reg/f:DI 83 [ _2 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":63:11 -1
+     (nil))
+(insn 45 44 46 9 (set (mem:SI (reg/f:DI 83 [ _2 ]) [3 *_2+0 S4 A32])
+        (const_int 12 [0xc])) "getcwd-lgpl.c":63:17 -1
+     (nil))
+(insn 46 45 47 9 (set (reg/f:DI 96 [ _19 ])
+        (const_int 0 [0])) "getcwd-lgpl.c":64:18 -1
+     (nil))
+(jump_insn 47 46 48 9 (set (pc)
+        (label_ref 205)) "getcwd-lgpl.c":64:18 -1
+     (nil)
+ -> 205)
+(barrier 48 47 49)
+(code_label 49 48 50 10 6 (nil) [1 uses])
+(note 50 49 51 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 51 50 52 10 (set (reg:DI 102)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])) "getcwd-lgpl.c":66:16 -1
+     (nil))
+(insn 52 51 53 10 (set (reg:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":66:16 -1
+     (nil))
+(insn 53 52 54 10 (set (reg:DI 4 si)
+        (reg:DI 102)) "getcwd-lgpl.c":66:16 -1
+     (nil))
+(insn 54 53 55 10 (set (reg:DI 5 di)
+        (reg:DI 103)) "getcwd-lgpl.c":66:16 -1
+     (nil))
+(call_insn 55 54 56 10 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getcwd") [flags 0x41]  <function_decl 0x7b9b0b395600 getcwd>) [0 getcwd S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":66:16 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 56 55 57 10 (set (reg:DI 104)
+        (reg:DI 0 ax)) "getcwd-lgpl.c":66:16 -1
+     (nil))
+(insn 57 56 58 10 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+        (reg:DI 104)) "getcwd-lgpl.c":66:16 -1
+     (nil))
+(insn 58 57 59 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+            (const_int 0 [0]))) "getcwd-lgpl.c":67:10 -1
+     (nil))
+(jump_insn 59 58 60 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 72)
+            (pc))) "getcwd-lgpl.c":67:10 -1
+     (nil)
+ -> 72)
+(note 60 59 61 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 61 60 62 11 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":69:29 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 62 61 63 11 (set (reg/f:DI 84 [ _3 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":69:29 -1
+     (nil))
+(insn 63 62 64 11 (set (reg:SI 105)
+        (mem:SI (reg/f:DI 84 [ _3 ]) [3 *_3+0 S4 A32])) "getcwd-lgpl.c":69:15 -1
+     (nil))
+(insn 64 63 65 11 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4068 [0xfffffffffffff01c])) [3 saved_errno+0 S4 A32])
+        (reg:SI 105)) "getcwd-lgpl.c":69:15 -1
+     (nil))
+(insn 65 64 66 11 (set (reg:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":70:11 -1
+     (nil))
+(insn 66 65 67 11 (set (reg:DI 5 di)
+        (reg:DI 106)) "getcwd-lgpl.c":70:11 -1
+     (nil))
+(call_insn 67 66 68 11 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7b9b0b2d6d00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "getcwd-lgpl.c":70:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn/u 68 67 69 11 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":71:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 69 68 70 11 (set (reg/f:DI 85 [ _4 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":71:11 -1
+     (nil))
+(insn 70 69 71 11 (set (reg:SI 107)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4068 [0xfffffffffffff01c])) [3 saved_errno+0 S4 A32])) "getcwd-lgpl.c":71:17 -1
+     (nil))
+(insn 71 70 72 11 (set (mem:SI (reg/f:DI 85 [ _4 ]) [3 *_4+0 S4 A32])
+        (reg:SI 107)) "getcwd-lgpl.c":71:17 -1
+     (nil))
+(code_label 72 71 73 12 7 (nil) [1 uses])
+(note 73 72 74 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 74 73 75 12 (set (reg/f:DI 96 [ _19 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])) "getcwd-lgpl.c":73:14 -1
+     (nil))
+(jump_insn 75 74 76 12 (set (pc)
+        (label_ref 205)) "getcwd-lgpl.c":73:14 -1
+     (nil)
+ -> 205)
+(barrier 76 75 77)
+(code_label 77 76 78 13 5 (nil) [1 uses])
+(note 78 77 79 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 79 78 80 13 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])
+        (const_int 4032 [0xfc0])) "getcwd-lgpl.c":81:10 -1
+     (nil))
+(insn 80 79 81 13 (set (reg:DI 108)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])) "getcwd-lgpl.c":82:11 -1
+     (nil))
+(insn 81 80 82 13 (parallel [
+            (set (reg:DI 109)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4048 [0xfffffffffffff030])))
+            (clobber (reg:CC 17 flags))
+        ]) "getcwd-lgpl.c":82:11 -1
+     (nil))
+(insn 82 81 83 13 (set (reg:DI 4 si)
+        (reg:DI 108)) "getcwd-lgpl.c":82:11 -1
+     (nil))
+(insn 83 82 84 13 (set (reg:DI 5 di)
+        (reg:DI 109)) "getcwd-lgpl.c":82:11 -1
+     (nil))
+(call_insn 84 83 85 13 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getcwd") [flags 0x41]  <function_decl 0x7b9b0b395600 getcwd>) [0 getcwd S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":82:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 85 84 86 13 (set (reg:DI 110)
+        (reg:DI 0 ax)) "getcwd-lgpl.c":82:11 -1
+     (nil))
+(insn 86 85 87 13 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4056 [0xfffffffffffff028])) [2 ptr+0 S8 A64])
+        (reg:DI 110)) "getcwd-lgpl.c":82:11 -1
+     (nil))
+(insn 87 86 88 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4056 [0xfffffffffffff028])) [2 ptr+0 S8 A64])
+            (const_int 0 [0]))) "getcwd-lgpl.c":83:8 -1
+     (nil))
+(jump_insn 88 87 89 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 106)
+            (pc))) "getcwd-lgpl.c":83:8 -1
+     (nil)
+ -> 106)
+(note 89 88 90 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 90 89 91 14 (set (reg:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4056 [0xfffffffffffff028])) [2 ptr+0 S8 A64])) "getcwd-lgpl.c":85:18 -1
+     (nil))
+(insn 91 90 92 14 (set (reg:DI 5 di)
+        (reg:DI 111)) "getcwd-lgpl.c":85:18 -1
+     (nil))
+(call_insn 92 91 93 14 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strdup") [flags 0x41]  <function_decl 0x7b9b0b2b7300 strdup>) [0 __builtin_strdup S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":85:18 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 93 92 94 14 (set (reg/f:DI 112)
+        (reg:DI 0 ax)) "getcwd-lgpl.c":85:18 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 112)
+        (nil)))
+(insn 94 93 95 14 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+        (reg/f:DI 112)) "getcwd-lgpl.c":85:18 -1
+     (nil))
+(insn 95 94 96 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+            (const_int 0 [0]))) "getcwd-lgpl.c":86:12 -1
+     (nil))
+(jump_insn 96 95 97 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 101)
+            (pc))) "getcwd-lgpl.c":86:12 -1
+     (nil)
+ -> 101)
+(note 97 96 98 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 98 97 99 15 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":87:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 99 98 100 15 (set (reg/f:DI 86 [ _5 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":87:11 -1
+     (nil))
+(insn 100 99 101 15 (set (mem:SI (reg/f:DI 86 [ _5 ]) [3 *_5+0 S4 A32])
+        (const_int 12 [0xc])) "getcwd-lgpl.c":87:17 -1
+     (nil))
+(code_label 101 100 102 16 9 (nil) [1 uses])
+(note 102 101 103 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 103 102 104 16 (set (reg/f:DI 96 [ _19 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])) "getcwd-lgpl.c":88:16 -1
+     (nil))
+(jump_insn 104 103 105 16 (set (pc)
+        (label_ref:DI 205)) "getcwd-lgpl.c":88:16 807 {jump}
+     (nil)
+ -> 205)
+(barrier 105 104 106)
+(code_label 106 105 107 17 8 (nil) [1 uses])
+(note 107 106 108 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 108 107 109 17 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":90:9 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 109 108 110 17 (set (reg/f:DI 87 [ _6 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":90:9 -1
+     (nil))
+(insn 110 109 111 17 (set (reg:SI 88 [ _7 ])
+        (mem:SI (reg/f:DI 87 [ _6 ]) [3 *_6+0 S4 A32])) "getcwd-lgpl.c":90:9 -1
+     (nil))
+(insn 111 110 112 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ _7 ])
+            (const_int 34 [0x22]))) "getcwd-lgpl.c":90:8 -1
+     (nil))
+(jump_insn 112 111 113 17 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 117)
+            (pc))) "getcwd-lgpl.c":90:8 -1
+     (nil)
+ -> 117)
+(note 113 112 114 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 114 113 115 18 (set (reg/f:DI 96 [ _19 ])
+        (const_int 0 [0])) "getcwd-lgpl.c":91:14 -1
+     (nil))
+(jump_insn 115 114 116 18 (set (pc)
+        (label_ref 121)) "getcwd-lgpl.c":91:14 -1
+     (nil)
+ -> 121)
+(barrier 116 115 117)
+(code_label 117 116 118 19 11 (nil) [1 uses])
+(note 118 117 119 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 119 118 120 19 (set (pc)
+        (label_ref 125)) -1
+     (nil)
+ -> 125)
+(barrier 120 119 121)
+(code_label 121 120 122 20 10 (nil) [1 uses])
+(note 122 121 123 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 123 122 124 20 (set (pc)
+        (label_ref 205)) "getcwd-lgpl.c":88:16 -1
+     (nil)
+ -> 205)
+(barrier 124 123 125)
+(code_label 125 124 126 21 12 (nil) [2 uses])
+(note 126 125 127 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 127 126 128 21 (parallel [
+            (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])
+                (ashift:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "getcwd-lgpl.c":97:12 -1
+     (nil))
+(insn 128 127 129 21 (set (reg:DI 113)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])) "getcwd-lgpl.c":98:13 -1
+     (nil))
+(insn 129 128 130 21 (set (reg:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":98:13 -1
+     (nil))
+(insn 130 129 131 21 (set (reg:DI 4 si)
+        (reg:DI 113)) "getcwd-lgpl.c":98:13 -1
+     (nil))
+(insn 131 130 132 21 (set (reg:DI 5 di)
+        (reg:DI 114)) "getcwd-lgpl.c":98:13 -1
+     (nil))
+(call_insn 132 131 133 21 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("realloc") [flags 0x41]  <function_decl 0x7b9b0b2e0600 realloc>) [0 __builtin_realloc S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":98:13 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 133 132 134 21 (set (reg:DI 115)
+        (reg:DI 0 ax)) "getcwd-lgpl.c":98:13 -1
+     (nil))
+(insn 134 133 135 21 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4056 [0xfffffffffffff028])) [2 ptr+0 S8 A64])
+        (reg:DI 115)) "getcwd-lgpl.c":98:13 -1
+     (nil))
+(insn 135 134 136 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4056 [0xfffffffffffff028])) [2 ptr+0 S8 A64])
+            (const_int 0 [0]))) "getcwd-lgpl.c":99:10 -1
+     (nil))
+(jump_insn 136 135 137 21 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 147)
+            (pc))) "getcwd-lgpl.c":99:10 -1
+     (nil)
+ -> 147)
+(note 137 136 138 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 138 137 139 22 (set (reg:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":101:11 -1
+     (nil))
+(insn 139 138 140 22 (set (reg:DI 5 di)
+        (reg:DI 116)) "getcwd-lgpl.c":101:11 -1
+     (nil))
+(call_insn 140 139 141 22 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7b9b0b2d6d00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "getcwd-lgpl.c":101:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn/u 141 140 142 22 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":102:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 142 141 143 22 (set (reg/f:DI 89 [ _8 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":102:11 -1
+     (nil))
+(insn 143 142 144 22 (set (mem:SI (reg/f:DI 89 [ _8 ]) [3 *_8+0 S4 A32])
+        (const_int 12 [0xc])) "getcwd-lgpl.c":102:17 -1
+     (nil))
+(insn 144 143 145 22 (set (reg/f:DI 96 [ _19 ])
+        (const_int 0 [0])) "getcwd-lgpl.c":103:18 -1
+     (nil))
+(jump_insn 145 144 146 22 (set (pc)
+        (label_ref 205)) "getcwd-lgpl.c":103:18 -1
+     (nil)
+ -> 205)
+(barrier 146 145 147)
+(code_label 147 146 148 23 13 (nil) [1 uses])
+(note 148 147 149 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 149 148 150 23 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4056 [0xfffffffffffff028])) [2 ptr+0 S8 A64])) "getcwd-lgpl.c":105:11 -1
+     (nil))
+(insn 150 149 151 23 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])
+        (reg/f:DI 117)) "getcwd-lgpl.c":105:11 -1
+     (nil))
+(insn 151 150 152 23 (set (reg:DI 118)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4096 [0xfffffffffffff000])) [4 size+0 S8 A64])) "getcwd-lgpl.c":106:16 -1
+     (nil))
+(insn 152 151 153 23 (set (reg:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":106:16 -1
+     (nil))
+(insn 153 152 154 23 (set (reg:DI 4 si)
+        (reg:DI 118)) "getcwd-lgpl.c":106:16 -1
+     (nil))
+(insn 154 153 155 23 (set (reg:DI 5 di)
+        (reg:DI 119)) "getcwd-lgpl.c":106:16 -1
+     (nil))
+(call_insn 155 154 156 23 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getcwd") [flags 0x41]  <function_decl 0x7b9b0b395600 getcwd>) [0 getcwd S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":106:16 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 156 155 157 23 (set (reg:DI 120)
+        (reg:DI 0 ax)) "getcwd-lgpl.c":106:16 -1
+     (nil))
+(insn 157 156 158 23 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+        (reg:DI 120)) "getcwd-lgpl.c":106:16 -1
+     (nil))
+(insn 158 157 159 23 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+            (const_int 0 [0]))) "getcwd-lgpl.c":108:18 -1
+     (nil))
+(jump_insn 159 158 160 23 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 166)
+            (pc))) "getcwd-lgpl.c":108:18 -1
+     (nil)
+ -> 166)
+(note 160 159 161 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 161 160 162 24 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":108:21 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 162 161 163 24 (set (reg/f:DI 90 [ _9 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":108:21 -1
+     (nil))
+(insn 163 162 164 24 (set (reg:SI 91 [ _10 ])
+        (mem:SI (reg/f:DI 90 [ _9 ]) [3 *_9+0 S4 A32])) "getcwd-lgpl.c":108:21 -1
+     (nil))
+(insn 164 163 165 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ _10 ])
+            (const_int 34 [0x22]))) "getcwd-lgpl.c":108:18 -1
+     (nil))
+(jump_insn 165 164 166 24 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 125)
+            (pc))) "getcwd-lgpl.c":108:18 -1
+     (nil)
+ -> 125)
+(code_label 166 165 167 25 14 (nil) [1 uses])
+(note 167 166 168 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 168 167 169 25 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+            (const_int 0 [0]))) "getcwd-lgpl.c":110:6 -1
+     (nil))
+(jump_insn 169 168 170 25 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 184)
+            (pc))) "getcwd-lgpl.c":110:6 -1
+     (nil)
+ -> 184)
+(note 170 169 171 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 171 170 172 26 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":112:25 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 172 171 173 26 (set (reg/f:DI 92 [ _11 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":112:25 -1
+     (nil))
+(insn 173 172 174 26 (set (reg:SI 121)
+        (mem:SI (reg/f:DI 92 [ _11 ]) [3 *_11+0 S4 A32])) "getcwd-lgpl.c":112:11 -1
+     (nil))
+(insn 174 173 175 26 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4072 [0xfffffffffffff018])) [3 saved_errno+0 S4 A64])
+        (reg:SI 121)) "getcwd-lgpl.c":112:11 -1
+     (nil))
+(insn 175 174 176 26 (set (reg:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":113:7 -1
+     (nil))
+(insn 176 175 177 26 (set (reg:DI 5 di)
+        (reg:DI 122)) "getcwd-lgpl.c":113:7 -1
+     (nil))
+(call_insn 177 176 178 26 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7b9b0b2d6d00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "getcwd-lgpl.c":113:7 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn/u 178 177 179 26 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7b9b0b3e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":114:7 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 179 178 180 26 (set (reg/f:DI 93 [ _12 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":114:7 -1
+     (nil))
+(insn 180 179 181 26 (set (reg:SI 123)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4072 [0xfffffffffffff018])) [3 saved_errno+0 S4 A64])) "getcwd-lgpl.c":114:13 -1
+     (nil))
+(insn 181 180 182 26 (set (mem:SI (reg/f:DI 93 [ _12 ]) [3 *_12+0 S4 A32])
+        (reg:SI 123)) "getcwd-lgpl.c":114:13 -1
+     (nil))
+(jump_insn 182 181 183 26 (set (pc)
+        (label_ref 202)) -1
+     (nil)
+ -> 202)
+(barrier 183 182 184)
+(code_label 184 183 185 27 15 (nil) [1 uses])
+(note 185 184 186 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 186 185 187 27 (set (reg:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":119:30 -1
+     (nil))
+(insn 187 186 188 27 (set (reg:DI 5 di)
+        (reg:DI 124)) "getcwd-lgpl.c":119:30 -1
+     (nil))
+(call_insn/i 188 187 189 27 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x7b9b0b2b7700 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":119:30 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 189 188 190 27 (set (reg:DI 94 [ _13 ])
+        (reg:DI 0 ax)) "getcwd-lgpl.c":119:30 -1
+     (nil))
+(insn 190 189 191 27 (parallel [
+            (set (reg:DI 95 [ _14 ])
+                (plus:DI (reg:DI 94 [ _13 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "getcwd-lgpl.c":119:16 -1
+     (nil))
+(insn 191 190 192 27 (set (reg:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":119:16 -1
+     (nil))
+(insn 192 191 193 27 (set (reg:DI 4 si)
+        (reg:DI 95 [ _14 ])) "getcwd-lgpl.c":119:16 -1
+     (nil))
+(insn 193 192 194 27 (set (reg:DI 5 di)
+        (reg:DI 125)) "getcwd-lgpl.c":119:16 -1
+     (nil))
+(call_insn 194 193 195 27 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("realloc") [flags 0x41]  <function_decl 0x7b9b0b2e0600 realloc>) [0 __builtin_realloc S1 A8])
+            (const_int 0 [0]))) "getcwd-lgpl.c":119:16 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 195 194 196 27 (set (reg:DI 126)
+        (reg:DI 0 ax)) "getcwd-lgpl.c":119:16 -1
+     (nil))
+(insn 196 195 197 27 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+        (reg:DI 126)) "getcwd-lgpl.c":119:16 -1
+     (nil))
+(insn 197 196 198 27 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+            (const_int 0 [0]))) "getcwd-lgpl.c":120:10 -1
+     (nil))
+(jump_insn 198 197 199 27 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 202)
+            (pc))) "getcwd-lgpl.c":120:10 -1
+     (nil)
+ -> 202)
+(note 199 198 200 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 200 199 201 28 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4088 [0xfffffffffffff008])) [2 buf+0 S8 A64])) "getcwd-lgpl.c":121:16 -1
+     (nil))
+(insn 201 200 202 28 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])
+        (reg/f:DI 127)) "getcwd-lgpl.c":121:16 -1
+     (nil))
+(code_label 202 201 203 29 16 (nil) [2 uses])
+(note 203 202 204 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 204 203 205 29 (set (reg/f:DI 96 [ _19 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4064 [0xfffffffffffff020])) [2 result+0 S8 A128])) "getcwd-lgpl.c":123:10 -1
+     (nil))
+(code_label 205 204 206 30 4 (nil) [7 uses])
+(note 206 205 207 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 207 206 211 30 (set (reg/f:DI 97 [ <retval> ])
+        (reg/f:DI 96 [ _19 ])) "getcwd-lgpl.c":124:1 -1
+     (nil))
+(insn 211 207 212 30 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [1 D.3746+0 S8 A64])
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_TEST))
+            (clobber (scratch:DI))
+        ]) "getcwd-lgpl.c":124:1 -1
+     (nil))
+(jump_insn 212 211 219 30 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 215)
+            (pc))) "getcwd-lgpl.c":124:1 -1
+     (nil)
+ -> 215)
+(note 219 212 213 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(call_insn 213 219 214 32 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7b9b0b07be00 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "getcwd-lgpl.c":124:1 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 214 213 215)
+(code_label 215 214 220 33 17 (nil) [1 uses])
+(note 220 215 216 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 216 220 217 33 (set (reg/i:DI 0 ax)
+        (reg/f:DI 97 [ <retval> ])) "getcwd-lgpl.c":124:1 -1
+     (nil))
+(insn 217 216 0 33 (use (reg/i:DI 0 ax)) "getcwd-lgpl.c":124:1 -1
+     (nil))

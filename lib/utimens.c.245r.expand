@@ -1,0 +1,3922 @@
+
+;; Function validate_timespec (validate_timespec, funcdef_no=19, decl_uid=3611, cgraph_uid=20, symbol_order=21)
+
+Partition 1: size 4 align 4
+	utime_omit_count_28
+Partition 0: size 4 align 4
+	result_26
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 126.
+Merging block 22 into block 21...
+Merged blocks 21 and 22.
+Merged 21 and 22 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])
+        (reg:DI 5 di [ timespec ])) "utimens.c":88:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 result+0 S4 A64])
+        (const_int 0 [0])) "utimens.c":89:7 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [4 utime_omit_count+0 S4 A32])
+        (const_int 0 [0])) "utimens.c":90:7 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":91:19 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 82 [ _1 ])
+        (mem:DI (plus:DI (reg/f:DI 109)
+                (const_int 8 [0x8])) [2 timespec_37(D)->tv_nsec+0 S8 A64])) "utimens.c":91:19 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 82 [ _1 ])
+            (const_int 1073741823 [0x3fffffff]))) "utimens.c":91:6 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) "utimens.c":91:6 -1
+     (nil)
+ -> 31)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":92:22 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 83 [ _2 ])
+        (mem:DI (plus:DI (reg/f:DI 110)
+                (const_int 8 [0x8])) [2 timespec_37(D)->tv_nsec+0 S8 A64])) "utimens.c":92:22 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 83 [ _2 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":92:8 -1
+     (nil))
+(jump_insn 16 15 17 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) "utimens.c":92:8 -1
+     (nil)
+ -> 31)
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":93:30 -1
+     (nil))
+(insn 19 18 22 5 (set (reg:DI 84 [ _3 ])
+        (mem:DI (plus:DI (reg/f:DI 111)
+                (const_int 8 [0x8])) [2 timespec_37(D)->tv_nsec+0 S8 A64])) "utimens.c":93:30 -1
+     (nil))
+(insn 22 19 23 5 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (reg:DI 84 [ _3 ])
+            (const_int 0 [0]))) "utimens.c":93:8 -1
+     (nil))
+(jump_insn 23 22 24 5 (set (pc)
+        (if_then_else (lt (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 60)
+            (pc))) "utimens.c":93:8 -1
+     (nil)
+ -> 60)
+(note 24 23 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 6 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":94:28 -1
+     (nil))
+(insn 26 25 29 6 (set (reg:DI 85 [ _4 ])
+        (mem:DI (plus:DI (reg/f:DI 112)
+                (const_int 8 [0x8])) [2 timespec_37(D)->tv_nsec+0 S8 A64])) "utimens.c":94:28 -1
+     (nil))
+(insn 29 26 30 6 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:DI 85 [ _4 ])
+            (const_int 999999999 [0x3b9ac9ff]))) "utimens.c":93:11 -1
+     (nil))
+(jump_insn 30 29 31 6 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 60)
+            (pc))) "utimens.c":93:11 -1
+     (nil)
+ -> 60)
+(code_label 31 30 32 7 2 (nil) [2 uses])
+(note 32 31 33 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 7 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":95:19 -1
+     (nil))
+(insn 34 33 35 7 (parallel [
+            (set (reg/f:DI 86 [ _5 ])
+                (plus:DI (reg/f:DI 113)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":95:19 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 35 34 36 7 (set (reg:DI 87 [ _6 ])
+        (mem:DI (plus:DI (reg/f:DI 86 [ _5 ])
+                (const_int 8 [0x8])) [2 _5->tv_nsec+0 S8 A64])) "utimens.c":95:22 -1
+     (nil))
+(insn 36 35 37 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 87 [ _6 ])
+            (const_int 1073741823 [0x3fffffff]))) "utimens.c":95:7 -1
+     (nil))
+(jump_insn 37 36 38 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 68)
+            (pc))) "utimens.c":95:7 -1
+     (nil)
+ -> 68)
+(note 38 37 39 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 40 8 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":96:22 -1
+     (nil))
+(insn 40 39 41 8 (parallel [
+            (set (reg/f:DI 88 [ _7 ])
+                (plus:DI (reg/f:DI 114)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":96:22 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 41 40 42 8 (set (reg:DI 89 [ _8 ])
+        (mem:DI (plus:DI (reg/f:DI 88 [ _7 ])
+                (const_int 8 [0x8])) [2 _7->tv_nsec+0 S8 A64])) "utimens.c":96:25 -1
+     (nil))
+(insn 42 41 43 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 89 [ _8 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":96:11 -1
+     (nil))
+(jump_insn 43 42 44 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 68)
+            (pc))) "utimens.c":96:11 -1
+     (nil)
+ -> 68)
+(note 44 43 45 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 9 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":97:30 -1
+     (nil))
+(insn 46 45 47 9 (parallel [
+            (set (reg/f:DI 90 [ _9 ])
+                (plus:DI (reg/f:DI 115)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":97:30 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 47 46 50 9 (set (reg:DI 91 [ _10 ])
+        (mem:DI (plus:DI (reg/f:DI 90 [ _9 ])
+                (const_int 8 [0x8])) [2 _9->tv_nsec+0 S8 A64])) "utimens.c":97:33 -1
+     (nil))
+(insn 50 47 51 9 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (reg:DI 91 [ _10 ])
+            (const_int 0 [0]))) "utimens.c":97:11 -1
+     (nil))
+(jump_insn 51 50 52 9 (set (pc)
+        (if_then_else (lt (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 60)
+            (pc))) "utimens.c":97:11 -1
+     (nil)
+ -> 60)
+(note 52 51 53 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 10 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":98:28 -1
+     (nil))
+(insn 54 53 55 10 (parallel [
+            (set (reg/f:DI 92 [ _11 ])
+                (plus:DI (reg/f:DI 116)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":98:28 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 55 54 58 10 (set (reg:DI 93 [ _12 ])
+        (mem:DI (plus:DI (reg/f:DI 92 [ _11 ])
+                (const_int 8 [0x8])) [2 _11->tv_nsec+0 S8 A64])) "utimens.c":98:31 -1
+     (nil))
+(insn 58 55 59 10 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:DI 93 [ _12 ])
+            (const_int 999999999 [0x3b9ac9ff]))) "utimens.c":97:14 -1
+     (nil))
+(jump_insn 59 58 60 10 (set (pc)
+        (if_then_else (le (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 68)
+            (pc))) "utimens.c":97:14 -1
+     (nil)
+ -> 68)
+(code_label 60 59 61 11 3 (nil) [3 uses])
+(note 61 60 62 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 62 61 63 11 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x737cda19da00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "utimens.c":100:7 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 63 62 64 11 (set (reg/f:DI 94 [ _13 ])
+        (reg:DI 0 ax)) "utimens.c":100:7 -1
+     (nil))
+(insn 64 63 65 11 (set (mem:SI (reg/f:DI 94 [ _13 ]) [4 *_13+0 S4 A32])
+        (const_int 22 [0x16])) "utimens.c":100:13 -1
+     (nil))
+(insn 65 64 66 11 (set (reg:SI 107 [ _30 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":101:14 -1
+     (nil))
+(jump_insn 66 65 67 11 (set (pc)
+        (label_ref 123)) "utimens.c":101:14 -1
+     (nil)
+ -> 123)
+(barrier 67 66 68)
+(code_label 68 67 69 12 4 (nil) [3 uses])
+(note 69 68 70 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 70 69 71 12 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":107:18 -1
+     (nil))
+(insn 71 70 72 12 (set (reg:DI 95 [ _14 ])
+        (mem:DI (plus:DI (reg/f:DI 117)
+                (const_int 8 [0x8])) [2 timespec_37(D)->tv_nsec+0 S8 A64])) "utimens.c":107:18 -1
+     (nil))
+(insn 72 71 73 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 95 [ _14 ])
+            (const_int 1073741823 [0x3fffffff]))) "utimens.c":107:6 -1
+     (nil))
+(jump_insn 73 72 74 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 79)
+            (pc))) "utimens.c":107:6 -1
+     (nil)
+ -> 79)
+(note 74 73 75 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 75 74 76 13 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":108:21 -1
+     (nil))
+(insn 76 75 77 13 (set (reg:DI 96 [ _15 ])
+        (mem:DI (plus:DI (reg/f:DI 118)
+                (const_int 8 [0x8])) [2 timespec_37(D)->tv_nsec+0 S8 A64])) "utimens.c":108:21 -1
+     (nil))
+(insn 77 76 78 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 96 [ _15 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":108:7 -1
+     (nil))
+(jump_insn 78 77 79 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 90)
+            (pc))) "utimens.c":108:7 -1
+     (nil)
+ -> 90)
+(code_label 79 78 80 14 6 (nil) [1 uses])
+(note 80 79 81 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 81 80 82 14 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":110:26 -1
+     (nil))
+(insn 82 81 83 14 (set (mem:DI (reg/f:DI 119) [2 timespec_37(D)->tv_sec+0 S8 A64])
+        (const_int 0 [0])) "utimens.c":110:26 -1
+     (nil))
+(insn 83 82 84 14 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 result+0 S4 A64])
+        (const_int 1 [0x1])) "utimens.c":111:14 -1
+     (nil))
+(insn 84 83 85 14 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":112:22 -1
+     (nil))
+(insn 85 84 86 14 (set (reg:DI 97 [ _16 ])
+        (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 8 [0x8])) [2 timespec_37(D)->tv_nsec+0 S8 A64])) "utimens.c":112:22 -1
+     (nil))
+(insn 86 85 87 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 97 [ _16 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":112:10 -1
+     (nil))
+(jump_insn 87 86 88 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 90)
+            (pc))) "utimens.c":112:10 -1
+     (nil)
+ -> 90)
+(note 88 87 89 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 89 88 90 15 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [4 utime_omit_count+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [4 utime_omit_count+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":113:25 -1
+     (nil))
+(code_label 90 89 91 16 7 (nil) [2 uses])
+(note 91 90 92 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 92 91 93 16 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":115:15 -1
+     (nil))
+(insn 93 92 94 16 (parallel [
+            (set (reg/f:DI 98 [ _17 ])
+                (plus:DI (reg/f:DI 121)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":115:15 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 94 93 95 16 (set (reg:DI 99 [ _18 ])
+        (mem:DI (plus:DI (reg/f:DI 98 [ _17 ])
+                (const_int 8 [0x8])) [2 _17->tv_nsec+0 S8 A64])) "utimens.c":115:18 -1
+     (nil))
+(insn 95 94 96 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 99 [ _18 ])
+            (const_int 1073741823 [0x3fffffff]))) "utimens.c":115:6 -1
+     (nil))
+(jump_insn 96 95 97 16 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 103)
+            (pc))) "utimens.c":115:6 -1
+     (nil)
+ -> 103)
+(note 97 96 98 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 98 97 99 17 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":116:18 -1
+     (nil))
+(insn 99 98 100 17 (parallel [
+            (set (reg/f:DI 100 [ _19 ])
+                (plus:DI (reg/f:DI 122)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":116:18 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 100 99 101 17 (set (reg:DI 101 [ _20 ])
+        (mem:DI (plus:DI (reg/f:DI 100 [ _19 ])
+                (const_int 8 [0x8])) [2 _19->tv_nsec+0 S8 A64])) "utimens.c":116:21 -1
+     (nil))
+(insn 101 100 102 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 101 [ _20 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":116:7 -1
+     (nil))
+(jump_insn 102 101 103 17 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 116)
+            (pc))) "utimens.c":116:7 -1
+     (nil)
+ -> 116)
+(code_label 103 102 104 18 8 (nil) [1 uses])
+(note 104 103 105 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 106 18 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":118:15 -1
+     (nil))
+(insn 106 105 107 18 (parallel [
+            (set (reg/f:DI 102 [ _21 ])
+                (plus:DI (reg/f:DI 123)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":118:15 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 107 106 108 18 (set (mem:DI (reg/f:DI 102 [ _21 ]) [2 _21->tv_sec+0 S8 A64])
+        (const_int 0 [0])) "utimens.c":118:26 -1
+     (nil))
+(insn 108 107 109 18 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 result+0 S4 A64])
+        (const_int 1 [0x1])) "utimens.c":119:14 -1
+     (nil))
+(insn 109 108 110 18 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])) "utimens.c":120:19 -1
+     (nil))
+(insn 110 109 111 18 (parallel [
+            (set (reg/f:DI 103 [ _22 ])
+                (plus:DI (reg/f:DI 124)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":120:19 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 111 110 112 18 (set (reg:DI 104 [ _23 ])
+        (mem:DI (plus:DI (reg/f:DI 103 [ _22 ])
+                (const_int 8 [0x8])) [2 _22->tv_nsec+0 S8 A64])) "utimens.c":120:22 -1
+     (nil))
+(insn 112 111 113 18 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 104 [ _23 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":120:10 -1
+     (nil))
+(jump_insn 113 112 114 18 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 116)
+            (pc))) "utimens.c":120:10 -1
+     (nil)
+ -> 116)
+(note 114 113 115 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 115 114 116 19 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [4 utime_omit_count+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [4 utime_omit_count+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":121:25 -1
+     (nil))
+(code_label 116 115 117 20 9 (nil) [2 uses])
+(note 117 116 118 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 118 117 119 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [4 utime_omit_count+0 S4 A32])
+            (const_int 1 [0x1]))) "utimens.c":123:37 -1
+     (nil))
+(insn 119 118 120 20 (set (reg:QI 105 [ _24 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) "utimens.c":123:37 -1
+     (nil))
+(insn 120 119 121 20 (set (reg:SI 106 [ _25 ])
+        (zero_extend:SI (reg:QI 105 [ _24 ]))) "utimens.c":123:37 -1
+     (nil))
+(insn 121 120 122 20 (set (reg:SI 125)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 result+0 S4 A64])) "utimens.c":123:17 -1
+     (nil))
+(insn 122 121 123 20 (parallel [
+            (set (reg:SI 107 [ _30 ])
+                (plus:SI (reg:SI 106 [ _25 ])
+                    (reg:SI 125)))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":123:17 -1
+     (expr_list:REG_EQUAL (plus:SI (reg:SI 106 [ _25 ])
+            (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [4 result+0 S4 A64]))
+        (nil)))
+(code_label 123 122 124 21 5 (nil) [1 uses])
+(note 124 123 125 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 125 124 129 21 (set (reg:SI 108 [ <retval> ])
+        (reg:SI 107 [ _30 ])) "utimens.c":124:1 -1
+     (nil))
+(insn 129 125 130 21 (set (reg/i:SI 0 ax)
+        (reg:SI 108 [ <retval> ])) "utimens.c":124:1 -1
+     (nil))
+(insn 130 129 0 21 (use (reg/i:SI 0 ax)) "utimens.c":124:1 -1
+     (nil))
+
+;; Function update_timespec (update_timespec, funcdef_no=20, decl_uid=3617, cgraph_uid=21, symbol_order=22)
+
+Partition 0: size 8 align 8
+	timespec_21
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 104.
+Merging block 19 into block 18...
+Merged blocks 18 and 19.
+Merged 18 and 19 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [8 statbuf+0 S8 A64])
+        (reg:DI 5 di [ statbuf ])) "utimens.c":134:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 ts+0 S8 A64])
+        (reg:DI 4 si [ ts ])) "utimens.c":134:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 ts+0 S8 A64])) "utimens.c":135:20 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 99)
+        (mem/f:DI (reg/f:DI 98) [3 *ts_20(D)+0 S8 A64])) "utimens.c":135:20 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])
+        (reg/f:DI 99)) "utimens.c":135:20 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":136:18 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 82 [ _1 ])
+        (mem:DI (plus:DI (reg/f:DI 100)
+                (const_int 8 [0x8])) [2 timespec_21->tv_nsec+0 S8 A64])) "utimens.c":136:18 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 82 [ _1 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":136:6 -1
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) "utimens.c":136:6 -1
+     (nil)
+ -> 24)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":137:18 -1
+     (nil))
+(insn 16 15 17 4 (parallel [
+            (set (reg/f:DI 83 [ _2 ])
+                (plus:DI (reg/f:DI 101)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":137:18 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 17 16 18 4 (set (reg:DI 84 [ _3 ])
+        (mem:DI (plus:DI (reg/f:DI 83 [ _2 ])
+                (const_int 8 [0x8])) [2 _2->tv_nsec+0 S8 A64])) "utimens.c":137:21 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 84 [ _3 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":137:7 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) "utimens.c":137:7 -1
+     (nil)
+ -> 24)
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 5 (set (reg:QI 96 [ _15 ])
+        (const_int 1 [0x1])) "utimens.c":138:12 -1
+     (nil))
+(jump_insn 22 21 23 5 (set (pc)
+        (label_ref 101)) "utimens.c":138:12 -1
+     (nil)
+ -> 101)
+(barrier 23 22 24)
+(code_label 24 23 25 6 11 (nil) [2 uses])
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 6 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":139:18 -1
+     (nil))
+(insn 27 26 28 6 (set (reg:DI 85 [ _4 ])
+        (mem:DI (plus:DI (reg/f:DI 102)
+                (const_int 8 [0x8])) [2 timespec_21->tv_nsec+0 S8 A64])) "utimens.c":139:18 -1
+     (nil))
+(insn 28 27 29 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 85 [ _4 ])
+            (const_int 1073741823 [0x3fffffff]))) "utimens.c":139:6 -1
+     (nil))
+(jump_insn 29 28 30 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) "utimens.c":139:6 -1
+     (nil)
+ -> 42)
+(note 30 29 31 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 7 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":140:18 -1
+     (nil))
+(insn 32 31 33 7 (parallel [
+            (set (reg/f:DI 86 [ _5 ])
+                (plus:DI (reg/f:DI 103)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":140:18 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 33 32 34 7 (set (reg:DI 87 [ _6 ])
+        (mem:DI (plus:DI (reg/f:DI 86 [ _5 ])
+                (const_int 8 [0x8])) [2 _5->tv_nsec+0 S8 A64])) "utimens.c":140:21 -1
+     (nil))
+(insn 34 33 35 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 87 [ _6 ])
+            (const_int 1073741823 [0x3fffffff]))) "utimens.c":140:7 -1
+     (nil))
+(jump_insn 35 34 36 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) "utimens.c":140:7 -1
+     (nil)
+ -> 42)
+(note 36 35 37 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 8 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 ts+0 S8 A64])) "utimens.c":142:11 -1
+     (nil))
+(insn 38 37 39 8 (set (mem/f:DI (reg/f:DI 104) [3 *ts_20(D)+0 S8 A64])
+        (const_int 0 [0])) "utimens.c":142:11 -1
+     (nil))
+(insn 39 38 40 8 (set (reg:QI 96 [ _15 ])
+        (const_int 0 [0])) "utimens.c":143:14 -1
+     (nil))
+(jump_insn 40 39 41 8 (set (pc)
+        (label_ref 101)) "utimens.c":143:14 -1
+     (nil)
+ -> 101)
+(barrier 41 40 42)
+(code_label 42 41 43 9 13 (nil) [2 uses])
+(note 43 42 44 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 9 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":146:18 -1
+     (nil))
+(insn 45 44 46 9 (set (reg:DI 88 [ _7 ])
+        (mem:DI (plus:DI (reg/f:DI 105)
+                (const_int 8 [0x8])) [2 timespec_21->tv_nsec+0 S8 A64])) "utimens.c":146:18 -1
+     (nil))
+(insn 46 45 47 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 88 [ _7 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":146:6 -1
+     (nil))
+(jump_insn 47 46 48 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 58)
+            (pc))) "utimens.c":146:6 -1
+     (nil)
+ -> 58)
+(note 48 47 49 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 10 (set (reg:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [8 statbuf+0 S8 A64])) "utimens.c":147:19 -1
+     (nil))
+(insn 50 49 51 10 (set (reg:DI 5 di)
+        (reg:DI 106)) "utimens.c":147:19 -1
+     (nil))
+(call_insn/i 51 50 52 10 (set (reg:TI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("get_stat_atime") [flags 0x41]  <function_decl 0x737cd9e6f200 get_stat_atime>) [0 get_stat_atime S1 A8])
+            (const_int 0 [0]))) "utimens.c":147:19 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 52 51 53 10 (set (reg:TI 107)
+        (reg:TI 0 ax)) "utimens.c":147:19 -1
+     (nil))
+(insn 53 52 54 10 (set (reg:TI 108)
+        (reg:TI 107)) "utimens.c":147:19 -1
+     (nil))
+(insn 54 53 55 10 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":147:19 -1
+     (nil))
+(insn 55 54 56 10 (set (mem:TI (reg/f:DI 109) [1 *timespec_21+0 S16 A64])
+        (reg:TI 108)) "utimens.c":147:19 -1
+     (nil))
+(jump_insn 56 55 57 10 (set (pc)
+        (label_ref 68)) -1
+     (nil)
+ -> 68)
+(barrier 57 56 58)
+(code_label 58 57 59 11 14 (nil) [1 uses])
+(note 59 58 60 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 11 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":148:23 -1
+     (nil))
+(insn 61 60 62 11 (set (reg:DI 89 [ _8 ])
+        (mem:DI (plus:DI (reg/f:DI 110)
+                (const_int 8 [0x8])) [2 timespec_21->tv_nsec+0 S8 A64])) "utimens.c":148:23 -1
+     (nil))
+(insn 62 61 63 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 89 [ _8 ])
+            (const_int 1073741823 [0x3fffffff]))) "utimens.c":148:11 -1
+     (nil))
+(jump_insn 63 62 64 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 68)
+            (pc))) "utimens.c":148:11 -1
+     (nil)
+ -> 68)
+(note 64 63 65 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 66 12 (set (reg:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":149:5 -1
+     (nil))
+(insn 66 65 67 12 (set (reg:DI 5 di)
+        (reg:DI 111)) "utimens.c":149:5 -1
+     (nil))
+(call_insn 67 66 68 12 (call (mem:QI (symbol_ref:DI ("gettime") [flags 0x41]  <function_decl 0x737cd9e75c00 gettime>) [0 gettime S1 A8])
+        (const_int 0 [0])) "utimens.c":149:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 68 67 69 13 15 (nil) [2 uses])
+(note 69 68 70 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 70 69 71 13 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":151:15 -1
+     (nil))
+(insn 71 70 72 13 (parallel [
+            (set (reg/f:DI 90 [ _9 ])
+                (plus:DI (reg/f:DI 112)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":151:15 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 72 71 73 13 (set (reg:DI 91 [ _10 ])
+        (mem:DI (plus:DI (reg/f:DI 90 [ _9 ])
+                (const_int 8 [0x8])) [2 _9->tv_nsec+0 S8 A64])) "utimens.c":151:18 -1
+     (nil))
+(insn 73 72 74 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 91 [ _10 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":151:6 -1
+     (nil))
+(jump_insn 74 73 75 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) "utimens.c":151:6 -1
+     (nil)
+ -> 86)
+(note 75 74 76 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 76 75 77 14 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":152:13 -1
+     (nil))
+(insn 77 76 78 14 (parallel [
+            (set (reg/f:DI 92 [ _11 ])
+                (plus:DI (reg/f:DI 113)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":152:13 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 78 77 79 14 (set (reg:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [8 statbuf+0 S8 A64])) "utimens.c":152:19 -1
+     (nil))
+(insn 79 78 80 14 (set (reg:DI 5 di)
+        (reg:DI 114)) "utimens.c":152:19 -1
+     (nil))
+(call_insn/i 80 79 81 14 (set (reg:TI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("get_stat_mtime") [flags 0x41]  <function_decl 0x737cd9e6f600 get_stat_mtime>) [0 get_stat_mtime S1 A8])
+            (const_int 0 [0]))) "utimens.c":152:19 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 81 80 82 14 (set (reg:TI 115)
+        (reg:TI 0 ax)) "utimens.c":152:19 -1
+     (nil))
+(insn 82 81 83 14 (set (reg:TI 116)
+        (reg:TI 115)) "utimens.c":152:19 -1
+     (nil))
+(insn 83 82 84 14 (set (mem:TI (reg/f:DI 92 [ _11 ]) [1 *_11+0 S16 A64])
+        (reg:TI 116)) "utimens.c":152:19 -1
+     (nil))
+(jump_insn 84 83 85 14 (set (pc)
+        (label_ref 98)) -1
+     (nil)
+ -> 98)
+(barrier 85 84 86)
+(code_label 86 85 87 15 16 (nil) [1 uses])
+(note 87 86 88 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 89 15 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":153:20 -1
+     (nil))
+(insn 89 88 90 15 (parallel [
+            (set (reg/f:DI 93 [ _12 ])
+                (plus:DI (reg/f:DI 117)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":153:20 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 90 89 91 15 (set (reg:DI 94 [ _13 ])
+        (mem:DI (plus:DI (reg/f:DI 93 [ _12 ])
+                (const_int 8 [0x8])) [2 _12->tv_nsec+0 S8 A64])) "utimens.c":153:23 -1
+     (nil))
+(insn 91 90 92 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 94 [ _13 ])
+            (const_int 1073741823 [0x3fffffff]))) "utimens.c":153:11 -1
+     (nil))
+(jump_insn 92 91 93 15 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 98)
+            (pc))) "utimens.c":153:11 -1
+     (nil)
+ -> 98)
+(note 93 92 94 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 94 93 95 16 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])) "utimens.c":154:5 -1
+     (nil))
+(insn 95 94 96 16 (parallel [
+            (set (reg/f:DI 95 [ _14 ])
+                (plus:DI (reg/f:DI 118)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":154:5 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 96 95 97 16 (set (reg:DI 5 di)
+        (reg/f:DI 95 [ _14 ])) "utimens.c":154:5 -1
+     (nil))
+(call_insn 97 96 98 16 (call (mem:QI (symbol_ref:DI ("gettime") [flags 0x41]  <function_decl 0x737cd9e75c00 gettime>) [0 gettime S1 A8])
+        (const_int 0 [0])) "utimens.c":154:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 98 97 99 17 17 (nil) [2 uses])
+(note 99 98 100 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 101 17 (set (reg:QI 96 [ _15 ])
+        (const_int 0 [0])) "utimens.c":156:10 -1
+     (nil))
+(code_label 101 100 102 18 12 (nil) [2 uses])
+(note 102 101 103 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 103 102 107 18 (set (reg:QI 97 [ <retval> ])
+        (reg:QI 96 [ _15 ])) "utimens.c":157:1 -1
+     (nil))
+(insn 107 103 108 18 (set (reg/i:QI 0 ax)
+        (reg:QI 97 [ <retval> ])) "utimens.c":157:1 -1
+     (nil))
+(insn 108 107 0 18 (use (reg/i:QI 0 ax)) "utimens.c":157:1 -1
+     (nil))
+
+;; Function fdutimens (fdutimens, funcdef_no=21, decl_uid=2211, cgraph_uid=22, symbol_order=23)
+
+Partition 11: size 144 align 16
+	st
+Partition 13: size 32 align 16
+	truncated_timeval
+Partition 12: size 32 align 16
+	timeval
+Partition 9: size 32 align 16
+	adjusted_timespec
+Partition 14: size 16 align 16
+	utimbuf
+Partition 8: size 8 align 8
+	mdiff_152
+Partition 7: size 8 align 8
+	adiff_151
+Partition 3: size 8 align 8
+	ut_67
+Partition 2: size 8 align 8
+	tt_65
+Partition 1: size 8 align 8
+	t_64
+Partition 10: size 8 align 8
+	ts
+Partition 4: size 4 align 4
+	result_115
+Partition 0: size 4 align 4
+	adjustment_needed_61
+Partition 6: size 1 align 1
+	mbig_149
+Partition 5: size 1 align 1
+	abig_148
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+;; Generating RTL for gimple basic block 39
+
+;; Generating RTL for gimple basic block 40
+
+;; Generating RTL for gimple basic block 41
+
+;; Generating RTL for gimple basic block 42
+
+;; Generating RTL for gimple basic block 43
+
+;; Generating RTL for gimple basic block 44
+
+;; Generating RTL for gimple basic block 45
+
+;; Generating RTL for gimple basic block 46
+
+;; Generating RTL for gimple basic block 47
+
+;; Generating RTL for gimple basic block 48
+
+;; Generating RTL for gimple basic block 49
+
+;; Generating RTL for gimple basic block 50
+
+;; Generating RTL for gimple basic block 51
+
+;; Generating RTL for gimple basic block 52
+
+;; Generating RTL for gimple basic block 53
+
+;; Generating RTL for gimple basic block 54
+
+;; Generating RTL for gimple basic block 55
+
+;; Generating RTL for gimple basic block 56
+
+;; Generating RTL for gimple basic block 57
+
+;; Generating RTL for gimple basic block 58
+
+;; Generating RTL for gimple basic block 59
+
+;; Generating RTL for gimple basic block 60
+
+;; Generating RTL for gimple basic block 61
+
+;; Generating RTL for gimple basic block 62
+
+;; Generating RTL for gimple basic block 63
+
+;; Generating RTL for gimple basic block 64
+
+;; Generating RTL for gimple basic block 65
+
+;; Generating RTL for gimple basic block 66
+
+;; Generating RTL for gimple basic block 67
+
+;; Generating RTL for gimple basic block 68
+
+;; Generating RTL for gimple basic block 69
+
+;; Generating RTL for gimple basic block 70
+
+;; Generating RTL for gimple basic block 71
+
+;; Generating RTL for gimple basic block 72
+
+;; Generating RTL for gimple basic block 73
+
+;; Generating RTL for gimple basic block 74
+
+;; Generating RTL for gimple basic block 75
+
+;; Generating RTL for gimple basic block 76
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 46 from 76 to 77.
+Redirecting jump 62 from 76 to 77.
+Redirecting jump 106 from 76 to 77.
+Redirecting jump 181 from 76 to 77.
+Redirecting jump 219 from 76 to 77.
+Redirecting jump 268 from 76 to 77.
+Redirecting jump 286 from 76 to 77.
+Redirecting jump 339 from 75 to 77.
+Edge 65->67 redirected to 68
+Merging block 67 into block 66...
+Merged blocks 66 and 67.
+Merged 66 and 67 without moving.
+Redirecting jump 456 from 75 to 77.
+Redirecting jump 464 from 75 to 77.
+Merging block 75 into block 74...
+Merged blocks 74 and 75.
+Merged 74 and 75 without moving.
+Merging block 76 into block 74...
+Merged blocks 74 and 76.
+Merged 74 and 76 without moving.
+Removing jump 501.
+Merging block 78 into block 77...
+Merged blocks 77 and 78.
+Merged 77 and 78 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])
+        (reg:SI 5 di [ fd ])) "utimens.c":171:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -352 [0xfffffffffffffea0])) [15 file+0 S8 A64])
+        (reg:DI 4 si [ file ])) "utimens.c":171:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -360 [0xfffffffffffffe98])) [3 timespec+0 S8 A64])
+        (reg:DI 1 dx [ timespec ])) "utimens.c":171:1 -1
+     (nil))
+(note 5 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 5 9 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [11 D.3836+0 S8 A64])
+                (unspec:DI [
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":171:1 -1
+     (nil))
+(insn 9 6 10 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -360 [0xfffffffffffffe98])) [3 timespec+0 S8 A64])
+            (const_int 0 [0]))) "utimens.c":173:54 -1
+     (nil))
+(jump_insn 10 9 11 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 15)
+            (pc))) "utimens.c":173:54 -1
+     (nil)
+ -> 15)
+(note 11 10 12 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 12 11 13 4 (parallel [
+            (set (reg/f:DI 142 [ iftmp.0_68 ])
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -256 [0xffffffffffffff00])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":173:54 -1
+     (nil))
+(jump_insn 13 12 14 4 (set (pc)
+        (label_ref 18)) -1
+     (nil)
+ -> 18)
+(barrier 14 13 15)
+(code_label 15 14 16 5 19 (nil) [1 uses])
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 5 (set (reg/f:DI 142 [ iftmp.0_68 ])
+        (const_int 0 [0])) "utimens.c":173:54 -1
+     (nil))
+(code_label 18 17 19 6 20 (nil) [1 uses])
+(note 19 18 20 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])
+        (reg/f:DI 142 [ iftmp.0_68 ])) "utimens.c":173:20 -1
+     (nil))
+(insn 21 20 22 6 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -328 [0xfffffffffffffeb8])) [4 adjustment_needed+0 S4 A64])
+        (const_int 0 [0])) "utimens.c":174:7 -1
+     (nil))
+(insn 22 21 23 6 (set (reg/f:DI 82 [ ts.1_1 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":177:7 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 82 [ ts.1_1 ])
+            (const_int 0 [0]))) "utimens.c":177:6 -1
+     (nil))
+(jump_insn 24 23 25 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 38)
+            (pc))) "utimens.c":177:6 -1
+     (nil)
+ -> 38)
+(note 25 24 26 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 7 (set (reg/f:DI 147)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -360 [0xfffffffffffffe98])) [3 timespec+0 S8 A64])) "utimens.c":179:28 -1
+     (nil))
+(insn 27 26 28 7 (set (reg:TI 148)
+        (mem:TI (reg/f:DI 147) [1 *timespec_92(D)+0 S16 A64])) "utimens.c":179:28 -1
+     (nil))
+(insn 28 27 29 7 (set (mem/c:TI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -256 [0xffffffffffffff00])) [1 adjusted_timespec[0]+0 S16 A128])
+        (reg:TI 148)) "utimens.c":179:28 -1
+     (nil))
+(insn 29 28 30 7 (set (reg/f:DI 149)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -360 [0xfffffffffffffe98])) [3 timespec+0 S8 A64])) "utimens.c":180:38 -1
+     (nil))
+(insn 30 29 31 7 (parallel [
+            (set (reg/f:DI 83 [ _2 ])
+                (plus:DI (reg/f:DI 149)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":180:38 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -360 [0xfffffffffffffe98])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 31 30 32 7 (set (reg:TI 150)
+        (mem:TI (reg/f:DI 83 [ _2 ]) [1 *_2+0 S16 A64])) "utimens.c":180:28 -1
+     (nil))
+(insn 32 31 33 7 (set (mem/c:TI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -240 [0xffffffffffffff10])) [1 adjusted_timespec[1]+0 S16 A128])
+        (reg:TI 150)) "utimens.c":180:28 -1
+     (nil))
+(insn 33 32 34 7 (set (reg/f:DI 84 [ ts.2_3 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":181:27 -1
+     (nil))
+(insn 34 33 35 7 (set (reg:DI 5 di)
+        (reg/f:DI 84 [ ts.2_3 ])) "utimens.c":181:27 -1
+     (nil))
+(call_insn 35 34 36 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("validate_timespec") [flags 0x3]  <function_decl 0x737cd9e75e00 validate_timespec>) [0 validate_timespec S1 A8])
+            (const_int 0 [0]))) "utimens.c":181:27 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 36 35 37 7 (set (reg:SI 151)
+        (reg:SI 0 ax)) "utimens.c":181:27 -1
+     (nil))
+(insn 37 36 38 7 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -328 [0xfffffffffffffeb8])) [4 adjustment_needed+0 S4 A64])
+        (reg:SI 151)) "utimens.c":181:27 -1
+     (nil))
+(code_label 38 37 39 8 21 (nil) [1 uses])
+(note 39 38 42 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 42 39 43 8 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -328 [0xfffffffffffffeb8])) [4 adjustment_needed+0 S4 A64])
+            (const_int 0 [0]))) "utimens.c":183:6 -1
+     (nil))
+(jump_insn 43 42 44 8 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 48)
+            (pc))) "utimens.c":183:6 -1
+     (nil)
+ -> 48)
+(note 44 43 45 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 9 (set (reg:SI 143 [ _70 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":184:12 -1
+     (nil))
+(jump_insn 46 45 47 9 (set (pc)
+        (label_ref:DI 498)) "utimens.c":184:12 807 {jump}
+     (nil)
+ -> 498)
+(barrier 47 46 48)
+(code_label 48 47 49 10 22 (nil) [1 uses])
+(note 49 48 52 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 52 49 53 10 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":189:6 -1
+     (nil))
+(jump_insn 53 52 54 10 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) "utimens.c":189:6 -1
+     (nil)
+ -> 64)
+(note 54 53 55 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 55 54 56 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -352 [0xfffffffffffffea0])) [15 file+0 S8 A64])
+            (const_int 0 [0]))) "utimens.c":189:14 -1
+     (nil))
+(jump_insn 56 55 57 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) "utimens.c":189:14 -1
+     (nil)
+ -> 64)
+(note 57 56 58 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 58 57 59 12 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x737cda19da00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "utimens.c":191:7 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 59 58 60 12 (set (reg/f:DI 85 [ _4 ])
+        (reg:DI 0 ax)) "utimens.c":191:7 -1
+     (nil))
+(insn 60 59 61 12 (set (mem:SI (reg/f:DI 85 [ _4 ]) [4 *_4+0 S4 A32])
+        (const_int 9 [0x9])) "utimens.c":191:13 -1
+     (nil))
+(insn 61 60 62 12 (set (reg:SI 143 [ _70 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":192:14 -1
+     (nil))
+(jump_insn 62 61 63 12 (set (pc)
+        (label_ref:DI 498)) "utimens.c":192:14 807 {jump}
+     (nil)
+ -> 498)
+(barrier 63 62 64)
+(code_label 64 63 65 13 24 (nil) [2 uses])
+(note 65 64 66 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 69 13 (set (reg:SI 86 [ utimensat_works_really.3_5 ])
+        (mem/c:SI (symbol_ref:DI ("utimensat_works_really") [flags 0x2]  <var_decl 0x737cd9e516c0 utimensat_works_really>) [4 utimensat_works_really+0 S4 A32])) "utimens.c":218:9 -1
+     (nil))
+(insn 69 66 70 13 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (reg:SI 86 [ utimensat_works_really.3_5 ])
+            (const_int 0 [0]))) "utimens.c":218:6 -1
+     (nil))
+(jump_insn 70 69 71 13 (set (pc)
+        (if_then_else (lt (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 221)
+            (pc))) "utimens.c":218:6 -1
+     (nil)
+ -> 221)
+(note 71 70 72 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -328 [0xfffffffffffffeb8])) [4 adjustment_needed+0 S4 A64])
+            (const_int 2 [0x2]))) "utimens.c":234:10 -1
+     (nil))
+(jump_insn 73 72 74 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 143)
+            (pc))) "utimens.c":234:10 -1
+     (nil)
+ -> 143)
+(note 74 73 77 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 77 74 78 15 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":236:15 -1
+     (nil))
+(jump_insn 78 77 79 15 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 90)
+            (pc))) "utimens.c":236:15 -1
+     (nil)
+ -> 90)
+(note 79 78 80 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 80 79 81 16 (parallel [
+            (set (reg:DI 152)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":236:24 -1
+     (nil))
+(insn 81 80 82 16 (set (reg:DI 153)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -352 [0xfffffffffffffea0])) [15 file+0 S8 A64])) "utimens.c":236:24 -1
+     (nil))
+(insn 82 81 83 16 (set (reg:DI 4 si)
+        (reg:DI 152)) "utimens.c":236:24 -1
+     (nil))
+(insn 83 82 84 16 (set (reg:DI 5 di)
+        (reg:DI 153)) "utimens.c":236:24 -1
+     (nil))
+(call_insn 84 83 85 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("rpl_stat") [flags 0x41]  <function_decl 0x737cda1f5500 rpl_stat>) [0 rpl_stat S1 A8])
+            (const_int 0 [0]))) "utimens.c":236:24 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 85 84 86 16 (set (reg:SI 87 [ _6 ])
+        (reg:SI 0 ax)) "utimens.c":236:24 -1
+     (nil))
+(insn 86 85 87 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ _6 ])
+            (const_int 0 [0]))) "utimens.c":236:15 -1
+     (nil))
+(insn 87 86 88 16 (set (reg:QI 144 [ iftmp.4_71 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) "utimens.c":236:15 -1
+     (nil))
+(jump_insn 88 87 89 16 (set (pc)
+        (label_ref 100)) -1
+     (nil)
+ -> 100)
+(barrier 89 88 90)
+(code_label 90 89 91 17 27 (nil) [1 uses])
+(note 91 90 92 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 92 91 93 17 (parallel [
+            (set (reg:DI 154)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":236:43 -1
+     (nil))
+(insn 93 92 94 17 (set (reg:SI 155)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])) "utimens.c":236:43 -1
+     (nil))
+(insn 94 93 95 17 (set (reg:DI 4 si)
+        (reg:DI 154)) "utimens.c":236:43 -1
+     (nil))
+(insn 95 94 96 17 (set (reg:SI 5 di)
+        (reg:SI 155)) "utimens.c":236:43 -1
+     (nil))
+(call_insn 96 95 97 17 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fstat") [flags 0x41]  <function_decl 0x737cda1e0900 fstat>) [0 fstat S1 A8])
+            (const_int 0 [0]))) "utimens.c":236:43 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 97 96 98 17 (set (reg:SI 88 [ _7 ])
+        (reg:SI 0 ax)) "utimens.c":236:43 -1
+     (nil))
+(insn 98 97 99 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ _7 ])
+            (const_int 0 [0]))) "utimens.c":236:15 -1
+     (nil))
+(insn 99 98 100 17 (set (reg:QI 144 [ iftmp.4_71 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) "utimens.c":236:15 -1
+     (nil))
+(code_label 100 99 101 18 28 (nil) [1 uses])
+(note 101 100 102 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 102 101 103 18 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 144 [ iftmp.4_71 ])
+            (const_int 0 [0]))) "utimens.c":236:14 -1
+     (nil))
+(jump_insn 103 102 104 18 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 108)
+            (pc))) "utimens.c":236:14 -1
+     (nil)
+ -> 108)
+(note 104 103 105 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 106 19 (set (reg:SI 143 [ _70 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":237:20 -1
+     (nil))
+(jump_insn 106 105 107 19 (set (pc)
+        (label_ref:DI 498)) "utimens.c":237:20 807 {jump}
+     (nil)
+ -> 498)
+(barrier 107 106 108)
+(code_label 108 107 109 20 29 (nil) [1 uses])
+(note 109 108 110 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 110 109 111 20 (set (reg/f:DI 89 [ ts.5_8 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":238:17 -1
+     (nil))
+(insn 111 110 112 20 (set (reg:DI 90 [ _9 ])
+        (mem:DI (plus:DI (reg/f:DI 89 [ ts.5_8 ])
+                (const_int 8 [0x8])) [2 ts.5_8->tv_nsec+0 S8 A64])) "utimens.c":238:20 -1
+     (nil))
+(insn 112 111 113 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 90 [ _9 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":238:14 -1
+     (nil))
+(jump_insn 113 112 114 20 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 124)
+            (pc))) "utimens.c":238:14 -1
+     (nil)
+ -> 124)
+(note 114 113 115 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 115 114 116 21 (set (reg/f:DI 91 [ ts.6_10 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":239:15 -1
+     (nil))
+(insn 116 115 117 21 (parallel [
+            (set (reg:DI 156)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":239:21 -1
+     (nil))
+(insn 117 116 118 21 (set (reg:DI 5 di)
+        (reg:DI 156)) "utimens.c":239:21 -1
+     (nil))
+(call_insn/i 118 117 119 21 (set (reg:TI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("get_stat_atime") [flags 0x41]  <function_decl 0x737cd9e6f200 get_stat_atime>) [0 get_stat_atime S1 A8])
+            (const_int 0 [0]))) "utimens.c":239:21 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 119 118 120 21 (set (reg:TI 157)
+        (reg:TI 0 ax)) "utimens.c":239:21 -1
+     (nil))
+(insn 120 119 121 21 (set (reg:TI 158)
+        (reg:TI 157)) "utimens.c":239:21 -1
+     (nil))
+(insn 121 120 122 21 (set (mem:TI (reg/f:DI 91 [ ts.6_10 ]) [1 *ts.6_10+0 S16 A64])
+        (reg:TI 158)) "utimens.c":239:21 -1
+     (nil))
+(jump_insn 122 121 123 21 (set (pc)
+        (label_ref 140)) -1
+     (nil)
+ -> 140)
+(barrier 123 122 124)
+(code_label 124 123 125 22 30 (nil) [1 uses])
+(note 125 124 126 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 126 125 127 22 (set (reg/f:DI 92 [ ts.7_11 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":240:22 -1
+     (nil))
+(insn 127 126 128 22 (parallel [
+            (set (reg/f:DI 93 [ _12 ])
+                (plus:DI (reg/f:DI 92 [ ts.7_11 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":240:22 -1
+     (nil))
+(insn 128 127 129 22 (set (reg:DI 94 [ _13 ])
+        (mem:DI (plus:DI (reg/f:DI 93 [ _12 ])
+                (const_int 8 [0x8])) [2 _12->tv_nsec+0 S8 A64])) "utimens.c":240:25 -1
+     (nil))
+(insn 129 128 130 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 94 [ _13 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":240:19 -1
+     (nil))
+(jump_insn 130 129 131 22 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 140)
+            (pc))) "utimens.c":240:19 -1
+     (nil)
+ -> 140)
+(note 131 130 132 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 132 131 133 23 (set (reg/f:DI 95 [ ts.8_14 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":241:15 -1
+     (nil))
+(insn 133 132 134 23 (parallel [
+            (set (reg/f:DI 96 [ _15 ])
+                (plus:DI (reg/f:DI 95 [ ts.8_14 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":241:15 -1
+     (nil))
+(insn 134 133 135 23 (parallel [
+            (set (reg:DI 159)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":241:21 -1
+     (nil))
+(insn 135 134 136 23 (set (reg:DI 5 di)
+        (reg:DI 159)) "utimens.c":241:21 -1
+     (nil))
+(call_insn/i 136 135 137 23 (set (reg:TI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("get_stat_mtime") [flags 0x41]  <function_decl 0x737cd9e6f600 get_stat_mtime>) [0 get_stat_mtime S1 A8])
+            (const_int 0 [0]))) "utimens.c":241:21 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 137 136 138 23 (set (reg:TI 160)
+        (reg:TI 0 ax)) "utimens.c":241:21 -1
+     (nil))
+(insn 138 137 139 23 (set (reg:TI 161)
+        (reg:TI 160)) "utimens.c":241:21 -1
+     (nil))
+(insn 139 138 140 23 (set (mem:TI (reg/f:DI 96 [ _15 ]) [1 *_15+0 S16 A64])
+        (reg:TI 161)) "utimens.c":241:21 -1
+     (nil))
+(code_label 140 139 141 24 31 (nil) [2 uses])
+(note 141 140 142 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 142 141 143 24 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -328 [0xfffffffffffffeb8])) [4 adjustment_needed+0 S4 A64])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -328 [0xfffffffffffffeb8])) [4 adjustment_needed+0 S4 A64])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":243:28 -1
+     (nil))
+(code_label 143 142 144 25 26 (nil) [1 uses])
+(note 144 143 147 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 147 144 148 25 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":247:10 -1
+     (nil))
+(jump_insn 148 147 149 25 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 183)
+            (pc))) "utimens.c":247:10 -1
+     (nil)
+ -> 183)
+(note 149 148 150 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 150 149 151 26 (set (reg/f:DI 97 [ ts.9_16 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":249:20 -1
+     (nil))
+(insn 151 150 152 26 (set (reg:DI 162)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -352 [0xfffffffffffffea0])) [15 file+0 S8 A64])) "utimens.c":249:20 -1
+     (nil))
+(insn 152 151 153 26 (set (reg:SI 2 cx)
+        (const_int 0 [0])) "utimens.c":249:20 -1
+     (nil))
+(insn 153 152 154 26 (set (reg:DI 1 dx)
+        (reg/f:DI 97 [ ts.9_16 ])) "utimens.c":249:20 -1
+     (nil))
+(insn 154 153 155 26 (set (reg:DI 4 si)
+        (reg:DI 162)) "utimens.c":249:20 -1
+     (nil))
+(insn 155 154 156 26 (set (reg:SI 5 di)
+        (const_int -100 [0xffffffffffffff9c])) "utimens.c":249:20 -1
+     (nil))
+(call_insn 156 155 157 26 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("utimensat") [flags 0x41]  <function_decl 0x737cda1e3c00 utimensat>) [0 utimensat S1 A8])
+            (const_int 0 [0]))) "utimens.c":249:20 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 157 156 158 26 (set (reg:SI 163)
+        (reg:SI 0 ax)) "utimens.c":249:20 -1
+     (nil))
+(insn 158 157 161 26 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -324 [0xfffffffffffffebc])) [4 result+0 S4 A32])
+        (reg:SI 163)) "utimens.c":249:20 -1
+     (nil))
+(insn 161 158 162 26 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -324 [0xfffffffffffffebc])) [4 result+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":258:14 -1
+     (nil))
+(jump_insn 162 161 163 26 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 167)
+            (pc))) "utimens.c":258:14 -1
+     (nil)
+ -> 167)
+(note 163 162 164 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 164 163 165 27 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x737cda19da00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "utimens.c":259:13 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 165 164 166 27 (set (reg/f:DI 98 [ _17 ])
+        (reg:DI 0 ax)) "utimens.c":259:13 -1
+     (nil))
+(insn 166 165 167 27 (set (mem:SI (reg/f:DI 98 [ _17 ]) [4 *_17+0 S4 A32])
+        (const_int 38 [0x26])) "utimens.c":259:19 -1
+     (nil))
+(code_label 167 166 168 28 33 (nil) [1 uses])
+(note 168 167 169 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 169 168 170 28 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -324 [0xfffffffffffffebc])) [4 result+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":261:14 -1
+     (nil))
+(jump_insn 170 169 171 28 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 177)
+            (pc))) "utimens.c":261:14 -1
+     (nil)
+ -> 177)
+(note 171 170 172 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 172 171 173 29 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x737cda19da00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "utimens.c":261:30 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 173 172 174 29 (set (reg/f:DI 99 [ _18 ])
+        (reg:DI 0 ax)) "utimens.c":261:30 -1
+     (nil))
+(insn 174 173 175 29 (set (reg:SI 100 [ _19 ])
+        (mem:SI (reg/f:DI 99 [ _18 ]) [4 *_18+0 S4 A32])) "utimens.c":261:30 -1
+     (nil))
+(insn 175 174 176 29 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 100 [ _19 ])
+            (const_int 38 [0x26]))) "utimens.c":261:27 -1
+     (nil))
+(jump_insn 176 175 177 29 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 183)
+            (pc))) "utimens.c":261:27 -1
+     (nil)
+ -> 183)
+(code_label 177 176 178 30 34 (nil) [1 uses])
+(note 178 177 179 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 179 178 180 30 (set (mem/c:SI (symbol_ref:DI ("utimensat_works_really") [flags 0x2]  <var_decl 0x737cd9e516c0 utimensat_works_really>) [4 utimensat_works_really+0 S4 A32])
+        (const_int 1 [0x1])) "utimens.c":263:38 -1
+     (nil))
+(insn 180 179 181 30 (set (reg:SI 143 [ _70 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -324 [0xfffffffffffffebc])) [4 result+0 S4 A32])) "utimens.c":264:22 -1
+     (nil))
+(jump_insn 181 180 182 30 (set (pc)
+        (label_ref:DI 498)) "utimens.c":264:22 807 {jump}
+     (nil)
+ -> 498)
+(barrier 182 181 183)
+(code_label 183 182 184 31 32 (nil) [2 uses])
+(note 184 183 187 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 187 184 188 31 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":269:10 -1
+     (nil))
+(jump_insn 188 187 189 31 (set (pc)
+        (if_then_else (lt (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 221)
+            (pc))) "utimens.c":269:10 -1
+     (nil)
+ -> 221)
+(note 189 188 190 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 190 189 191 32 (set (reg/f:DI 101 [ ts.10_20 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":271:20 -1
+     (nil))
+(insn 191 190 192 32 (set (reg:SI 164)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])) "utimens.c":271:20 -1
+     (nil))
+(insn 192 191 193 32 (set (reg:DI 4 si)
+        (reg/f:DI 101 [ ts.10_20 ])) "utimens.c":271:20 -1
+     (nil))
+(insn 193 192 194 32 (set (reg:SI 5 di)
+        (reg:SI 164)) "utimens.c":271:20 -1
+     (nil))
+(call_insn 194 193 195 32 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("futimens") [flags 0x41]  <function_decl 0x737cda1e3d00 futimens>) [0 futimens S1 A8])
+            (const_int 0 [0]))) "utimens.c":271:20 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 195 194 196 32 (set (reg:SI 165)
+        (reg:SI 0 ax)) "utimens.c":271:20 -1
+     (nil))
+(insn 196 195 199 32 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -324 [0xfffffffffffffebc])) [4 result+0 S4 A32])
+        (reg:SI 165)) "utimens.c":271:20 -1
+     (nil))
+(insn 199 196 200 32 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -324 [0xfffffffffffffebc])) [4 result+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":274:14 -1
+     (nil))
+(jump_insn 200 199 201 32 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 205)
+            (pc))) "utimens.c":274:14 -1
+     (nil)
+ -> 205)
+(note 201 200 202 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 202 201 203 33 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x737cda19da00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "utimens.c":275:13 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 203 202 204 33 (set (reg/f:DI 102 [ _21 ])
+        (reg:DI 0 ax)) "utimens.c":275:13 -1
+     (nil))
+(insn 204 203 205 33 (set (mem:SI (reg/f:DI 102 [ _21 ]) [4 *_21+0 S4 A32])
+        (const_int 38 [0x26])) "utimens.c":275:19 -1
+     (nil))
+(code_label 205 204 206 34 35 (nil) [1 uses])
+(note 206 205 207 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 207 206 208 34 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -324 [0xfffffffffffffebc])) [4 result+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":277:14 -1
+     (nil))
+(jump_insn 208 207 209 34 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 215)
+            (pc))) "utimens.c":277:14 -1
+     (nil)
+ -> 215)
+(note 209 208 210 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 210 209 211 35 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x737cda19da00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "utimens.c":277:30 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 211 210 212 35 (set (reg/f:DI 103 [ _22 ])
+        (reg:DI 0 ax)) "utimens.c":277:30 -1
+     (nil))
+(insn 212 211 213 35 (set (reg:SI 104 [ _23 ])
+        (mem:SI (reg/f:DI 103 [ _22 ]) [4 *_22+0 S4 A32])) "utimens.c":277:30 -1
+     (nil))
+(insn 213 212 214 35 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 104 [ _23 ])
+            (const_int 38 [0x26]))) "utimens.c":277:27 -1
+     (nil))
+(jump_insn 214 213 215 35 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 221)
+            (pc))) "utimens.c":277:27 -1
+     (nil)
+ -> 221)
+(code_label 215 214 216 36 36 (nil) [1 uses])
+(note 216 215 217 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 217 216 218 36 (set (mem/c:SI (symbol_ref:DI ("utimensat_works_really") [flags 0x2]  <var_decl 0x737cd9e516c0 utimensat_works_really>) [4 utimensat_works_really+0 S4 A32])
+        (const_int 1 [0x1])) "utimens.c":279:38 -1
+     (nil))
+(insn 218 217 219 36 (set (reg:SI 143 [ _70 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -324 [0xfffffffffffffebc])) [4 result+0 S4 A32])) "utimens.c":280:22 -1
+     (nil))
+(jump_insn 219 218 220 36 (set (pc)
+        (label_ref:DI 498)) "utimens.c":280:22 807 {jump}
+     (nil)
+ -> 498)
+(barrier 220 219 221)
+(code_label 221 220 222 37 25 (nil) [3 uses])
+(note 222 221 223 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 223 222 224 37 (set (mem/c:SI (symbol_ref:DI ("utimensat_works_really") [flags 0x2]  <var_decl 0x737cd9e516c0 utimensat_works_really>) [4 utimensat_works_really+0 S4 A32])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":285:26 -1
+     (nil))
+(insn 224 223 225 37 (set (mem/c:SI (symbol_ref:DI ("lutimensat_works_really") [flags 0x2]  <var_decl 0x737cd9e51750 lutimensat_works_really>) [4 lutimensat_works_really+0 S4 A32])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":286:27 -1
+     (nil))
+(insn 225 224 226 37 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -328 [0xfffffffffffffeb8])) [4 adjustment_needed+0 S4 A64])
+            (const_int 0 [0]))) "utimens.c":377:6 -1
+     (nil))
+(jump_insn 226 225 227 37 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 232)
+            (pc))) "utimens.c":377:6 -1
+     (nil)
+ -> 232)
+(note 227 226 230 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 230 227 231 38 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":377:25 -1
+     (nil))
+(jump_insn 231 230 232 38 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 288)
+            (pc))) "utimens.c":377:25 -1
+     (nil)
+ -> 288)
+(code_label 232 231 233 39 37 (nil) [1 uses])
+(note 233 232 234 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 234 233 235 39 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -328 [0xfffffffffffffeb8])) [4 adjustment_needed+0 S4 A64])
+            (const_int 3 [0x3]))) "utimens.c":379:10 -1
+     (nil))
+(jump_insn 235 234 236 39 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 270)
+            (pc))) "utimens.c":379:10 -1
+     (nil)
+ -> 270)
+(note 236 235 239 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(insn 239 236 240 40 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":380:11 -1
+     (nil))
+(jump_insn 240 239 241 40 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 252)
+            (pc))) "utimens.c":380:11 -1
+     (nil)
+ -> 252)
+(note 241 240 242 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 242 241 243 41 (parallel [
+            (set (reg:DI 166)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":380:24 -1
+     (nil))
+(insn 243 242 244 41 (set (reg:DI 167)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -352 [0xfffffffffffffea0])) [15 file+0 S8 A64])) "utimens.c":380:24 -1
+     (nil))
+(insn 244 243 245 41 (set (reg:DI 4 si)
+        (reg:DI 166)) "utimens.c":380:24 -1
+     (nil))
+(insn 245 244 246 41 (set (reg:DI 5 di)
+        (reg:DI 167)) "utimens.c":380:24 -1
+     (nil))
+(call_insn 246 245 247 41 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("rpl_stat") [flags 0x41]  <function_decl 0x737cda1f5500 rpl_stat>) [0 rpl_stat S1 A8])
+            (const_int 0 [0]))) "utimens.c":380:24 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 247 246 248 41 (set (reg:SI 105 [ _24 ])
+        (reg:SI 0 ax)) "utimens.c":380:24 -1
+     (nil))
+(insn 248 247 249 41 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 105 [ _24 ])
+            (const_int 0 [0]))) "utimens.c":380:11 -1
+     (nil))
+(insn 249 248 250 41 (set (reg:QI 145 [ iftmp.11_72 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) "utimens.c":380:11 -1
+     (nil))
+(jump_insn 250 249 251 41 (set (pc)
+        (label_ref 262)) -1
+     (nil)
+ -> 262)
+(barrier 251 250 252)
+(code_label 252 251 253 42 40 (nil) [1 uses])
+(note 253 252 254 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 254 253 255 42 (parallel [
+            (set (reg:DI 168)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":380:43 -1
+     (nil))
+(insn 255 254 256 42 (set (reg:SI 169)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])) "utimens.c":380:43 -1
+     (nil))
+(insn 256 255 257 42 (set (reg:DI 4 si)
+        (reg:DI 168)) "utimens.c":380:43 -1
+     (nil))
+(insn 257 256 258 42 (set (reg:SI 5 di)
+        (reg:SI 169)) "utimens.c":380:43 -1
+     (nil))
+(call_insn 258 257 259 42 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fstat") [flags 0x41]  <function_decl 0x737cda1e0900 fstat>) [0 fstat S1 A8])
+            (const_int 0 [0]))) "utimens.c":380:43 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 259 258 260 42 (set (reg:SI 106 [ _25 ])
+        (reg:SI 0 ax)) "utimens.c":380:43 -1
+     (nil))
+(insn 260 259 261 42 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 106 [ _25 ])
+            (const_int 0 [0]))) "utimens.c":380:11 -1
+     (nil))
+(insn 261 260 262 42 (set (reg:QI 145 [ iftmp.11_72 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) "utimens.c":380:11 -1
+     (nil))
+(code_label 262 261 263 43 41 (nil) [1 uses])
+(note 263 262 264 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(insn 264 263 265 43 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 145 [ iftmp.11_72 ])
+            (const_int 0 [0]))) "utimens.c":380:11 -1
+     (nil))
+(jump_insn 265 264 266 43 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 270)
+            (pc))) "utimens.c":380:11 -1
+     (nil)
+ -> 270)
+(note 266 265 267 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 267 266 268 44 (set (reg:SI 143 [ _70 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":381:16 -1
+     (nil))
+(jump_insn 268 267 269 44 (set (pc)
+        (label_ref:DI 498)) "utimens.c":381:16 807 {jump}
+     (nil)
+ -> 498)
+(barrier 269 268 270)
+(code_label 270 269 271 45 39 (nil) [2 uses])
+(note 271 270 272 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 272 271 273 45 (set (reg/f:DI 107 [ ts.12_26 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":382:11 -1
+     (nil))
+(insn 273 272 274 45 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 107 [ ts.12_26 ])
+            (const_int 0 [0]))) "utimens.c":382:10 -1
+     (nil))
+(jump_insn 274 273 275 45 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 288)
+            (pc))) "utimens.c":382:10 -1
+     (nil)
+ -> 288)
+(note 275 274 276 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(insn 276 275 277 46 (parallel [
+            (set (reg:DI 170)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -320 [0xfffffffffffffec0])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":382:17 -1
+     (nil))
+(insn 277 276 278 46 (parallel [
+            (set (reg:DI 171)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":382:17 -1
+     (nil))
+(insn 278 277 279 46 (set (reg:DI 4 si)
+        (reg:DI 170)) "utimens.c":382:17 -1
+     (nil))
+(insn 279 278 280 46 (set (reg:DI 5 di)
+        (reg:DI 171)) "utimens.c":382:17 -1
+     (nil))
+(call_insn 280 279 281 46 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("update_timespec") [flags 0x3]  <function_decl 0x737cd9e7b000 update_timespec>) [0 update_timespec S1 A8])
+            (const_int 0 [0]))) "utimens.c":382:17 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 281 280 282 46 (set (reg:QI 108 [ _27 ])
+        (reg:QI 0 ax)) "utimens.c":382:17 -1
+     (nil))
+(insn 282 281 283 46 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 108 [ _27 ])
+            (const_int 0 [0]))) "utimens.c":382:14 -1
+     (nil))
+(jump_insn 283 282 284 46 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 288)
+            (pc))) "utimens.c":382:14 -1
+     (nil)
+ -> 288)
+(note 284 283 285 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(insn 285 284 286 47 (set (reg:SI 143 [ _70 ])
+        (const_int 0 [0])) "utimens.c":383:16 -1
+     (nil))
+(jump_insn 286 285 287 47 (set (pc)
+        (label_ref:DI 498)) "utimens.c":383:16 807 {jump}
+     (nil)
+ -> 498)
+(barrier 287 286 288)
+(code_label 288 287 289 48 38 (nil) [3 uses])
+(note 289 288 290 48 [bb 48] NOTE_INSN_BASIC_BLOCK)
+(insn 290 289 291 48 (set (reg/f:DI 109 [ ts.13_28 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":390:9 -1
+     (nil))
+(insn 291 290 292 48 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 109 [ ts.13_28 ])
+            (const_int 0 [0]))) "utimens.c":390:8 -1
+     (nil))
+(jump_insn 292 291 293 48 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 322)
+            (pc))) "utimens.c":390:8 -1
+     (nil)
+ -> 322)
+(note 293 292 294 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 294 293 295 49 (set (reg/f:DI 110 [ ts.14_29 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":392:31 -1
+     (nil))
+(insn 295 294 296 49 (set (reg:DI 111 [ _30 ])
+        (mem:DI (reg/f:DI 110 [ ts.14_29 ]) [2 ts.14_29->tv_sec+0 S8 A64])) "utimens.c":392:34 -1
+     (nil))
+(insn 296 295 297 49 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [2 timeval[0].tv_sec+0 S8 A128])
+        (reg:DI 111 [ _30 ])) "utimens.c":392:27 -1
+     (nil))
+(insn 297 296 298 49 (set (reg/f:DI 112 [ ts.15_31 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":393:32 -1
+     (nil))
+(insn 298 297 299 49 (set (reg:DI 113 [ _32 ])
+        (mem:DI (plus:DI (reg/f:DI 112 [ ts.15_31 ])
+                (const_int 8 [0x8])) [2 ts.15_31->tv_nsec+0 S8 A64])) "utimens.c":393:35 -1
+     (nil))
+(insn 299 298 300 49 (set (reg:DI 173)
+        (const_int 2361183241434822607 [0x20c49ba5e353f7cf])) "utimens.c":393:44 -1
+     (nil))
+(insn 300 299 301 49 (parallel [
+            (set (reg:DI 172)
+                (truncate:DI (lshiftrt:TI (mult:TI (sign_extend:TI (reg:DI 113 [ _32 ]))
+                            (sign_extend:TI (reg:DI 173)))
+                        (const_int 64 [0x40]))))
+            (clobber (scratch:DI))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":393:44 -1
+     (nil))
+(insn 301 300 302 49 (parallel [
+            (set (reg:DI 174)
+                (ashiftrt:DI (reg:DI 172)
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":393:44 -1
+     (nil))
+(insn 302 301 303 49 (parallel [
+            (set (reg:DI 175)
+                (ashiftrt:DI (reg:DI 113 [ _32 ])
+                    (const_int 63 [0x3f])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":393:44 -1
+     (nil))
+(insn 303 302 304 49 (parallel [
+            (set (reg:DI 114 [ _33 ])
+                (minus:DI (reg:DI 174)
+                    (reg:DI 175)))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":393:44 -1
+     (expr_list:REG_EQUAL (div:DI (reg:DI 113 [ _32 ])
+            (const_int 1000 [0x3e8]))
+        (nil)))
+(insn 304 303 305 49 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [2 timeval[0].tv_usec+0 S8 A64])
+        (reg:DI 114 [ _33 ])) "utimens.c":393:28 -1
+     (nil))
+(insn 305 304 306 49 (set (reg/f:DI 115 [ ts.16_34 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":394:31 -1
+     (nil))
+(insn 306 305 307 49 (parallel [
+            (set (reg/f:DI 116 [ _35 ])
+                (plus:DI (reg/f:DI 115 [ ts.16_34 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":394:31 -1
+     (nil))
+(insn 307 306 308 49 (set (reg:DI 117 [ _36 ])
+        (mem:DI (reg/f:DI 116 [ _35 ]) [2 _35->tv_sec+0 S8 A64])) "utimens.c":394:34 -1
+     (nil))
+(insn 308 307 309 49 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [2 timeval[1].tv_sec+0 S8 A128])
+        (reg:DI 117 [ _36 ])) "utimens.c":394:27 -1
+     (nil))
+(insn 309 308 310 49 (set (reg/f:DI 118 [ ts.17_37 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":395:32 -1
+     (nil))
+(insn 310 309 311 49 (parallel [
+            (set (reg/f:DI 119 [ _38 ])
+                (plus:DI (reg/f:DI 118 [ ts.17_37 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":395:32 -1
+     (nil))
+(insn 311 310 312 49 (set (reg:DI 120 [ _39 ])
+        (mem:DI (plus:DI (reg/f:DI 119 [ _38 ])
+                (const_int 8 [0x8])) [2 _38->tv_nsec+0 S8 A64])) "utimens.c":395:35 -1
+     (nil))
+(insn 312 311 313 49 (set (reg:DI 177)
+        (const_int 2361183241434822607 [0x20c49ba5e353f7cf])) "utimens.c":395:44 -1
+     (nil))
+(insn 313 312 314 49 (parallel [
+            (set (reg:DI 176)
+                (truncate:DI (lshiftrt:TI (mult:TI (sign_extend:TI (reg:DI 120 [ _39 ]))
+                            (sign_extend:TI (reg:DI 177)))
+                        (const_int 64 [0x40]))))
+            (clobber (scratch:DI))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":395:44 -1
+     (nil))
+(insn 314 313 315 49 (parallel [
+            (set (reg:DI 178)
+                (ashiftrt:DI (reg:DI 176)
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":395:44 -1
+     (nil))
+(insn 315 314 316 49 (parallel [
+            (set (reg:DI 179)
+                (ashiftrt:DI (reg:DI 120 [ _39 ])
+                    (const_int 63 [0x3f])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":395:44 -1
+     (nil))
+(insn 316 315 317 49 (parallel [
+            (set (reg:DI 121 [ _40 ])
+                (minus:DI (reg:DI 178)
+                    (reg:DI 179)))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":395:44 -1
+     (expr_list:REG_EQUAL (div:DI (reg:DI 120 [ _39 ])
+            (const_int 1000 [0x3e8]))
+        (nil)))
+(insn 317 316 318 49 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [2 timeval[1].tv_usec+0 S8 A64])
+        (reg:DI 121 [ _40 ])) "utimens.c":395:28 -1
+     (nil))
+(insn 318 317 319 49 (parallel [
+            (set (reg:DI 180)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":396:11 -1
+     (nil))
+(insn 319 318 320 49 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])
+        (reg:DI 180)) "utimens.c":396:11 -1
+     (nil))
+(jump_insn 320 319 321 49 (set (pc)
+        (label_ref 325)) -1
+     (nil)
+ -> 325)
+(barrier 321 320 322)
+(code_label 322 321 323 50 42 (nil) [1 uses])
+(note 323 322 324 50 [bb 50] NOTE_INSN_BASIC_BLOCK)
+(insn 324 323 325 50 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])
+        (const_int 0 [0])) "utimens.c":399:9 -1
+     (nil))
+(code_label 325 324 326 51 43 (nil) [1 uses])
+(note 326 325 329 51 [bb 51] NOTE_INSN_BASIC_BLOCK)
+(insn 329 326 330 51 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":401:8 -1
+     (nil))
+(jump_insn 330 329 331 51 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 341)
+            (pc))) "utimens.c":401:8 -1
+     (nil)
+ -> 341)
+(note 331 330 332 52 [bb 52] NOTE_INSN_BASIC_BLOCK)
+(insn 332 331 333 52 (set (reg:DI 181)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])) "utimens.c":404:16 -1
+     (nil))
+(insn 333 332 334 52 (set (reg:DI 182)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -352 [0xfffffffffffffea0])) [15 file+0 S8 A64])) "utimens.c":404:16 -1
+     (nil))
+(insn 334 333 335 52 (set (reg:DI 1 dx)
+        (reg:DI 181)) "utimens.c":404:16 -1
+     (nil))
+(insn 335 334 336 52 (set (reg:DI 4 si)
+        (reg:DI 182)) "utimens.c":404:16 -1
+     (nil))
+(insn 336 335 337 52 (set (reg:SI 5 di)
+        (const_int -100 [0xffffffffffffff9c])) "utimens.c":404:16 -1
+     (nil))
+(call_insn 337 336 338 52 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("futimesat") [flags 0x41]  <function_decl 0x737cda1f5e00 futimesat>) [0 futimesat S1 A8])
+            (const_int 0 [0]))) "utimens.c":404:16 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 338 337 339 52 (set (reg:SI 143 [ _70 ])
+        (reg:SI 0 ax)) "utimens.c":404:16 -1
+     (nil))
+(jump_insn 339 338 340 52 (set (pc)
+        (label_ref:DI 498)) "utimens.c":404:16 807 {jump}
+     (nil)
+ -> 498)
+(barrier 340 339 341)
+(code_label 341 340 342 53 44 (nil) [1 uses])
+(note 342 341 343 53 [bb 53] NOTE_INSN_BASIC_BLOCK)
+(insn 343 342 344 53 (set (reg:DI 183)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])) "utimens.c":425:13 -1
+     (nil))
+(insn 344 343 345 53 (set (reg:SI 184)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])) "utimens.c":425:13 -1
+     (nil))
+(insn 345 344 346 53 (set (reg:DI 1 dx)
+        (reg:DI 183)) "utimens.c":425:13 -1
+     (nil))
+(insn 346 345 347 53 (set (reg:DI 4 si)
+        (const_int 0 [0])) "utimens.c":425:13 -1
+     (nil))
+(insn 347 346 348 53 (set (reg:SI 5 di)
+        (reg:SI 184)) "utimens.c":425:13 -1
+     (nil))
+(call_insn 348 347 349 53 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("futimesat") [flags 0x41]  <function_decl 0x737cda1f5e00 futimesat>) [0 futimesat S1 A8])
+            (const_int 0 [0]))) "utimens.c":425:13 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 349 348 350 53 (set (reg:SI 122 [ _41 ])
+        (reg:SI 0 ax)) "utimens.c":425:13 -1
+     (nil))
+(insn 350 349 351 53 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 122 [ _41 ])
+            (const_int 0 [0]))) "utimens.c":425:12 -1
+     (nil))
+(jump_insn 351 350 352 53 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 458)
+            (pc))) "utimens.c":425:12 -1
+     (nil)
+ -> 458)
+(note 352 351 353 54 [bb 54] NOTE_INSN_BASIC_BLOCK)
+(insn 353 352 354 54 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])
+            (const_int 0 [0]))) "utimens.c":433:16 -1
+     (nil))
+(jump_insn 354 353 355 54 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 453)
+            (pc))) "utimens.c":433:16 -1
+     (nil)
+ -> 453)
+(note 355 354 356 55 [bb 55] NOTE_INSN_BASIC_BLOCK)
+(insn 356 355 357 55 (set (reg/f:DI 185)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])) "utimens.c":435:43 -1
+     (nil))
+(insn 357 356 360 55 (set (reg:DI 123 [ _42 ])
+        (mem:DI (plus:DI (reg/f:DI 185)
+                (const_int 8 [0x8])) [2 t_64->tv_usec+0 S8 A64])) "utimens.c":435:43 -1
+     (nil))
+(insn 360 357 361 55 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:DI 123 [ _42 ])
+            (const_int 499999 [0x7a11f]))) "utimens.c":435:22 -1
+     (nil))
+(insn 361 360 362 55 (set (reg:QI 186)
+        (gt:QI (reg:CCGC 17 flags)
+            (const_int 0 [0]))) "utimens.c":435:22 -1
+     (nil))
+(insn 362 361 363 55 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -330 [0xfffffffffffffeb6])) [14 abig+0 S1 A16])
+        (reg:QI 186)) "utimens.c":435:22 -1
+     (nil))
+(insn 363 362 364 55 (set (reg/f:DI 187)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])) "utimens.c":436:40 -1
+     (nil))
+(insn 364 363 365 55 (parallel [
+            (set (reg/f:DI 124 [ _43 ])
+                (plus:DI (reg/f:DI 187)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":436:40 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 365 364 368 55 (set (reg:DI 125 [ _44 ])
+        (mem:DI (plus:DI (reg/f:DI 124 [ _43 ])
+                (const_int 8 [0x8])) [2 _43->tv_usec+0 S8 A64])) "utimens.c":436:43 -1
+     (nil))
+(insn 368 365 369 55 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:DI 125 [ _44 ])
+            (const_int 499999 [0x7a11f]))) "utimens.c":436:22 -1
+     (nil))
+(insn 369 368 370 55 (set (reg:QI 188)
+        (gt:QI (reg:CCGC 17 flags)
+            (const_int 0 [0]))) "utimens.c":436:22 -1
+     (nil))
+(insn 370 369 371 55 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -329 [0xfffffffffffffeb7])) [14 mbig+0 S1 A8])
+        (reg:QI 188)) "utimens.c":436:22 -1
+     (nil))
+(insn 371 370 372 55 (set (reg:QI 189)
+        (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -330 [0xfffffffffffffeb6])) [14 abig+0 S1 A16])) "utimens.c":437:27 -1
+     (nil))
+(insn 372 371 373 55 (parallel [
+            (set (reg:QI 126 [ _45 ])
+                (ior:QI (reg:QI 189)
+                    (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -329 [0xfffffffffffffeb7])) [14 mbig+0 S1 A8])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":437:27 -1
+     (expr_list:REG_EQUAL (ior:QI (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -330 [0xfffffffffffffeb6])) [14 abig+0 S1 A16])
+            (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -329 [0xfffffffffffffeb7])) [14 mbig+0 S1 A8]))
+        (nil)))
+(insn 373 372 374 55 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 126 [ _45 ])
+            (const_int 0 [0]))) "utimens.c":437:20 -1
+     (nil))
+(jump_insn 374 373 375 55 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 453)
+            (pc))) "utimens.c":437:20 -1
+     (nil)
+ -> 453)
+(note 375 374 376 56 [bb 56] NOTE_INSN_BASIC_BLOCK)
+(insn 376 375 377 56 (parallel [
+            (set (reg:DI 190)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":437:38 -1
+     (nil))
+(insn 377 376 378 56 (set (reg:SI 191)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])) "utimens.c":437:38 -1
+     (nil))
+(insn 378 377 379 56 (set (reg:DI 4 si)
+        (reg:DI 190)) "utimens.c":437:38 -1
+     (nil))
+(insn 379 378 380 56 (set (reg:SI 5 di)
+        (reg:SI 191)) "utimens.c":437:38 -1
+     (nil))
+(call_insn 380 379 381 56 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fstat") [flags 0x41]  <function_decl 0x737cda1e0900 fstat>) [0 fstat S1 A8])
+            (const_int 0 [0]))) "utimens.c":437:38 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 381 380 382 56 (set (reg:SI 127 [ _46 ])
+        (reg:SI 0 ax)) "utimens.c":437:38 -1
+     (nil))
+(insn 382 381 383 56 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 127 [ _46 ])
+            (const_int 0 [0]))) "utimens.c":437:35 -1
+     (nil))
+(jump_insn 383 382 384 56 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 453)
+            (pc))) "utimens.c":437:35 -1
+     (nil)
+ -> 453)
+(note 384 383 385 57 [bb 57] NOTE_INSN_BASIC_BLOCK)
+(insn 385 384 386 57 (set (reg:DI 128 [ _47 ])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [2 st.st_atim.tv_sec+0 S8 A64])) "utimens.c":441:39 -1
+     (nil))
+(insn 386 385 387 57 (set (reg/f:DI 192)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])) "utimens.c":441:54 -1
+     (nil))
+(insn 387 386 388 57 (set (reg:DI 129 [ _48 ])
+        (mem:DI (reg/f:DI 192) [2 t_64->tv_sec+0 S8 A64])) "utimens.c":441:54 -1
+     (nil))
+(insn 388 387 389 57 (parallel [
+            (set (reg:DI 193)
+                (minus:DI (reg:DI 128 [ _47 ])
+                    (reg:DI 129 [ _48 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":441:28 -1
+     (nil))
+(insn 389 388 390 57 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [2 adiff+0 S8 A128])
+        (reg:DI 193)) "utimens.c":441:28 -1
+     (nil))
+(insn 390 389 391 57 (set (reg:DI 130 [ _49 ])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [2 st.st_mtim.tv_sec+0 S8 A64])) "utimens.c":442:39 -1
+     (nil))
+(insn 391 390 392 57 (set (reg/f:DI 194)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])) "utimens.c":442:51 -1
+     (nil))
+(insn 392 391 393 57 (parallel [
+            (set (reg/f:DI 131 [ _50 ])
+                (plus:DI (reg/f:DI 194)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":442:51 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 393 392 394 57 (set (reg:DI 132 [ _51 ])
+        (mem:DI (reg/f:DI 131 [ _50 ]) [2 _50->tv_sec+0 S8 A64])) "utimens.c":442:54 -1
+     (nil))
+(insn 394 393 395 57 (parallel [
+            (set (reg:DI 195)
+                (minus:DI (reg:DI 130 [ _49 ])
+                    (reg:DI 132 [ _51 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":442:28 -1
+     (nil))
+(insn 395 394 396 57 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -280 [0xfffffffffffffee8])) [2 mdiff+0 S8 A64])
+        (reg:DI 195)) "utimens.c":442:28 -1
+     (nil))
+(insn 396 395 397 57 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -304 [0xfffffffffffffed0])) [13 tt+0 S8 A128])
+        (const_int 0 [0])) "utimens.c":444:37 -1
+     (nil))
+(insn 397 396 398 57 (set (reg/f:DI 196)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])) "utimens.c":446:42 -1
+     (nil))
+(insn 398 397 399 57 (set (reg:TI 197)
+        (mem:TI (reg/f:DI 196) [5 *t_64+0 S16 A64])) "utimens.c":446:42 -1
+     (nil))
+(insn 399 398 400 57 (set (mem/c:TI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [5 truncated_timeval[0]+0 S16 A128])
+        (reg:TI 197)) "utimens.c":446:42 -1
+     (nil))
+(insn 400 399 401 57 (set (reg/f:DI 198)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [13 t+0 S8 A64])) "utimens.c":447:42 -1
+     (nil))
+(insn 401 400 402 57 (set (reg:TI 199)
+        (mem:TI (plus:DI (reg/f:DI 198)
+                (const_int 16 [0x10])) [5 MEM[(struct timeval *)t_64 + 16B]+0 S16 A64])) "utimens.c":447:42 -1
+     (nil))
+(insn 402 401 403 57 (set (mem/c:TI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [5 truncated_timeval[1]+0 S16 A128])
+        (reg:TI 199)) "utimens.c":447:42 -1
+     (nil))
+(insn 403 402 404 57 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -330 [0xfffffffffffffeb6])) [14 abig+0 S1 A16])
+            (const_int 0 [0]))) "utimens.c":448:24 -1
+     (nil))
+(jump_insn 404 403 405 57 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 420)
+            (pc))) "utimens.c":448:24 -1
+     (nil)
+ -> 420)
+(note 405 404 406 58 [bb 58] NOTE_INSN_BASIC_BLOCK)
+(insn 406 405 407 58 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -288 [0xfffffffffffffee0])) [2 adiff+0 S8 A128])
+            (const_int 1 [0x1]))) "utimens.c":448:30 -1
+     (nil))
+(jump_insn 407 406 408 58 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 420)
+            (pc))) "utimens.c":448:30 -1
+     (nil)
+ -> 420)
+(note 408 407 409 59 [bb 59] NOTE_INSN_BASIC_BLOCK)
+(insn 409 408 410 59 (parallel [
+            (set (reg:DI 200)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":448:47 -1
+     (nil))
+(insn 410 409 411 59 (set (reg:DI 5 di)
+        (reg:DI 200)) "utimens.c":448:47 -1
+     (nil))
+(call_insn/i 411 410 412 59 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("get_stat_atime_ns") [flags 0x41]  <function_decl 0x737cd9e63a00 get_stat_atime_ns>) [0 get_stat_atime_ns S1 A8])
+            (const_int 0 [0]))) "utimens.c":448:47 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 412 411 413 59 (set (reg:DI 133 [ _52 ])
+        (reg:DI 0 ax)) "utimens.c":448:47 -1
+     (nil))
+(insn 413 412 414 59 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 133 [ _52 ])
+            (const_int 0 [0]))) "utimens.c":448:44 -1
+     (nil))
+(jump_insn 414 413 415 59 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 420)
+            (pc))) "utimens.c":448:44 -1
+     (nil)
+ -> 420)
+(note 415 414 416 60 [bb 60] NOTE_INSN_BASIC_BLOCK)
+(insn 416 415 417 60 (parallel [
+            (set (reg:DI 201)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -192 [0xffffffffffffff40])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":450:28 -1
+     (nil))
+(insn 417 416 418 60 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -304 [0xfffffffffffffed0])) [13 tt+0 S8 A128])
+        (reg:DI 201)) "utimens.c":450:28 -1
+     (nil))
+(insn 418 417 419 60 (set (reg/f:DI 202)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -304 [0xfffffffffffffed0])) [13 tt+0 S8 A128])) "utimens.c":451:39 -1
+     (nil))
+(insn 419 418 420 60 (set (mem:DI (plus:DI (reg/f:DI 202)
+                (const_int 8 [0x8])) [2 tt_156->tv_usec+0 S8 A64])
+        (const_int 0 [0])) "utimens.c":451:39 -1
+     (nil))
+(code_label 420 419 421 61 48 (nil) [3 uses])
+(note 421 420 422 61 [bb 61] NOTE_INSN_BASIC_BLOCK)
+(insn 422 421 423 61 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -329 [0xfffffffffffffeb7])) [14 mbig+0 S1 A8])
+            (const_int 0 [0]))) "utimens.c":453:24 -1
+     (nil))
+(jump_insn 423 422 424 61 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 440)
+            (pc))) "utimens.c":453:24 -1
+     (nil)
+ -> 440)
+(note 424 423 425 62 [bb 62] NOTE_INSN_BASIC_BLOCK)
+(insn 425 424 426 62 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -280 [0xfffffffffffffee8])) [2 mdiff+0 S8 A64])
+            (const_int 1 [0x1]))) "utimens.c":453:30 -1
+     (nil))
+(jump_insn 426 425 427 62 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 440)
+            (pc))) "utimens.c":453:30 -1
+     (nil)
+ -> 440)
+(note 427 426 428 63 [bb 63] NOTE_INSN_BASIC_BLOCK)
+(insn 428 427 429 63 (parallel [
+            (set (reg:DI 203)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":453:47 -1
+     (nil))
+(insn 429 428 430 63 (set (reg:DI 5 di)
+        (reg:DI 203)) "utimens.c":453:47 -1
+     (nil))
+(call_insn/i 430 429 431 63 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("get_stat_mtime_ns") [flags 0x41]  <function_decl 0x737cd9e63e00 get_stat_mtime_ns>) [0 get_stat_mtime_ns S1 A8])
+            (const_int 0 [0]))) "utimens.c":453:47 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 431 430 432 63 (set (reg:DI 134 [ _53 ])
+        (reg:DI 0 ax)) "utimens.c":453:47 -1
+     (nil))
+(insn 432 431 433 63 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 134 [ _53 ])
+            (const_int 0 [0]))) "utimens.c":453:44 -1
+     (nil))
+(jump_insn 433 432 434 63 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 440)
+            (pc))) "utimens.c":453:44 -1
+     (nil)
+ -> 440)
+(note 434 433 435 64 [bb 64] NOTE_INSN_BASIC_BLOCK)
+(insn 435 434 436 64 (parallel [
+            (set (reg:DI 204)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -192 [0xffffffffffffff40])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":455:28 -1
+     (nil))
+(insn 436 435 437 64 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -304 [0xfffffffffffffed0])) [13 tt+0 S8 A128])
+        (reg:DI 204)) "utimens.c":455:28 -1
+     (nil))
+(insn 437 436 438 64 (set (reg/f:DI 205)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -304 [0xfffffffffffffed0])) [13 tt+0 S8 A128])) "utimens.c":456:27 -1
+     (nil))
+(insn 438 437 439 64 (parallel [
+            (set (reg/f:DI 135 [ _54 ])
+                (plus:DI (reg/f:DI 205)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":456:27 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -304 [0xfffffffffffffed0])) [13 tt+0 S8 A128])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 439 438 440 64 (set (mem:DI (plus:DI (reg/f:DI 135 [ _54 ])
+                (const_int 8 [0x8])) [2 _54->tv_usec+0 S8 A64])
+        (const_int 0 [0])) "utimens.c":456:39 -1
+     (nil))
+(code_label 440 439 441 65 49 (nil) [3 uses])
+(note 441 440 442 65 [bb 65] NOTE_INSN_BASIC_BLOCK)
+(insn 442 441 443 65 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -304 [0xfffffffffffffed0])) [13 tt+0 S8 A128])
+            (const_int 0 [0]))) "utimens.c":458:24 -1
+     (nil))
+(jump_insn 443 442 444 65 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 453)
+            (pc))) "utimens.c":458:24 806 {*jcc}
+     (nil)
+ -> 453)
+(note 444 443 445 66 [bb 66] NOTE_INSN_BASIC_BLOCK)
+(insn 445 444 446 66 (set (reg:DI 206)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -304 [0xfffffffffffffed0])) [13 tt+0 S8 A128])) "utimens.c":459:23 -1
+     (nil))
+(insn 446 445 447 66 (set (reg:SI 207)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -340 [0xfffffffffffffeac])) [4 fd+0 S4 A32])) "utimens.c":459:23 -1
+     (nil))
+(insn 447 446 448 66 (set (reg:DI 1 dx)
+        (reg:DI 206)) "utimens.c":459:23 -1
+     (nil))
+(insn 448 447 449 66 (set (reg:DI 4 si)
+        (const_int 0 [0])) "utimens.c":459:23 -1
+     (nil))
+(insn 449 448 450 66 (set (reg:SI 5 di)
+        (reg:SI 207)) "utimens.c":459:23 -1
+     (nil))
+(call_insn 450 449 453 66 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("futimesat") [flags 0x41]  <function_decl 0x737cda1f5e00 futimesat>) [0 futimesat S1 A8])
+            (const_int 0 [0]))) "utimens.c":459:23 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(code_label 453 450 454 68 47 (nil) [4 uses])
+(note 454 453 455 68 [bb 68] NOTE_INSN_BASIC_BLOCK)
+(insn 455 454 456 68 (set (reg:SI 143 [ _70 ])
+        (const_int 0 [0])) "utimens.c":464:20 -1
+     (nil))
+(jump_insn 456 455 457 68 (set (pc)
+        (label_ref:DI 498)) "utimens.c":464:20 807 {jump}
+     (nil)
+ -> 498)
+(barrier 457 456 458)
+(code_label 458 457 459 69 46 (nil) [1 uses])
+(note 459 458 460 69 [bb 69] NOTE_INSN_BASIC_BLOCK)
+(insn 460 459 461 69 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -352 [0xfffffffffffffea0])) [15 file+0 S8 A64])
+            (const_int 0 [0]))) "utimens.c":470:8 -1
+     (nil))
+(jump_insn 461 460 462 69 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 466)
+            (pc))) "utimens.c":470:8 -1
+     (nil)
+ -> 466)
+(note 462 461 463 70 [bb 70] NOTE_INSN_BASIC_BLOCK)
+(insn 463 462 464 70 (set (reg:SI 143 [ _70 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":476:16 -1
+     (nil))
+(jump_insn 464 463 465 70 (set (pc)
+        (label_ref:DI 498)) "utimens.c":476:16 807 {jump}
+     (nil)
+ -> 498)
+(barrier 465 464 466)
+(code_label 466 465 467 71 51 (nil) [1 uses])
+(note 467 466 468 71 [bb 71] NOTE_INSN_BASIC_BLOCK)
+(insn 468 467 469 71 (set (reg/f:DI 136 [ ts.18_55 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":487:11 -1
+     (nil))
+(insn 469 468 470 71 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 136 [ ts.18_55 ])
+            (const_int 0 [0]))) "utimens.c":487:10 -1
+     (nil))
+(jump_insn 470 469 471 71 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 483)
+            (pc))) "utimens.c":487:10 -1
+     (nil)
+ -> 483)
+(note 471 470 472 72 [bb 72] NOTE_INSN_BASIC_BLOCK)
+(insn 472 471 473 72 (set (reg/f:DI 137 [ ts.19_56 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":489:30 -1
+     (nil))
+(insn 473 472 474 72 (set (reg:DI 138 [ _57 ])
+        (mem:DI (reg/f:DI 137 [ ts.19_56 ]) [2 ts.19_56->tv_sec+0 S8 A64])) "utimens.c":489:33 -1
+     (nil))
+(insn 474 473 475 72 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -272 [0xfffffffffffffef0])) [2 utimbuf.actime+0 S8 A128])
+        (reg:DI 138 [ _57 ])) "utimens.c":489:26 -1
+     (nil))
+(insn 475 474 476 72 (set (reg/f:DI 139 [ ts.20_58 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [3 ts+0 S8 A128])) "utimens.c":490:31 -1
+     (nil))
+(insn 476 475 477 72 (parallel [
+            (set (reg/f:DI 140 [ _59 ])
+                (plus:DI (reg/f:DI 139 [ ts.20_58 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":490:31 -1
+     (nil))
+(insn 477 476 478 72 (set (reg:DI 141 [ _60 ])
+        (mem:DI (reg/f:DI 140 [ _59 ]) [2 _59->tv_sec+0 S8 A64])) "utimens.c":490:34 -1
+     (nil))
+(insn 478 477 479 72 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -264 [0xfffffffffffffef8])) [2 utimbuf.modtime+0 S8 A64])
+        (reg:DI 141 [ _60 ])) "utimens.c":490:27 -1
+     (nil))
+(insn 479 478 480 72 (parallel [
+            (set (reg:DI 208)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -272 [0xfffffffffffffef0])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":491:14 -1
+     (nil))
+(insn 480 479 481 72 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -296 [0xfffffffffffffed8])) [12 ut+0 S8 A64])
+        (reg:DI 208)) "utimens.c":491:14 -1
+     (nil))
+(jump_insn 481 480 482 72 (set (pc)
+        (label_ref 486)) -1
+     (nil)
+ -> 486)
+(barrier 482 481 483)
+(code_label 483 482 484 73 52 (nil) [1 uses])
+(note 484 483 485 73 [bb 73] NOTE_INSN_BASIC_BLOCK)
+(insn 485 484 486 73 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -296 [0xfffffffffffffed8])) [12 ut+0 S8 A64])
+        (const_int 0 [0])) "utimens.c":494:12 -1
+     (nil))
+(code_label 486 485 487 74 53 (nil) [1 uses])
+(note 487 486 488 74 [bb 74] NOTE_INSN_BASIC_BLOCK)
+(insn 488 487 489 74 (set (reg:DI 209)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -296 [0xfffffffffffffed8])) [12 ut+0 S8 A64])) "utimens.c":496:14 -1
+     (nil))
+(insn 489 488 490 74 (set (reg:DI 210)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -352 [0xfffffffffffffea0])) [15 file+0 S8 A64])) "utimens.c":496:14 -1
+     (nil))
+(insn 490 489 491 74 (set (reg:DI 4 si)
+        (reg:DI 209)) "utimens.c":496:14 -1
+     (nil))
+(insn 491 490 492 74 (set (reg:DI 5 di)
+        (reg:DI 210)) "utimens.c":496:14 -1
+     (nil))
+(call_insn 492 491 493 74 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("utime") [flags 0x41]  <function_decl 0x737cd9e55600 utime>) [0 utime S1 A8])
+            (const_int 0 [0]))) "utimens.c":496:14 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 493 492 498 74 (set (reg:SI 143 [ _70 ])
+        (reg:SI 0 ax)) "utimens.c":496:14 -1
+     (nil))
+(code_label 498 493 499 77 54 (nil) [10 uses])
+(note 499 498 500 77 [bb 77] NOTE_INSN_BASIC_BLOCK)
+(insn 500 499 504 77 (set (reg:SI 146 [ <retval> ])
+        (reg:SI 143 [ _70 ])) "utimens.c":500:1 -1
+     (nil))
+(insn 504 500 505 77 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [11 D.3836+0 S8 A64])
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_TEST))
+            (clobber (scratch:DI))
+        ]) "utimens.c":500:1 -1
+     (nil))
+(jump_insn 505 504 512 77 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 508)
+            (pc))) "utimens.c":500:1 -1
+     (nil)
+ -> 508)
+(note 512 505 506 79 [bb 79] NOTE_INSN_BASIC_BLOCK)
+(call_insn 506 512 507 79 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x737cd9ec2900 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "utimens.c":500:1 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 507 506 508)
+(code_label 508 507 513 80 55 (nil) [1 uses])
+(note 513 508 509 80 [bb 80] NOTE_INSN_BASIC_BLOCK)
+(insn 509 513 510 80 (set (reg/i:SI 0 ax)
+        (reg:SI 146 [ <retval> ])) "utimens.c":500:1 -1
+     (nil))
+(insn 510 509 0 80 (use (reg/i:SI 0 ax)) "utimens.c":500:1 -1
+     (nil))
+
+;; Function utimens (utimens, funcdef_no=22, decl_uid=2214, cgraph_uid=23, symbol_order=24)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 17.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [15 file+0 S8 A64])
+        (reg:DI 5 di [ file ])) "utimens.c":506:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [3 timespec+0 S8 A64])
+        (reg:DI 4 si [ timespec ])) "utimens.c":506:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [3 timespec+0 S8 A64])) "utimens.c":507:10 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [15 file+0 S8 A64])) "utimens.c":507:10 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 1 dx)
+        (reg:DI 84)) "utimens.c":507:10 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (reg:DI 85)) "utimens.c":507:10 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 5 di)
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":507:10 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fdutimens") [flags 0x3]  <function_decl 0x737cda19d700 fdutimens>) [0 fdutimens S1 A8])
+            (const_int 0 [0]))) "utimens.c":507:10 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 13 12 16 2 (set (reg:SI 82 [ _5 ])
+        (reg:SI 0 ax)) "utimens.c":507:10 -1
+     (nil))
+(insn 16 13 20 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _5 ])) "utimens.c":507:10 -1
+     (nil))
+(insn 20 16 21 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "utimens.c":508:1 -1
+     (nil))
+(insn 21 20 0 2 (use (reg/i:SI 0 ax)) "utimens.c":508:1 -1
+     (nil))
+
+;; Function lutimens (lutimens, funcdef_no=23, decl_uid=2217, cgraph_uid=24, symbol_order=25)
+
+Partition 4: size 144 align 16
+	st
+Partition 2: size 32 align 16
+	adjusted_timespec
+Partition 3: size 8 align 8
+	ts
+Partition 1: size 4 align 4
+	result_55
+Partition 0: size 4 align 4
+	adjustment_needed_25
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 45 from 34 to 35.
+Redirecting jump 68 from 34 to 35.
+Redirecting jump 139 from 34 to 35.
+Merging block 25 into block 24...
+Merged blocks 24 and 25.
+Merged 24 and 25 without moving.
+Redirecting jump 158 from 34 to 35.
+Redirecting jump 176 from 34 to 35.
+Redirecting jump 192 from 34 to 35.
+Merging block 34 into block 33...
+Merged blocks 33 and 34.
+Merged 33 and 34 without moving.
+Removing jump 205.
+Merging block 36 into block 35...
+Merged blocks 35 and 36.
+Merged 35 and 36 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [15 file+0 S8 A64])
+        (reg:DI 5 di [ file ])) "utimens.c":516:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [3 timespec+0 S8 A64])
+        (reg:DI 4 si [ timespec ])) "utimens.c":516:1 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [11 D.3838+0 S8 A64])
+                (unspec:DI [
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":516:1 -1
+     (nil))
+(insn 8 5 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])) [3 timespec+0 S8 A64])
+            (const_int 0 [0]))) "utimens.c":518:54 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 14)
+            (pc))) "utimens.c":518:54 -1
+     (nil)
+ -> 14)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (parallel [
+            (set (reg/f:DI 106 [ iftmp.21_28 ])
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -192 [0xffffffffffffff40])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":518:54 -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (label_ref 17)) -1
+     (nil)
+ -> 17)
+(barrier 13 12 14)
+(code_label 14 13 15 5 59 (nil) [1 uses])
+(note 15 14 16 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 5 (set (reg/f:DI 106 [ iftmp.21_28 ])
+        (const_int 0 [0])) "utimens.c":518:54 -1
+     (nil))
+(code_label 17 16 18 6 60 (nil) [1 uses])
+(note 18 17 19 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])
+        (reg/f:DI 106 [ iftmp.21_28 ])) "utimens.c":518:20 -1
+     (nil))
+(insn 20 19 21 6 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [4 adjustment_needed+0 S4 A128])
+        (const_int 0 [0])) "utimens.c":519:7 -1
+     (nil))
+(insn 21 20 22 6 (set (reg/f:DI 82 [ ts.22_1 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])) "utimens.c":522:7 -1
+     (nil))
+(insn 22 21 23 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 82 [ ts.22_1 ])
+            (const_int 0 [0]))) "utimens.c":522:6 -1
+     (nil))
+(jump_insn 23 22 24 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 37)
+            (pc))) "utimens.c":522:6 -1
+     (nil)
+ -> 37)
+(note 24 23 25 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 7 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [3 timespec+0 S8 A64])) "utimens.c":524:28 -1
+     (nil))
+(insn 26 25 27 7 (set (reg:TI 110)
+        (mem:TI (reg/f:DI 109) [1 *timespec_38(D)+0 S16 A64])) "utimens.c":524:28 -1
+     (nil))
+(insn 27 26 28 7 (set (mem/c:TI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [1 adjusted_timespec[0]+0 S16 A128])
+        (reg:TI 110)) "utimens.c":524:28 -1
+     (nil))
+(insn 28 27 29 7 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [3 timespec+0 S8 A64])) "utimens.c":525:38 -1
+     (nil))
+(insn 29 28 30 7 (parallel [
+            (set (reg/f:DI 83 [ _2 ])
+                (plus:DI (reg/f:DI 111)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":525:38 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])) [3 timespec+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 30 29 31 7 (set (reg:TI 112)
+        (mem:TI (reg/f:DI 83 [ _2 ]) [1 *_2+0 S16 A64])) "utimens.c":525:28 -1
+     (nil))
+(insn 31 30 32 7 (set (mem/c:TI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [1 adjusted_timespec[1]+0 S16 A128])
+        (reg:TI 112)) "utimens.c":525:28 -1
+     (nil))
+(insn 32 31 33 7 (set (reg/f:DI 84 [ ts.23_3 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])) "utimens.c":526:27 -1
+     (nil))
+(insn 33 32 34 7 (set (reg:DI 5 di)
+        (reg/f:DI 84 [ ts.23_3 ])) "utimens.c":526:27 -1
+     (nil))
+(call_insn 34 33 35 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("validate_timespec") [flags 0x3]  <function_decl 0x737cd9e75e00 validate_timespec>) [0 validate_timespec S1 A8])
+            (const_int 0 [0]))) "utimens.c":526:27 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 35 34 36 7 (set (reg:SI 113)
+        (reg:SI 0 ax)) "utimens.c":526:27 -1
+     (nil))
+(insn 36 35 37 7 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [4 adjustment_needed+0 S4 A128])
+        (reg:SI 113)) "utimens.c":526:27 -1
+     (nil))
+(code_label 37 36 38 8 61 (nil) [1 uses])
+(note 38 37 41 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 41 38 42 8 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -208 [0xffffffffffffff30])) [4 adjustment_needed+0 S4 A128])
+            (const_int 0 [0]))) "utimens.c":528:6 -1
+     (nil))
+(jump_insn 42 41 43 8 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 47)
+            (pc))) "utimens.c":528:6 -1
+     (nil)
+ -> 47)
+(note 43 42 44 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 9 (set (reg:SI 107 [ _29 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":529:12 -1
+     (nil))
+(jump_insn 45 44 46 9 (set (pc)
+        (label_ref:DI 202)) "utimens.c":529:12 807 {jump}
+     (nil)
+ -> 202)
+(barrier 46 45 47)
+(code_label 47 46 48 10 62 (nil) [1 uses])
+(note 48 47 49 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 52 10 (set (reg:SI 85 [ lutimensat_works_really.24_4 ])
+        (mem/c:SI (symbol_ref:DI ("lutimensat_works_really") [flags 0x2]  <var_decl 0x737cd9e51750 lutimensat_works_really>) [4 lutimensat_works_really+0 S4 A32])) "utimens.c":537:9 -1
+     (nil))
+(insn 52 49 53 10 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (reg:SI 85 [ lutimensat_works_really.24_4 ])
+            (const_int 0 [0]))) "utimens.c":537:6 -1
+     (nil))
+(jump_insn 53 52 54 10 (set (pc)
+        (if_then_else (lt (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 141)
+            (pc))) "utimens.c":537:6 -1
+     (nil)
+ -> 141)
+(note 54 53 55 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 55 54 56 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -208 [0xffffffffffffff30])) [4 adjustment_needed+0 S4 A128])
+            (const_int 2 [0x2]))) "utimens.c":553:10 -1
+     (nil))
+(jump_insn 56 55 57 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 105)
+            (pc))) "utimens.c":553:10 -1
+     (nil)
+ -> 105)
+(note 57 56 58 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 59 12 (parallel [
+            (set (reg:DI 114)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":555:15 -1
+     (nil))
+(insn 59 58 60 12 (set (reg:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [15 file+0 S8 A64])) "utimens.c":555:15 -1
+     (nil))
+(insn 60 59 61 12 (set (reg:DI 4 si)
+        (reg:DI 114)) "utimens.c":555:15 -1
+     (nil))
+(insn 61 60 62 12 (set (reg:DI 5 di)
+        (reg:DI 115)) "utimens.c":555:15 -1
+     (nil))
+(call_insn 62 61 63 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("rpl_lstat") [flags 0x41]  <function_decl 0x737cda1f5300 rpl_lstat>) [0 rpl_lstat S1 A8])
+            (const_int 0 [0]))) "utimens.c":555:15 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 63 62 64 12 (set (reg:SI 86 [ _5 ])
+        (reg:SI 0 ax)) "utimens.c":555:15 -1
+     (nil))
+(insn 64 63 65 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 86 [ _5 ])
+            (const_int 0 [0]))) "utimens.c":555:14 -1
+     (nil))
+(jump_insn 65 64 66 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 70)
+            (pc))) "utimens.c":555:14 -1
+     (nil)
+ -> 70)
+(note 66 65 67 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 67 66 68 13 (set (reg:SI 107 [ _29 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":556:20 -1
+     (nil))
+(jump_insn 68 67 69 13 (set (pc)
+        (label_ref:DI 202)) "utimens.c":556:20 807 {jump}
+     (nil)
+ -> 202)
+(barrier 69 68 70)
+(code_label 70 69 71 14 66 (nil) [1 uses])
+(note 71 70 72 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 14 (set (reg/f:DI 87 [ ts.25_6 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])) "utimens.c":557:17 -1
+     (nil))
+(insn 73 72 74 14 (set (reg:DI 88 [ _7 ])
+        (mem:DI (plus:DI (reg/f:DI 87 [ ts.25_6 ])
+                (const_int 8 [0x8])) [2 ts.25_6->tv_nsec+0 S8 A64])) "utimens.c":557:20 -1
+     (nil))
+(insn 74 73 75 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 88 [ _7 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":557:14 -1
+     (nil))
+(jump_insn 75 74 76 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) "utimens.c":557:14 -1
+     (nil)
+ -> 86)
+(note 76 75 77 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 78 15 (set (reg/f:DI 89 [ ts.26_8 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])) "utimens.c":558:15 -1
+     (nil))
+(insn 78 77 79 15 (parallel [
+            (set (reg:DI 116)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":558:21 -1
+     (nil))
+(insn 79 78 80 15 (set (reg:DI 5 di)
+        (reg:DI 116)) "utimens.c":558:21 -1
+     (nil))
+(call_insn/i 80 79 81 15 (set (reg:TI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("get_stat_atime") [flags 0x41]  <function_decl 0x737cd9e6f200 get_stat_atime>) [0 get_stat_atime S1 A8])
+            (const_int 0 [0]))) "utimens.c":558:21 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 81 80 82 15 (set (reg:TI 117)
+        (reg:TI 0 ax)) "utimens.c":558:21 -1
+     (nil))
+(insn 82 81 83 15 (set (reg:TI 118)
+        (reg:TI 117)) "utimens.c":558:21 -1
+     (nil))
+(insn 83 82 84 15 (set (mem:TI (reg/f:DI 89 [ ts.26_8 ]) [1 *ts.26_8+0 S16 A64])
+        (reg:TI 118)) "utimens.c":558:21 -1
+     (nil))
+(jump_insn 84 83 85 15 (set (pc)
+        (label_ref 102)) -1
+     (nil)
+ -> 102)
+(barrier 85 84 86)
+(code_label 86 85 87 16 67 (nil) [1 uses])
+(note 87 86 88 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 89 16 (set (reg/f:DI 90 [ ts.27_9 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])) "utimens.c":559:22 -1
+     (nil))
+(insn 89 88 90 16 (parallel [
+            (set (reg/f:DI 91 [ _10 ])
+                (plus:DI (reg/f:DI 90 [ ts.27_9 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":559:22 -1
+     (nil))
+(insn 90 89 91 16 (set (reg:DI 92 [ _11 ])
+        (mem:DI (plus:DI (reg/f:DI 91 [ _10 ])
+                (const_int 8 [0x8])) [2 _10->tv_nsec+0 S8 A64])) "utimens.c":559:25 -1
+     (nil))
+(insn 91 90 92 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 92 [ _11 ])
+            (const_int 1073741822 [0x3ffffffe]))) "utimens.c":559:19 -1
+     (nil))
+(jump_insn 92 91 93 16 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 102)
+            (pc))) "utimens.c":559:19 -1
+     (nil)
+ -> 102)
+(note 93 92 94 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 94 93 95 17 (set (reg/f:DI 93 [ ts.28_12 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])) "utimens.c":560:15 -1
+     (nil))
+(insn 95 94 96 17 (parallel [
+            (set (reg/f:DI 94 [ _13 ])
+                (plus:DI (reg/f:DI 93 [ ts.28_12 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":560:15 -1
+     (nil))
+(insn 96 95 97 17 (parallel [
+            (set (reg:DI 119)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":560:21 -1
+     (nil))
+(insn 97 96 98 17 (set (reg:DI 5 di)
+        (reg:DI 119)) "utimens.c":560:21 -1
+     (nil))
+(call_insn/i 98 97 99 17 (set (reg:TI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("get_stat_mtime") [flags 0x41]  <function_decl 0x737cd9e6f600 get_stat_mtime>) [0 get_stat_mtime S1 A8])
+            (const_int 0 [0]))) "utimens.c":560:21 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 99 98 100 17 (set (reg:TI 120)
+        (reg:TI 0 ax)) "utimens.c":560:21 -1
+     (nil))
+(insn 100 99 101 17 (set (reg:TI 121)
+        (reg:TI 120)) "utimens.c":560:21 -1
+     (nil))
+(insn 101 100 102 17 (set (mem:TI (reg/f:DI 94 [ _13 ]) [1 *_13+0 S16 A64])
+        (reg:TI 121)) "utimens.c":560:21 -1
+     (nil))
+(code_label 102 101 103 18 68 (nil) [2 uses])
+(note 103 102 104 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 104 103 105 18 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -208 [0xffffffffffffff30])) [4 adjustment_needed+0 S4 A128])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -208 [0xffffffffffffff30])) [4 adjustment_needed+0 S4 A128])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":562:28 -1
+     (nil))
+(code_label 105 104 106 19 65 (nil) [1 uses])
+(note 106 105 107 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 107 106 108 19 (set (reg/f:DI 95 [ ts.29_14 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])) "utimens.c":565:16 -1
+     (nil))
+(insn 108 107 109 19 (set (reg:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [15 file+0 S8 A64])) "utimens.c":565:16 -1
+     (nil))
+(insn 109 108 110 19 (set (reg:SI 2 cx)
+        (const_int 256 [0x100])) "utimens.c":565:16 -1
+     (nil))
+(insn 110 109 111 19 (set (reg:DI 1 dx)
+        (reg/f:DI 95 [ ts.29_14 ])) "utimens.c":565:16 -1
+     (nil))
+(insn 111 110 112 19 (set (reg:DI 4 si)
+        (reg:DI 122)) "utimens.c":565:16 -1
+     (nil))
+(insn 112 111 113 19 (set (reg:SI 5 di)
+        (const_int -100 [0xffffffffffffff9c])) "utimens.c":565:16 -1
+     (nil))
+(call_insn 113 112 114 19 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("utimensat") [flags 0x41]  <function_decl 0x737cda1e3c00 utimensat>) [0 utimensat S1 A8])
+            (const_int 0 [0]))) "utimens.c":565:16 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 114 113 115 19 (set (reg:SI 123)
+        (reg:SI 0 ax)) "utimens.c":565:16 -1
+     (nil))
+(insn 115 114 118 19 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -204 [0xffffffffffffff34])) [4 result+0 S4 A32])
+        (reg:SI 123)) "utimens.c":565:16 -1
+     (nil))
+(insn 118 115 119 19 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -204 [0xffffffffffffff34])) [4 result+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":574:10 -1
+     (nil))
+(jump_insn 119 118 120 19 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 124)
+            (pc))) "utimens.c":574:10 -1
+     (nil)
+ -> 124)
+(note 120 119 121 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 121 120 122 20 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x737cda19da00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "utimens.c":575:9 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 122 121 123 20 (set (reg/f:DI 96 [ _15 ])
+        (reg:DI 0 ax)) "utimens.c":575:9 -1
+     (nil))
+(insn 123 122 124 20 (set (mem:SI (reg/f:DI 96 [ _15 ]) [4 *_15+0 S4 A32])
+        (const_int 38 [0x26])) "utimens.c":575:15 -1
+     (nil))
+(code_label 124 123 125 21 69 (nil) [1 uses])
+(note 125 124 126 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 126 125 127 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -204 [0xffffffffffffff34])) [4 result+0 S4 A32])
+            (const_int 0 [0]))) "utimens.c":577:10 -1
+     (nil))
+(jump_insn 127 126 128 21 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 134)
+            (pc))) "utimens.c":577:10 -1
+     (nil)
+ -> 134)
+(note 128 127 129 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 129 128 130 22 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x737cda19da00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "utimens.c":577:26 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 130 129 131 22 (set (reg/f:DI 97 [ _16 ])
+        (reg:DI 0 ax)) "utimens.c":577:26 -1
+     (nil))
+(insn 131 130 132 22 (set (reg:SI 98 [ _17 ])
+        (mem:SI (reg/f:DI 97 [ _16 ]) [4 *_16+0 S4 A32])) "utimens.c":577:26 -1
+     (nil))
+(insn 132 131 133 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 98 [ _17 ])
+            (const_int 38 [0x26]))) "utimens.c":577:23 -1
+     (nil))
+(jump_insn 133 132 134 22 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 141)
+            (pc))) "utimens.c":577:23 -1
+     (nil)
+ -> 141)
+(code_label 134 133 135 23 70 (nil) [1 uses])
+(note 135 134 136 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 136 135 137 23 (set (mem/c:SI (symbol_ref:DI ("utimensat_works_really") [flags 0x2]  <var_decl 0x737cd9e516c0 utimensat_works_really>) [4 utimensat_works_really+0 S4 A32])
+        (const_int 1 [0x1])) "utimens.c":579:34 -1
+     (nil))
+(insn 137 136 138 23 (set (mem/c:SI (symbol_ref:DI ("lutimensat_works_really") [flags 0x2]  <var_decl 0x737cd9e51750 lutimensat_works_really>) [4 lutimensat_works_really+0 S4 A32])
+        (const_int 1 [0x1])) "utimens.c":580:35 -1
+     (nil))
+(insn 138 137 139 23 (set (reg:SI 107 [ _29 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -204 [0xffffffffffffff34])) [4 result+0 S4 A32])) "utimens.c":581:18 -1
+     (nil))
+(jump_insn 139 138 140 23 (set (pc)
+        (label_ref:DI 202)) "utimens.c":581:18 807 {jump}
+     (nil)
+ -> 202)
+(barrier 140 139 141)
+(code_label 141 140 142 24 64 (nil) [2 uses])
+(note 142 141 143 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 143 142 145 24 (set (mem/c:SI (symbol_ref:DI ("lutimensat_works_really") [flags 0x2]  <var_decl 0x737cd9e51750 lutimensat_works_really>) [4 lutimensat_works_really+0 S4 A32])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":584:27 -1
+     (nil))
+(insn 145 143 146 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -208 [0xffffffffffffff30])) [4 adjustment_needed+0 S4 A128])
+            (const_int 3 [0x3]))) "utimens.c":593:10 -1
+     (nil))
+(jump_insn 146 145 147 24 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 160)
+            (pc))) "utimens.c":593:10 -1
+     (nil)
+ -> 160)
+(note 147 146 148 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 148 147 149 26 (parallel [
+            (set (reg:DI 124)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":593:37 -1
+     (nil))
+(insn 149 148 150 26 (set (reg:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [15 file+0 S8 A64])) "utimens.c":593:37 -1
+     (nil))
+(insn 150 149 151 26 (set (reg:DI 4 si)
+        (reg:DI 124)) "utimens.c":593:37 -1
+     (nil))
+(insn 151 150 152 26 (set (reg:DI 5 di)
+        (reg:DI 125)) "utimens.c":593:37 -1
+     (nil))
+(call_insn 152 151 153 26 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("rpl_lstat") [flags 0x41]  <function_decl 0x737cda1f5300 rpl_lstat>) [0 rpl_lstat S1 A8])
+            (const_int 0 [0]))) "utimens.c":593:37 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 153 152 154 26 (set (reg:SI 99 [ _18 ])
+        (reg:SI 0 ax)) "utimens.c":593:37 -1
+     (nil))
+(insn 154 153 155 26 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 99 [ _18 ])
+            (const_int 0 [0]))) "utimens.c":593:34 -1
+     (nil))
+(jump_insn 155 154 156 26 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 160)
+            (pc))) "utimens.c":593:34 -1
+     (nil)
+ -> 160)
+(note 156 155 157 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 157 156 158 27 (set (reg:SI 107 [ _29 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":594:16 -1
+     (nil))
+(jump_insn 158 157 159 27 (set (pc)
+        (label_ref:DI 202)) "utimens.c":594:16 807 {jump}
+     (nil)
+ -> 202)
+(barrier 159 158 160)
+(code_label 160 159 161 28 71 (nil) [2 uses])
+(note 161 160 162 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 162 161 163 28 (set (reg/f:DI 100 [ ts.30_19 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])) "utimens.c":595:11 -1
+     (nil))
+(insn 163 162 164 28 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 100 [ ts.30_19 ])
+            (const_int 0 [0]))) "utimens.c":595:10 -1
+     (nil))
+(jump_insn 164 163 165 28 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 178)
+            (pc))) "utimens.c":595:10 -1
+     (nil)
+ -> 178)
+(note 165 164 166 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 166 165 167 29 (parallel [
+            (set (reg:DI 126)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -200 [0xffffffffffffff38])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":595:17 -1
+     (nil))
+(insn 167 166 168 29 (parallel [
+            (set (reg:DI 127)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":595:17 -1
+     (nil))
+(insn 168 167 169 29 (set (reg:DI 4 si)
+        (reg:DI 126)) "utimens.c":595:17 -1
+     (nil))
+(insn 169 168 170 29 (set (reg:DI 5 di)
+        (reg:DI 127)) "utimens.c":595:17 -1
+     (nil))
+(call_insn 170 169 171 29 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("update_timespec") [flags 0x3]  <function_decl 0x737cd9e7b000 update_timespec>) [0 update_timespec S1 A8])
+            (const_int 0 [0]))) "utimens.c":595:17 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 171 170 172 29 (set (reg:QI 101 [ _20 ])
+        (reg:QI 0 ax)) "utimens.c":595:17 -1
+     (nil))
+(insn 172 171 173 29 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 101 [ _20 ])
+            (const_int 0 [0]))) "utimens.c":595:14 -1
+     (nil))
+(jump_insn 173 172 174 29 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 178)
+            (pc))) "utimens.c":595:14 -1
+     (nil)
+ -> 178)
+(note 174 173 175 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 175 174 176 30 (set (reg:SI 107 [ _29 ])
+        (const_int 0 [0])) "utimens.c":596:16 -1
+     (nil))
+(jump_insn 176 175 177 30 (set (pc)
+        (label_ref:DI 202)) "utimens.c":596:16 807 {jump}
+     (nil)
+ -> 202)
+(barrier 177 176 178)
+(code_label 178 177 179 31 72 (nil) [2 uses])
+(note 179 178 180 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 180 179 181 31 (set (reg:SI 102 [ _21 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -136 [0xffffffffffffff78])) [4 st.st_mode+0 S4 A64])) "utimens.c":626:8 -1
+     (nil))
+(insn 181 180 182 31 (parallel [
+            (set (reg:SI 103 [ _22 ])
+                (and:SI (reg:SI 102 [ _21 ])
+                    (const_int 61440 [0xf000])))
+            (clobber (reg:CC 17 flags))
+        ]) "utimens.c":626:8 -1
+     (nil))
+(insn 182 181 183 31 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 103 [ _22 ])
+            (const_int 40960 [0xa000]))) "utimens.c":626:6 -1
+     (nil))
+(jump_insn 183 182 184 31 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 194)
+            (pc))) "utimens.c":626:6 -1
+     (nil)
+ -> 194)
+(note 184 183 185 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 185 184 186 32 (set (reg/f:DI 104 [ ts.31_23 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [3 ts+0 S8 A64])) "utimens.c":627:12 -1
+     (nil))
+(insn 186 185 187 32 (set (reg:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [15 file+0 S8 A64])) "utimens.c":627:12 -1
+     (nil))
+(insn 187 186 188 32 (set (reg:DI 1 dx)
+        (reg/f:DI 104 [ ts.31_23 ])) "utimens.c":627:12 -1
+     (nil))
+(insn 188 187 189 32 (set (reg:DI 4 si)
+        (reg:DI 128)) "utimens.c":627:12 -1
+     (nil))
+(insn 189 188 190 32 (set (reg:SI 5 di)
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":627:12 -1
+     (nil))
+(call_insn 190 189 191 32 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fdutimens") [flags 0x3]  <function_decl 0x737cda19d700 fdutimens>) [0 fdutimens S1 A8])
+            (const_int 0 [0]))) "utimens.c":627:12 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 191 190 192 32 (set (reg:SI 107 [ _29 ])
+        (reg:SI 0 ax)) "utimens.c":627:12 -1
+     (nil))
+(jump_insn 192 191 193 32 (set (pc)
+        (label_ref:DI 202)) "utimens.c":627:12 807 {jump}
+     (nil)
+ -> 202)
+(barrier 193 192 194)
+(code_label 194 193 195 33 73 (nil) [1 uses])
+(note 195 194 196 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 196 195 197 33 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x737cda19da00 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "utimens.c":628:3 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 197 196 198 33 (set (reg/f:DI 105 [ _24 ])
+        (reg:DI 0 ax)) "utimens.c":628:3 -1
+     (nil))
+(insn 198 197 199 33 (set (mem:SI (reg/f:DI 105 [ _24 ]) [4 *_24+0 S4 A32])
+        (const_int 38 [0x26])) "utimens.c":628:9 -1
+     (nil))
+(insn 199 198 202 33 (set (reg:SI 107 [ _29 ])
+        (const_int -1 [0xffffffffffffffff])) "utimens.c":629:10 -1
+     (nil))
+(code_label 202 199 203 35 74 (nil) [6 uses])
+(note 203 202 204 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 204 203 208 35 (set (reg:SI 108 [ <retval> ])
+        (reg:SI 107 [ _29 ])) "utimens.c":630:1 -1
+     (nil))
+(insn 208 204 209 35 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [11 D.3838+0 S8 A64])
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_TEST))
+            (clobber (scratch:DI))
+        ]) "utimens.c":630:1 -1
+     (nil))
+(jump_insn 209 208 216 35 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 212)
+            (pc))) "utimens.c":630:1 -1
+     (nil)
+ -> 212)
+(note 216 209 210 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(call_insn 210 216 211 37 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x737cd9ec2900 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "utimens.c":630:1 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 211 210 212)
+(code_label 212 211 217 38 75 (nil) [1 uses])
+(note 217 212 213 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 213 217 214 38 (set (reg/i:SI 0 ax)
+        (reg:SI 108 [ <retval> ])) "utimens.c":630:1 -1
+     (nil))
+(insn 214 213 0 38 (use (reg/i:SI 0 ax)) "utimens.c":630:1 -1
+     (nil))

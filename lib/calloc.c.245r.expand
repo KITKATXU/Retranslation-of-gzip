@@ -1,0 +1,208 @@
+
+;; Function rpl_calloc (rpl_calloc, funcdef_no=6, decl_uid=2704, cgraph_uid=7, symbol_order=6)
+
+Partition 1: size 8 align 8
+	result_16
+Partition 0: size 8 align 8
+	bytes_9
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 48.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 n+0 S8 A64])
+        (reg:DI 5 di [ n ])) "calloc.c":43:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 s+0 S8 A64])
+        (reg:DI 4 si [ s ])) "calloc.c":43:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [2 n+0 S8 A64])
+            (const_int 0 [0]))) "calloc.c":47:6 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 12)
+            (pc))) "calloc.c":47:6 -1
+     (nil)
+ -> 12)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [2 s+0 S8 A64])
+            (const_int 0 [0]))) "calloc.c":47:14 -1
+     (nil))
+(jump_insn 11 10 12 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "calloc.c":47:14 -1
+     (nil)
+ -> 18)
+(code_label 12 11 13 5 2 (nil) [1 uses])
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 5 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 n+0 S8 A64])
+        (const_int 1 [0x1])) "calloc.c":49:9 -1
+     (nil))
+(insn 15 14 16 5 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 s+0 S8 A64])
+        (const_int 1 [0x1])) "calloc.c":50:9 -1
+     (nil))
+(jump_insn 16 15 17 5 (set (pc)
+        (label_ref 35)) "calloc.c":50:9 -1
+     (nil)
+ -> 35)
+(barrier 17 16 18)
+(code_label 18 17 19 6 3 (nil) [1 uses])
+(note 19 18 20 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 6 (set (reg:DI 87)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 n+0 S8 A64])) "calloc.c":56:14 -1
+     (nil))
+(insn 21 20 22 6 (parallel [
+            (set (reg:DI 86)
+                (mult:DI (reg:DI 87)
+                    (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -32 [0xffffffffffffffe0])) [2 s+0 S8 A64])))
+            (clobber (reg:CC 17 flags))
+        ]) "calloc.c":56:14 -1
+     (nil))
+(insn 22 21 23 6 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 bytes+0 S8 A64])
+        (reg:DI 86)) "calloc.c":56:14 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:DI 90)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 bytes+0 S8 A64])) "calloc.c":57:17 -1
+     (nil))
+(insn 24 23 25 6 (parallel [
+            (set (reg:DI 88)
+                (udiv:DI (reg:DI 90)
+                    (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -32 [0xffffffffffffffe0])) [2 s+0 S8 A64])))
+            (set (reg:DI 89)
+                (umod:DI (reg:DI 90)
+                    (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -32 [0xffffffffffffffe0])) [2 s+0 S8 A64])))
+            (clobber (reg:CC 17 flags))
+        ]) "calloc.c":57:17 -1
+     (nil))
+(insn 25 24 26 6 (set (reg:DI 82 [ _1 ])
+        (reg:DI 88)) "calloc.c":57:17 -1
+     (nil))
+(insn 26 25 27 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [2 n+0 S8 A64])
+            (reg:DI 82 [ _1 ]))) "calloc.c":57:10 -1
+     (nil))
+(jump_insn 27 26 28 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 35)
+            (pc))) "calloc.c":57:10 -1
+     (nil)
+ -> 35)
+(note 28 27 29 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 29 28 30 7 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x71457abe7100 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "calloc.c":59:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 30 29 31 7 (set (reg/f:DI 83 [ _2 ])
+        (reg:DI 0 ax)) "calloc.c":59:11 -1
+     (nil))
+(insn 31 30 32 7 (set (mem:SI (reg/f:DI 83 [ _2 ]) [3 *_2+0 S4 A32])
+        (const_int 12 [0xc])) "calloc.c":59:17 -1
+     (nil))
+(insn 32 31 33 7 (set (reg/f:DI 84 [ _5 ])
+        (const_int 0 [0])) "calloc.c":60:18 -1
+     (nil))
+(jump_insn 33 32 34 7 (set (pc)
+        (label_ref 45)) "calloc.c":60:18 -1
+     (nil)
+ -> 45)
+(barrier 34 33 35)
+(code_label 35 34 36 8 4 (nil) [2 uses])
+(note 36 35 37 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 8 (set (reg:DI 91)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 s+0 S8 A64])) "calloc.c":65:12 -1
+     (nil))
+(insn 38 37 39 8 (set (reg:DI 92)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 n+0 S8 A64])) "calloc.c":65:12 -1
+     (nil))
+(insn 39 38 40 8 (set (reg:DI 4 si)
+        (reg:DI 91)) "calloc.c":65:12 -1
+     (nil))
+(insn 40 39 41 8 (set (reg:DI 5 di)
+        (reg:DI 92)) "calloc.c":65:12 -1
+     (nil))
+(call_insn 41 40 42 8 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("calloc") [flags 0x41]  <function_decl 0x71457aacf600 calloc>) [0 __builtin_calloc S1 A8])
+            (const_int 0 [0]))) "calloc.c":65:12 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 42 41 43 8 (set (reg/f:DI 93)
+        (reg:DI 0 ax)) "calloc.c":65:12 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 93)
+        (nil)))
+(insn 43 42 44 8 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 result+0 S8 A64])
+        (reg/f:DI 93)) "calloc.c":65:12 -1
+     (nil))
+(insn 44 43 45 8 (set (reg/f:DI 84 [ _5 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 result+0 S8 A64])) "calloc.c":72:10 -1
+     (nil))
+(code_label 45 44 46 9 5 (nil) [1 uses])
+(note 46 45 47 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 51 9 (set (reg/f:DI 85 [ <retval> ])
+        (reg/f:DI 84 [ _5 ])) "calloc.c":73:1 -1
+     (nil))
+(insn 51 47 52 9 (set (reg/i:DI 0 ax)
+        (reg/f:DI 85 [ <retval> ])) "calloc.c":73:1 -1
+     (nil))
+(insn 52 51 0 9 (use (reg/i:DI 0 ax)) "calloc.c":73:1 -1
+     (nil))

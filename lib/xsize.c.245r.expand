@@ -1,0 +1,393 @@
+
+;; Function xsum (xsum, funcdef_no=0, decl_uid=2046, cgraph_uid=1, symbol_order=0)
+
+Partition 0: size 8 align 8
+	sum_4
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 20 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 30.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 size1+0 S8 A64])
+        (reg:DI 5 di [ size1 ])) "xsize.h":64:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [1 size2+0 S8 A64])
+        (reg:DI 4 si [ size2 ])) "xsize.h":64:1 -1
+     (nil))
+(note 4 3 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 4 12 2 (set (reg:DI 88)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 size1+0 S8 A64])) "xsize.h":65:10 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 89)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [1 size2+0 S8 A64])) "xsize.h":65:10 -1
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg:DI 87)
+                (plus:DI (reg:DI 88)
+                    (reg:DI 89)))
+            (clobber (reg:CC 17 flags))
+        ]) "xsize.h":65:10 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [1 size1+0 S8 A64])
+            (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [1 size2+0 S8 A64]))
+        (nil)))
+(insn 14 13 15 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 sum+0 S8 A64])
+        (reg:DI 87)) "xsize.h":65:10 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 90)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 sum+0 S8 A64])) "xsize.h":66:30 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 90)
+            (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [1 size1+0 S8 A64]))) "xsize.h":66:30 -1
+     (nil))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) "xsize.h":66:30 -1
+     (nil)
+ -> 22)
+(note 18 17 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg:DI 82 [ iftmp.0_1 ])
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 sum+0 S8 A64])) "xsize.h":66:30 -1
+     (nil))
+(jump_insn 20 19 21 4 (set (pc)
+        (label_ref:DI 27)) 807 {jump}
+     (nil)
+ -> 27)
+(barrier 21 20 22)
+(code_label 22 21 23 5 2 (nil) [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 27 5 (set (reg:DI 82 [ iftmp.0_1 ])
+        (const_int -1 [0xffffffffffffffff])) "xsize.h":66:30 -1
+     (nil))
+(code_label 27 24 28 7 4 (nil) [1 uses])
+(note 28 27 29 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 33 7 (set (reg:DI 83 [ <retval> ])
+        (reg:DI 82 [ iftmp.0_1 ])) "xsize.h":66:30 -1
+     (nil))
+(insn 33 29 34 7 (set (reg/i:DI 0 ax)
+        (reg:DI 83 [ <retval> ])) "xsize.h":67:1 -1
+     (nil))
+(insn 34 33 0 7 (use (reg/i:DI 0 ax)) "xsize.h":67:1 -1
+     (nil))
+
+;; Function xsum3 (xsum3, funcdef_no=1, decl_uid=2052, cgraph_uid=2, symbol_order=1)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 22.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 size1+0 S8 A64])
+        (reg:DI 5 di [ size1 ])) "xsize.h":75:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 size2+0 S8 A64])
+        (reg:DI 4 si [ size2 ])) "xsize.h":75:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 size3+0 S8 A64])
+        (reg:DI 1 dx [ size3 ])) "xsize.h":75:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:DI 85)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 size2+0 S8 A64])) "xsize.h":76:10 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 86)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 size1+0 S8 A64])) "xsize.h":76:10 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (reg:DI 85)) "xsize.h":76:10 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 86)) "xsize.h":76:10 -1
+     (nil))
+(call_insn/i 12 11 13 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("xsum") [flags 0x3]  <function_decl 0x76007b180600 xsum>) [0 xsum S1 A8])
+            (const_int 0 [0]))) "xsize.h":76:10 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 13 12 14 2 (set (reg:DI 82 [ _1 ])
+        (reg:DI 0 ax)) "xsize.h":76:10 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 87)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 size3+0 S8 A64])) "xsize.h":76:10 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 4 si)
+        (reg:DI 87)) "xsize.h":76:10 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "xsize.h":76:10 -1
+     (nil))
+(call_insn/i 17 16 18 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("xsum") [flags 0x3]  <function_decl 0x76007b180600 xsum>) [0 xsum S1 A8])
+            (const_int 0 [0]))) "xsize.h":76:10 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 18 17 21 2 (set (reg:DI 83 [ _6 ])
+        (reg:DI 0 ax)) "xsize.h":76:10 -1
+     (nil))
+(insn 21 18 25 2 (set (reg:DI 84 [ <retval> ])
+        (reg:DI 83 [ _6 ])) "xsize.h":76:10 -1
+     (nil))
+(insn 25 21 26 2 (set (reg/i:DI 0 ax)
+        (reg:DI 84 [ <retval> ])) "xsize.h":77:1 -1
+     (nil))
+(insn 26 25 0 2 (use (reg/i:DI 0 ax)) "xsize.h":77:1 -1
+     (nil))
+
+;; Function xsum4 (xsum4, funcdef_no=2, decl_uid=2058, cgraph_uid=3, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 28.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 size1+0 S8 A64])
+        (reg:DI 5 di [ size1 ])) "xsize.h":85:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 size2+0 S8 A64])
+        (reg:DI 4 si [ size2 ])) "xsize.h":85:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 size3+0 S8 A64])
+        (reg:DI 1 dx [ size3 ])) "xsize.h":85:1 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [1 size4+0 S8 A64])
+        (reg:DI 2 cx [ size4 ])) "xsize.h":85:1 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:DI 86)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 size2+0 S8 A64])) "xsize.h":86:10 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 87)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 size1+0 S8 A64])) "xsize.h":86:10 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 4 si)
+        (reg:DI 86)) "xsize.h":86:10 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 5 di)
+        (reg:DI 87)) "xsize.h":86:10 -1
+     (nil))
+(call_insn/i 13 12 14 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("xsum") [flags 0x3]  <function_decl 0x76007b180600 xsum>) [0 xsum S1 A8])
+            (const_int 0 [0]))) "xsize.h":86:10 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 14 13 15 2 (set (reg:DI 82 [ _1 ])
+        (reg:DI 0 ax)) "xsize.h":86:10 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 88)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 size3+0 S8 A64])) "xsize.h":86:10 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 4 si)
+        (reg:DI 88)) "xsize.h":86:10 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg:DI 82 [ _1 ])) "xsize.h":86:10 -1
+     (nil))
+(call_insn/i 18 17 19 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("xsum") [flags 0x3]  <function_decl 0x76007b180600 xsum>) [0 xsum S1 A8])
+            (const_int 0 [0]))) "xsize.h":86:10 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 19 18 20 2 (set (reg:DI 83 [ _2 ])
+        (reg:DI 0 ax)) "xsize.h":86:10 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 89)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [1 size4+0 S8 A64])) "xsize.h":86:10 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 4 si)
+        (reg:DI 89)) "xsize.h":86:10 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 5 di)
+        (reg:DI 83 [ _2 ])) "xsize.h":86:10 -1
+     (nil))
+(call_insn/i 23 22 24 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("xsum") [flags 0x3]  <function_decl 0x76007b180600 xsum>) [0 xsum S1 A8])
+            (const_int 0 [0]))) "xsize.h":86:10 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 24 23 27 2 (set (reg:DI 84 [ _8 ])
+        (reg:DI 0 ax)) "xsize.h":86:10 -1
+     (nil))
+(insn 27 24 31 2 (set (reg:DI 85 [ <retval> ])
+        (reg:DI 84 [ _8 ])) "xsize.h":86:10 -1
+     (nil))
+(insn 31 27 32 2 (set (reg/i:DI 0 ax)
+        (reg:DI 85 [ <retval> ])) "xsize.h":87:1 -1
+     (nil))
+(insn 32 31 0 2 (use (reg/i:DI 0 ax)) "xsize.h":87:1 -1
+     (nil))
+
+;; Function xmax (xmax, funcdef_no=3, decl_uid=2062, cgraph_uid=4, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 12.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 size1+0 S8 A64])
+        (reg:DI 5 di [ size1 ])) "xsize.h":95:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 size2+0 S8 A64])
+        (reg:DI 4 si [ size2 ])) "xsize.h":95:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 84)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 size1+0 S8 A64])) "xsize.h":98:34 -1
+     (nil))
+(insn 8 7 11 2 (parallel [
+            (set (reg:DI 82 [ _3 ])
+                (umax:DI (reg:DI 84)
+                    (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -16 [0xfffffffffffffff0])) [1 size2+0 S8 A64])))
+            (clobber (reg:CC 17 flags))
+        ]) "xsize.h":98:34 -1
+     (nil))
+(insn 11 8 15 2 (set (reg:DI 83 [ <retval> ])
+        (reg:DI 82 [ _3 ])) "xsize.h":98:34 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:DI 0 ax)
+        (reg:DI 83 [ <retval> ])) "xsize.h":99:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:DI 0 ax)) "xsize.h":99:1 -1
+     (nil))

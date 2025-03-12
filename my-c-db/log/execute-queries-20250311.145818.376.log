@@ -1,0 +1,77 @@
+[2025-03-11 14:58:18] This is codeql execute queries -J-Xmx12861M --off-heap-ram=16001 --verbosity=progress --logdir=/home/qingxiao/retranslation/gzip/my-c-db/log --evaluator-log-level=5 --warnings=show --dynamic-join-order-mode=none --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --output=/home/qingxiao/retranslation/gzip/call_graph.csv -- /home/qingxiao/retranslation/gzip/my-c-db/db-cpp path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:58:18] Calling plumbing command: codeql resolve queries --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --format=json -- path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:58:18] [PROGRESS] resolve queries> Recording pack reference (anonymous QL pack at /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql) at /home/qingxiao/codeql/my-queries.
+[2025-03-11 14:58:18] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql"
+                      ]
+[2025-03-11 14:58:18] Creating executor with 1 threads.
+[2025-03-11 14:58:18] Calling plumbing command: codeql resolve extensions --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --include-extension-row-locations path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:58:18] Calling plumbing command: codeql resolve queries --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --allow-library-packs --format startingpacks -- path:/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql
+[2025-03-11 14:58:18] [PROGRESS] resolve queries> Recording pack reference (anonymous QL pack at /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql) at /home/qingxiao/codeql/my-queries.
+[2025-03-11 14:58:18] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/qingxiao/codeql/my-queries"
+                      ]
+[2025-03-11 14:58:18] Calling plumbing command: codeql resolve extensions-by-pack --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --include-extension-row-locations -- /home/qingxiao/codeql/my-queries
+[2025-03-11 14:58:18] [SPAMMY] resolve extensions-by-pack> [INCOMPATIBILITY] <anonymous pack>: not 0.0.0 {root: <anonymous pack>@0.0.0}
+[2025-03-11 14:58:18] [SPAMMY] resolve extensions-by-pack> [DERIVATION] <anonymous pack>: 0.0.0 {<anonymous pack>: not 0.0.0 {root: <anonymous pack>@0.0.0}}
+[2025-03-11 14:58:18] [SPAMMY] resolve extensions-by-pack> [DECISION 1] <anonymous pack>: 0.0.0
+[2025-03-11 14:58:18] Plumbing command codeql resolve extensions-by-pack completed:
+                      {
+                        "models" : [ ],
+                        "data" : { },
+                        "threatModels" : { },
+                        "extensionPacks" : [ ]
+                      }
+[2025-03-11 14:58:18] Plumbing command codeql resolve extensions completed:
+                      {
+                        "models" : [ ],
+                        "data" : { },
+                        "threatModels" : { },
+                        "extensionPacks" : [ ]
+                      }
+[2025-03-11 14:58:18] Calling plumbing command: codeql resolve library-path --search-path=/home/qingxiao/codeql/qlpacks --qlconfig-file=/home/qingxiao/retranslation/gzip/qlconfig.yml --query=/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql --format=json
+[2025-03-11 14:58:18] [DETAILS] resolve library-path> Resolving query at normalized path /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql.
+[2025-03-11 14:58:18] [DETAILS] resolve library-path> Found no pack; trying after symlink resolution with /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql.
+[2025-03-11 14:58:18] [DETAILS] resolve library-path> Found enclosing pack 'my-queries' at /home/qingxiao/codeql/my-queries.
+[2025-03-11 14:58:18] [DETAILS] resolve library-path> Adding compilation cache at /home/qingxiao/.codeql/compile-cache.
+[2025-03-11 14:58:18] [DETAILS] resolve library-path> Resolving library dependencies from /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql.
+[2025-03-11 14:58:18] [SPAMMY] resolve library-path> [INCOMPATIBILITY] <anonymous pack>: not 0.0.0 {root: <anonymous pack>@0.0.0}
+[2025-03-11 14:58:18] [SPAMMY] resolve library-path> [DERIVATION] <anonymous pack>: 0.0.0 {<anonymous pack>: not 0.0.0 {root: <anonymous pack>@0.0.0}}
+[2025-03-11 14:58:18] [SPAMMY] resolve library-path> [DECISION 1] <anonymous pack>: 0.0.0
+[2025-03-11 14:58:18] [DETAILS] resolve library-path> QL pack dependencies for /home/qingxiao/codeql/my-queries resolved OK.
+[2025-03-11 14:58:18] [DETAILS] resolve library-path> Found no dbscheme through dependencies.
+[2025-03-11 14:58:18] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/home/qingxiao/codeql/my-queries"
+                        ],
+                        "compilationCache" : [
+                          "/home/qingxiao/.codeql/compile-cache"
+                        ],
+                        "relativeName" : "my-queries/FunctionCallGraph.ql",
+                        "possibleAdvice" : "There should probably be a qlpack.yml file declaring dependencies in /home/qingxiao/codeql/my-queries or an enclosing directory.",
+                        "qlPackName" : "my-queries"
+                      }
+[2025-03-11 14:58:18] [PROGRESS] execute queries> Compiling query plan for /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql.
+[2025-03-11 14:58:18] [DETAILS] execute queries> Resolving imports for /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql.
+[2025-03-11 14:58:18] Resolved file set for /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql hashes to fdfb8126cb31a9c60049c06c8b87b337c15ec992.
+[2025-03-11 14:58:18] [DETAILS] execute queries> Checking QL for /home/qingxiao/codeql/my-queries/FunctionCallGraph.ql.
+[2025-03-11 14:58:18] Stale frontend caches are invalidated based on import graph reachability.
+[2025-03-11 14:58:19] ExternalModuleBindingPass ...
+[2025-03-11 14:58:19] ExternalModuleBindingPass time: 00:00.000
+[2025-03-11 14:58:19] CollectInstantiationsPass ...
+[2025-03-11 14:58:19] CollectInstantiationsPass time: 00:00.003
+[2025-03-11 14:58:19] Ql checks ...
+[2025-03-11 14:58:19] Ql checks time: 00:00.028
+[2025-03-11 14:58:19] [ERROR] execute queries> ERROR: could not resolve module cpp (/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql:1,8-11)
+[2025-03-11 14:58:19] [ERROR] execute queries> ERROR: could not resolve type Function (/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql:3,6-14)
+[2025-03-11 14:58:19] [ERROR] execute queries> ERROR: could not resolve type Function (/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql:3,23-31)
+[2025-03-11 14:58:19] [ERROR] execute queries> ERROR: could not resolve type CallExpr (/home/qingxiao/codeql/my-queries/FunctionCallGraph.ql:3,40-48)
+[2025-03-11 14:58:19] Sequence stamp origin is -6073319555671008484
+[2025-03-11 14:58:19] Pausing evaluation to close the cache at sequence stamp o+0
+[2025-03-11 14:58:19] The disk cache is freshly trimmed; leave it be.
+[2025-03-11 14:58:19] Unpausing evaluation
+[2025-03-11 14:58:19] This NaiveBuddyAllocator requested 0 eviction rounds.
+[2025-03-11 14:58:19] Exiting with code 2

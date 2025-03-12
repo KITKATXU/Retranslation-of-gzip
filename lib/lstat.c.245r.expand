@@ -1,0 +1,378 @@
+
+;; Function orig_lstat (orig_lstat, funcdef_no=6, decl_uid=2395, cgraph_uid=7, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 16.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 filename+0 S8 A64])
+        (reg:DI 5 di [ filename ])) "lstat.c":40:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 buf+0 S8 A64])
+        (reg:DI 4 si [ buf ])) "lstat.c":40:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 buf+0 S8 A64])) "lstat.c":41:10 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 filename+0 S8 A64])) "lstat.c":41:10 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (reg:DI 84)) "lstat.c":41:10 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg:DI 85)) "lstat.c":41:10 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("lstat") [flags 0x41]  <function_decl 0x78379b7a7e00 lstat>) [0 lstat S1 A8])
+            (const_int 0 [0]))) "lstat.c":41:10 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 12 11 15 2 (set (reg:SI 82 [ _5 ])
+        (reg:SI 0 ax)) "lstat.c":41:10 -1
+     (nil))
+(insn 15 12 19 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _5 ])) "lstat.c":41:10 -1
+     (nil))
+(insn 19 15 20 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "lstat.c":42:1 -1
+     (nil))
+(insn 20 19 0 2 (use (reg/i:SI 0 ax)) "lstat.c":42:1 -1
+     (nil))
+
+;; Function rpl_lstat (rpl_lstat, funcdef_no=16, decl_uid=2597, cgraph_uid=17, symbol_order=16)
+
+Partition 0: size 4 align 4
+	result_10
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 73.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 file+0 S8 A64])
+        (reg:DI 5 di [ file ])) "lstat.c":70:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 sbuf+0 S8 A64])
+        (reg:DI 4 si [ sbuf ])) "lstat.c":70:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 sbuf+0 S8 A64])) "lstat.c":71:16 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 file+0 S8 A64])) "lstat.c":71:16 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (reg:DI 93)) "lstat.c":71:16 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg:DI 94)) "lstat.c":71:16 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("orig_lstat") [flags 0x3]  <function_decl 0x78379b7c0000 orig_lstat>) [0 orig_lstat S1 A8])
+            (const_int 0 [0]))) "lstat.c":71:16 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 12 11 13 2 (set (reg:SI 95)
+        (reg:SI 0 ax)) "lstat.c":71:16 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [3 result+0 S4 A32])
+        (reg:SI 95)) "lstat.c":71:16 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [3 result+0 S4 A32])
+            (const_int 0 [0]))) "lstat.c":78:6 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 67)
+            (pc))) "lstat.c":78:6 -1
+     (nil)
+ -> 67)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 4 (set (reg/f:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 sbuf+0 S8 A64])) "lstat.c":80:11 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 82 [ _1 ])
+        (mem:SI (plus:DI (reg/f:DI 96)
+                (const_int 24 [0x18])) [3 sbuf_16(D)->st_mode+0 S4 A64])) "lstat.c":80:11 -1
+     (nil))
+(insn 19 18 20 4 (parallel [
+            (set (reg:SI 83 [ _2 ])
+                (and:SI (reg:SI 82 [ _1 ])
+                    (const_int 61440 [0xf000])))
+            (clobber (reg:CC 17 flags))
+        ]) "lstat.c":80:11 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 83 [ _2 ])
+            (const_int 16384 [0x4000]))) "lstat.c":80:10 -1
+     (nil))
+(jump_insn 21 20 22 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) "lstat.c":80:10 -1
+     (nil)
+ -> 33)
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 file+0 S8 A64])) "lstat.c":80:43 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:DI 5 di)
+        (reg:DI 97)) "lstat.c":80:43 -1
+     (nil))
+(call_insn/i 25 24 26 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x78379b6b7700 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) "lstat.c":80:43 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 26 25 27 5 (set (reg:DI 84 [ _3 ])
+        (reg:DI 0 ax)) "lstat.c":80:43 -1
+     (nil))
+(insn 27 26 28 5 (parallel [
+            (set (reg:DI 85 [ _4 ])
+                (plus:DI (reg:DI 84 [ _3 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "lstat.c":80:42 -1
+     (nil))
+(insn 28 27 29 5 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 file+0 S8 A64])) "lstat.c":80:42 -1
+     (nil))
+(insn 29 28 30 5 (parallel [
+            (set (reg/f:DI 86 [ _5 ])
+                (plus:DI (reg:DI 85 [ _4 ])
+                    (reg/f:DI 98)))
+            (clobber (reg:CC 17 flags))
+        ]) "lstat.c":80:42 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [1 file+0 S8 A64])
+            (reg:DI 85 [ _4 ]))
+        (nil)))
+(insn 30 29 31 5 (set (reg:QI 87 [ _6 ])
+        (mem:QI (reg/f:DI 86 [ _5 ]) [0 *_5+0 S1 A8])) "lstat.c":80:42 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 87 [ _6 ])
+            (const_int 47 [0x2f]))) "lstat.c":80:35 -1
+     (nil))
+(jump_insn 32 31 33 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 44)
+            (pc))) "lstat.c":80:35 -1
+     (nil)
+ -> 44)
+(code_label 33 32 34 6 5 (nil) [1 uses])
+(note 34 33 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 6 (set (reg:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 sbuf+0 S8 A64])) "lstat.c":81:18 -1
+     (nil))
+(insn 36 35 37 6 (set (reg:SI 100)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [3 result+0 S4 A32])) "lstat.c":81:18 -1
+     (nil))
+(insn 37 36 38 6 (set (reg:DI 4 si)
+        (reg:DI 99)) "lstat.c":81:18 -1
+     (nil))
+(insn 38 37 39 6 (set (reg:SI 5 di)
+        (reg:SI 100)) "lstat.c":81:18 -1
+     (nil))
+(call_insn 39 38 40 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("stat_time_normalize") [flags 0x41]  <function_decl 0x78379b7f8a00 stat_time_normalize>) [0 stat_time_normalize S1 A8])
+            (const_int 0 [0]))) "lstat.c":81:18 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 40 39 41 6 (set (reg:SI 101)
+        (reg:SI 0 ax)) "lstat.c":81:18 -1
+     (nil))
+(insn 41 40 42 6 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [3 result+0 S4 A32])
+        (reg:SI 101)) "lstat.c":81:18 -1
+     (nil))
+(jump_insn 42 41 43 6 (set (pc)
+        (label_ref 67)) "lstat.c":81:16 -1
+     (nil)
+ -> 67)
+(barrier 43 42 44)
+(code_label 44 43 45 7 6 (nil) [1 uses])
+(note 45 44 46 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 7 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 sbuf+0 S8 A64])) "lstat.c":89:16 -1
+     (nil))
+(insn 47 46 48 7 (set (reg:SI 88 [ _7 ])
+        (mem:SI (plus:DI (reg/f:DI 102)
+                (const_int 24 [0x18])) [3 sbuf_16(D)->st_mode+0 S4 A64])) "lstat.c":89:16 -1
+     (nil))
+(insn 48 47 49 7 (parallel [
+            (set (reg:SI 89 [ _8 ])
+                (and:SI (reg:SI 88 [ _7 ])
+                    (const_int 61440 [0xf000])))
+            (clobber (reg:CC 17 flags))
+        ]) "lstat.c":89:16 -1
+     (nil))
+(insn 49 48 50 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ _8 ])
+            (const_int 40960 [0xa000]))) "lstat.c":89:14 -1
+     (nil))
+(jump_insn 50 49 51 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 58)
+            (pc))) "lstat.c":89:14 -1
+     (nil)
+ -> 58)
+(note 51 50 52 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 52 51 53 8 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x78379b7e9800 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "lstat.c":91:15 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 53 52 54 8 (set (reg/f:DI 90 [ _9 ])
+        (reg:DI 0 ax)) "lstat.c":91:15 -1
+     (nil))
+(insn 54 53 55 8 (set (mem:SI (reg/f:DI 90 [ _9 ]) [3 *_9+0 S4 A32])
+        (const_int 20 [0x14])) "lstat.c":91:21 -1
+     (nil))
+(insn 55 54 56 8 (set (reg:SI 91 [ _11 ])
+        (const_int -1 [0xffffffffffffffff])) "lstat.c":92:22 -1
+     (nil))
+(jump_insn 56 55 57 8 (set (pc)
+        (label_ref 70)) "lstat.c":92:22 -1
+     (nil)
+ -> 70)
+(barrier 57 56 58)
+(code_label 58 57 59 9 7 (nil) [1 uses])
+(note 59 58 60 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 9 (set (reg:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [2 sbuf+0 S8 A64])) "lstat.c":94:20 -1
+     (nil))
+(insn 61 60 62 9 (set (reg:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [1 file+0 S8 A64])) "lstat.c":94:20 -1
+     (nil))
+(insn 62 61 63 9 (set (reg:DI 4 si)
+        (reg:DI 103)) "lstat.c":94:20 -1
+     (nil))
+(insn 63 62 64 9 (set (reg:DI 5 di)
+        (reg:DI 104)) "lstat.c":94:20 -1
+     (nil))
+(call_insn 64 63 65 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("rpl_stat") [flags 0x41]  <function_decl 0x78379b7dc500 rpl_stat>) [0 rpl_stat S1 A8])
+            (const_int 0 [0]))) "lstat.c":94:20 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 65 64 66 9 (set (reg:SI 105)
+        (reg:SI 0 ax)) "lstat.c":94:20 -1
+     (nil))
+(insn 66 65 67 9 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [3 result+0 S4 A32])
+        (reg:SI 105)) "lstat.c":94:20 -1
+     (nil))
+(code_label 67 66 68 10 4 (nil) [2 uses])
+(note 68 67 69 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 69 68 70 10 (set (reg:SI 91 [ _11 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [3 result+0 S4 A32])) "lstat.c":97:10 -1
+     (nil))
+(code_label 70 69 71 11 8 (nil) [1 uses])
+(note 71 70 72 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 76 11 (set (reg:SI 92 [ <retval> ])
+        (reg:SI 91 [ _11 ])) "lstat.c":98:1 -1
+     (nil))
+(insn 76 72 77 11 (set (reg/i:SI 0 ax)
+        (reg:SI 92 [ <retval> ])) "lstat.c":98:1 -1
+     (nil))
+(insn 77 76 0 11 (use (reg/i:SI 0 ax)) "lstat.c":98:1 -1
+     (nil))

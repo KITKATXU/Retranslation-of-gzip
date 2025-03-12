@@ -1,0 +1,542 @@
+
+;; Function rpl_getopt_long (rpl_getopt_long, funcdef_no=0, decl_uid=1985, cgraph_uid=1, symbol_order=0)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 29.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) "getopt1.c":30:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) "getopt1.c":30:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 options+0 S8 A64])
+        (reg:DI 1 dx [ options ])) "getopt1.c":30:1 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [4 long_options+0 S8 A64])
+        (reg:DI 2 cx [ long_options ])) "getopt1.c":30:1 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 opt_index+0 S8 A64])
+        (reg:DI 36 r8 [ opt_index ])) "getopt1.c":30:1 -1
+     (nil))
+(note 7 6 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 7 11 2 (set (reg:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 opt_index+0 S8 A64])) "getopt1.c":31:10 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [4 long_options+0 S8 A64])) "getopt1.c":31:10 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 86)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 options+0 S8 A64])) "getopt1.c":31:10 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 87)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 argv+0 S8 A64])) "getopt1.c":31:10 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 88)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 argc+0 S4 A32])) "getopt1.c":31:10 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) "getopt1.c":31:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 16 15 17 2 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [1  S4 A32])
+        (const_int 0 [0])) "getopt1.c":31:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 37 r9)
+        (const_int 0 [0])) "getopt1.c":31:10 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 36 r8)
+        (reg:DI 84)) "getopt1.c":31:10 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 2 cx)
+        (reg:DI 85)) "getopt1.c":31:10 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 1 dx)
+        (reg:DI 86)) "getopt1.c":31:10 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 4 si)
+        (reg:DI 87)) "getopt1.c":31:10 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 5 di)
+        (reg:SI 88)) "getopt1.c":31:10 -1
+     (nil))
+(call_insn 23 22 24 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("rpl_getopt_internal") [flags 0x41]  <function_decl 0x77badb774f00 rpl_getopt_internal>) [0 rpl_getopt_internal S1 A8])
+            (const_int 16 [0x10]))) "getopt1.c":31:10 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 36 r8))
+                        (expr_list:SI (use (reg:SI 37 r9))
+                            (nil))))))))
+(insn 24 23 25 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "getopt1.c":31:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 25 24 28 2 (set (reg:SI 82 [ _8 ])
+        (reg:SI 0 ax)) "getopt1.c":31:10 -1
+     (nil))
+(insn 28 25 32 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _8 ])) "getopt1.c":31:10 -1
+     (nil))
+(insn 32 28 33 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "getopt1.c":33:1 -1
+     (nil))
+(insn 33 32 0 2 (use (reg/i:SI 0 ax)) "getopt1.c":33:1 -1
+     (nil))
+
+;; Function _getopt_long_r (_getopt_long_r, funcdef_no=1, decl_uid=2029, cgraph_uid=2, symbol_order=1)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 30.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) "getopt1.c":39:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) "getopt1.c":39:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 options+0 S8 A64])
+        (reg:DI 1 dx [ options ])) "getopt1.c":39:1 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [4 long_options+0 S8 A64])
+        (reg:DI 2 cx [ long_options ])) "getopt1.c":39:1 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 opt_index+0 S8 A64])
+        (reg:DI 36 r8 [ opt_index ])) "getopt1.c":39:1 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [6 d+0 S8 A64])
+        (reg:DI 37 r9 [ d ])) "getopt1.c":39:1 -1
+     (nil))
+(note 8 7 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 8 12 2 (set (reg:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 opt_index+0 S8 A64])) "getopt1.c":40:10 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [4 long_options+0 S8 A64])) "getopt1.c":40:10 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 86)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 options+0 S8 A64])) "getopt1.c":40:10 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 87)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 argv+0 S8 A64])) "getopt1.c":40:10 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 88)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 argc+0 S4 A32])) "getopt1.c":40:10 -1
+     (nil))
+(insn 16 15 17 2 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [1  S4 A32])
+        (const_int 0 [0])) "getopt1.c":40:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 17 16 18 2 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [6  S8 A64])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [6 d+0 S8 A64])) "getopt1.c":40:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 18 17 19 2 (set (reg:SI 37 r9)
+        (const_int 0 [0])) "getopt1.c":40:10 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 36 r8)
+        (reg:DI 84)) "getopt1.c":40:10 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 2 cx)
+        (reg:DI 85)) "getopt1.c":40:10 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 1 dx)
+        (reg:DI 86)) "getopt1.c":40:10 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 4 si)
+        (reg:DI 87)) "getopt1.c":40:10 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 5 di)
+        (reg:SI 88)) "getopt1.c":40:10 -1
+     (nil))
+(call_insn 24 23 25 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_getopt_internal_r") [flags 0x41]  <function_decl 0x77badb781000 _getopt_internal_r>) [0 _getopt_internal_r S1 A8])
+            (const_int 16 [0x10]))) "getopt1.c":40:10 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 36 r8))
+                        (expr_list:SI (use (reg:SI 37 r9))
+                            (nil))))))))
+(insn 25 24 26 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "getopt1.c":40:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 26 25 29 2 (set (reg:SI 82 [ _9 ])
+        (reg:SI 0 ax)) "getopt1.c":40:10 -1
+     (nil))
+(insn 29 26 33 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _9 ])) "getopt1.c":40:10 -1
+     (nil))
+(insn 33 29 34 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "getopt1.c":42:1 -1
+     (nil))
+(insn 34 33 0 2 (use (reg/i:SI 0 ax)) "getopt1.c":42:1 -1
+     (nil))
+
+;; Function rpl_getopt_long_only (rpl_getopt_long_only, funcdef_no=2, decl_uid=1991, cgraph_uid=3, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 29.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) "getopt1.c":53:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) "getopt1.c":53:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 options+0 S8 A64])
+        (reg:DI 1 dx [ options ])) "getopt1.c":53:1 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [4 long_options+0 S8 A64])
+        (reg:DI 2 cx [ long_options ])) "getopt1.c":53:1 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 opt_index+0 S8 A64])
+        (reg:DI 36 r8 [ opt_index ])) "getopt1.c":53:1 -1
+     (nil))
+(note 7 6 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 7 11 2 (set (reg:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 opt_index+0 S8 A64])) "getopt1.c":54:10 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [4 long_options+0 S8 A64])) "getopt1.c":54:10 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 86)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 options+0 S8 A64])) "getopt1.c":54:10 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 87)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 argv+0 S8 A64])) "getopt1.c":54:10 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 88)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 argc+0 S4 A32])) "getopt1.c":54:10 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) "getopt1.c":54:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 16 15 17 2 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [1  S4 A32])
+        (const_int 0 [0])) "getopt1.c":54:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 37 r9)
+        (const_int 1 [0x1])) "getopt1.c":54:10 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 36 r8)
+        (reg:DI 84)) "getopt1.c":54:10 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 2 cx)
+        (reg:DI 85)) "getopt1.c":54:10 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 1 dx)
+        (reg:DI 86)) "getopt1.c":54:10 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 4 si)
+        (reg:DI 87)) "getopt1.c":54:10 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 5 di)
+        (reg:SI 88)) "getopt1.c":54:10 -1
+     (nil))
+(call_insn 23 22 24 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("rpl_getopt_internal") [flags 0x41]  <function_decl 0x77badb774f00 rpl_getopt_internal>) [0 rpl_getopt_internal S1 A8])
+            (const_int 16 [0x10]))) "getopt1.c":54:10 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 36 r8))
+                        (expr_list:SI (use (reg:SI 37 r9))
+                            (nil))))))))
+(insn 24 23 25 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "getopt1.c":54:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 25 24 28 2 (set (reg:SI 82 [ _8 ])
+        (reg:SI 0 ax)) "getopt1.c":54:10 -1
+     (nil))
+(insn 28 25 32 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _8 ])) "getopt1.c":54:10 -1
+     (nil))
+(insn 32 28 33 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "getopt1.c":56:1 -1
+     (nil))
+(insn 33 32 0 2 (use (reg/i:SI 0 ax)) "getopt1.c":56:1 -1
+     (nil))
+
+;; Function _getopt_long_only_r (_getopt_long_only_r, funcdef_no=3, decl_uid=2036, cgraph_uid=4, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 30.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) "getopt1.c":62:1 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) "getopt1.c":62:1 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 options+0 S8 A64])
+        (reg:DI 1 dx [ options ])) "getopt1.c":62:1 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [4 long_options+0 S8 A64])
+        (reg:DI 2 cx [ long_options ])) "getopt1.c":62:1 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 opt_index+0 S8 A64])
+        (reg:DI 36 r8 [ opt_index ])) "getopt1.c":62:1 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [6 d+0 S8 A64])
+        (reg:DI 37 r9 [ d ])) "getopt1.c":62:1 -1
+     (nil))
+(note 8 7 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 8 12 2 (set (reg:DI 84)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [5 opt_index+0 S8 A64])) "getopt1.c":63:10 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [4 long_options+0 S8 A64])) "getopt1.c":63:10 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 86)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [3 options+0 S8 A64])) "getopt1.c":63:10 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 87)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 argv+0 S8 A64])) "getopt1.c":63:10 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 88)
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 argc+0 S4 A32])) "getopt1.c":63:10 -1
+     (nil))
+(insn 16 15 17 2 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [1  S4 A32])
+        (const_int 0 [0])) "getopt1.c":63:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 17 16 18 2 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [6  S8 A64])
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [6 d+0 S8 A64])) "getopt1.c":63:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 18 17 19 2 (set (reg:SI 37 r9)
+        (const_int 1 [0x1])) "getopt1.c":63:10 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 36 r8)
+        (reg:DI 84)) "getopt1.c":63:10 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 2 cx)
+        (reg:DI 85)) "getopt1.c":63:10 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 1 dx)
+        (reg:DI 86)) "getopt1.c":63:10 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 4 si)
+        (reg:DI 87)) "getopt1.c":63:10 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 5 di)
+        (reg:SI 88)) "getopt1.c":63:10 -1
+     (nil))
+(call_insn 24 23 25 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_getopt_internal_r") [flags 0x41]  <function_decl 0x77badb781000 _getopt_internal_r>) [0 _getopt_internal_r S1 A8])
+            (const_int 16 [0x10]))) "getopt1.c":63:10 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 36 r8))
+                        (expr_list:SI (use (reg:SI 37 r9))
+                            (nil))))))))
+(insn 25 24 26 2 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "getopt1.c":63:10 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 26 25 29 2 (set (reg:SI 82 [ _9 ])
+        (reg:SI 0 ax)) "getopt1.c":63:10 -1
+     (nil))
+(insn 29 26 33 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _9 ])) "getopt1.c":63:10 -1
+     (nil))
+(insn 33 29 34 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "getopt1.c":65:1 -1
+     (nil))
+(insn 34 33 0 2 (use (reg/i:SI 0 ax)) "getopt1.c":65:1 -1
+     (nil))

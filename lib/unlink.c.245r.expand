@@ -1,0 +1,810 @@
+
+;; Function rpl_unlink (rpl_unlink, funcdef_no=6, decl_uid=2755, cgraph_uid=7, symbol_order=6)
+
+Partition 3: size 144 align 16
+	st
+Partition 2: size 8 align 8
+	short_name_44
+Partition 0: size 8 align 8
+	len_23
+Partition 1: size 4 align 4
+	result_26
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 5->17 redirected to 19
+Merging block 17 into block 16...
+Merged blocks 16 and 17.
+Merged 16 and 17 without moving.
+Removing jump 177.
+Merging block 29 into block 28...
+Merged blocks 28 and 29.
+Merged 28 and 29 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])
+        (reg:DI 5 di [ name ])) "unlink.c":36:1 -1
+     (nil))
+(note 3 2 4 2 NOTE_INSN_FUNCTION_BEG)
+(insn 4 3 7 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [5 D.4137+0 S8 A64])
+                (unspec:DI [
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":36:1 -1
+     (nil))
+(insn 7 4 8 2 (set (reg:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])) "unlink.c":38:16 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 5 di)
+        (reg:DI 106)) "unlink.c":38:16 -1
+     (nil))
+(call_insn/i 9 8 10 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x790fc40b7700 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) "unlink.c":38:16 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 10 9 11 2 (set (reg:DI 107)
+        (reg:DI 0 ax)) "unlink.c":38:16 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+        (reg:DI 107)) "unlink.c":38:16 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -180 [0xffffffffffffff4c])) [3 result+0 S4 A32])
+        (const_int 0 [0])) "unlink.c":39:7 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int 0 [0]))) "unlink.c":40:6 -1
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 120)
+            (pc))) "unlink.c":40:6 -1
+     (nil)
+ -> 120)
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg:DI 108)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])) "unlink.c":40:14 -1
+     (nil))
+(insn 17 16 18 4 (parallel [
+            (set (reg:DI 82 [ _1 ])
+                (plus:DI (reg:DI 108)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":40:14 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 18 17 19 4 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])) "unlink.c":40:14 -1
+     (nil))
+(insn 19 18 20 4 (parallel [
+            (set (reg/f:DI 83 [ _2 ])
+                (plus:DI (reg:DI 82 [ _1 ])
+                    (reg/f:DI 109)))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":40:14 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])
+            (reg:DI 82 [ _1 ]))
+        (nil)))
+(insn 20 19 21 4 (set (reg:QI 84 [ _3 ])
+        (mem:QI (reg/f:DI 83 [ _2 ]) [0 *_2+0 S1 A8])) "unlink.c":40:14 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 84 [ _3 ])
+            (const_int 47 [0x2f]))) "unlink.c":40:11 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 120)
+            (pc))) "unlink.c":40:11 -1
+     (nil)
+ -> 120)
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 5 (parallel [
+            (set (reg:DI 110)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":62:16 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])) "unlink.c":62:16 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:DI 4 si)
+        (reg:DI 110)) "unlink.c":62:16 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:DI 5 di)
+        (reg:DI 111)) "unlink.c":62:16 -1
+     (nil))
+(call_insn 28 27 29 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("rpl_lstat") [flags 0x41]  <function_decl 0x790fc3e91800 rpl_lstat>) [0 rpl_lstat S1 A8])
+            (const_int 0 [0]))) "unlink.c":62:16 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 29 28 30 5 (set (reg:SI 112)
+        (reg:SI 0 ax)) "unlink.c":62:16 -1
+     (nil))
+(insn 30 29 31 5 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -180 [0xffffffffffffff4c])) [3 result+0 S4 A32])
+        (reg:SI 112)) "unlink.c":62:16 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -180 [0xffffffffffffff4c])) [3 result+0 S4 A32])
+            (const_int 0 [0]))) "unlink.c":63:10 -1
+     (nil))
+(jump_insn 32 31 33 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 120)
+            (pc))) "unlink.c":63:10 806 {*jcc}
+     (nil)
+ -> 120)
+(note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 6 (set (reg:DI 113)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])) "unlink.c":66:30 -1
+     (nil))
+(insn 35 34 36 6 (set (reg:DI 5 di)
+        (reg:DI 113)) "unlink.c":66:30 -1
+     (nil))
+(call_insn 36 35 37 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x790fc40dd800 malloc>) [0 __builtin_malloc S1 A8])
+            (const_int 0 [0]))) "unlink.c":66:30 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 37 36 38 6 (set (reg/f:DI 114)
+        (reg:DI 0 ax)) "unlink.c":66:30 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 114)
+        (nil)))
+(insn 38 37 39 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])
+        (reg/f:DI 114)) "unlink.c":66:30 -1
+     (nil))
+(insn 39 38 40 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])
+            (const_int 0 [0]))) "unlink.c":67:14 -1
+     (nil))
+(jump_insn 40 39 41 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 48)
+            (pc))) "unlink.c":67:14 -1
+     (nil)
+ -> 48)
+(note 41 40 42 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 42 41 43 7 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x790fc41e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "unlink.c":69:15 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 43 42 44 7 (set (reg/f:DI 85 [ _4 ])
+        (reg:DI 0 ax)) "unlink.c":69:15 -1
+     (nil))
+(insn 44 43 45 7 (set (mem:SI (reg/f:DI 85 [ _4 ]) [3 *_4+0 S4 A32])
+        (const_int 1 [0x1])) "unlink.c":69:21 -1
+     (nil))
+(insn 45 44 46 7 (set (reg:SI 104 [ _28 ])
+        (const_int -1 [0xffffffffffffffff])) "unlink.c":70:22 -1
+     (nil))
+(jump_insn 46 45 47 7 (set (pc)
+        (label_ref 116)) "unlink.c":70:22 -1
+     (nil)
+ -> 116)
+(barrier 47 46 48)
+(code_label 48 47 49 8 4 (nil) [1 uses])
+(note 49 48 50 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 8 (set (reg:DI 115)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])) "unlink.c":72:11 -1
+     (nil))
+(insn 51 50 52 8 (set (reg:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])) "unlink.c":72:11 -1
+     (nil))
+(insn 52 51 53 8 (set (reg:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])) "unlink.c":72:11 -1
+     (nil))
+(insn 53 52 54 8 (set (reg:DI 1 dx)
+        (reg:DI 115)) "unlink.c":72:11 -1
+     (nil))
+(insn 54 53 55 8 (set (reg:DI 4 si)
+        (reg:DI 116)) "unlink.c":72:11 -1
+     (nil))
+(insn 55 54 56 8 (set (reg:DI 5 di)
+        (reg:DI 117)) "unlink.c":72:11 -1
+     (nil))
+(call_insn 56 55 57 8 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x790fc40b2900 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) "unlink.c":72:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 57 56 58 8 (set (pc)
+        (label_ref 65)) "unlink.c":73:17 -1
+     (nil)
+ -> 65)
+(barrier 58 57 75)
+(code_label 75 58 59 9 8 (nil) [1 uses])
+(note 59 75 60 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 9 (parallel [
+            (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+                (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                            (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":74:31 -1
+     (nil))
+(insn 61 60 62 9 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])) "unlink.c":74:23 -1
+     (nil))
+(insn 62 61 63 9 (set (reg:DI 119)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])) "unlink.c":74:23 -1
+     (nil))
+(insn 63 62 64 9 (parallel [
+            (set (reg/f:DI 86 [ _5 ])
+                (plus:DI (reg/f:DI 118)
+                    (reg:DI 119)))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":74:23 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])
+            (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128]))
+        (nil)))
+(insn 64 63 65 9 (set (mem:QI (reg/f:DI 86 [ _5 ]) [0 *_5+0 S1 A8])
+        (const_int 0 [0])) "unlink.c":74:31 -1
+     (nil))
+(code_label 65 64 66 10 6 (nil) [1 uses])
+(note 66 65 67 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 67 66 68 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int 0 [0]))) "unlink.c":73:22 -1
+     (nil))
+(jump_insn 68 67 69 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 78)
+            (pc))) "unlink.c":73:22 -1
+     (nil)
+ -> 78)
+(note 69 68 70 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 70 69 71 11 (set (reg:DI 120)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])) "unlink.c":73:25 -1
+     (nil))
+(insn 71 70 72 11 (parallel [
+            (set (reg:DI 87 [ _6 ])
+                (plus:DI (reg:DI 120)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":73:25 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 72 71 73 11 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])) "unlink.c":73:25 -1
+     (nil))
+(insn 73 72 74 11 (parallel [
+            (set (reg/f:DI 88 [ _7 ])
+                (plus:DI (reg:DI 87 [ _6 ])
+                    (reg/f:DI 121)))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":73:25 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])
+            (reg:DI 87 [ _6 ]))
+        (nil)))
+(insn 74 73 76 11 (set (reg:QI 89 [ _8 ])
+        (mem:QI (reg/f:DI 88 [ _7 ]) [0 *_7+0 S1 A8])) "unlink.c":73:25 -1
+     (nil))
+(insn 76 74 77 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 89 [ _8 ])
+            (const_int 47 [0x2f]))) "unlink.c":73:22 -1
+     (nil))
+(jump_insn 77 76 78 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 75)
+            (pc))) "unlink.c":73:22 -1
+     (nil)
+ -> 75)
+(code_label 78 77 79 12 7 (nil) [1 uses])
+(note 79 78 80 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 80 79 81 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int 0 [0]))) "unlink.c":75:14 -1
+     (nil))
+(jump_insn 81 80 82 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 107)
+            (pc))) "unlink.c":75:14 -1
+     (nil)
+ -> 107)
+(note 82 81 83 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 13 (parallel [
+            (set (reg:DI 122)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":75:23 -1
+     (nil))
+(insn 84 83 85 13 (set (reg:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])) "unlink.c":75:23 -1
+     (nil))
+(insn 85 84 86 13 (set (reg:DI 4 si)
+        (reg:DI 122)) "unlink.c":75:23 -1
+     (nil))
+(insn 86 85 87 13 (set (reg:DI 5 di)
+        (reg:DI 123)) "unlink.c":75:23 -1
+     (nil))
+(call_insn 87 86 88 13 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("rpl_lstat") [flags 0x41]  <function_decl 0x790fc3e91800 rpl_lstat>) [0 rpl_lstat S1 A8])
+            (const_int 0 [0]))) "unlink.c":75:23 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 88 87 89 13 (set (reg:SI 90 [ _9 ])
+        (reg:SI 0 ax)) "unlink.c":75:23 -1
+     (nil))
+(insn 89 88 90 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ _9 ])
+            (const_int 0 [0]))) "unlink.c":75:19 -1
+     (nil))
+(jump_insn 90 89 91 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 96)
+            (pc))) "unlink.c":75:19 -1
+     (nil)
+ -> 96)
+(note 91 90 92 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 92 91 93 14 (set (reg:SI 91 [ _10 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -136 [0xffffffffffffff78])) [3 st.st_mode+0 S4 A64])) "unlink.c":75:50 -1
+     (nil))
+(insn 93 92 94 14 (parallel [
+            (set (reg:SI 92 [ _11 ])
+                (and:SI (reg:SI 91 [ _10 ])
+                    (const_int 61440 [0xf000])))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":75:50 -1
+     (nil))
+(insn 94 93 95 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ _11 ])
+            (const_int 40960 [0xa000]))) "unlink.c":75:47 -1
+     (nil))
+(jump_insn 95 94 96 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 107)
+            (pc))) "unlink.c":75:47 -1
+     (nil)
+ -> 107)
+(code_label 96 95 97 15 10 (nil) [1 uses])
+(note 97 96 98 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 98 97 99 15 (set (reg:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])) "unlink.c":77:15 -1
+     (nil))
+(insn 99 98 100 15 (set (reg:DI 5 di)
+        (reg:DI 124)) "unlink.c":77:15 -1
+     (nil))
+(call_insn 100 99 101 15 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x790fc40d6d00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "unlink.c":77:15 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn/u 101 100 102 15 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x790fc41e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "unlink.c":78:15 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 102 101 103 15 (set (reg/f:DI 93 [ _12 ])
+        (reg:DI 0 ax)) "unlink.c":78:15 -1
+     (nil))
+(insn 103 102 104 15 (set (mem:SI (reg/f:DI 93 [ _12 ]) [3 *_12+0 S4 A32])
+        (const_int 1 [0x1])) "unlink.c":78:21 -1
+     (nil))
+(insn 104 103 105 15 (set (reg:SI 104 [ _28 ])
+        (const_int -1 [0xffffffffffffffff])) "unlink.c":79:22 -1
+     (nil))
+(jump_insn 105 104 106 15 (set (pc)
+        (label_ref 116)) "unlink.c":79:22 -1
+     (nil)
+ -> 116)
+(barrier 106 105 107)
+(code_label 107 106 108 16 9 (nil) [2 uses])
+(note 108 107 109 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 109 108 110 16 (set (reg:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [6 short_name+0 S8 A64])) "unlink.c":81:11 -1
+     (nil))
+(insn 110 109 111 16 (set (reg:DI 5 di)
+        (reg:DI 125)) "unlink.c":81:11 -1
+     (nil))
+(call_insn 111 110 114 16 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x790fc40d6d00 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "unlink.c":81:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 114 111 115 16 (set (pc)
+        (label_ref 120)) -1
+     (nil)
+ -> 120)
+(barrier 115 114 116)
+(code_label 116 115 117 18 5 (nil) [2 uses])
+(note 117 116 118 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 118 117 119 18 (set (pc)
+        (label_ref 174)) "unlink.c":70:22 -1
+     (nil)
+ -> 174)
+(barrier 119 118 120)
+(code_label 120 119 121 19 2 (nil) [4 uses])
+(note 121 120 122 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 122 121 123 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -180 [0xffffffffffffff4c])) [3 result+0 S4 A32])
+            (const_int 0 [0]))) "unlink.c":84:6 -1
+     (nil))
+(jump_insn 123 122 124 19 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 171)
+            (pc))) "unlink.c":84:6 -1
+     (nil)
+ -> 171)
+(note 124 123 127 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 127 124 128 20 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int 1 [0x1]))) "unlink.c":87:10 -1
+     (nil))
+(jump_insn 128 127 129 20 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 164)
+            (pc))) "unlink.c":87:10 -1
+     (nil)
+ -> 164)
+(note 129 128 130 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 130 129 131 21 (set (reg:DI 126)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])) "unlink.c":87:27 -1
+     (nil))
+(insn 131 130 132 21 (parallel [
+            (set (reg:DI 94 [ _13 ])
+                (plus:DI (reg:DI 126)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":87:27 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 132 131 133 21 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])) "unlink.c":87:27 -1
+     (nil))
+(insn 133 132 134 21 (parallel [
+            (set (reg/f:DI 95 [ _14 ])
+                (plus:DI (reg:DI 94 [ _13 ])
+                    (reg/f:DI 127)))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":87:27 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])
+            (reg:DI 94 [ _13 ]))
+        (nil)))
+(insn 134 133 135 21 (set (reg:QI 96 [ _15 ])
+        (mem:QI (reg/f:DI 95 [ _14 ]) [0 *_14+0 S1 A8])) "unlink.c":87:27 -1
+     (nil))
+(insn 135 134 136 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 96 [ _15 ])
+            (const_int 46 [0x2e]))) "unlink.c":87:20 -1
+     (nil))
+(jump_insn 136 135 137 21 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 164)
+            (pc))) "unlink.c":87:20 -1
+     (nil)
+ -> 164)
+(note 137 136 138 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 138 137 139 22 (set (reg:DI 128)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])) "unlink.c":87:51 -1
+     (nil))
+(insn 139 138 140 22 (parallel [
+            (set (reg:DI 97 [ _16 ])
+                (plus:DI (reg:DI 128)
+                    (const_int -2 [0xfffffffffffffffe])))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":87:51 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int -2 [0xfffffffffffffffe]))
+        (nil)))
+(insn 140 139 141 22 (set (reg/f:DI 129)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])) "unlink.c":87:51 -1
+     (nil))
+(insn 141 140 142 22 (parallel [
+            (set (reg/f:DI 98 [ _17 ])
+                (plus:DI (reg:DI 97 [ _16 ])
+                    (reg/f:DI 129)))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":87:51 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])
+            (reg:DI 97 [ _16 ]))
+        (nil)))
+(insn 142 141 143 22 (set (reg:QI 99 [ _18 ])
+        (mem:QI (reg/f:DI 98 [ _17 ]) [0 *_17+0 S1 A8])) "unlink.c":87:51 -1
+     (nil))
+(insn 143 142 144 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 99 [ _18 ])
+            (const_int 46 [0x2e]))) "unlink.c":87:44 -1
+     (nil))
+(jump_insn 144 143 145 22 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 164)
+            (pc))) "unlink.c":87:44 -1
+     (nil)
+ -> 164)
+(note 145 144 146 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 146 145 147 23 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int 2 [0x2]))) "unlink.c":88:11 -1
+     (nil))
+(jump_insn 147 146 148 23 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 156)
+            (pc))) "unlink.c":88:11 -1
+     (nil)
+ -> 156)
+(note 148 147 149 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 149 148 150 24 (set (reg:DI 130)
+        (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])) "unlink.c":88:27 -1
+     (nil))
+(insn 150 149 151 24 (parallel [
+            (set (reg:DI 100 [ _19 ])
+                (plus:DI (reg:DI 130)
+                    (const_int -3 [0xfffffffffffffffd])))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":88:27 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [2 len+0 S8 A128])
+            (const_int -3 [0xfffffffffffffffd]))
+        (nil)))
+(insn 151 150 152 24 (set (reg/f:DI 131)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])) "unlink.c":88:27 -1
+     (nil))
+(insn 152 151 153 24 (parallel [
+            (set (reg/f:DI 101 [ _20 ])
+                (plus:DI (reg:DI 100 [ _19 ])
+                    (reg/f:DI 131)))
+            (clobber (reg:CC 17 flags))
+        ]) "unlink.c":88:27 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])
+            (reg:DI 100 [ _19 ]))
+        (nil)))
+(insn 153 152 154 24 (set (reg:QI 102 [ _21 ])
+        (mem:QI (reg/f:DI 101 [ _20 ]) [0 *_20+0 S1 A8])) "unlink.c":88:27 -1
+     (nil))
+(insn 154 153 155 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 102 [ _21 ])
+            (const_int 47 [0x2f]))) "unlink.c":88:24 -1
+     (nil))
+(jump_insn 155 154 156 24 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 164)
+            (pc))) "unlink.c":88:24 -1
+     (nil)
+ -> 164)
+(code_label 156 155 157 25 14 (nil) [1 uses])
+(note 157 156 158 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 158 157 159 25 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x790fc41e3500 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "unlink.c":90:11 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 159 158 160 25 (set (reg/f:DI 103 [ _22 ])
+        (reg:DI 0 ax)) "unlink.c":90:11 -1
+     (nil))
+(insn 160 159 161 25 (set (mem:SI (reg/f:DI 103 [ _22 ]) [3 *_22+0 S4 A32])
+        (const_int 21 [0x15])) "unlink.c":90:17 -1
+     (nil))
+(insn 161 160 162 25 (set (reg:SI 104 [ _28 ])
+        (const_int -1 [0xffffffffffffffff])) "unlink.c":91:18 -1
+     (nil))
+(jump_insn 162 161 163 25 (set (pc)
+        (label_ref 174)) "unlink.c":91:18 -1
+     (nil)
+ -> 174)
+(barrier 163 162 164)
+(code_label 164 163 165 26 13 (nil) [4 uses])
+(note 165 164 166 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 166 165 167 26 (set (reg:DI 132)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [6 name+0 S8 A64])) "unlink.c":94:16 -1
+     (nil))
+(insn 167 166 168 26 (set (reg:DI 5 di)
+        (reg:DI 132)) "unlink.c":94:16 -1
+     (nil))
+(call_insn 168 167 169 26 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("unlink") [flags 0x41]  <function_decl 0x790fc41c2800 unlink>) [0 unlink S1 A8])
+            (const_int 0 [0]))) "unlink.c":94:16 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 169 168 170 26 (set (reg:SI 133)
+        (reg:SI 0 ax)) "unlink.c":94:16 -1
+     (nil))
+(insn 170 169 171 26 (set (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -180 [0xffffffffffffff4c])) [3 result+0 S4 A32])
+        (reg:SI 133)) "unlink.c":94:16 -1
+     (nil))
+(code_label 171 170 172 27 12 (nil) [1 uses])
+(note 172 171 173 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 173 172 174 27 (set (reg:SI 104 [ _28 ])
+        (mem/c:SI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -180 [0xffffffffffffff4c])) [3 result+0 S4 A32])) "unlink.c":96:10 -1
+     (nil))
+(code_label 174 173 175 28 11 (nil) [2 uses])
+(note 175 174 176 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 176 175 180 28 (set (reg:SI 105 [ <retval> ])
+        (reg:SI 104 [ _28 ])) "unlink.c":97:1 -1
+     (nil))
+(insn 180 176 181 28 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [5 D.4137+0 S8 A64])
+                        (mem/v/f:DI (const_int 40 [0x28]) [0 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_TEST))
+            (clobber (scratch:DI))
+        ]) "unlink.c":97:1 -1
+     (nil))
+(jump_insn 181 180 188 28 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 184)
+            (pc))) "unlink.c":97:1 -1
+     (nil)
+ -> 184)
+(note 188 181 182 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(call_insn 182 188 183 30 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x790fc3eb3900 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "unlink.c":97:1 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 183 182 184)
+(code_label 184 183 189 31 15 (nil) [1 uses])
+(note 189 184 185 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 185 189 186 31 (set (reg/i:SI 0 ax)
+        (reg:SI 105 [ <retval> ])) "unlink.c":97:1 -1
+     (nil))
+(insn 186 185 0 31 (use (reg/i:SI 0 ax)) "unlink.c":97:1 -1
+     (nil))
